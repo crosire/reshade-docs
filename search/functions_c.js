@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['set_5fprivate_5fdata_861',['set_private_data',['../classreshade_1_1api_1_1api__object.html#a62c6353765e5d7d017128f0acdfe1b9d',1,'reshade::api::api_object']]],
+  ['set_5fresource_5fname_862',['set_resource_name',['../classreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4',1,'reshade::api::device']]],
+  ['set_5ftexture_5fdata_863',['set_texture_data',['../classreshade_1_1api_1_1effect__runtime.html#a14d4e595f96d282a02b719492517640b',1,'reshade::api::effect_runtime']]],
+  ['set_5funiform_5fdata_864',['set_uniform_data',['../classreshade_1_1api_1_1effect__runtime.html#a23ebc3e24624e7e425821b11e2ed033b',1,'reshade::api::effect_runtime::set_uniform_data(effect_uniform_variable variable, const bool *values, size_t count, size_t array_index=0)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a28534fd99c18db48e1170a3d8527e2a5',1,'reshade::api::effect_runtime::set_uniform_data(effect_uniform_variable variable, const float *values, size_t count, size_t array_index=0)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a406ccad881f1c1d8169cac7d2d04432b',1,'reshade::api::effect_runtime::set_uniform_data(effect_uniform_variable variable, const int32_t *values, size_t count, size_t array_index=0)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a3847c886c350405fe202452d937a083c',1,'reshade::api::effect_runtime::set_uniform_data(effect_uniform_variable variable, const uint32_t *values, size_t count, size_t array_index=0)=0']]]
+];
