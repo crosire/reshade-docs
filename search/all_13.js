@@ -8,7 +8,7 @@ var searchData=
   ['unordered_5faccess_5fview_662',['unordered_access_view',['../namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a',1,'reshade::api']]],
   ['unregister_5faddon_663',['unregister_addon',['../namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1',1,'reshade']]],
   ['unregister_5fevent_664',['unregister_event',['../namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780',1,'reshade']]],
-  ['unregister_5foverlay_665',['unregister_overlay',['../namespacereshade.html#ae450a484247d0157201b74d36c949871',1,'reshade']]],
+  ['unregister_5foverlay_665',['unregister_overlay',['../namespacereshade.html#a703aada3667d2098df03bcbe62d39109',1,'reshade']]],
   ['update_5fbuffer_5fregion_666',['update_buffer_region',['../classreshade_1_1api_1_1device.html#a20067bd353735e244a73bedf6e3e3c40',1,'reshade::api::device::update_buffer_region()'],['../namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa9086e81e0f09156072dd02012308b4e6',1,'reshade::update_buffer_region()']]],
   ['update_5fdescriptor_5fsets_667',['update_descriptor_sets',['../classreshade_1_1api_1_1device.html#ab178df8c3d8fc5457fe154df69e738f8',1,'reshade::api::device::update_descriptor_sets()'],['../namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa06ac05b6d3f4e9964d7700aa6ab2f2aa',1,'reshade::update_descriptor_sets()']]],
   ['update_5ftexture_5fbindings_668',['update_texture_bindings',['../classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca',1,'reshade::api::effect_runtime']]],

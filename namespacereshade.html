@@ -77,6 +77,8 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacereshade_1_1api"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html">api</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacereshade_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -325,12 +327,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0a4281d1cf1afd3b728e4422774cd8a6"><td class="memItemLeft" align="right" valign="top">HMODULE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a0a4281d1cf1afd3b728e4422774cd8a6">get_reshade_module_handle</a> ()</td></tr>
-<tr class="memdesc:a0a4281d1cf1afd3b728e4422774cd8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the ReShade module in the current process.  <a href="namespacereshade.html#a0a4281d1cf1afd3b728e4422774cd8a6">More...</a><br /></td></tr>
-<tr class="separator:a0a4281d1cf1afd3b728e4422774cd8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3817635491363e340c51102fdbf8e6"><td class="memItemLeft" align="right" valign="top">HMODULE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a3d3817635491363e340c51102fdbf8e6">get_current_module_handle</a> ()</td></tr>
-<tr class="memdesc:a3d3817635491363e340c51102fdbf8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the current add-on module.  <a href="namespacereshade.html#a3d3817635491363e340c51102fdbf8e6">More...</a><br /></td></tr>
-<tr class="separator:a3d3817635491363e340c51102fdbf8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">log_message</a> (int level, const char *message)</td></tr>
 <tr class="memdesc:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">More...</a><br /></td></tr>
 <tr class="separator:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,12 +344,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">unregister_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
 <tr class="memdesc:ab85d6da3c11d36a58e9ef519a0f83780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a callback for the specified event (via template) that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event (via template) with ReShade.">register_event</a>.  <a href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">More...</a><br /></td></tr>
 <tr class="separator:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a950f8ca82e92a7f62d541915e42df6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a950f8ca82e92a7f62d541915e42df6be">register_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime, void *imgui_context))</td></tr>
-<tr class="memdesc:a950f8ca82e92a7f62d541915e42df6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an overlay with ReShade.  <a href="namespacereshade.html#a950f8ca82e92a7f62d541915e42df6be">More...</a><br /></td></tr>
-<tr class="separator:a950f8ca82e92a7f62d541915e42df6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae450a484247d0157201b74d36c949871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ae450a484247d0157201b74d36c949871">unregister_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime, void *imgui_context))</td></tr>
-<tr class="memdesc:ae450a484247d0157201b74d36c949871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#a950f8ca82e92a7f62d541915e42df6be" title="Registers an overlay with ReShade.">register_overlay</a>.  <a href="namespacereshade.html#ae450a484247d0157201b74d36c949871">More...</a><br /></td></tr>
-<tr class="separator:ae450a484247d0157201b74d36c949871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">register_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
+<tr class="memdesc:afdb7ad56c410fefee6bf6e1466fc938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an overlay with ReShade.  <a href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">More...</a><br /></td></tr>
+<tr class="separator:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703aada3667d2098df03bcbe62d39109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a703aada3667d2098df03bcbe62d39109">unregister_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
+<tr class="memdesc:a703aada3667d2098df03bcbe62d39109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e" title="Registers an overlay with ReShade.">register_overlay</a>.  <a href="namespacereshade.html#a703aada3667d2098df03bcbe62d39109">More...</a><br /></td></tr>
+<tr class="separator:a703aada3667d2098df03bcbe62d39109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ade35954538c5f2529c2170104f9f5dbf"></a>
@@ -1410,60 +1406,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3d3817635491363e340c51102fdbf8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d3817635491363e340c51102fdbf8e6">&#9670;&nbsp;</a></span>get_current_module_handle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HMODULE&amp; reshade::get_current_module_handle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the handle to the current add-on module. </p>
-
-</div>
-</div>
-<a id="a0a4281d1cf1afd3b728e4422774cd8a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a4281d1cf1afd3b728e4422774cd8a6">&#9670;&nbsp;</a></span>get_reshade_module_handle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HMODULE&amp; reshade::get_reshade_module_handle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the handle to the ReShade module in the current process. </p>
-
-</div>
-</div>
 <a id="ab89735a25ed07c53b8c44b3ad31cc49d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab89735a25ed07c53b8c44b3ad31cc49d">&#9670;&nbsp;</a></span>log_message()</h2>
 
@@ -1580,8 +1522,8 @@ template&lt;reshade::addon_event ev&gt; </div>
 
 </div>
 </div>
-<a id="a950f8ca82e92a7f62d541915e42df6be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a950f8ca82e92a7f62d541915e42df6be">&#9670;&nbsp;</a></span>register_overlay()</h2>
+<a id="afdb7ad56c410fefee6bf6e1466fc938e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb7ad56c410fefee6bf6e1466fc938e">&#9670;&nbsp;</a></span>register_overlay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1598,7 +1540,7 @@ template&lt;reshade::addon_event ev&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime, void *imgui_context)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime)&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -1696,8 +1638,8 @@ template&lt;reshade::addon_event ev&gt; </div>
 
 </div>
 </div>
-<a id="ae450a484247d0157201b74d36c949871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae450a484247d0157201b74d36c949871">&#9670;&nbsp;</a></span>unregister_overlay()</h2>
+<a id="a703aada3667d2098df03bcbe62d39109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703aada3667d2098df03bcbe62d39109">&#9670;&nbsp;</a></span>unregister_overlay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1714,7 +1656,7 @@ template&lt;reshade::addon_event ev&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime, void *imgui_context)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime)&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -1730,7 +1672,7 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#a950f8ca82e92a7f62d541915e42df6be" title="Registers an overlay with ReShade.">register_overlay</a>. </p>
+<p>Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e" title="Registers an overlay with ReShade.">register_overlay</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">title</td><td>A null-terminated title string.</td></tr>
