@@ -90,11 +90,11 @@ $(function() {
 <div class="line">        <span class="comment">// This registers a callback for the &#39;present&#39; event, which occurs every time a new frame is presented to the screen.</span></div>
 <div class="line">        <span class="comment">// The function signature has to match the type defined by &#39;reshade::addon_event_traits&lt;reshade::addon_event::present&gt;::decl&#39;.</span></div>
 <div class="line">        <span class="comment">// For more details check the inline documentation for each event in &#39;reshade_events.hpp&#39;.</span></div>
-<div class="line">        reshade::register_event&lt;reshade::addon_event::present&gt;(on_present);</div>
+<div class="line">        reshade::register_event&lt;reshade::addon_event::present&gt;(&amp;on_present);</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordflow">case</span> DLL_PROCESS_DETACH:</div>
 <div class="line">        <span class="comment">// This unregisters the event callback that was previously registered during process attachment.</span></div>
-<div class="line">        reshade::unregister_event&lt;reshade::addon_event::present&gt;(on_present);</div>
+<div class="line">        reshade::unregister_event&lt;reshade::addon_event::present&gt;(&amp;on_present);</div>
 <div class="line">        <span class="comment">// And finally unregister the add-on from ReShade (this will automatically clean up any events and overlays registered by this add-on as well).</span></div>
 <div class="line">        <a class="code" href="namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1">reshade::unregister_addon</a>(hinstDLL);</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
