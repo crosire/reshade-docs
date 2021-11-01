@@ -98,14 +98,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b1203d24668090d42df08ea2cc99bd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7">barrier</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *resources, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> *old_states, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> *new_states)=0</td></tr>
 <tr class="memdesc:a4b1203d24668090d42df08ea2cc99bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a barrier for the specified <em>resources</em>  to the command stream.  <a href="classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7">More...</a><br /></td></tr>
 <tr class="separator:a4b1203d24668090d42df08ea2cc99bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a512eceb35bde4103b79d3a0c04016"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016">begin_render_pass</a> (<a class="el" href="structreshade_1_1api_1_1render__pass.html">render_pass</a> pass, <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a> <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a>)=0</td></tr>
-<tr class="memdesc:a86a512eceb35bde4103b79d3a0c04016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render pass by binding its render targets and depth-stencil buffer.  <a href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016">More...</a><br /></td></tr>
-<tr class="separator:a86a512eceb35bde4103b79d3a0c04016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2810e1c008db44d88f0a8203bc00b227"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227">finish_render_pass</a> ()=0</td></tr>
-<tr class="memdesc:a2810e1c008db44d88f0a8203bc00b227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested.  <a href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227">More...</a><br /></td></tr>
-<tr class="separator:a2810e1c008db44d88f0a8203bc00b227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ca6199d26aaabf624c32ed32b99425"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425">begin_render_pass</a> (<a class="el" href="structreshade_1_1api_1_1render__pass.html">render_pass</a> pass, <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a> <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a>, uint32_t clear_value_count=0, const void *clear_values=nullptr)=0</td></tr>
+<tr class="memdesc:a74ca6199d26aaabf624c32ed32b99425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render pass by binding its render targets and depth-stencil buffer.  <a href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425">More...</a><br /></td></tr>
+<tr class="separator:a74ca6199d26aaabf624c32ed32b99425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">end_render_pass</a> ()=0</td></tr>
+<tr class="memdesc:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested.  <a href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">More...</a><br /></td></tr>
+<tr class="separator:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5bd17b2cb03863913efda6e01d972"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">bind_render_targets_and_depth_stencil</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *rtvs, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv={ 0 })=0</td></tr>
-<tr class="memdesc:a72b5bd17b2cb03863913efda6e01d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">finish_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">More...</a><br /></td></tr>
+<tr class="memdesc:a72b5bd17b2cb03863913efda6e01d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">More...</a><br /></td></tr>
 <tr class="separator:a72b5bd17b2cb03863913efda6e01d972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">bind_pipeline</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> type, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>)=0</td></tr>
 <tr class="memdesc:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a pipeline state object.  <a href="classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">More...</a><br /></td></tr>
@@ -174,7 +174,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad1285c0ce3e3fa8a2ce11b75af7e3dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#ad1285c0ce3e3fa8a2ce11b75af7e3dec">More...</a><br /></td></tr>
 <tr class="separator:ad1285c0ce3e3fa8a2ce11b75af7e3dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">clear_attachments</a> (<a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a> clear_flags, const float color[4], float depth, uint8_t stencil, uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">finish_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">More...</a><br /></td></tr>
+<tr class="memdesc:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">More...</a><br /></td></tr>
 <tr class="separator:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b4d365233359fbf12baa251b6afcdd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aa3b4d365233359fbf12baa251b6afcdd">clear_depth_stencil_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv, <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a> clear_flags, float depth, uint8_t stencil, uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
 <tr class="memdesc:aa3b4d365233359fbf12baa251b6afcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the depth-stencil view.  <a href="classreshade_1_1api_1_1command__list.html#aa3b4d365233359fbf12baa251b6afcdd">More...</a><br /></td></tr>
@@ -194,18 +194,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a51df1782d51eb18624174d395ead37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">begin_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
 <tr class="memdesc:a1a51df1782d51eb18624174d395ead37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a query.  <a href="classreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">More...</a><br /></td></tr>
 <tr class="separator:a1a51df1782d51eb18624174d395ead37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f6ec1d3dfa4ae582de6992fea868434"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a0f6ec1d3dfa4ae582de6992fea868434">finish_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
-<tr class="memdesc:a0f6ec1d3dfa4ae582de6992fea868434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a query.  <a href="classreshade_1_1api_1_1command__list.html#a0f6ec1d3dfa4ae582de6992fea868434">More...</a><br /></td></tr>
-<tr class="separator:a0f6ec1d3dfa4ae582de6992fea868434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c22d4af96e4a160676fe0d898de7137"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">end_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
+<tr class="memdesc:a6c22d4af96e4a160676fe0d898de7137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a query.  <a href="classreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">More...</a><br /></td></tr>
+<tr class="separator:a6c22d4af96e4a160676fe0d898de7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae1beb797978b3ccf3292039edfcef7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">copy_query_pool_results</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first, uint32_t count, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t stride)=0</td></tr>
 <tr class="memdesc:a2ae1beb797978b3ccf3292039edfcef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the results of queries in a query pool to a buffer resource.  <a href="classreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">More...</a><br /></td></tr>
 <tr class="separator:a2ae1beb797978b3ccf3292039edfcef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">begin_debug_event</a> (const char *label, const float color[4]=nullptr)=0</td></tr>
 <tr class="memdesc:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a debug event region in the command list.  <a href="classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">More...</a><br /></td></tr>
 <tr class="separator:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dbf7c8fed693327b39bd5c6d5792266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a6dbf7c8fed693327b39bd5c6d5792266">finish_debug_event</a> ()=0</td></tr>
-<tr class="memdesc:a6dbf7c8fed693327b39bd5c6d5792266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the current debug event region (the last one opened with <a class="el" href="classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec" title="Opens a debug event region in the command list.">begin_debug_event</a>).  <a href="classreshade_1_1api_1_1command__list.html#a6dbf7c8fed693327b39bd5c6d5792266">More...</a><br /></td></tr>
-<tr class="separator:a6dbf7c8fed693327b39bd5c6d5792266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e85530ee6c2c43eb0d3dfb256e6cc10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4e85530ee6c2c43eb0d3dfb256e6cc10">end_debug_event</a> ()=0</td></tr>
+<tr class="memdesc:a4e85530ee6c2c43eb0d3dfb256e6cc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the current debug event region (the last one opened with <a class="el" href="classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec" title="Opens a debug event region in the command list.">begin_debug_event</a>).  <a href="classreshade_1_1api_1_1command__list.html#a4e85530ee6c2c43eb0d3dfb256e6cc10">More...</a><br /></td></tr>
+<tr class="separator:a4e85530ee6c2c43eb0d3dfb256e6cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa43b68ac312f25a8944e05166aa917"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a5aa43b68ac312f25a8944e05166aa917">insert_debug_marker</a> (const char *label, const float color[4]=nullptr)=0</td></tr>
 <tr class="memdesc:a5aa43b68ac312f25a8944e05166aa917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a debug marker into the command list.  <a href="classreshade_1_1api_1_1command__list.html#a5aa43b68ac312f25a8944e05166aa917">More...</a><br /></td></tr>
 <tr class="separator:a5aa43b68ac312f25a8944e05166aa917"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,8 +449,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86a512eceb35bde4103b79d3a0c04016"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a512eceb35bde4103b79d3a0c04016">&#9670;&nbsp;</a></span>begin_render_pass()</h2>
+<a id="a74ca6199d26aaabf624c32ed32b99425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ca6199d26aaabf624c32ed32b99425">&#9670;&nbsp;</a></span>begin_render_pass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,7 +468,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a>&#160;</td>
-          <td class="paramname"><em>framebuffer</em>&#160;</td>
+          <td class="paramname"><em>framebuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>clear_value_count</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>clear_values</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -484,6 +496,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a render pass by binding its render targets and depth-stencil buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pass</td><td>Render pass to begin.</td></tr>
+    <tr><td class="paramname">framebuffer</td><td>Framebuffer to bind.</td></tr>
+    <tr><td class="paramname">clear_value_count</td><td>Number of clear values, or zero if there are no attachments with the <a class="el" href="namespacereshade_1_1api.html#ab65b587cb324272f805862577227115da01bc6f8efa4202821e95f4fdf6298b30">attachment_load_op::clear</a> operation in the render pass.</td></tr>
+    <tr><td class="paramname">clear_values</td><td>Pointer to an array of clear values, with four 32-bit elements for each attachment in the framebuffer.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -846,8 +867,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">finish_render_pass</a>. </p>
+<p>Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
 <p>This is not supported (and will do nothing) in Vulkan. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>Number of render target views to bind.</td></tr>
+    <tr><td class="paramname">rtvs</td><td>Pointer to an array of render target views to bind.</td></tr>
+    <tr><td class="paramname">dsv</td><td>Depth-stencil view to bind, or zero to bind none.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1138,7 +1167,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">finish_render_pass</a>. </p>
+<p>Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clear_flags</td><td>Combination of flags to identify which attachment types to clear.</td></tr>
@@ -2089,8 +2118,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6dbf7c8fed693327b39bd5c6d5792266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dbf7c8fed693327b39bd5c6d5792266">&#9670;&nbsp;</a></span>finish_debug_event()</h2>
+<a id="a4e85530ee6c2c43eb0d3dfb256e6cc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e85530ee6c2c43eb0d3dfb256e6cc10">&#9670;&nbsp;</a></span>end_debug_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2099,7 +2128,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::command_list::finish_debug_event </td>
+          <td class="memname">virtual void reshade::api::command_list::end_debug_event </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2116,8 +2145,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f6ec1d3dfa4ae582de6992fea868434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f6ec1d3dfa4ae582de6992fea868434">&#9670;&nbsp;</a></span>finish_query()</h2>
+<a id="a6c22d4af96e4a160676fe0d898de7137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c22d4af96e4a160676fe0d898de7137">&#9670;&nbsp;</a></span>end_query()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2126,7 +2155,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::command_list::finish_query </td>
+          <td class="memname">virtual void reshade::api::command_list::end_query </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a>&#160;</td>
           <td class="paramname"><em>pool</em>, </td>
@@ -2168,8 +2197,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2810e1c008db44d88f0a8203bc00b227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2810e1c008db44d88f0a8203bc00b227">&#9670;&nbsp;</a></span>finish_render_pass()</h2>
+<a id="a4e7e0b86b35be07c2e03a2ea19843ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7e0b86b35be07c2e03a2ea19843ace">&#9670;&nbsp;</a></span>end_render_pass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2178,7 +2207,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::command_list::finish_render_pass </td>
+          <td class="memname">virtual void reshade::api::command_list::end_render_pass </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2191,7 +2220,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested. </p>
+<p>Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested. </p>
 
 </div>
 </div>

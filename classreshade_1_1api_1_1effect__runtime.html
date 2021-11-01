@@ -115,42 +115,60 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ec9be3eba45d32d1d3d4864dacef6e7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a1ec9be3eba45d32d1d3d4864dacef6e7">find_uniform_variable</a> (const char *effect_name, const char *variable_name) const =0</td></tr>
 <tr class="memdesc:a1ec9be3eba45d32d1d3d4864dacef6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a specific uniform variable in the loaded effects and returns a handle to it.  <a href="classreshade_1_1api_1_1effect__runtime.html#a1ec9be3eba45d32d1d3d4864dacef6e7">More...</a><br /></td></tr>
 <tr class="separator:a1ec9be3eba45d32d1d3d4864dacef6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94aca5d8ae26a408064cceb862ab1a8a"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a94aca5d8ae26a408064cceb862ab1a8a">get_uniform_name</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable) const =0</td></tr>
-<tr class="memdesc:a94aca5d8ae26a408064cceb862ab1a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of a uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a94aca5d8ae26a408064cceb862ab1a8a">More...</a><br /></td></tr>
-<tr class="separator:a94aca5d8ae26a408064cceb862ab1a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf448fe52329383f7a058004083b07d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#adcf448fe52329383f7a058004083b07d">get_uniform_binding</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, uint32_t *out_offset) const =0</td></tr>
-<tr class="memdesc:adcf448fe52329383f7a058004083b07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the offset of the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#adcf448fe52329383f7a058004083b07d">More...</a><br /></td></tr>
-<tr class="separator:adcf448fe52329383f7a058004083b07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf84140e9b77e3ea0ec4e32ed04d0a1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#abf84140e9b77e3ea0ec4e32ed04d0a1c">get_uniform_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="memdesc:abf84140e9b77e3ea0ec4e32ed04d0a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a named annotation attached to the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#abf84140e9b77e3ea0ec4e32ed04d0a1c">More...</a><br /></td></tr>
-<tr class="separator:abf84140e9b77e3ea0ec4e32ed04d0a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3819dc537c67b8e3ca56a82a2c399c66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3819dc537c67b8e3ca56a82a2c399c66">get_uniform_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, float *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a3819dc537c67b8e3ca56a82a2c399c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80f49d416f068f973f2f60d917104ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ab80f49d416f068f973f2f60d917104ed">get_uniform_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:ab80f49d416f068f973f2f60d917104ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac089ea423e54a1dc7ee981e520d456a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ac089ea423e54a1dc7ee981e520d456a6">get_uniform_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:ac089ea423e54a1dc7ee981e520d456a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27c8c49050f43b41a2df3b69c5bc9ca"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ad27c8c49050f43b41a2df3b69c5bc9ca">get_uniform_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name) const =0</td></tr>
-<tr class="memdesc:ad27c8c49050f43b41a2df3b69c5bc9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a named annotation attached to the specified uniform <em>variable</em>  as a null-terminated string.  <a href="classreshade_1_1api_1_1effect__runtime.html#ad27c8c49050f43b41a2df3b69c5bc9ca">More...</a><br /></td></tr>
-<tr class="separator:ad27c8c49050f43b41a2df3b69c5bc9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0476a7b2da465c3ba416a7574a3e9430"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a0476a7b2da465c3ba416a7574a3e9430">get_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="memdesc:a0476a7b2da465c3ba416a7574a3e9430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a0476a7b2da465c3ba416a7574a3e9430">More...</a><br /></td></tr>
-<tr class="separator:a0476a7b2da465c3ba416a7574a3e9430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd60b706802d85043d81c1f148931b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aecd60b706802d85043d81c1f148931b5">get_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, float *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:aecd60b706802d85043d81c1f148931b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7023e6de8b5dc973eb38b23b75da3897"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7023e6de8b5dc973eb38b23b75da3897">get_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a7023e6de8b5dc973eb38b23b75da3897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47355e104207ad76a5a133cbd318a0f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a47355e104207ad76a5a133cbd318a0f8">get_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a47355e104207ad76a5a133cbd318a0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ebc3e24624e7e425821b11e2ed033b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a23ebc3e24624e7e425821b11e2ed033b">set_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const bool *values, size_t count, size_t array_index=0)=0</td></tr>
-<tr class="memdesc:a23ebc3e24624e7e425821b11e2ed033b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a23ebc3e24624e7e425821b11e2ed033b">More...</a><br /></td></tr>
-<tr class="separator:a23ebc3e24624e7e425821b11e2ed033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28534fd99c18db48e1170a3d8527e2a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a28534fd99c18db48e1170a3d8527e2a5">set_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const float *values, size_t count, size_t array_index=0)=0</td></tr>
-<tr class="separator:a28534fd99c18db48e1170a3d8527e2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a406ccad881f1c1d8169cac7d2d04432b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a406ccad881f1c1d8169cac7d2d04432b">set_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const int32_t *values, size_t count, size_t array_index=0)=0</td></tr>
-<tr class="separator:a406ccad881f1c1d8169cac7d2d04432b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3847c886c350405fe202452d937a083c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3847c886c350405fe202452d937a083c">set_uniform_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const uint32_t *values, size_t count, size_t array_index=0)=0</td></tr>
-<tr class="separator:a3847c886c350405fe202452d937a083c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f6a4b48047cd2255bd77d197701605"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ab6f6a4b48047cd2255bd77d197701605">get_uniform_variable_name</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable) const =0</td></tr>
+<tr class="memdesc:ab6f6a4b48047cd2255bd77d197701605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of a uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#ab6f6a4b48047cd2255bd77d197701605">More...</a><br /></td></tr>
+<tr class="separator:ab6f6a4b48047cd2255bd77d197701605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f38cdd8cb8670ef6cf633d39aa34544"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a4f38cdd8cb8670ef6cf633d39aa34544">get_uniform_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a4f38cdd8cb8670ef6cf633d39aa34544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified uniform <em>variable</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a4f38cdd8cb8670ef6cf633d39aa34544">More...</a><br /></td></tr>
+<tr class="separator:a4f38cdd8cb8670ef6cf633d39aa34544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1751480f459de1284f8ea4f93ef1b6eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a1751480f459de1284f8ea4f93ef1b6eb">get_uniform_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, float *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a1751480f459de1284f8ea4f93ef1b6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified uniform <em>variable</em>  as floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a1751480f459de1284f8ea4f93ef1b6eb">More...</a><br /></td></tr>
+<tr class="separator:a1751480f459de1284f8ea4f93ef1b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020cc0dd095e87cf3479cbb8d2955b46"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a020cc0dd095e87cf3479cbb8d2955b46">get_uniform_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a020cc0dd095e87cf3479cbb8d2955b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified uniform <em>variable</em>  as signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a020cc0dd095e87cf3479cbb8d2955b46">More...</a><br /></td></tr>
+<tr class="separator:a020cc0dd095e87cf3479cbb8d2955b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9962e3d49e856390869dbee03a2b6acb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a9962e3d49e856390869dbee03a2b6acb">get_uniform_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a9962e3d49e856390869dbee03a2b6acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified uniform <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a9962e3d49e856390869dbee03a2b6acb">More...</a><br /></td></tr>
+<tr class="separator:a9962e3d49e856390869dbee03a2b6acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c028ecf4ec688723d19f3c66b29ce12"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7c028ecf4ec688723d19f3c66b29ce12">get_uniform_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name) const =0</td></tr>
+<tr class="memdesc:a7c028ecf4ec688723d19f3c66b29ce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a7c028ecf4ec688723d19f3c66b29ce12">More...</a><br /></td></tr>
+<tr class="separator:a7c028ecf4ec688723d19f3c66b29ce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ce52e0ae647a29676b4d60eb106d2e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a52ce52e0ae647a29676b4d60eb106d2e">get_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a52ce52e0ae647a29676b4d60eb106d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a52ce52e0ae647a29676b4d60eb106d2e">More...</a><br /></td></tr>
+<tr class="separator:a52ce52e0ae647a29676b4d60eb106d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75a3d8ac727fb158484da39d964220e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ad75a3d8ac727fb158484da39d964220e">get_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, float *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:ad75a3d8ac727fb158484da39d964220e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em>  as floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#ad75a3d8ac727fb158484da39d964220e">More...</a><br /></td></tr>
+<tr class="separator:ad75a3d8ac727fb158484da39d964220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87afb5aebbd792dcb9ba820c1b4a0c62"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a87afb5aebbd792dcb9ba820c1b4a0c62">get_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a87afb5aebbd792dcb9ba820c1b4a0c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em>  as signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a87afb5aebbd792dcb9ba820c1b4a0c62">More...</a><br /></td></tr>
+<tr class="separator:a87afb5aebbd792dcb9ba820c1b4a0c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92b68026f3eb5e8db145909adb62d1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ab92b68026f3eb5e8db145909adb62d1c">get_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:ab92b68026f3eb5e8db145909adb62d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#ab92b68026f3eb5e8db145909adb62d1c">More...</a><br /></td></tr>
+<tr class="separator:ab92b68026f3eb5e8db145909adb62d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1c86edc7c0b76b48c0070b53236c9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3b1c86edc7c0b76b48c0070b53236c9d">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const bool *values, size_t count, size_t array_index=0)=0</td></tr>
+<tr class="memdesc:a3b1c86edc7c0b76b48c0070b53236c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a3b1c86edc7c0b76b48c0070b53236c9d">More...</a><br /></td></tr>
+<tr class="separator:a3b1c86edc7c0b76b48c0070b53236c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7de1bc225ca64efa65ff35a32586c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#afd7de1bc225ca64efa65ff35a32586c6">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, bool x, bool y=bool(0), bool z=bool(0), bool w=bool(0))</td></tr>
+<tr class="memdesc:afd7de1bc225ca64efa65ff35a32586c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as a vector of boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#afd7de1bc225ca64efa65ff35a32586c6">More...</a><br /></td></tr>
+<tr class="separator:afd7de1bc225ca64efa65ff35a32586c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad6766cf30de6378faa97f8a794b189"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a0ad6766cf30de6378faa97f8a794b189">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const float *values, size_t count, size_t array_index=0)=0</td></tr>
+<tr class="memdesc:a0ad6766cf30de6378faa97f8a794b189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a0ad6766cf30de6378faa97f8a794b189">More...</a><br /></td></tr>
+<tr class="separator:a0ad6766cf30de6378faa97f8a794b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec17f037c3514fc1f3d26ff5216ea623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aec17f037c3514fc1f3d26ff5216ea623">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, float x, float y=float(0), float z=float(0), float w=float(0))</td></tr>
+<tr class="memdesc:aec17f037c3514fc1f3d26ff5216ea623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as a vector of floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#aec17f037c3514fc1f3d26ff5216ea623">More...</a><br /></td></tr>
+<tr class="separator:aec17f037c3514fc1f3d26ff5216ea623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321ee239cb5be95715b06ab4f33dbecb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a321ee239cb5be95715b06ab4f33dbecb">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const int32_t *values, size_t count, size_t array_index=0)=0</td></tr>
+<tr class="memdesc:a321ee239cb5be95715b06ab4f33dbecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a321ee239cb5be95715b06ab4f33dbecb">More...</a><br /></td></tr>
+<tr class="separator:a321ee239cb5be95715b06ab4f33dbecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb3dcb48d80c87ce329f8fe69d5d10e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a5eb3dcb48d80c87ce329f8fe69d5d10e">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, int32_t x, int32_t y=int32_t(0), int32_t z=int32_t(0), int32_t w=int32_t(0))</td></tr>
+<tr class="memdesc:a5eb3dcb48d80c87ce329f8fe69d5d10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as a vector of signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a5eb3dcb48d80c87ce329f8fe69d5d10e">More...</a><br /></td></tr>
+<tr class="separator:a5eb3dcb48d80c87ce329f8fe69d5d10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e7a1c7d4567c154a115d8e70142222"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a55e7a1c7d4567c154a115d8e70142222">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const uint32_t *values, size_t count, size_t array_index=0)=0</td></tr>
+<tr class="memdesc:a55e7a1c7d4567c154a115d8e70142222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a55e7a1c7d4567c154a115d8e70142222">More...</a><br /></td></tr>
+<tr class="separator:a55e7a1c7d4567c154a115d8e70142222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3dbc03bb8f09ce0790e834ef2c1fb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aaa3dbc03bb8f09ce0790e834ef2c1fb6">set_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, uint32_t x, uint32_t y=uint32_t(0), uint32_t z=uint32_t(0), uint32_t w=uint32_t(0))</td></tr>
+<tr class="memdesc:aaa3dbc03bb8f09ce0790e834ef2c1fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified uniform <em>variable</em>  as a vector of unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#aaa3dbc03bb8f09ce0790e834ef2c1fb6">More...</a><br /></td></tr>
+<tr class="separator:aaa3dbc03bb8f09ce0790e834ef2c1fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6060e2706fbb4565232d063792e316"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aab6060e2706fbb4565232d063792e316">enumerate_texture_variables</a> (const char *effect_name, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, void *user_data), void *user_data)=0</td></tr>
 <tr class="memdesc:aab6060e2706fbb4565232d063792e316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates all texture variables of loaded effects and calls the specified <em>callback</em>  function with a handle for each one.  <a href="classreshade_1_1api_1_1effect__runtime.html#aab6060e2706fbb4565232d063792e316">More...</a><br /></td></tr>
 <tr class="separator:aab6060e2706fbb4565232d063792e316"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,30 +179,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad815a85502d01c9772e9e68e64f113e6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ad815a85502d01c9772e9e68e64f113e6">find_texture_variable</a> (const char *effect_name, const char *variable_name) const =0</td></tr>
 <tr class="memdesc:ad815a85502d01c9772e9e68e64f113e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a specific texture variable in the loaded effects and returns a handle to it.  <a href="classreshade_1_1api_1_1effect__runtime.html#ad815a85502d01c9772e9e68e64f113e6">More...</a><br /></td></tr>
 <tr class="separator:ad815a85502d01c9772e9e68e64f113e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5c0a70b9db1764e28738b1cfb6aa4a"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#adf5c0a70b9db1764e28738b1cfb6aa4a">get_texture_name</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable) const =0</td></tr>
-<tr class="memdesc:adf5c0a70b9db1764e28738b1cfb6aa4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of a texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#adf5c0a70b9db1764e28738b1cfb6aa4a">More...</a><br /></td></tr>
-<tr class="separator:adf5c0a70b9db1764e28738b1cfb6aa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788ae196e9af75fd920af38df2af3a4c"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a788ae196e9af75fd920af38df2af3a4c">get_texture_variable_name</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable) const =0</td></tr>
+<tr class="memdesc:a788ae196e9af75fd920af38df2af3a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of a texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a788ae196e9af75fd920af38df2af3a4c">More...</a><br /></td></tr>
+<tr class="separator:a788ae196e9af75fd920af38df2af3a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53e7b9990f3f72661eb91809a8dee83"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#af53e7b9990f3f72661eb91809a8dee83">get_texture_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:af53e7b9990f3f72661eb91809a8dee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified texture <em>variable</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#af53e7b9990f3f72661eb91809a8dee83">More...</a><br /></td></tr>
+<tr class="separator:af53e7b9990f3f72661eb91809a8dee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf6084b94faac05cc53729cac0978f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a8cf6084b94faac05cc53729cac0978f7">get_texture_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, float *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a8cf6084b94faac05cc53729cac0978f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified texture <em>variable</em>  as floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a8cf6084b94faac05cc53729cac0978f7">More...</a><br /></td></tr>
+<tr class="separator:a8cf6084b94faac05cc53729cac0978f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351b3edd93eb13510c2ceb32db5d1165"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a351b3edd93eb13510c2ceb32db5d1165">get_texture_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a351b3edd93eb13510c2ceb32db5d1165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified texture <em>variable</em>  as signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a351b3edd93eb13510c2ceb32db5d1165">More...</a><br /></td></tr>
+<tr class="separator:a351b3edd93eb13510c2ceb32db5d1165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a14cdcebdbdf99af41cdf4e98a9b2a529">get_texture_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified texture <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a14cdcebdbdf99af41cdf4e98a9b2a529">More...</a><br /></td></tr>
+<tr class="separator:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d745dded907c6a13cb1a363aa18c714"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6d745dded907c6a13cb1a363aa18c714">get_texture_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name) const =0</td></tr>
+<tr class="memdesc:a6d745dded907c6a13cb1a363aa18c714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a6d745dded907c6a13cb1a363aa18c714">More...</a><br /></td></tr>
+<tr class="separator:a6d745dded907c6a13cb1a363aa18c714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64615e6be07aea20120b4c8ee4c15f40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">update_texture</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const uint32_t width, const uint32_t height, const uint8_t *pixels)=0</td></tr>
+<tr class="memdesc:a64615e6be07aea20120b4c8ee4c15f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads 32 bits-per-pixel RGBA image data to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">More...</a><br /></td></tr>
+<tr class="separator:a64615e6be07aea20120b4c8ee4c15f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c023c4ac2bb677f655f8d817c58977c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a0c023c4ac2bb677f655f8d817c58977c">get_texture_binding</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_srv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_srv_srgb=nullptr) const =0</td></tr>
-<tr class="memdesc:a0c023c4ac2bb677f655f8d817c58977c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the shader resource views that are bound to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a0c023c4ac2bb677f655f8d817c58977c">More...</a><br /></td></tr>
+<tr class="memdesc:a0c023c4ac2bb677f655f8d817c58977c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the shader resource view that is bound to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a0c023c4ac2bb677f655f8d817c58977c">More...</a><br /></td></tr>
 <tr class="separator:a0c023c4ac2bb677f655f8d817c58977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68dd577a302b3f3bfced94ff0b770573"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a68dd577a302b3f3bfced94ff0b770573">get_texture_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="memdesc:a68dd577a302b3f3bfced94ff0b770573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a named annotation attached to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a68dd577a302b3f3bfced94ff0b770573">More...</a><br /></td></tr>
-<tr class="separator:a68dd577a302b3f3bfced94ff0b770573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d06741f2282596d3cb37b407d0ed61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a29d06741f2282596d3cb37b407d0ed61">get_texture_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, float *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a29d06741f2282596d3cb37b407d0ed61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de725fa8e62a7ac0cc11d4d18ea5969"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3de725fa8e62a7ac0cc11d4d18ea5969">get_texture_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a3de725fa8e62a7ac0cc11d4d18ea5969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e665a94d186c6fe55f7f3d9a32fa4f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6e665a94d186c6fe55f7f3d9a32fa4f2">get_texture_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
-<tr class="separator:a6e665a94d186c6fe55f7f3d9a32fa4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d116a881810b47067f5a56b67905505"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7d116a881810b47067f5a56b67905505">get_texture_annotation</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name) const =0</td></tr>
-<tr class="memdesc:a7d116a881810b47067f5a56b67905505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a named annotation attached to the specified texture <em>variable</em>  as a null-terminated string.  <a href="classreshade_1_1api_1_1effect__runtime.html#a7d116a881810b47067f5a56b67905505">More...</a><br /></td></tr>
-<tr class="separator:a7d116a881810b47067f5a56b67905505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ed080d373a963005cc5b32afb5c122"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a38ed080d373a963005cc5b32afb5c122">get_texture_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, uint32_t *out_width, uint32_t *out_height, uint8_t *pixels)=0</td></tr>
-<tr class="memdesc:a38ed080d373a963005cc5b32afb5c122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the image data of the specified texture <em>variable</em>  in 32 bits-per-pixel RGBA format.  <a href="classreshade_1_1api_1_1effect__runtime.html#a38ed080d373a963005cc5b32afb5c122">More...</a><br /></td></tr>
-<tr class="separator:a38ed080d373a963005cc5b32afb5c122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d4e595f96d282a02b719492517640b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a14d4e595f96d282a02b719492517640b">set_texture_data</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const uint32_t width, const uint32_t height, const uint8_t *pixels)=0</td></tr>
-<tr class="memdesc:a14d4e595f96d282a02b719492517640b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads 32 bits-per-pixel RGBA image data to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a14d4e595f96d282a02b719492517640b">More...</a><br /></td></tr>
-<tr class="separator:a14d4e595f96d282a02b719492517640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41999c3ad8a862e2e9d5d5090e495cca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca">update_texture_bindings</a> (const char *semantic, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv_srgb={ 0 })=0</td></tr>
 <tr class="memdesc:a41999c3ad8a862e2e9d5d5090e495cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a new shader resource view to all texture variables that use the specified <em>semantic</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca">More...</a><br /></td></tr>
 <tr class="separator:a41999c3ad8a862e2e9d5d5090e495cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +219,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html#a1c0a508cf4c60ae1d29db94665ea90fb">get_current_back_buffer_index</a> () const =0</td></tr>
 <tr class="memdesc:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the back buffer resource that can currently be rendered into.  <a href="classreshade_1_1api_1_1swapchain.html#a1c0a508cf4c60ae1d29db94665ea90fb">More...</a><br /></td></tr>
 <tr class="separator:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819b60f30760bffca03213a6a05e57cc inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structreshade_1_1api_1_1resource__desc.html">resource_desc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html#a819b60f30760bffca03213a6a05e57cc">get_desc</a> () const</td></tr>
-<tr class="memdesc:a819b60f30760bffca03213a6a05e57cc inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the description of the back buffer resources.  <a href="classreshade_1_1api_1_1swapchain.html#a819b60f30760bffca03213a6a05e57cc">More...</a><br /></td></tr>
-<tr class="separator:a819b60f30760bffca03213a6a05e57cc inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8457884cb8e7b159f78a174a5ab7378 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classreshade_1_1api_1_1effect__runtime.html">effect_runtime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html#ad8457884cb8e7b159f78a174a5ab7378">get_effect_runtime</a> ()</td></tr>
 <tr class="memdesc:ad8457884cb8e7b159f78a174a5ab7378 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the effect runtime associated with this swap chain.  <a href="classreshade_1_1api_1_1swapchain.html#ad8457884cb8e7b159f78a174a5ab7378">More...</a><br /></td></tr>
 <tr class="separator:ad8457884cb8e7b159f78a174a5ab7378 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,6 +520,7 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p>Finds a specific texture variable in the loaded effects and returns a handle to it. </p>
+<p>The returned handle is only valid until effects are next reloaded again. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">effect_name</td><td>File name of the effect file the variable is declared in, or <code>nullptr</code> to search in all loaded effects.</td></tr>
@@ -551,6 +567,7 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p>Finds a specific uniform variable in the loaded effects and returns a handle to it. </p>
+<p>The returned handle is only valid until effects are next reloaded again. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">effect_name</td><td>File name of the effect file the variable is declared in, or <code>nullptr</code> to search in all loaded effects.</td></tr>
@@ -627,8 +644,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a7d116a881810b47067f5a56b67905505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d116a881810b47067f5a56b67905505">&#9670;&nbsp;</a></span>get_texture_annotation() <span class="overload">[1/5]</span></h2>
+<a id="a6d745dded907c6a13cb1a363aa18c714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d745dded907c6a13cb1a363aa18c714">&#9670;&nbsp;</a></span>get_texture_annotation_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -637,7 +654,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_texture_annotation </td>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_texture_annotation_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -661,12 +678,19 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the value from a named annotation attached to the specified texture <em>variable</em>  as a null-terminated string. </p>
+<p>Gets the value from a string annotation attached to the specified texture <em>variable</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a68dd577a302b3f3bfced94ff0b770573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68dd577a302b3f3bfced94ff0b770573">&#9670;&nbsp;</a></span>get_texture_annotation() <span class="overload">[2/5]</span></h2>
+<a id="af53e7b9990f3f72661eb91809a8dee83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53e7b9990f3f72661eb91809a8dee83">&#9670;&nbsp;</a></span>get_texture_annotation_value() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,7 +699,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -717,12 +741,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the value from a named annotation attached to the specified texture <em>variable</em> . </p>
+<p>Gets the value from an annotation attached to the specified texture <em>variable</em>  as boolean values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of booleans that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a29d06741f2282596d3cb37b407d0ed61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29d06741f2282596d3cb37b407d0ed61">&#9670;&nbsp;</a></span>get_texture_annotation() <span class="overload">[3/5]</span></h2>
+<a id="a8cf6084b94faac05cc53729cac0978f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf6084b94faac05cc53729cac0978f7">&#9670;&nbsp;</a></span>get_texture_annotation_value() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,7 +765,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -773,10 +807,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value from an annotation attached to the specified texture <em>variable</em>  as floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of floating-points that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a3de725fa8e62a7ac0cc11d4d18ea5969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de725fa8e62a7ac0cc11d4d18ea5969">&#9670;&nbsp;</a></span>get_texture_annotation() <span class="overload">[4/5]</span></h2>
+<a id="a351b3edd93eb13510c2ceb32db5d1165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351b3edd93eb13510c2ceb32db5d1165">&#9670;&nbsp;</a></span>get_texture_annotation_value() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -785,7 +831,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -827,10 +873,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value from an annotation attached to the specified texture <em>variable</em>  as signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of signed integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a6e665a94d186c6fe55f7f3d9a32fa4f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e665a94d186c6fe55f7f3d9a32fa4f2">&#9670;&nbsp;</a></span>get_texture_annotation() <span class="overload">[5/5]</span></h2>
+<a id="a14cdcebdbdf99af41cdf4e98a9b2a529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cdcebdbdf99af41cdf4e98a9b2a529">&#9670;&nbsp;</a></span>get_texture_annotation_value() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,7 +897,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -880,6 +938,18 @@ template&lt;typename F &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the value from an annotation attached to the specified texture <em>variable</em>  as unsigned integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of unsigned integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -923,7 +993,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the shader resource views that are bound to the specified texture <em>variable</em> . </p>
+<p>Gets the shader resource view that is bound to the specified texture <em>variable</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
@@ -935,8 +1005,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a38ed080d373a963005cc5b32afb5c122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38ed080d373a963005cc5b32afb5c122">&#9670;&nbsp;</a></span>get_texture_data()</h2>
+<a id="a788ae196e9af75fd920af38df2af3a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788ae196e9af75fd920af38df2af3a4c">&#9670;&nbsp;</a></span>get_texture_variable_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -945,66 +1015,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_texture_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>out_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>out_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>pixels</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the image data of the specified texture <em>variable</em>  in 32 bits-per-pixel RGBA format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
-    <tr><td class="paramname">out_width</td><td>Pointer to a variable that is set to the width of the image data.</td></tr>
-    <tr><td class="paramname">out_height</td><td>Pointer to a variable that is set to the height of the image data.</td></tr>
-    <tr><td class="paramname">pixels</td><td>Optional pointer to an array of <code>width * height * 4</code> bytes the image data is written to.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adf5c0a70b9db1764e28738b1cfb6aa4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5c0a70b9db1764e28738b1cfb6aa4a">&#9670;&nbsp;</a></span>get_texture_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_texture_name </td>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_texture_variable_name </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em></td><td>)</td>
@@ -1028,8 +1039,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="ad27c8c49050f43b41a2df3b69c5bc9ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27c8c49050f43b41a2df3b69c5bc9ca">&#9670;&nbsp;</a></span>get_uniform_annotation() <span class="overload">[1/5]</span></h2>
+<a id="a7c028ecf4ec688723d19f3c66b29ce12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c028ecf4ec688723d19f3c66b29ce12">&#9670;&nbsp;</a></span>get_uniform_annotation_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1038,7 +1049,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_uniform_annotation </td>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_uniform_annotation_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1062,12 +1073,19 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the value from a named annotation attached to the specified uniform <em>variable</em>  as a null-terminated string. </p>
+<p>Gets the value from a string annotation attached to the specified uniform <em>variable</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="abf84140e9b77e3ea0ec4e32ed04d0a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf84140e9b77e3ea0ec4e32ed04d0a1c">&#9670;&nbsp;</a></span>get_uniform_annotation() <span class="overload">[2/5]</span></h2>
+<a id="a4f38cdd8cb8670ef6cf633d39aa34544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f38cdd8cb8670ef6cf633d39aa34544">&#9670;&nbsp;</a></span>get_uniform_annotation_value() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1076,7 +1094,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1118,12 +1136,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the value from a named annotation attached to the specified uniform <em>variable</em> . </p>
+<p>Gets the value from an annotation attached to the specified uniform <em>variable</em>  as boolean values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of booleans that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3819dc537c67b8e3ca56a82a2c399c66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3819dc537c67b8e3ca56a82a2c399c66">&#9670;&nbsp;</a></span>get_uniform_annotation() <span class="overload">[3/5]</span></h2>
+<a id="a1751480f459de1284f8ea4f93ef1b6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1751480f459de1284f8ea4f93ef1b6eb">&#9670;&nbsp;</a></span>get_uniform_annotation_value() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1132,7 +1160,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1174,10 +1202,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value from an annotation attached to the specified uniform <em>variable</em>  as floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of floating-points that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ab80f49d416f068f973f2f60d917104ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab80f49d416f068f973f2f60d917104ed">&#9670;&nbsp;</a></span>get_uniform_annotation() <span class="overload">[4/5]</span></h2>
+<a id="a020cc0dd095e87cf3479cbb8d2955b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a020cc0dd095e87cf3479cbb8d2955b46">&#9670;&nbsp;</a></span>get_uniform_annotation_value() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,7 +1226,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1228,10 +1268,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value from an annotation attached to the specified uniform <em>variable</em>  as signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of signed integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ac089ea423e54a1dc7ee981e520d456a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac089ea423e54a1dc7ee981e520d456a6">&#9670;&nbsp;</a></span>get_uniform_annotation() <span class="overload">[5/5]</span></h2>
+<a id="a9962e3d49e856390869dbee03a2b6acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9962e3d49e856390869dbee03a2b6acb">&#9670;&nbsp;</a></span>get_uniform_annotation_value() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1240,7 +1292,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_annotation_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1282,55 +1334,22 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="adcf448fe52329383f7a058004083b07d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcf448fe52329383f7a058004083b07d">&#9670;&nbsp;</a></span>get_uniform_binding()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_binding </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>out_offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the offset of the specified uniform <em>variable</em> . </p>
+<p>Gets the value from an annotation attached to the specified uniform <em>variable</em>  as unsigned integer values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
-    <tr><td class="paramname">out_offset</td><td>Pointer to a variable that is set to the offset (in bytes) of the variable from the start of the effect.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of unsigned integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0476a7b2da465c3ba416a7574a3e9430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0476a7b2da465c3ba416a7574a3e9430">&#9670;&nbsp;</a></span>get_uniform_data() <span class="overload">[1/4]</span></h2>
+<a id="a52ce52e0ae647a29676b4d60eb106d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ce52e0ae647a29676b4d60eb106d2e">&#9670;&nbsp;</a></span>get_uniform_value() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1339,7 +1358,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_data </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1375,11 +1394,11 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the value of the specified uniform <em>variable</em> . </p>
+<p>Gets the value of the specified uniform <em>variable</em>  as boolean values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
-    <tr><td class="paramname">values</td><td>Pointer to an array of values that is filled with the values of this uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of booleans that is filled with the values of this uniform variable.</td></tr>
     <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
     <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when this uniform variable is an array variable.</td></tr>
   </table>
@@ -1388,8 +1407,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="aecd60b706802d85043d81c1f148931b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecd60b706802d85043d81c1f148931b5">&#9670;&nbsp;</a></span>get_uniform_data() <span class="overload">[2/4]</span></h2>
+<a id="ad75a3d8ac727fb158484da39d964220e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75a3d8ac727fb158484da39d964220e">&#9670;&nbsp;</a></span>get_uniform_value() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1398,7 +1417,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_data </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1434,10 +1453,21 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value of the specified uniform <em>variable</em>  as floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of floating-points that is filled with the values of this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a7023e6de8b5dc973eb38b23b75da3897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7023e6de8b5dc973eb38b23b75da3897">&#9670;&nbsp;</a></span>get_uniform_data() <span class="overload">[3/4]</span></h2>
+<a id="a87afb5aebbd792dcb9ba820c1b4a0c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87afb5aebbd792dcb9ba820c1b4a0c62">&#9670;&nbsp;</a></span>get_uniform_value() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1446,7 +1476,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_data </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1482,10 +1512,21 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value of the specified uniform <em>variable</em>  as signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of signed integers that is filled with the values of this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a47355e104207ad76a5a133cbd318a0f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47355e104207ad76a5a133cbd318a0f8">&#9670;&nbsp;</a></span>get_uniform_data() <span class="overload">[4/4]</span></h2>
+<a id="ab92b68026f3eb5e8db145909adb62d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92b68026f3eb5e8db145909adb62d1c">&#9670;&nbsp;</a></span>get_uniform_value() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1494,7 +1535,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_data </td>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_uniform_value </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1530,10 +1571,21 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the value of the specified uniform <em>variable</em>  as unsigned integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of unsigned integers that is filled with the values of this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a94aca5d8ae26a408064cceb862ab1a8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94aca5d8ae26a408064cceb862ab1a8a">&#9670;&nbsp;</a></span>get_uniform_name()</h2>
+<a id="ab6f6a4b48047cd2255bd77d197701605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f6a4b48047cd2255bd77d197701605">&#9670;&nbsp;</a></span>get_uniform_variable_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1542,7 +1594,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_uniform_name </td>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_uniform_variable_name </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em></td><td>)</td>
@@ -1619,8 +1671,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a14d4e595f96d282a02b719492517640b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d4e595f96d282a02b719492517640b">&#9670;&nbsp;</a></span>set_texture_data()</h2>
+<a id="afd7de1bc225ca64efa65ff35a32586c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7de1bc225ca64efa65ff35a32586c6">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1629,7 +1681,507 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::set_texture_data </td>
+          <td class="memname">void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>y</em> = <code>bool(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>z</em> = <code>bool(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>w</em> = <code>bool(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as a vector of boolean values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">x</td><td>Value of the first component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">y</td><td>Optional value of the second component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">z</td><td>Optional value of the third component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">w</td><td>Optional value of the fourth component in the vector that is used to update this uniform variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b1c86edc7c0b76b48c0070b53236c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1c86edc7c0b76b48c0070b53236c9d">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as boolean values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of booleans that are used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to write.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start writing values to when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ad6766cf30de6378faa97f8a794b189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad6766cf30de6378faa97f8a794b189">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of floating-points that are used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to write.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start writing values to when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a321ee239cb5be95715b06ab4f33dbecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321ee239cb5be95715b06ab4f33dbecb">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of signed integers that are used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to write.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start writing values to when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a55e7a1c7d4567c154a115d8e70142222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e7a1c7d4567c154a115d8e70142222">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as unsigned integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of unsigned integers that are used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to write.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start writing values to when this uniform variable is an array variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec17f037c3514fc1f3d26ff5216ea623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec17f037c3514fc1f3d26ff5216ea623">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em> = <code>float(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z</em> = <code>float(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>w</em> = <code>float(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as a vector of floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">x</td><td>Value of the first component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">y</td><td>Optional value of the second component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">z</td><td>Optional value of the third component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">w</td><td>Optional value of the fourth component in the vector that is used to update this uniform variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5eb3dcb48d80c87ce329f8fe69d5d10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb3dcb48d80c87ce329f8fe69d5d10e">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>y</em> = <code>int32_t(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>z</em> = <code>int32_t(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>w</em> = <code>int32_t(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as a vector of signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">x</td><td>Value of the first component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">y</td><td>Optional value of the second component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">z</td><td>Optional value of the third component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">w</td><td>Optional value of the fourth component in the vector that is used to update this uniform variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa3dbc03bb8f09ce0790e834ef2c1fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3dbc03bb8f09ce0790e834ef2c1fb6">&#9670;&nbsp;</a></span>set_uniform_value() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::api::effect_runtime::set_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>y</em> = <code>uint32_t(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>z</em> = <code>uint32_t(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>w</em> = <code>uint32_t(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of the specified uniform <em>variable</em>  as a vector of unsigned integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+    <tr><td class="paramname">x</td><td>Value of the first component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">y</td><td>Optional value of the second component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">z</td><td>Optional value of the third component in the vector that is used to update this uniform variable.</td></tr>
+    <tr><td class="paramname">w</td><td>Optional value of the fourth component in the vector that is used to update this uniform variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64615e6be07aea20120b4c8ee4c15f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64615e6be07aea20120b4c8ee4c15f40">&#9670;&nbsp;</a></span>update_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::update_texture </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1675,209 +2227,6 @@ template&lt;typename F &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a23ebc3e24624e7e425821b11e2ed033b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ebc3e24624e7e425821b11e2ed033b">&#9670;&nbsp;</a></span>set_uniform_data() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool *&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of the specified uniform <em>variable</em> . </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
-    <tr><td class="paramname">values</td><td>Pointer to an array of values that are used to update this uniform variable.</td></tr>
-    <tr><td class="paramname">count</td><td>Number of values to write.</td></tr>
-    <tr><td class="paramname">array_index</td><td>Array offset to start writing values to when this uniform variable is an array variable.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a28534fd99c18db48e1170a3d8527e2a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28534fd99c18db48e1170a3d8527e2a5">&#9670;&nbsp;</a></span>set_uniform_data() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a406ccad881f1c1d8169cac7d2d04432b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a406ccad881f1c1d8169cac7d2d04432b">&#9670;&nbsp;</a></span>set_uniform_data() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3847c886c350405fe202452d937a083c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3847c886c350405fe202452d937a083c">&#9670;&nbsp;</a></span>set_uniform_data() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::effect_runtime::set_uniform_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
-          <td class="paramname"><em>variable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t *&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

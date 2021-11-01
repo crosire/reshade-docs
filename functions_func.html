@@ -65,6 +65,13 @@ $(function() {
 <div class="contents">
 &#160;
 
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>attachment_desc()
+: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#ae8c04c6f3cedb7bb7edf99b03202336d">reshade::api::attachment_desc</a>
+</li>
+</ul>
+
+
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>barrier()
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7">reshade::api::command_list</a>
@@ -77,7 +84,7 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">reshade::api::command_list</a>
 </li>
 <li>begin_render_pass()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a86a512eceb35bde4103b79d3a0c04016">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425">reshade::api::command_list</a>
 </li>
 <li>bind_descriptor_set()
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f">reshade::api::command_list</a>
@@ -168,7 +175,7 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1device.html#aa78d543ec7e83c531d189c4710bd7a1d">reshade::api::device</a>
 </li>
 <li>create_framebuffer()
-: <a class="el" href="classreshade_1_1api_1_1device.html#af1fe940510fb7602e00f862ee38b739c">reshade::api::device</a>
+: <a class="el" href="classreshade_1_1api_1_1device.html#ae8b6bdff693d3bdfa46936110a1343bf">reshade::api::device</a>
 </li>
 <li>create_pipeline()
 : <a class="el" href="classreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177">reshade::api::device</a>
@@ -183,7 +190,7 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1device.html#a24df37d021d5a2e08fd23dc71cf344d5">reshade::api::device</a>
 </li>
 <li>create_render_pass()
-: <a class="el" href="classreshade_1_1api_1_1device.html#a93e20eff25dcf9569ac8cdca8b6c3207">reshade::api::device</a>
+: <a class="el" href="classreshade_1_1api_1_1device.html#a09acb216e58eebc8699891a9c33e5370">reshade::api::device</a>
 </li>
 <li>create_resource()
 : <a class="el" href="classreshade_1_1api_1_1device.html#a56b7fb04c40c32e9773ce84292f5f950">reshade::api::device</a>
@@ -250,6 +257,16 @@ $(function() {
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>end_debug_event()
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e85530ee6c2c43eb0d3dfb256e6cc10">reshade::api::command_list</a>
+, <a class="el" href="classreshade_1_1api_1_1command__queue.html#ab087350244e15d195c82f546f896a96c">reshade::api::command_queue</a>
+</li>
+<li>end_query()
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">reshade::api::command_list</a>
+</li>
+<li>end_render_pass()
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">reshade::api::command_list</a>
+</li>
 <li>enumerate_texture_variables()
 : <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aab6060e2706fbb4565232d063792e316">reshade::api::effect_runtime</a>
 </li>
@@ -265,16 +282,6 @@ $(function() {
 </li>
 <li>find_uniform_variable()
 : <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a1ec9be3eba45d32d1d3d4864dacef6e7">reshade::api::effect_runtime</a>
-</li>
-<li>finish_debug_event()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a6dbf7c8fed693327b39bd5c6d5792266">reshade::api::command_list</a>
-, <a class="el" href="classreshade_1_1api_1_1command__queue.html#a93591715e0e960cf4c4f7660b70abd6e">reshade::api::command_queue</a>
-</li>
-<li>finish_query()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a0f6ec1d3dfa4ae582de6992fea868434">reshade::api::command_list</a>
-</li>
-<li>finish_render_pass()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a2810e1c008db44d88f0a8203bc00b227">reshade::api::command_list</a>
 </li>
 <li>flush_immediate_command_list()
 : <a class="el" href="classreshade_1_1api_1_1command__queue.html#a74c42e40f530d0a738e3390628130a83">reshade::api::command_queue</a>
@@ -304,14 +311,11 @@ $(function() {
 <li>get_current_back_buffer_index()
 : <a class="el" href="classreshade_1_1api_1_1swapchain.html#a1c0a508cf4c60ae1d29db94665ea90fb">reshade::api::swapchain</a>
 </li>
-<li>get_desc()
-: <a class="el" href="classreshade_1_1api_1_1swapchain.html#a819b60f30760bffca03213a6a05e57cc">reshade::api::swapchain</a>
-</li>
 <li>get_descriptor_pool_offset()
 : <a class="el" href="classreshade_1_1api_1_1device.html#afc930c134958f2f91df36a2ab43616c2">reshade::api::device</a>
 </li>
-<li>get_descriptor_set_layout_desc()
-: <a class="el" href="classreshade_1_1api_1_1device.html#ae3972f3579896ea770db930ec3e7b939">reshade::api::device</a>
+<li>get_descriptor_set_layout_ranges()
+: <a class="el" href="classreshade_1_1api_1_1device.html#a0c28d711f614171cdf297fa513ac7f0b">reshade::api::device</a>
 </li>
 <li>get_device()
 : <a class="el" href="classreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">reshade::api::device_object</a>
@@ -328,8 +332,8 @@ $(function() {
 <li>get_native_object()
 : <a class="el" href="classreshade_1_1api_1_1api__object.html#a5778844850708600b77b2da43c79d76f">reshade::api::api_object</a>
 </li>
-<li>get_pipeline_layout_desc()
-: <a class="el" href="classreshade_1_1api_1_1device.html#abaa4077cab04860b7069abb13871e023">reshade::api::device</a>
+<li>get_pipeline_layout_params()
+: <a class="el" href="classreshade_1_1api_1_1device.html#a494867fc4dfadf84babf3ed0451693f9">reshade::api::device</a>
 </li>
 <li>get_private_data()
 : <a class="el" href="classreshade_1_1api_1_1api__object.html#a4459480490de4a4f9ab5713317ac39ec">reshade::api::api_object</a>
@@ -343,32 +347,35 @@ $(function() {
 <li>get_resource_from_view()
 : <a class="el" href="classreshade_1_1api_1_1device.html#a77dfc678aca82c427f2b1eac4580a857">reshade::api::device</a>
 </li>
+<li>get_resource_view_desc()
+: <a class="el" href="classreshade_1_1api_1_1device.html#a0c5d2b79417962dc87009e0a63478e4e">reshade::api::device</a>
+</li>
 <li>get_screenshot_width_and_height()
 : <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a2e91582bfc7d36b939def1d93a11d384">reshade::api::effect_runtime</a>
 </li>
-<li>get_texture_annotation()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a68dd577a302b3f3bfced94ff0b770573">reshade::api::effect_runtime</a>
+<li>get_texture_annotation_string()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6d745dded907c6a13cb1a363aa18c714">reshade::api::effect_runtime</a>
+</li>
+<li>get_texture_annotation_value()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#af53e7b9990f3f72661eb91809a8dee83">reshade::api::effect_runtime</a>
 </li>
 <li>get_texture_binding()
 : <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a0c023c4ac2bb677f655f8d817c58977c">reshade::api::effect_runtime</a>
 </li>
-<li>get_texture_data()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a38ed080d373a963005cc5b32afb5c122">reshade::api::effect_runtime</a>
+<li>get_texture_variable_name()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a788ae196e9af75fd920af38df2af3a4c">reshade::api::effect_runtime</a>
 </li>
-<li>get_texture_name()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#adf5c0a70b9db1764e28738b1cfb6aa4a">reshade::api::effect_runtime</a>
+<li>get_uniform_annotation_string()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7c028ecf4ec688723d19f3c66b29ce12">reshade::api::effect_runtime</a>
 </li>
-<li>get_uniform_annotation()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3819dc537c67b8e3ca56a82a2c399c66">reshade::api::effect_runtime</a>
+<li>get_uniform_annotation_value()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a4f38cdd8cb8670ef6cf633d39aa34544">reshade::api::effect_runtime</a>
 </li>
-<li>get_uniform_binding()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#adcf448fe52329383f7a058004083b07d">reshade::api::effect_runtime</a>
+<li>get_uniform_value()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a52ce52e0ae647a29676b4d60eb106d2e">reshade::api::effect_runtime</a>
 </li>
-<li>get_uniform_data()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a0476a7b2da465c3ba416a7574a3e9430">reshade::api::effect_runtime</a>
-</li>
-<li>get_uniform_name()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a94aca5d8ae26a408064cceb862ab1a8a">reshade::api::effect_runtime</a>
+<li>get_uniform_variable_name()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ab6f6a4b48047cd2255bd77d197701605">reshade::api::effect_runtime</a>
 </li>
 </ul>
 
@@ -422,13 +429,13 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1api__object.html#a62c6353765e5d7d017128f0acdfe1b9d">reshade::api::api_object</a>
 </li>
 <li>set_resource_name()
-: <a class="el" href="classreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4">reshade::api::device</a>
+: <a class="el" href="classreshade_1_1api_1_1device.html#a5456d5ae2caad780c51e4970faae8757">reshade::api::device</a>
 </li>
-<li>set_texture_data()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a14d4e595f96d282a02b719492517640b">reshade::api::effect_runtime</a>
+<li>set_resource_view_name()
+: <a class="el" href="classreshade_1_1api_1_1device.html#a7f5c3ed6d4adee4a1ce215915aa0dff4">reshade::api::device</a>
 </li>
-<li>set_uniform_data()
-: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a23ebc3e24624e7e425821b11e2ed033b">reshade::api::effect_runtime</a>
+<li>set_uniform_value()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a3b1c86edc7c0b76b48c0070b53236c9d">reshade::api::effect_runtime</a>
 </li>
 </ul>
 
@@ -445,6 +452,9 @@ $(function() {
 </li>
 <li>update_descriptor_sets()
 : <a class="el" href="classreshade_1_1api_1_1device.html#ab178df8c3d8fc5457fe154df69e738f8">reshade::api::device</a>
+</li>
+<li>update_texture()
+: <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">reshade::api::effect_runtime</a>
 </li>
 <li>update_texture_bindings()
 : <a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca">reshade::api::effect_runtime</a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_5fmessage_840',['log_message',['../namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d',1,'reshade']]]
+  ['insert_5fdebug_5fmarker_846',['insert_debug_marker',['../classreshade_1_1api_1_1command__list.html#a5aa43b68ac312f25a8944e05166aa917',1,'reshade::api::command_list::insert_debug_marker()'],['../classreshade_1_1api_1_1command__queue.html#a4ab57b33f73374fbef1387afd5d9789d',1,'reshade::api::command_queue::insert_debug_marker()']]]
 ];
