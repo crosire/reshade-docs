@@ -206,6 +206,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41999c3ad8a862e2e9d5d5090e495cca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca">update_texture_bindings</a> (const char *semantic, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv_srgb={ 0 })=0</td></tr>
 <tr class="memdesc:a41999c3ad8a862e2e9d5d5090e495cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a new shader resource view to all texture variables that use the specified <em>semantic</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a41999c3ad8a862e2e9d5d5090e495cca">More...</a><br /></td></tr>
 <tr class="separator:a41999c3ad8a862e2e9d5d5090e495cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e79bd63d18041b78630b13feba8795"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a66e79bd63d18041b78630b13feba8795">enumerate_techniques</a> (const char *effect_name, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, void *user_data), void *user_data)=0</td></tr>
+<tr class="memdesc:a66e79bd63d18041b78630b13feba8795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates all techniques of loaded effects and calls the specified <em>callback</em>  function with a handle for each one.  <a href="classreshade_1_1api_1_1effect__runtime.html#a66e79bd63d18041b78630b13feba8795">More...</a><br /></td></tr>
+<tr class="separator:a66e79bd63d18041b78630b13feba8795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eaa9445777ac2efcaae119afa47e619"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a8eaa9445777ac2efcaae119afa47e619"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a8eaa9445777ac2efcaae119afa47e619">enumerate_techniques</a> (const char *effect_name, F lambda)</td></tr>
+<tr class="memdesc:a8eaa9445777ac2efcaae119afa47e619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates all techniques of loaded effects and calls the specified callback function with a handle for each one.  <a href="classreshade_1_1api_1_1effect__runtime.html#a8eaa9445777ac2efcaae119afa47e619">More...</a><br /></td></tr>
+<tr class="separator:a8eaa9445777ac2efcaae119afa47e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca455a91e34953720ad95b4910701e48"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aca455a91e34953720ad95b4910701e48">find_technique</a> (const char *effect_name, const char *technique_name)=0</td></tr>
+<tr class="memdesc:aca455a91e34953720ad95b4910701e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a specific technique in the loaded effects and returns a handle to it.  <a href="classreshade_1_1api_1_1effect__runtime.html#aca455a91e34953720ad95b4910701e48">More...</a><br /></td></tr>
+<tr class="separator:aca455a91e34953720ad95b4910701e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0f3822abfca5d1e1d69df2f0971806"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6b0f3822abfca5d1e1d69df2f0971806">get_technique_name</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique) const =0</td></tr>
+<tr class="memdesc:a6b0f3822abfca5d1e1d69df2f0971806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of a <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a6b0f3822abfca5d1e1d69df2f0971806">More...</a><br /></td></tr>
+<tr class="separator:a6b0f3822abfca5d1e1d69df2f0971806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a09a5774f0ebaa3a1aae963bf27c3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#af4a09a5774f0ebaa3a1aae963bf27c3f">get_technique_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:af4a09a5774f0ebaa3a1aae963bf27c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified <em>technique</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#af4a09a5774f0ebaa3a1aae963bf27c3f">More...</a><br /></td></tr>
+<tr class="separator:af4a09a5774f0ebaa3a1aae963bf27c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b5949e5a50028ff3365a091bc0365e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a61b5949e5a50028ff3365a091bc0365e">get_technique_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, float *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a61b5949e5a50028ff3365a091bc0365e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified <em>technique</em>  as floating-point values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a61b5949e5a50028ff3365a091bc0365e">More...</a><br /></td></tr>
+<tr class="separator:a61b5949e5a50028ff3365a091bc0365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbee7842e3c10df97c2f6dc612fb618"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#aedbee7842e3c10df97c2f6dc612fb618">get_technique_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, int32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:aedbee7842e3c10df97c2f6dc612fb618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified <em>technique</em>  as signed integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#aedbee7842e3c10df97c2f6dc612fb618">More...</a><br /></td></tr>
+<tr class="separator:aedbee7842e3c10df97c2f6dc612fb618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a4ef17bee2c8476c86d8ec4f8aecaf0bd">get_technique_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
+<tr class="memdesc:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified <em>technique</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a4ef17bee2c8476c86d8ec4f8aecaf0bd">More...</a><br /></td></tr>
+<tr class="separator:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ada0d57ec0f6c08d4b219f9082d8a9088">get_technique_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name) const =0</td></tr>
+<tr class="memdesc:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#ada0d57ec0f6c08d4b219f9082d8a9088">More...</a><br /></td></tr>
+<tr class="separator:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7b6309b62fefccfa4e3e5c2b706226f6">get_technique_enabled</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique) const =0</td></tr>
+<tr class="memdesc:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the status of a <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a7b6309b62fefccfa4e3e5c2b706226f6">More...</a><br /></td></tr>
+<tr class="separator:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a57fe8922f0865a18b6972f0f18966"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ae4a57fe8922f0865a18b6972f0f18966">set_technique_enabled</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, bool enabled)=0</td></tr>
+<tr class="memdesc:ae4a57fe8922f0865a18b6972f0f18966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disable the specified <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#ae4a57fe8922f0865a18b6972f0f18966">More...</a><br /></td></tr>
+<tr class="separator:ae4a57fe8922f0865a18b6972f0f18966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
 <tr class="memitem:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">get_back_buffer</a> (uint32_t index)=0</td></tr>
 <tr class="memdesc:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the back buffer resource at the specified <em>index</em>  in this swap chain.  <a href="classreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">More...</a><br /></td></tr>
@@ -281,6 +315,105 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pixels</td><td>Pointer to an array of <code>width * height * 4</code> bytes the image data is written to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8eaa9445777ac2efcaae119afa47e619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eaa9445777ac2efcaae119afa47e619">&#9670;&nbsp;</a></span>enumerate_techniques() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::api::effect_runtime::enumerate_techniques </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>effect_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>lambda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enumerates all techniques of loaded effects and calls the specified callback function with a handle for each one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect_name</td><td>File name of the effect file to enumerate techniques from, or <code>nullptr</code> to enumerate those of all loaded effects.</td></tr>
+    <tr><td class="paramname">lambda</td><td>Function to call for every technique.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66e79bd63d18041b78630b13feba8795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e79bd63d18041b78630b13feba8795">&#9670;&nbsp;</a></span>enumerate_techniques() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::enumerate_techniques </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>effect_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, void *user_data)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enumerates all techniques of loaded effects and calls the specified <em>callback</em>  function with a handle for each one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect_name</td><td>File name of the effect file to enumerate techniques from, or <code>nullptr</code> to enumerate those of all loaded effects.</td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call for every technique.</td></tr>
+    <tr><td class="paramname">user_data</td><td>Optional pointer passed to the callback function.</td></tr>
   </table>
   </dd>
 </dl>
@@ -485,6 +618,53 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
+<a id="aca455a91e34953720ad95b4910701e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca455a91e34953720ad95b4910701e48">&#9670;&nbsp;</a></span>find_technique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> reshade::api::effect_runtime::find_technique </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>effect_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>technique_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds a specific technique in the loaded effects and returns a handle to it. </p>
+<p>The returned handle is only valid until effects are next reloaded again. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect_name</td><td>File name of the effect file the technique is declared in, or <code>nullptr</code> to search in all loaded effects.</td></tr>
+    <tr><td class="paramname">technique_name</td><td>Name of the technique to find.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Opaque handle to the technique, or zero in case it was not found.</dd></dl>
+
+</div>
+</div>
 <a id="ad815a85502d01c9772e9e68e64f113e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad815a85502d01c9772e9e68e64f113e6">&#9670;&nbsp;</a></span>find_texture_variable()</h2>
 
@@ -641,6 +821,383 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p>Gets the current buffer dimensions of the swap chain as used with effect rendering. The returned values are equivalent to <code>BUFFER_WIDTH</code> and <code>BUFFER_HEIGHT</code> in ReShade FX. </p>
+
+</div>
+</div>
+<a id="ada0d57ec0f6c08d4b219f9082d8a9088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0d57ec0f6c08d4b219f9082d8a9088">&#9670;&nbsp;</a></span>get_technique_annotation_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_technique_annotation_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value from a string annotation attached to the specified <em>technique</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4a09a5774f0ebaa3a1aae963bf27c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a09a5774f0ebaa3a1aae963bf27c3f">&#9670;&nbsp;</a></span>get_technique_annotation_value() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_technique_annotation_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value from an annotation attached to the specified <em>technique</em>  as boolean values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of booleans that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61b5949e5a50028ff3365a091bc0365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b5949e5a50028ff3365a091bc0365e">&#9670;&nbsp;</a></span>get_technique_annotation_value() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_technique_annotation_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value from an annotation attached to the specified <em>technique</em>  as floating-point values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of floating-points that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aedbee7842e3c10df97c2f6dc612fb618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbee7842e3c10df97c2f6dc612fb618">&#9670;&nbsp;</a></span>get_technique_annotation_value() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_technique_annotation_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value from an annotation attached to the specified <em>technique</em>  as signed integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of signed integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ef17bee2c8476c86d8ec4f8aecaf0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef17bee2c8476c86d8ec4f8aecaf0bd">&#9670;&nbsp;</a></span>get_technique_annotation_value() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_technique_annotation_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value from an annotation attached to the specified <em>technique</em>  as unsigned integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to an array of unsigned integers that is filled with the values of the annotation.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of values to read.</td></tr>
+    <tr><td class="paramname">array_index</td><td>Array offset to start reading values from when the annotation is an array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b6309b62fefccfa4e3e5c2b706226f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6309b62fefccfa4e3e5c2b706226f6">&#9670;&nbsp;</a></span>get_technique_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_technique_enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the status of a <em>technique</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b0f3822abfca5d1e1d69df2f0971806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0f3822abfca5d1e1d69df2f0971806">&#9670;&nbsp;</a></span>get_technique_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* reshade::api::effect_runtime::get_technique_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of a <em>technique</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1665,6 +2222,51 @@ template&lt;typename F &gt; </div>
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
     <tr><td class="paramname">rtv</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>false</code>.</td></tr>
     <tr><td class="paramname">rtv_srgb</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>true</code>, or zero in which case the view from <em>rtv</em>  is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4a57fe8922f0865a18b6972f0f18966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a57fe8922f0865a18b6972f0f18966">&#9670;&nbsp;</a></span>set_technique_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_technique_enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables or disable the specified <em>technique</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
+    <tr><td class="paramname">enabled</td><td><code>true</code> to enable the technique, or <code>false</code> to disable it.</td></tr>
   </table>
   </dd>
 </dl>

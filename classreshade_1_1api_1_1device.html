@@ -78,7 +78,7 @@ $(function() {
 <p>A logical render device, used for resource creation and global operations.  
  <a href="classreshade_1_1api_1_1device.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="reshade__api_8hpp_source.html">reshade_api.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="reshade__api__device_8hpp_source.html">reshade_api_device.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for reshade::api::device:</div>
 <div class="dyncontent">
@@ -160,9 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a879a3aad5be3008e74cd217f054ad4cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device.html#a879a3aad5be3008e74cd217f054ad4cd">destroy_pipeline_layout</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> handle)=0</td></tr>
 <tr class="memdesc:a879a3aad5be3008e74cd217f054ad4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline layout that was previously created via <a class="el" href="classreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0" title="Creates a new pipeline layout.">create_pipeline_layout</a>.  <a href="classreshade_1_1api_1_1device.html#a879a3aad5be3008e74cd217f054ad4cd">More...</a><br /></td></tr>
 <tr class="separator:a879a3aad5be3008e74cd217f054ad4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494867fc4dfadf84babf3ed0451693f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device.html#a494867fc4dfadf84babf3ed0451693f9">get_pipeline_layout_params</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t *out_count, <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> *out_params) const =0</td></tr>
-<tr class="memdesc:a494867fc4dfadf84babf3ed0451693f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the description of the specified pipeline <em>layout</em> .  <a href="classreshade_1_1api_1_1device.html#a494867fc4dfadf84babf3ed0451693f9">More...</a><br /></td></tr>
-<tr class="separator:a494867fc4dfadf84babf3ed0451693f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3851f1dc67c911aa08de8a1be488b8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device.html#a2d3851f1dc67c911aa08de8a1be488b8">get_pipeline_layout_param</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t index) const =0</td></tr>
+<tr class="memdesc:a2d3851f1dc67c911aa08de8a1be488b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a layout parameter from the specified pipeline <em>layout</em> .  <a href="classreshade_1_1api_1_1device.html#a2d3851f1dc67c911aa08de8a1be488b8">More...</a><br /></td></tr>
+<tr class="separator:a2d3851f1dc67c911aa08de8a1be488b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af330b5f3448990c6e92c16847ff8016f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device.html#af330b5f3448990c6e92c16847ff8016f">create_descriptor_set_layout</a> (uint32_t range_count, const <a class="el" href="structreshade_1_1api_1_1descriptor__range.html">descriptor_range</a> *ranges, bool push_descriptors, <a class="el" href="structreshade_1_1api_1_1descriptor__set__layout.html">descriptor_set_layout</a> *out_handle)=0</td></tr>
 <tr class="memdesc:af330b5f3448990c6e92c16847ff8016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new descriptor set layout.  <a href="classreshade_1_1api_1_1device.html#af330b5f3448990c6e92c16847ff8016f">More...</a><br /></td></tr>
 <tr class="separator:af330b5f3448990c6e92c16847ff8016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1341,8 +1341,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a494867fc4dfadf84babf3ed0451693f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494867fc4dfadf84babf3ed0451693f9">&#9670;&nbsp;</a></span>get_pipeline_layout_params()</h2>
+<a id="a2d3851f1dc67c911aa08de8a1be488b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3851f1dc67c911aa08de8a1be488b8">&#9670;&nbsp;</a></span>get_pipeline_layout_param()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1351,7 +1351,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::device::get_pipeline_layout_params </td>
+          <td class="memname">virtual <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> reshade::api::device::get_pipeline_layout_param </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a>&#160;</td>
           <td class="paramname"><em>layout</em>, </td>
@@ -1359,14 +1359,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>out_count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> *&#160;</td>
-          <td class="paramname"><em>out_params</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1381,13 +1375,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the description of the specified pipeline <em>layout</em> . </p>
-<p>Call this first with <em>out_params</em>  set to <code>nullptr</code> to get the size of the array in <em>out_count</em> , then allocate the array and call this again with <em>out_params</em>  set to it. </p>
+<p>Gets a layout parameter from the specified pipeline <em>layout</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">layout</td><td>Pipeline layout to get the description from.</td></tr>
-    <tr><td class="paramname">out_count</td><td>Pointer to a variable that is set to the number of layout parameters in the <em>layout</em> .</td></tr>
-    <tr><td class="paramname">out_params</td><td>Optional pointer to an array that is filled with the layout parameters in the <em>layout</em> .</td></tr>
+    <tr><td class="paramname">layout</td><td>Pipeline layout to get the layout parameter from.</td></tr>
+    <tr><td class="paramname">index</td><td>Index of the layout parameter to get.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2040,7 +2032,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="reshade__api_8hpp_source.html">reshade_api.hpp</a></li>
+<li>include/<a class="el" href="reshade__api__device_8hpp_source.html">reshade_api_device.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -70,13 +70,12 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">reshade_api.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="reshade__api__device_8hpp_source.html">reshade_api_device.hpp</a>&quot;</code><br />
 </div>
 <p><a href="reshade__api_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -88,23 +87,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">reshade::api::effect_texture_variable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque handle to a texture variable in an effect.  <a href="structreshade_1_1api_1_1effect__texture__variable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1api__object.html">reshade::api::api_object</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects provided by the ReShade API.  <a href="classreshade_1_1api_1_1api__object.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device.html">reshade::api::device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A logical render device, used for resource creation and global operations.  <a href="classreshade_1_1api_1_1device.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1device__object.html">reshade::api::device_object</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects that are children to a logical render <a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">device</a>.  <a href="classreshade_1_1api_1_1device__object.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html">reshade::api::command_list</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command list, used to enqueue render commands on the CPU, before later executing them in a command queue.  <a href="classreshade_1_1api_1_1command__list.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__queue.html">reshade::api::command_queue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command queue, used to execute command lists on the GPU.  <a href="classreshade_1_1api_1_1command__queue.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A swap chain, used to present images to the screen.  <a href="classreshade_1_1api_1_1swapchain.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">reshade::api::effect_technique</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque handle to a technique in an effect.  <a href="structreshade_1_1api_1_1effect__technique.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A ReShade effect runtime, used to control effects.  <a href="classreshade_1_1api_1_1effect__runtime.html#details">More...</a><br /></td></tr>
@@ -116,53 +100,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacereshade_1_1api"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html">reshade::api</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a0e2758bd8e3478f957852a26e12d7f5f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">reshade::api::device_api</a> { <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fad8ad44e2eff81b33c01349929e1c1f91">reshade::api::d3d9</a> = 0x9000
-, <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5faf5a08e60ebe459f8e00f83e6cc95a068">reshade::api::d3d10</a> = 0xa000
-, <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa6590a43543d53241ebf77667ac85f2a7">reshade::api::d3d11</a> = 0xb000
-, <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa1dae544a125c8f47bb4cbf14447abd1f">reshade::api::d3d12</a> = 0xc000
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa6785e6b975db5d7cf223101ef1bc2f6f">reshade::api::opengl</a> = 0x10000
-, <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa8473f19e6529e22157459e75b4cbf485">reshade::api::vulkan</a> = 0x20000
-<br />
- }</td></tr>
-<tr class="memdesc:a0e2758bd8e3478f957852a26e12d7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying render API a device is using, as returned by device::get_api.  <a href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">More...</a><br /></td></tr>
-<tr class="separator:a0e2758bd8e3478f957852a26e12d7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f75e72812269a7815296a0f248f9d0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">reshade::api::device_caps</a> { <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3fab409c137d7ba5f6c7cf647a3d3d62">reshade::api::compute_shader</a> = 1
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa4f11a78f74864cfd78ab5119c3dee7b">reshade::api::geometry_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3c93a7c75062e942599844e27cf88034">reshade::api::hull_and_domain_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0acbf8ba6477522ba81b39f43ee6cebe66">reshade::api::logic_op</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ac905a2681ab4baa71ad044bff859bc75">reshade::api::dual_source_blend</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a60b179dc209681947e48dfcdecd65b2d">reshade::api::independent_blend</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa84ee4d178873e2b7aedf45412213759">reshade::api::fill_mode_non_solid</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a09842ebe1ba7bc504e21f27ea94befbf">reshade::api::conservative_rasterization</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a987b2aa4a2dd7ad21a312488fe3cf9db">reshade::api::bind_render_targets_and_depth_stencil</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a4e134cc959165e70f2e8152111b941c6">reshade::api::multi_viewport</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a137624fb0450850037b499662edad3b0">reshade::api::partial_push_constant_updates</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a1ad28dfe8e08a1a3e97dfa5d3b428d6a">reshade::api::partial_push_descriptor_updates</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afac290d641e57a4ab6d0a086ceba380d">reshade::api::draw_instanced</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3299ec3835b4d48e817b73a6051b5055">reshade::api::draw_or_dispatch_indirect</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a80257d98cf24fac3db951337ebad0423">reshade::api::copy_buffer_region</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aad18153d559de9119fdc4802cc36b681">reshade::api::copy_buffer_to_texture</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ae120bede29a8f2b624d7f55078d7a15f">reshade::api::blit</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a6f1f028740db5e31adf9939e134f93b4">reshade::api::resolve_region</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa292dfd59680988598edc50e2f1e4c88">reshade::api::copy_query_pool_results</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a71c304e35a3900da48ebee39edbc6041">reshade::api::sampler_compare</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a6bb09ea98a31d3e6639b2079e816d703">reshade::api::sampler_anisotropic</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0acf2abea31022a0c3cd4b340acf7f138b">reshade::api::sampler_with_resource_view</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
-<tr class="separator:ac1f75e72812269a7815296a0f248f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -186,6 +123,16 @@ Functions</h2></td></tr>
 <tr class="separator:a880963c857be00e264f144bff888401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969b3bd19bfabf69e605d9fb3425cf0f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a969b3bd19bfabf69e605d9fb3425cf0f">reshade::api::operator==</a> (effect_texture_variable lhs, uint64_t rhs)</td></tr>
 <tr class="separator:a969b3bd19bfabf69e605d9fb3425cf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794c6211d686f219d8b92e9ad57181c5"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a794c6211d686f219d8b92e9ad57181c5">reshade::api::operator&lt;</a> (effect_technique lhs, effect_technique rhs)</td></tr>
+<tr class="separator:a794c6211d686f219d8b92e9ad57181c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf2f6f79c951a3e8400e4c45c96864a"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a2cf2f6f79c951a3e8400e4c45c96864a">reshade::api::operator!=</a> (effect_technique lhs, effect_technique rhs)</td></tr>
+<tr class="separator:a2cf2f6f79c951a3e8400e4c45c96864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d76639306939fa7b31465c8c1c474c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a96d76639306939fa7b31465c8c1c474c">reshade::api::operator!=</a> (effect_technique lhs, uint64_t rhs)</td></tr>
+<tr class="separator:a96d76639306939fa7b31465c8c1c474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83f25e11c88a52d353d9701ca7c20b0"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad83f25e11c88a52d353d9701ca7c20b0">reshade::api::operator==</a> (effect_technique lhs, effect_technique rhs)</td></tr>
+<tr class="separator:ad83f25e11c88a52d353d9701ca7c20b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5eebf6b08c44bc2c31f3a19ef5fca3"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aad5eebf6b08c44bc2c31f3a19ef5fca3">reshade::api::operator==</a> (effect_technique lhs, uint64_t rhs)</td></tr>
+<tr class="separator:aad5eebf6b08c44bc2c31f3a19ef5fca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
