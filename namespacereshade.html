@@ -130,18 +130,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::destroy_pipeline &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::init_render_pass &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::create_render_pass &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::destroy_render_pass &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::init_framebuffer &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::create_framebuffer &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::destroy_framebuffer &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::map_buffer_region &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::unmap_buffer_region &gt;</b></td></tr>
@@ -202,8 +190,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::resolve_texture_region &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::clear_attachments &gt;</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::clear_depth_stencil_view &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::clear_render_target_view &gt;</b></td></tr>
@@ -260,67 +246,59 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa21182f9a819ec7d8be03b99c155f8be0">init_pipeline</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaf5e25b252edd1495a86264c53d2dc4a9">create_pipeline</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfab7ae7557e06d4f07955aecbd74076d11">destroy_pipeline</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa66e74e1da086c50196a30ef26b85b267">init_render_pass</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa58d37ae95ae1d1e094322cd93f5cf734">create_render_pass</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa60527fd247ff7a4d0ad987711ccb8d9b">destroy_render_pass</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaa5066dfaa20e35dde8d3788c942eea1c">init_framebuffer</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacf7b194b7ccb47d566a7e23c1d389b9e">create_framebuffer</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa7b5c0e8bd21b8479450c694648df7efc">destroy_framebuffer</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3e4c8af685abff398098a3b0a951b47e">map_buffer_region</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacafbf15ea06e8061b30fb1f4dd040171">unmap_buffer_region</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacafbf15ea06e8061b30fb1f4dd040171">unmap_buffer_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa7a6f24d4a7ffa9d339d9242024e34008">map_texture_region</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa34549cc0bf687589daa836a2310bf78d">unmap_texture_region</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa34549cc0bf687589daa836a2310bf78d">unmap_texture_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa9086e81e0f09156072dd02012308b4e6">update_buffer_region</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa77b7aa9f57b7d2179b93aadb18760da4">update_texture_region</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa77b7aa9f57b7d2179b93aadb18760da4">update_texture_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa06ac05b6d3f4e9964d7700aa6ab2f2aa">update_descriptor_sets</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfafa9c8ab925b4a1cd4c75b1886fac8f61">barrier</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfafa9c8ab925b4a1cd4c75b1886fac8f61">barrier</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfab86bb0560cdee07cdff03615303d8bf4">begin_render_pass</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfab56285fa14942207a561835044abb4d2">end_render_pass</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfab56285fa14942207a561835044abb4d2">end_render_pass</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa987b2aa4a2dd7ad21a312488fe3cf9db">bind_render_targets_and_depth_stencil</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0bfc34308f215b079e6593e9b00e9e99">bind_pipeline</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0bfc34308f215b079e6593e9b00e9e99">bind_pipeline</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa1bbbb486e0b6eb11d8804470441d077f">bind_pipeline_states</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa5d9247a016d4496d9a29ffcea4473e41">bind_scissor_rects</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacf66d15894ab6128d23c652d72e5ac24">push_constants</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacf66d15894ab6128d23c652d72e5ac24">push_constants</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfae57ceb034a5e4b9b91e5bdd0d5239d1f">bind_descriptor_sets</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfae57ceb034a5e4b9b91e5bdd0d5239d1f">bind_descriptor_sets</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa19a4f637b2ebbbd4c2fee7fd98ccd593">bind_index_buffer</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa5bd667ff1d3e8e790e8a561cdbecf460">bind_vertex_buffers</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa5bd667ff1d3e8e790e8a561cdbecf460">bind_vertex_buffers</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa817491bc777731f0f0c6e485f28e4d86">draw</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa9dddf2a4f7d94594ec2ea98407a410e1">dispatch</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa60f6e59e82570d137160b1441acb473e">copy_resource</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa4ebf42358198546667376f080fadd527">copy_texture_to_buffer</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfacf1e64509c0a4193c1169009a03e78d1">clear_attachments</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa148388d5a5ef8f4fc725bfb3ceb87e75">clear_render_target_view</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa627ab3110236aee8fdd14b724bd0c918">clear_unordered_access_view_uint</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa47ed49958e2500d72e305f85ed316c91">present</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa47ed49958e2500d72e305f85ed316c91">present</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
 <br />
  }</td></tr>
 <tr class="separator:ade35954538c5f2529c2170104f9f5dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,6 +308,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">log_message</a> (int level, const char *message)</td></tr>
 <tr class="memdesc:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">More...</a><br /></td></tr>
 <tr class="separator:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22ee14c4f5d76e0be6f815e3a5a7978"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad22ee14c4f5d76e0be6f815e3a5a7978">get_config_value</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, char *value, size_t *length)</td></tr>
+<tr class="memdesc:ad22ee14c4f5d76e0be6f815e3a5a7978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#ad22ee14c4f5d76e0be6f815e3a5a7978">More...</a><br /></td></tr>
+<tr class="separator:ad22ee14c4f5d76e0be6f815e3a5a7978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b56f0bf1e0c39dddeb23caf5efb42e5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7b56f0bf1e0c39dddeb23caf5efb42e5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a7b56f0bf1e0c39dddeb23caf5efb42e5">get_config_value</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, T &amp;value)</td></tr>
+<tr class="separator:a7b56f0bf1e0c39dddeb23caf5efb42e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb197615008fd50959cab64eb4457d15"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:abb197615008fd50959cab64eb4457d15"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#abb197615008fd50959cab64eb4457d15">get_config_value&lt; bool &gt;</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, bool &amp;value)</td></tr>
+<tr class="separator:abb197615008fd50959cab64eb4457d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">set_config_value</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const char *value)</td></tr>
+<tr class="memdesc:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets and saves a value in one of ReShade's config files.  <a href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">More...</a><br /></td></tr>
+<tr class="separator:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81115ad7fad29535e8e1ebacdca8ec24"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a81115ad7fad29535e8e1ebacdca8ec24"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a81115ad7fad29535e8e1ebacdca8ec24">set_config_value</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const T &amp;value)</td></tr>
+<tr class="separator:a81115ad7fad29535e8e1ebacdca8ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42aefac32cc2a93be1b8918be573d6f1"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a42aefac32cc2a93be1b8918be573d6f1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a42aefac32cc2a93be1b8918be573d6f1">set_config_value&lt; bool &gt;</a> (<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const bool &amp;value)</td></tr>
+<tr class="separator:a42aefac32cc2a93be1b8918be573d6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de21e80da98494dc6ed9832d79e34e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">register_addon</a> (HMODULE module)</td></tr>
 <tr class="memdesc:a8de21e80da98494dc6ed9832d79e34e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">More...</a><br /></td></tr>
 <tr class="separator:a8de21e80da98494dc6ed9832d79e34e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,9 +686,13 @@ glNamedRenderbufferStorage </li>
 <li>
 glNamedRenderbufferStorageMultisample </li>
 <li>
-vkCreateBuffer </li>
+vkBindBufferMemory </li>
 <li>
-vkCreateImage </li>
+vkBindBufferMemory2 </li>
+<li>
+vkBindImageMemory </li>
+<li>
+vkBindImageMemory2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, const <a class="el" href="structreshade_1_1api_1_1resource__desc.html" title="Describes a resource, such as a buffer or texture.">api::resource_desc</a> &amp;desc, const <a class="el" href="structreshade_1_1api_1_1subresource__data.html" title="Used to specify data for initializing a subresource or access existing subresource data.">api::subresource_data</a> *initial_data, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059" title="A list of flags that specify how a resource is to be used. This needs to be specified during creation...">api::resource_usage</a> initial_state, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource)</code></p>
 </td></tr>
@@ -1122,79 +1122,6 @@ vkDestroyPipeline </li>
 <p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
 <p>Is not called in D3D9. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa66e74e1da086c50196a30ef26b85b267"></a>init_render_pass&#160;</td><td class="fielddoc"><p>Called after successfull render pass creation from: </p><ul>
-<li>
-vkCreateRenderPass </li>
-</ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, uint32_t attachment_count, const <a class="el" href="structreshade_1_1api_1_1attachment__desc.html" title="Describes a render pass attachment.">api::attachment_desc</a> *attachments, <a class="el" href="structreshade_1_1api_1_1render__pass.html" title="An opaque handle to a render pass.">api::render_pass</a> pass)</code></p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa58d37ae95ae1d1e094322cd93f5cf734"></a>create_render_pass&#160;</td><td class="fielddoc"><p>Called on render pass creation, before: </p><ul>
-<li>
-vkCreateRenderPass </li>
-</ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, uint32_t attachment_count, <a class="el" href="structreshade_1_1api_1_1attachment__desc.html" title="Describes a render pass attachment.">api::attachment_desc</a> *attachments)</code></p>
-<p>To overwrite the render pass description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa60527fd247ff7a4d0ad987711ccb8d9b"></a>destroy_render_pass&#160;</td><td class="fielddoc"><p>Called on render pass destruction, before: </p><ul>
-<li>
-vkDestroyRenderPass </li>
-</ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1render__pass.html" title="An opaque handle to a render pass.">api::render_pass</a> pass)</code></p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfaa5066dfaa20e35dde8d3788c942eea1c"></a>init_framebuffer&#160;</td><td class="fielddoc"><p>Called after successfull framebuffer object creation from: </p><ul>
-<li>
-glFramebufferTexture </li>
-<li>
-glFramebufferTexture1D </li>
-<li>
-glFramebufferTexture2D </li>
-<li>
-glFramebufferTexture3D </li>
-<li>
-glFramebufferTextureLayer </li>
-<li>
-glFramebufferRenderbuffer </li>
-<li>
-glNamedFramebufferTexture </li>
-<li>
-glNamedFramebufferRenderbuffer </li>
-<li>
-vkCreateFramebuffer </li>
-</ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1render__pass.html" title="An opaque handle to a render pass.">api::render_pass</a> render_pass_template, uint32_t attachment_count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> *attachments, <a class="el" href="structreshade_1_1api_1_1framebuffer.html" title="An opaque handle to a framebuffer object.">api::framebuffer</a> fbo)</code></p>
-<p>May be called multiple times with the same framebuffer handle (whenever the framebuffer object is updated). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfacf7b194b7ccb47d566a7e23c1d389b9e"></a>create_framebuffer&#160;</td><td class="fielddoc"><p>Called on framebuffer object creation, before: </p><ul>
-<li>
-glFramebufferTexture </li>
-<li>
-glFramebufferTexture1D </li>
-<li>
-glFramebufferTexture2D </li>
-<li>
-glFramebufferTexture3D </li>
-<li>
-glFramebufferTextureLayer </li>
-<li>
-glFramebufferRenderbuffer </li>
-<li>
-glNamedFramebufferTexture </li>
-<li>
-glNamedFramebufferRenderbuffer </li>
-<li>
-vkCreateFramebuffer </li>
-</ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1render__pass.html" title="An opaque handle to a render pass.">api::render_pass</a> render_pass_template, uint32_t attachment_count, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> *attachments)</code></p>
-<p>To overwrite the framebuffer description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa7b5c0e8bd21b8479450c694648df7efc"></a>destroy_framebuffer&#160;</td><td class="fielddoc"><p>Called on framebuffer object destruction, before: </p><ul>
-<li>
-glDeleteFramebuffers </li>
-<li>
-vkDestroyFramebuffer </li>
-</ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1framebuffer.html" title="An opaque handle to a framebuffer object.">api::framebuffer</a> fbo)</code></p>
-</td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa3e4c8af685abff398098a3b0a951b47e"></a>map_buffer_region&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
 IDirect3DVertexBuffer9::Lock </li>
@@ -1253,7 +1180,7 @@ ID3D11DeviceContext::Map </li>
 <li>
 ID3D12Resource::Map </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource, uint32_t subresource, const int32_t box[6], <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195" title="The available memory mapping access types.">api::map_access</a> access, <a class="el" href="structreshade_1_1api_1_1subresource__data.html" title="Used to specify data for initializing a subresource or access existing subresource data.">api::subresource_data</a> *data)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource, uint32_t subresource, const api::box *box, <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195" title="The available memory mapping access types.">api::map_access</a> access, <a class="el" href="structreshade_1_1api_1_1subresource__data.html" title="Used to specify data for initializing a subresource or access existing subresource data.">api::subresource_data</a> *data)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa34549cc0bf687589daa836a2310bf78d"></a>unmap_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1318,7 +1245,7 @@ glCompressedTextureSubData2D </li>
 <li>
 glCompressedTextureSubData3D </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, const <a class="el" href="structreshade_1_1api_1_1subresource__data.html" title="Used to specify data for initializing a subresource or access existing subresource data.">api::subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource, uint32_t subresource, const int32_t box[6])</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, const <a class="el" href="structreshade_1_1api_1_1subresource__data.html" title="Used to specify data for initializing a subresource or access existing subresource data.">api::subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource, uint32_t subresource, const api::box *box)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa06ac05b6d3f4e9964d7700aa6ab2f2aa"></a>update_descriptor_sets&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1342,21 +1269,23 @@ vkCmdPipelineBarrier </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *resources, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059" title="A list of flags that specify how a resource is to be used. This needs to be specified during creation...">api::resource_usage</a> *old_states, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059" title="A list of flags that specify how a resource is to be used. This needs to be specified during creation...">api::resource_usage</a> *new_states)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfab86bb0560cdee07cdff03615303d8bf4"></a>begin_render_pass&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfab86bb0560cdee07cdff03615303d8bf4"></a>begin_render_pass&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
 ID3D12GraphicsCommandList4::BeginRenderPass </li>
 <li>
-glBindFramebuffer </li>
-<li>
 vkCmdBeginRenderPass </li>
+<li>
+vkCmdNextSubpass </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1render__pass.html" title="An opaque handle to a render pass.">api::render_pass</a> pass, <a class="el" href="structreshade_1_1api_1_1framebuffer.html" title="An opaque handle to a framebuffer object.">api::framebuffer</a> fbo)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfab56285fa14942207a561835044abb4d2"></a>end_render_pass&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfab56285fa14942207a561835044abb4d2"></a>end_render_pass&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
 ID3D12GraphicsCommandList4::EndRenderPass </li>
 <li>
 vkCmdEndRenderPass </li>
+<li>
+vkCmdNextSubpass </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
@@ -1373,6 +1302,8 @@ ID3D11DeviceContext::OMSetRenderTargets </li>
 ID3D11DeviceContext::OMSetRenderTargetsAndUnorderedAccessViews </li>
 <li>
 ID3D12GraphicsCommandList::OMSetRenderTargets </li>
+<li>
+glBindFramebuffer </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> *rtvs, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> dsv)</code></p>
 </td></tr>
@@ -1486,8 +1417,7 @@ glViewportIndexedfv </li>
 <li>
 vkCmdSetViewport </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const float *viewports)</code></p>
-<p>Viewport data format is <code>{ viewport[0].x, viewport[0].y, viewport[0].width, viewport[0].height, viewport[0].min_depth, viewport[0].max_depth, viewport[1].x, viewport[1].y, ... }</code>. </p>
+<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1viewport.html" title="Describes a render viewport.">api::viewport</a> *viewports)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa5d9247a016d4496d9a29ffcea4473e41"></a>bind_scissor_rects&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1509,8 +1439,7 @@ glScissorIndexedv </li>
 <li>
 vkCmdSetScissor </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const int32_t *rects)</code></p>
-<p>Rectangle data format is <code>{ rect[0].left, rect[0].top, rect[0].right, rect[0].bottom, rect[1].left, rect[1].right, ... }</code>. </p>
+<p>Callback function signature: <code>void (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfacf66d15894ab6128d23c652d72e5ac24"></a>push_constants&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1808,7 +1737,7 @@ ID3D12GraphicsCommandList::CopyTextureRegion </li>
 <li>
 vkCmdCopyBufferToImage </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const int32_t dest_box[6])</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const api::box *dest_box)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfaf8fd0974a2fbc67f3ddc418fbd518aa5"></a>copy_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1845,7 +1774,7 @@ vkCmdBlitImage </li>
 <li>
 vkCmdCopyImage </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const int32_t dest_box[6], <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384" title="The available filtering modes used for texture sampling operations.">api::filter_mode</a> filter)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const api::box *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const api::box *dest_box, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384" title="The available filtering modes used for texture sampling operations.">api::filter_mode</a> filter)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa4ebf42358198546667376f080fadd527"></a>copy_texture_to_buffer&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1854,7 +1783,7 @@ ID3D12GraphicsCommandList::CopyTextureRegion </li>
 <li>
 vkCmdCopyImageToBuffer </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint32_t row_length, uint32_t slice_height)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const api::box *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint32_t row_length, uint32_t slice_height)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa65ccf1dcac4e95d7c1721708968552b9"></a>resolve_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1875,21 +1804,12 @@ glBlitNamedFramebuffer </li>
 <li>
 vkCmdResolveImage </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const int32_t dest_offset[3], <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *source_rect, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfacf1e64509c0a4193c1169009a03e78d1"></a>clear_attachments&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
 IDirect3DDevice9::Clear </li>
-<li>
-glClear </li>
-<li>
-vkCmdClearAttachments </li>
-</ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1" title="The framebuffer attachment types that can be cleared by command_list::clear_attachments.">api::attachment_type</a> clear_flags, const float color[4], float depth, uint8_t stencil, uint32_t rect_count, const int32_t *rects)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
 ID3D10Device::ClearDepthStencilView </li>
 <li>
@@ -1899,7 +1819,7 @@ ID3D11DeviceContext1::ClearView (for depth-stencil views) </li>
 <li>
 ID3D12GraphicsCommandList::ClearDepthStencilView </li>
 <li>
-ID3D12GraphicsCommandList4::BeginRenderPass (if access contains D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE_CLEAR) </li>
+glClear </li>
 <li>
 glClearBufferfi </li>
 <li>
@@ -1911,12 +1831,14 @@ glClearNamedFramebufferfv </li>
 <li>
 vkCmdClearDepthStencilImage </li>
 <li>
-vkCmdBeginRenderPass (if any attachments are cleared) </li>
+vkCmdClearAttachments </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> dsv, <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1" title="The framebuffer attachment types that can be cleared by command_list::clear_attachments.">api::attachment_type</a> clear_flags, float depth, uint8_t stencil, uint32_t rect_count, const int32_t *rects)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> dsv, const float *depth, const uint8_t *stencil, uint32_t rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a8d67848e47e92b279f252dd3f27969cd">api::resource_usage::depth_stencil_write</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa148388d5a5ef8f4fc725bfb3ceb87e75"></a>clear_render_target_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
+<li>
+IDirect3DDevice9::Clear </li>
 <li>
 IDirect3DDevice9::ColorFill </li>
 <li>
@@ -1928,7 +1850,7 @@ ID3D11DeviceContext1::ClearView (for render target views) </li>
 <li>
 ID3D12GraphicsCommandList::ClearRenderTargetView </li>
 <li>
-ID3D12GraphicsCommandList4::BeginRenderPass (if access contains D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE_CLEAR) </li>
+glClear </li>
 <li>
 glClearBufferfv </li>
 <li>
@@ -1936,9 +1858,9 @@ glClearNamedFramebufferfv </li>
 <li>
 vkCmdClearColorImage </li>
 <li>
-vkCmdBeginRenderPass (if any attachments are cleared) </li>
+vkCmdClearAttachments </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, const float color[4], uint32_t rect_count, const int32_t *rects)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, const float color[4], uint32_t rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resources will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">api::resource_usage::render_target</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa627ab3110236aee8fdd14b724bd0c918"></a>clear_unordered_access_view_uint&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1947,7 +1869,7 @@ ID3D11DeviceContext::ClearUnorderedAccessViewUint </li>
 <li>
 ID3D12GraphicsCommandList::ClearUnorderedAccessViewUint </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> uav, const uint32_t values[4], uint32_t rect_count, const int32_t *rects)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> uav, const uint32_t values[4], uint32_t rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9d625a0527071357b9b7ba12d608c8cd">api::resource_usage::unordered_access</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa776b327f3612924a143fd44229558b02"></a>clear_unordered_access_view_float&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -1958,7 +1880,7 @@ ID3D11DeviceContext1::ClearView (for unordered access views) </li>
 <li>
 ID3D12GraphicsCommandList::ClearUnorderedAccessViewFloat </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> uav, const float values[4], uint32_t rect_count, const int32_t *rects)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="classreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> uav, const float values[4], uint32_t rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9d625a0527071357b9b7ba12d608c8cd">api::resource_usage::unordered_access</a> state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa479546bce1c2da73f9d7c4260a50cd03"></a>generate_mipmaps&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -2040,6 +1962,173 @@ IVRCompositor::Submit </li>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad22ee14c4f5d76e0be6f815e3a5a7978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22ee14c4f5d76e0be6f815e3a5a7978">&#9670;&nbsp;</a></span>get_config_value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reshade::get_config_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value from one of ReShade's config files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">runtime</td><td>Optional effect runtime to use the config file from, or <code>nullptr</code> to use the global config file.</td></tr>
+    <tr><td class="paramname">section</td><td>Name of the config section.</td></tr>
+    <tr><td class="paramname">key</td><td>Name of the config value.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the config value.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the specified config value exists, false otherwise.</dd></dl>
+
+</div>
+</div>
+<a id="a7b56f0bf1e0c39dddeb23caf5efb42e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b56f0bf1e0c39dddeb23caf5efb42e5">&#9670;&nbsp;</a></span>get_config_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reshade::get_config_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb197615008fd50959cab64eb4457d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb197615008fd50959cab64eb4457d15">&#9670;&nbsp;</a></span>get_config_value&lt; bool &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="namespacereshade.html#ad22ee14c4f5d76e0be6f815e3a5a7978">reshade::get_config_value</a>&lt; bool &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab89735a25ed07c53b8c44b3ad31cc49d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab89735a25ed07c53b8c44b3ad31cc49d">&#9670;&nbsp;</a></span>log_message()</h2>
 
@@ -2199,6 +2288,165 @@ template&lt;reshade::addon_event ev&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a86c7bfd003b4459ba8d3ff3ba94eac02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c7bfd003b4459ba8d3ff3ba94eac02">&#9670;&nbsp;</a></span>set_config_value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::set_config_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets and saves a value in one of ReShade's config files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">runtime</td><td>Optional effect runtime to use the config file from, or <code>nullptr</code> to use the global config file.</td></tr>
+    <tr><td class="paramname">section</td><td>Name of the config section.</td></tr>
+    <tr><td class="paramname">key</td><td>Name of the config value.</td></tr>
+    <tr><td class="paramname">value</td><td>Config value to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81115ad7fad29535e8e1ebacdca8ec24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81115ad7fad29535e8e1ebacdca8ec24">&#9670;&nbsp;</a></span>set_config_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::set_config_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42aefac32cc2a93be1b8918be573d6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42aefac32cc2a93be1b8918be573d6f1">&#9670;&nbsp;</a></span>set_config_value&lt; bool &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">reshade::set_config_value</a>&lt; bool &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

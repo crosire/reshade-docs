@@ -118,13 +118,13 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a731621b8ad8c63fd465bbb43446a1f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the most detailed mipmap level to use. This number has to be between zero and the maximum number of mipmap levels in the texture minus 1.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a731621b8ad8c63fd465bbb43446a1f26">More...</a><br /></td></tr>
 <tr class="separator:a731621b8ad8c63fd465bbb43446a1f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43">level_count</a></td></tr>
-<tr class="memdesc:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels for the view of the texture. Set to -1 (0xFFFFFFFF) to indicate that all mipmap levels down to the least detailed should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a1fdfc8c988902483cb0f3e5f804fbbe9">More...</a><br /></td></tr>
+<tr class="memdesc:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels for the view of the texture. Set to -1 (UINT32_MAX) to indicate that all mipmap levels down to the least detailed should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a1fdfc8c988902483cb0f3e5f804fbbe9">More...</a><br /></td></tr>
 <tr class="separator:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a0277cbfb28fc3069fac94f19946a52c8">first_layer</a></td></tr>
 <tr class="memdesc:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first array layer of the texture array to use. This value is ignored if the texture is not layered.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#ae2ed3c5d6c58c9e6e0b70adad7e4e49f">More...</a><br /></td></tr>
 <tr class="separator:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#ac88a915a7f4cc3099435e39eb9c18b48">layer_count</a></td></tr>
-<tr class="memdesc:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (0xFFFFFFFF) to indicate that all array layers should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a19737e9b378a5e5d1afbd2ffcbb2d66d">More...</a><br /></td></tr>
+<tr class="memdesc:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (UINT32_MAX) to indicate that all array layers should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a19737e9b378a5e5d1afbd2ffcbb2d66d">More...</a><br /></td></tr>
 <tr class="separator:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d58f992456e593a4494f1b65db9e58"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a3980d6ff8495009ecd40324472d618e8">texture</a></td></tr>
 <tr class="memdesc:a52d58f992456e593a4494f1b65db9e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when view type is a texture.  <a href="unionreshade_1_1api_1_1resource__view__desc_1_1_0d10.html#a52d58f992456e593a4494f1b65db9e58">More...</a><br /></td></tr>
@@ -433,7 +433,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (0xFFFFFFFF) to indicate that all array layers should be used. </p>
+<p>Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (UINT32_MAX) to indicate that all array layers should be used. </p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum number of mipmap levels for the view of the texture. Set to -1 (0xFFFFFFFF) to indicate that all mipmap levels down to the least detailed should be used. </p>
+<p>Maximum number of mipmap levels for the view of the texture. Set to -1 (UINT32_MAX) to indicate that all mipmap levels down to the least detailed should be used. </p>
 
 </div>
 </div>

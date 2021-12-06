@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ReShade: reshade::api::render_pass Struct Reference</title>
+<title>ReShade: reshade::api::rect Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,87 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1render__pass.html">render_pass</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1rect.html">rect</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structreshade_1_1api_1_1render__pass-members.html">List of all members</a>  </div>
+<a href="structreshade_1_1api_1_1rect-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">reshade::api::render_pass Struct Reference</div>  </div>
+<div class="title">reshade::api::rect Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An opaque handle to a render pass.  
- <a href="structreshade_1_1api_1_1render__pass.html#details">More...</a></p>
+<p>Describes a rectangle.  
+ <a href="structreshade_1_1api_1_1rect.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a00817b3f87724989fb558a6bb045631e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1render__pass.html#a00817b3f87724989fb558a6bb045631e">handle</a></td></tr>
-<tr class="separator:a00817b3f87724989fb558a6bb045631e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d32ba5f2755e689cc7bbff5577b9ed"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1rect.html#a39d32ba5f2755e689cc7bbff5577b9ed">left</a></td></tr>
+<tr class="separator:a39d32ba5f2755e689cc7bbff5577b9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263c1e40f85e7de56db14179068879a9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1rect.html#a263c1e40f85e7de56db14179068879a9">top</a></td></tr>
+<tr class="separator:a263c1e40f85e7de56db14179068879a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497b7be13a8d4c61371b6e898f8b9d34"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1rect.html#a497b7be13a8d4c61371b6e898f8b9d34">right</a></td></tr>
+<tr class="separator:a497b7be13a8d4c61371b6e898f8b9d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae084d23425f8b5edfb4f569df5d11eed"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1rect.html#ae084d23425f8b5edfb4f569df5d11eed">bottom</a></td></tr>
+<tr class="separator:ae084d23425f8b5edfb4f569df5d11eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An opaque handle to a render pass. </p>
-<p>In Vulkan this is a 'VkRenderPass' handle.</p>
+<div class="textblock"><p>Describes a rectangle. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a00817b3f87724989fb558a6bb045631e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00817b3f87724989fb558a6bb045631e">&#9670;&nbsp;</a></span>handle</h2>
+<a id="ae084d23425f8b5edfb4f569df5d11eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae084d23425f8b5edfb4f569df5d11eed">&#9670;&nbsp;</a></span>bottom</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t reshade::api::render_pass::handle</td>
+          <td class="memname">int32_t reshade::api::rect::bottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39d32ba5f2755e689cc7bbff5577b9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d32ba5f2755e689cc7bbff5577b9ed">&#9670;&nbsp;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t reshade::api::rect::left</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a497b7be13a8d4c61371b6e898f8b9d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497b7be13a8d4c61371b6e898f8b9d34">&#9670;&nbsp;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t reshade::api::rect::right</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a263c1e40f85e7de56db14179068879a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263c1e40f85e7de56db14179068879a9">&#9670;&nbsp;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t reshade::api::rect::top</td>
         </tr>
       </table>
 </div><div class="memdoc">

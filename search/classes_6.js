@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['input_5felement_731',['input_element',['../structreshade_1_1api_1_1input__element.html',1,'reshade::api']]]
+  ['pipeline_743',['pipeline',['../structreshade_1_1api_1_1pipeline.html',1,'reshade::api']]],
+  ['pipeline_5fdesc_744',['pipeline_desc',['../structreshade_1_1api_1_1pipeline__desc.html',1,'reshade::api']]],
+  ['pipeline_5flayout_745',['pipeline_layout',['../structreshade_1_1api_1_1pipeline__layout.html',1,'reshade::api']]],
+  ['pipeline_5flayout_5fparam_746',['pipeline_layout_param',['../structreshade_1_1api_1_1pipeline__layout__param.html',1,'reshade::api']]],
+  ['pipeline_5fstatistics_747',['pipeline_statistics',['../structreshade_1_1api_1_1pipeline__statistics.html',1,'reshade::api']]]
 ];

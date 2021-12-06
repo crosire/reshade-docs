@@ -151,9 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9962e3d49e856390869dbee03a2b6acb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a9962e3d49e856390869dbee03a2b6acb">get_uniform_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
 <tr class="memdesc:a9962e3d49e856390869dbee03a2b6acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified uniform <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a9962e3d49e856390869dbee03a2b6acb">More...</a><br /></td></tr>
 <tr class="separator:a9962e3d49e856390869dbee03a2b6acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c028ecf4ec688723d19f3c66b29ce12"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7c028ecf4ec688723d19f3c66b29ce12">get_uniform_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name) const =0</td></tr>
-<tr class="memdesc:a7c028ecf4ec688723d19f3c66b29ce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a7c028ecf4ec688723d19f3c66b29ce12">More...</a><br /></td></tr>
-<tr class="separator:a7c028ecf4ec688723d19f3c66b29ce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9614d6cc45f8b141a542c2a2ea84a1a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a9614d6cc45f8b141a542c2a2ea84a1a5">get_uniform_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, const char *name, char *value, size_t *length) const =0</td></tr>
+<tr class="memdesc:a9614d6cc45f8b141a542c2a2ea84a1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified uniform <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a9614d6cc45f8b141a542c2a2ea84a1a5">More...</a><br /></td></tr>
+<tr class="separator:a9614d6cc45f8b141a542c2a2ea84a1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ce52e0ae647a29676b4d60eb106d2e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a52ce52e0ae647a29676b4d60eb106d2e">get_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable, bool *values, size_t count, size_t array_index=0) const =0</td></tr>
 <tr class="memdesc:a52ce52e0ae647a29676b4d60eb106d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the specified uniform <em>variable</em>  as boolean values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a52ce52e0ae647a29676b4d60eb106d2e">More...</a><br /></td></tr>
 <tr class="separator:a52ce52e0ae647a29676b4d60eb106d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,9 +215,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a14cdcebdbdf99af41cdf4e98a9b2a529">get_texture_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
 <tr class="memdesc:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified texture <em>variable</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a14cdcebdbdf99af41cdf4e98a9b2a529">More...</a><br /></td></tr>
 <tr class="separator:a14cdcebdbdf99af41cdf4e98a9b2a529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d745dded907c6a13cb1a363aa18c714"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6d745dded907c6a13cb1a363aa18c714">get_texture_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name) const =0</td></tr>
-<tr class="memdesc:a6d745dded907c6a13cb1a363aa18c714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a6d745dded907c6a13cb1a363aa18c714">More...</a><br /></td></tr>
-<tr class="separator:a6d745dded907c6a13cb1a363aa18c714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500b0c73fc3785b1c97f37b141fb8b40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a500b0c73fc3785b1c97f37b141fb8b40">get_texture_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, char *value, size_t *length) const =0</td></tr>
+<tr class="memdesc:a500b0c73fc3785b1c97f37b141fb8b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a500b0c73fc3785b1c97f37b141fb8b40">More...</a><br /></td></tr>
+<tr class="separator:a500b0c73fc3785b1c97f37b141fb8b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64615e6be07aea20120b4c8ee4c15f40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">update_texture</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const uint32_t width, const uint32_t height, const uint8_t *pixels)=0</td></tr>
 <tr class="memdesc:a64615e6be07aea20120b4c8ee4c15f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads 32 bits-per-pixel RGBA image data to the specified texture <em>variable</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">More...</a><br /></td></tr>
 <tr class="separator:a64615e6be07aea20120b4c8ee4c15f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,15 +252,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a4ef17bee2c8476c86d8ec4f8aecaf0bd">get_technique_annotation_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, uint32_t *values, size_t count, size_t array_index=0) const =0</td></tr>
 <tr class="memdesc:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from an annotation attached to the specified <em>technique</em>  as unsigned integer values.  <a href="classreshade_1_1api_1_1effect__runtime.html#a4ef17bee2c8476c86d8ec4f8aecaf0bd">More...</a><br /></td></tr>
 <tr class="separator:a4ef17bee2c8476c86d8ec4f8aecaf0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ada0d57ec0f6c08d4b219f9082d8a9088">get_technique_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name) const =0</td></tr>
-<tr class="memdesc:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#ada0d57ec0f6c08d4b219f9082d8a9088">More...</a><br /></td></tr>
-<tr class="separator:ada0d57ec0f6c08d4b219f9082d8a9088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7dd48c964c82ddadc427ade99f4edbf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#af7dd48c964c82ddadc427ade99f4edbf">get_technique_annotation_string</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, const char *name, char *value, size_t *length) const =0</td></tr>
+<tr class="memdesc:af7dd48c964c82ddadc427ade99f4edbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from a string annotation attached to the specified <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#af7dd48c964c82ddadc427ade99f4edbf">More...</a><br /></td></tr>
+<tr class="separator:af7dd48c964c82ddadc427ade99f4edbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a7b6309b62fefccfa4e3e5c2b706226f6">get_technique_enabled</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique) const =0</td></tr>
 <tr class="memdesc:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the status of a <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a7b6309b62fefccfa4e3e5c2b706226f6">More...</a><br /></td></tr>
 <tr class="separator:a7b6309b62fefccfa4e3e5c2b706226f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a57fe8922f0865a18b6972f0f18966"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ae4a57fe8922f0865a18b6972f0f18966">set_technique_enabled</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, bool enabled)=0</td></tr>
 <tr class="memdesc:ae4a57fe8922f0865a18b6972f0f18966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disable the specified <em>technique</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#ae4a57fe8922f0865a18b6972f0f18966">More...</a><br /></td></tr>
 <tr class="separator:ae4a57fe8922f0865a18b6972f0f18966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0854d9a3296681587ccfd02effe22a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#ad0854d9a3296681587ccfd02effe22a5">get_preprocessor_definition</a> (const char *name, char *value, size_t *length) const =0</td></tr>
+<tr class="memdesc:ad0854d9a3296681587ccfd02effe22a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of global preprocessor definition.  <a href="classreshade_1_1api_1_1effect__runtime.html#ad0854d9a3296681587ccfd02effe22a5">More...</a><br /></td></tr>
+<tr class="separator:ad0854d9a3296681587ccfd02effe22a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf330fba36f5e5dab3d21731f9dd572"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1effect__runtime.html#a6cf330fba36f5e5dab3d21731f9dd572">set_preprocessor_definition</a> (const char *name, const char *value)=0</td></tr>
+<tr class="memdesc:a6cf330fba36f5e5dab3d21731f9dd572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a global preprocessor definition to the specified <em>value</em> .  <a href="classreshade_1_1api_1_1effect__runtime.html#a6cf330fba36f5e5dab3d21731f9dd572">More...</a><br /></td></tr>
+<tr class="separator:a6cf330fba36f5e5dab3d21731f9dd572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
 <tr class="memitem:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">get_back_buffer</a> (uint32_t index)=0</td></tr>
 <tr class="memdesc:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_classreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the back buffer resource at the specified <em>index</em>  in this swap chain.  <a href="classreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">More...</a><br /></td></tr>
@@ -859,6 +865,58 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
+<a id="ad0854d9a3296681587ccfd02effe22a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0854d9a3296681587ccfd02effe22a5">&#9670;&nbsp;</a></span>get_preprocessor_definition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_preprocessor_definition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of global preprocessor definition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the definition.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the value of the definition.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2e91582bfc7d36b939def1d93a11d384"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e91582bfc7d36b939def1d93a11d384">&#9670;&nbsp;</a></span>get_screenshot_width_and_height()</h2>
 
@@ -897,8 +955,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="ada0d57ec0f6c08d4b219f9082d8a9088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada0d57ec0f6c08d4b219f9082d8a9088">&#9670;&nbsp;</a></span>get_technique_annotation_string()</h2>
+<a id="af7dd48c964c82ddadc427ade99f4edbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7dd48c964c82ddadc427ade99f4edbf">&#9670;&nbsp;</a></span>get_technique_annotation_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -907,7 +965,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_technique_annotation_string </td>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_technique_annotation_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
           <td class="paramname"><em>technique</em>, </td>
@@ -916,7 +974,19 @@ template&lt;typename F &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -936,6 +1006,8 @@ template&lt;typename F &gt; </div>
   <table class="params">
     <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
     <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the value of the annotation.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1274,8 +1346,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a6d745dded907c6a13cb1a363aa18c714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d745dded907c6a13cb1a363aa18c714">&#9670;&nbsp;</a></span>get_texture_annotation_string()</h2>
+<a id="a500b0c73fc3785b1c97f37b141fb8b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500b0c73fc3785b1c97f37b141fb8b40">&#9670;&nbsp;</a></span>get_texture_annotation_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1284,7 +1356,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_texture_annotation_string </td>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_texture_annotation_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1293,7 +1365,19 @@ template&lt;typename F &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1313,6 +1397,8 @@ template&lt;typename F &gt; </div>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
     <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the value of the annotation.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1669,8 +1755,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a7c028ecf4ec688723d19f3c66b29ce12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c028ecf4ec688723d19f3c66b29ce12">&#9670;&nbsp;</a></span>get_uniform_annotation_string()</h2>
+<a id="a9614d6cc45f8b141a542c2a2ea84a1a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9614d6cc45f8b141a542c2a2ea84a1a5">&#9670;&nbsp;</a></span>get_uniform_annotation_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1679,7 +1765,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* reshade::api::effect_runtime::get_uniform_annotation_string </td>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_uniform_annotation_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
@@ -1688,7 +1774,19 @@ template&lt;typename F &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1708,6 +1806,8 @@ template&lt;typename F &gt; </div>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
     <tr><td class="paramname">name</td><td>Name of the annotation.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the value of the annotation.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2505,6 +2605,51 @@ template&lt;typename F &gt; </div>
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
     <tr><td class="paramname">rtv</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>false</code>.</td></tr>
     <tr><td class="paramname">rtv_srgb</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>true</code>, or zero in which case the view from <em>rtv</em>  is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6cf330fba36f5e5dab3d21731f9dd572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf330fba36f5e5dab3d21731f9dd572">&#9670;&nbsp;</a></span>set_preprocessor_definition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_preprocessor_definition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines a global preprocessor definition to the specified <em>value</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the definition.</td></tr>
+    <tr><td class="paramname">value</td><td>Value of the definition.</td></tr>
   </table>
   </dd>
 </dl>

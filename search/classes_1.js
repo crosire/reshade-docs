@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['blend_5fdesc_713',['blend_desc',['../structreshade_1_1api_1_1blend__desc.html',1,'reshade::api']]],
-  ['buffer_5frange_714',['buffer_range',['../structreshade_1_1api_1_1buffer__range.html',1,'reshade::api']]]
+  ['blend_5fdesc_725',['blend_desc',['../structreshade_1_1api_1_1blend__desc.html',1,'reshade::api']]],
+  ['buffer_5frange_726',['buffer_range',['../structreshade_1_1api_1_1buffer__range.html',1,'reshade::api']]]
 ];

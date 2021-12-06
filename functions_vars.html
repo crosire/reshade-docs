@@ -94,6 +94,9 @@ $(function() {
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>back
+: <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a5042c65329ec3583d56040e753940ac1">reshade::api::subresource_box</a>
+</li>
 <li>back_stencil_depth_fail_op
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#ae8b02613f01cfdd65f69b961ec44b222">reshade::api::depth_stencil_desc</a>
 </li>
@@ -123,6 +126,10 @@ $(function() {
 <li>border_color
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a338e9905ce767be119963b62ed88b6c0">reshade::api::sampler_desc</a>
 </li>
+<li>bottom
+: <a class="el" href="structreshade_1_1api_1_1rect.html#ae084d23425f8b5edfb4f569df5d11eed">reshade::api::rect</a>
+, <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a2e0a767d10490f8047e1f5c4ca6841dd">reshade::api::subresource_box</a>
+</li>
 <li>buffer
 : <a class="el" href="structreshade_1_1api_1_1buffer__range.html#afe86396fd81c960f08be6e89a5079d78">reshade::api::buffer_range</a>
 , <a class="el" href="structreshade_1_1api_1_1resource__desc.html#ab3da230631792b66f4ade10e3ed133db">reshade::api::resource_desc</a>
@@ -135,6 +142,15 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>clear_color
+: <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html#a4f8ba1b2535b7ead09a63aabd7fa9685">reshade::api::render_pass_render_target_desc</a>
+</li>
+<li>clear_depth
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#af871fa4cd402c8fab32bfa0471b394c3">reshade::api::render_pass_depth_stencil_desc</a>
+</li>
+<li>clear_stencil
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#a8a5d998fa76d2326f90b94274da84f77">reshade::api::render_pass_depth_stencil_desc</a>
+</li>
 <li>clipping_invocations
 : <a class="el" href="structreshade_1_1api_1_1pipeline__statistics.html#a5711be13dec9dfdab4cb30c3e405aa1e">reshade::api::pipeline_statistics</a>
 </li>
@@ -149,12 +165,6 @@ $(function() {
 </li>
 <li>color_blend_op
 : <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a7a7bef844568ddc483e05cb8d485b293">reshade::api::blend_desc</a>
-</li>
-<li>color_or_depth_load_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#ac1f196776d3ce6f04692809286861df1">reshade::api::attachment_desc</a>
-</li>
-<li>color_or_depth_store_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a1dccd5365fe24e5cad3c5bbb2ed8f612">reshade::api::attachment_desc</a>
 </li>
 <li>compare_op
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a5b28db944b7af466641dd54264861cba">reshade::api::sampler_desc</a>
@@ -198,11 +208,20 @@ $(function() {
 <li>depth_func
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#a9630f43ac3aa7549ab3b82f25ed6cc4c">reshade::api::depth_stencil_desc</a>
 </li>
+<li>depth_load_op
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#a1ed284c66ead4ea19475720a7d2f426c">reshade::api::render_pass_depth_stencil_desc</a>
+</li>
 <li>depth_or_layers
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a3cedd4b9e69d4646629e5ea2e8a7c837">reshade::api::resource_desc</a>
 </li>
+<li>depth_stencil_format
+: <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aac2afaab8409bb4185cb6256fc1d5b29">reshade::api::pipeline_desc</a>
+</li>
 <li>depth_stencil_state
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a04a57daef2f1b701745795a98968de7e">reshade::api::pipeline_desc</a>
+</li>
+<li>depth_store_op
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#a54c81d390b47ebcbf18c3ebfb68ecb50">reshade::api::render_pass_depth_stencil_desc</a>
 </li>
 <li>depth_write_mask
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#a35f46eec2844d78b16d602faf9baa44d">reshade::api::depth_stencil_desc</a>
@@ -260,10 +279,12 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a60458bbb519805b1c90f51233132712e">reshade::api::resource_desc</a>
 </li>
 <li>format
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#aba8e348edd0b10033e8cbad51a959c8e">reshade::api::attachment_desc</a>
-, <a class="el" href="structreshade_1_1api_1_1input__element.html#a151c212d0a9970601520b0387856a4c0">reshade::api::input_element</a>
+: <a class="el" href="structreshade_1_1api_1_1input__element.html#a151c212d0a9970601520b0387856a4c0">reshade::api::input_element</a>
 , <a class="el" href="structreshade_1_1api_1_1resource__desc.html#af345224a8e8095ca9fe5635409e0e778">reshade::api::resource_desc</a>
 , <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a071f02a5ebf65f298e82c6f76b33f37a">reshade::api::resource_view_desc</a>
+</li>
+<li>front
+: <a class="el" href="structreshade_1_1api_1_1subresource__box.html#abe4a19865d7ba8c98a05ae8cecbfb27f">reshade::api::subresource_box</a>
 </li>
 <li>front_counter_clockwise
 : <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html#a1e1c155f64ab8a8a25464bc83c9d05b7">reshade::api::rasterizer_desc</a>
@@ -307,11 +328,9 @@ $(function() {
 , <a class="el" href="structreshade_1_1api_1_1effect__technique.html#ae39655b56c4a59dce3f9c86c3482f701">reshade::api::effect_technique</a>
 , <a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html#a05e308f01d4c0e69c8170bec62dd56b5">reshade::api::effect_texture_variable</a>
 , <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html#a40d5565f99be393b944710eb0a1553e4">reshade::api::effect_uniform_variable</a>
-, <a class="el" href="structreshade_1_1api_1_1framebuffer.html#a03beb81ec336cb029c4f6875777706a0">reshade::api::framebuffer</a>
 , <a class="el" href="structreshade_1_1api_1_1pipeline.html#a147eceecb3549ea3cc82cda9b77b7e14">reshade::api::pipeline</a>
 , <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html#a69a0b8643d9f6d5c95c816ca405742e3">reshade::api::pipeline_layout</a>
 , <a class="el" href="structreshade_1_1api_1_1query__pool.html#ab1de06ffef10a76151a408443bd5a19c">reshade::api::query_pool</a>
-, <a class="el" href="structreshade_1_1api_1_1render__pass.html#a00817b3f87724989fb558a6bb045631e">reshade::api::render_pass</a>
 , <a class="el" href="structreshade_1_1api_1_1resource.html#a378d545ab6e405ee7738458b51a342f1">reshade::api::resource</a>
 , <a class="el" href="structreshade_1_1api_1_1resource__view.html#a6d48831b61082e71b853d51e488d0182">reshade::api::resource_view</a>
 , <a class="el" href="structreshade_1_1api_1_1sampler.html#a680e77e54d1beb50bb4e2290b18e891e">reshade::api::sampler</a>
@@ -321,6 +340,7 @@ $(function() {
 </li>
 <li>height
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a630030523999bbcedd693a99540b8131">reshade::api::resource_desc</a>
+, <a class="el" href="structreshade_1_1api_1_1viewport.html#a440b4dfa74176ebf9d525031c88ec667">reshade::api::viewport</a>
 </li>
 <li>hull_shader
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a52713c572c8fcaea5087ef6f246cb377">reshade::api::pipeline_desc</a>
@@ -332,9 +352,6 @@ $(function() {
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
-<li>index
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#ad78d390a5f0ce4ae0f2662d13fc0e2ff">reshade::api::attachment_desc</a>
-</li>
 <li>input_assembler_primitives
 : <a class="el" href="structreshade_1_1api_1_1pipeline__statistics.html#a2c6df200a1a91560cd8be895bec24adf">reshade::api::pipeline_statistics</a>
 </li>
@@ -357,11 +374,18 @@ $(function() {
 <li>layout
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ad08495bd06266870bd5ed1c5d5d4d3eb">reshade::api::pipeline_desc</a>
 </li>
+<li>left
+: <a class="el" href="structreshade_1_1api_1_1rect.html#a39d32ba5f2755e689cc7bbff5577b9ed">reshade::api::rect</a>
+, <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a59bbf3652275d854aa65b0f437ed52a2">reshade::api::subresource_box</a>
+</li>
 <li>level_count
 : <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43">reshade::api::resource_view_desc</a>
 </li>
 <li>levels
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a6de7bc82494f15a4cdf3f75fc1a0a46a">reshade::api::resource_desc</a>
+</li>
+<li>load_op
+: <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html#aa841b5c7e2f69bc0c84140156974c4c7">reshade::api::render_pass_render_target_desc</a>
 </li>
 <li>location
 : <a class="el" href="structreshade_1_1api_1_1input__element.html#a659edfe5da82d9634968ca52c5298f1a">reshade::api::input_element</a>
@@ -379,8 +403,14 @@ $(function() {
 <li>max_anisotropy
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a96469a14cf98300bedecf83bd22e0c57">reshade::api::sampler_desc</a>
 </li>
+<li>max_depth
+: <a class="el" href="structreshade_1_1api_1_1viewport.html#ae6e19ca376c5d354c44c9b8f2a572991">reshade::api::viewport</a>
+</li>
 <li>max_lod
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a2c89ccde9aea2adfb411bf277a79f11c">reshade::api::sampler_desc</a>
+</li>
+<li>min_depth
+: <a class="el" href="structreshade_1_1api_1_1viewport.html#a2b00bffb1a100af4c0df939de5d0dce2">reshade::api::viewport</a>
 </li>
 <li>min_lod
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a6a97f6b326c327da780b841f360531a0">reshade::api::sampler_desc</a>
@@ -423,11 +453,15 @@ $(function() {
 <li>rasterizer_state
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#adfd83c765d9001046b49f6613b05795a">reshade::api::pipeline_desc</a>
 </li>
-<li>render_pass_template
-: <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aa3c130e540f576fb670c77ee1aab6f33">reshade::api::pipeline_desc</a>
+<li>render_target_formats
+: <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2c2f6fa83974e98109a5c71233b9ef19">reshade::api::pipeline_desc</a>
 </li>
 <li>render_target_write_mask
 : <a class="el" href="structreshade_1_1api_1_1blend__desc.html#aa60429daeccfd10f1e237996571bc4ab">reshade::api::blend_desc</a>
+</li>
+<li>right
+: <a class="el" href="structreshade_1_1api_1_1rect.html#a497b7be13a8d4c61371b6e898f8b9d34">reshade::api::rect</a>
+, <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a1fd34c6ac3d7f0090707bc3574ad7b12">reshade::api::subresource_box</a>
 </li>
 <li>row_pitch
 : <a class="el" href="structreshade_1_1api_1_1subresource__data.html#ac7aa0764dcf2319c9493a36f4036100c">reshade::api::subresource_data</a>
@@ -436,6 +470,9 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>sample_count
+: <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a014349a9bcefd77317cdd792747e2701">reshade::api::pipeline_desc</a>
+</li>
 <li>sample_mask
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a685671610bd1453a2ce58dbea0ecbb01">reshade::api::pipeline_desc</a>
 </li>
@@ -443,8 +480,7 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1sampler__with__resource__view.html#a9dc27c8c122370b4a21ffddd1fa13bfc">reshade::api::sampler_with_resource_view</a>
 </li>
 <li>samples
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a1ab50d35416791a694362485e3abdb97">reshade::api::attachment_desc</a>
-, <a class="el" href="structreshade_1_1api_1_1resource__desc.html#aab918f20ba02fd7e9ee0bab8a3e987a6">reshade::api::resource_desc</a>
+: <a class="el" href="structreshade_1_1api_1_1resource__desc.html#aab918f20ba02fd7e9ee0bab8a3e987a6">reshade::api::resource_desc</a>
 </li>
 <li>scissor_enable
 : <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html#a1160693724788334596ef87f76d6c1e5">reshade::api::rasterizer_desc</a>
@@ -491,7 +527,7 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#a0f318800ea8c265921c81278eaad7d9c">reshade::api::depth_stencil_desc</a>
 </li>
 <li>stencil_load_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a6fdbec9765ec70ce90a0fea4a96f0628">reshade::api::attachment_desc</a>
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#ae16406fa95ab1787ed7abb5e14acf302">reshade::api::render_pass_depth_stencil_desc</a>
 </li>
 <li>stencil_read_mask
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#afee22775694e36a05ab70db2fa460d75">reshade::api::depth_stencil_desc</a>
@@ -500,10 +536,13 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#a3ae9da20c0b6f8f203b2f961b6739e76">reshade::api::depth_stencil_desc</a>
 </li>
 <li>stencil_store_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a5cb93bea6025e19f95d6f9cbbf094763">reshade::api::attachment_desc</a>
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#a7bcb4621b2457fe5247e91a6a1fd8d55">reshade::api::render_pass_depth_stencil_desc</a>
 </li>
 <li>stencil_write_mask
 : <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html#a96379f3ba2f0ed8afc78631205a73849">reshade::api::depth_stencil_desc</a>
+</li>
+<li>store_op
+: <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html#a05e44c8e6749ef8cd05176ea7d49716e">reshade::api::render_pass_render_target_desc</a>
 </li>
 <li>stride
 : <a class="el" href="structreshade_1_1api_1_1input__element.html#af0d2102f481b8d33ed6cfcd65193b9a2">reshade::api::input_element</a>
@@ -517,12 +556,15 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a8f8c62a214a513968333d680ac7de5e0">reshade::api::resource_desc</a>
 , <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a3980d6ff8495009ecd40324472d618e8">reshade::api::resource_view_desc</a>
 </li>
+<li>top
+: <a class="el" href="structreshade_1_1api_1_1rect.html#a263c1e40f85e7de56db14179068879a9">reshade::api::rect</a>
+, <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a832b83e67fd0db4c5a40eb1616eb8143">reshade::api::subresource_box</a>
+</li>
 <li>topology
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2eed86c5def828a46c625a231f8deb9f">reshade::api::pipeline_desc</a>
 </li>
 <li>type
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a728ca1af7a7aa15a49602e4dcd5eaaca">reshade::api::attachment_desc</a>
-, <a class="el" href="structreshade_1_1api_1_1descriptor__range.html#afb651e4ed20fffd6e869e6de6af989ec">reshade::api::descriptor_range</a>
+: <a class="el" href="structreshade_1_1api_1_1descriptor__range.html#afb651e4ed20fffd6e869e6de6af989ec">reshade::api::descriptor_range</a>
 , <a class="el" href="structreshade_1_1api_1_1descriptor__set__update.html#a80cef2fa754458a75ebe7976667a819f">reshade::api::descriptor_set_update</a>
 , <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae45ac7e8c0db6af76e70c4504da305f7">reshade::api::pipeline_desc</a>
 , <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html#a25c6a56ecce5abdd050be884b51d0b75">reshade::api::pipeline_layout_param</a>
@@ -547,7 +589,9 @@ $(function() {
 : <a class="el" href="structreshade_1_1api_1_1pipeline__statistics.html#a60ad6ca2a691f12a741b8b387f3ef533">reshade::api::pipeline_statistics</a>
 </li>
 <li>view
-: <a class="el" href="structreshade_1_1api_1_1sampler__with__resource__view.html#a810ecd1740cff3c8c727050feab77528">reshade::api::sampler_with_resource_view</a>
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#af3a3eebd08d02936dfedf318253a9bdd">reshade::api::render_pass_depth_stencil_desc</a>
+, <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html#a2c48b467cd1e0fc9729e67e619e8904f">reshade::api::render_pass_render_target_desc</a>
+, <a class="el" href="structreshade_1_1api_1_1sampler__with__resource__view.html#a810ecd1740cff3c8c727050feab77528">reshade::api::sampler_with_resource_view</a>
 </li>
 <li>viewport_count
 : <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aed27da86c0ef62a21dfe1eabd49c665e">reshade::api::pipeline_desc</a>
@@ -562,6 +606,21 @@ $(function() {
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>width
 : <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a526dec27b7a2b1253dd5557b3acea5af">reshade::api::resource_desc</a>
+, <a class="el" href="structreshade_1_1api_1_1viewport.html#a02cd117f99f06614952198e2ef676dfd">reshade::api::viewport</a>
+</li>
+</ul>
+
+
+<h3><a id="index_x"></a>- x -</h3><ul>
+<li>x
+: <a class="el" href="structreshade_1_1api_1_1viewport.html#a47a6b8b9bbc5886e16626c2831d653c9">reshade::api::viewport</a>
+</li>
+</ul>
+
+
+<h3><a id="index_y"></a>- y -</h3><ul>
+<li>y
+: <a class="el" href="structreshade_1_1api_1_1viewport.html#ab83df381816317b4cbc6d6f592b3666d">reshade::api::viewport</a>
 </li>
 </ul>
 </div><!-- contents -->

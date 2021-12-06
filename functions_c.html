@@ -75,20 +75,26 @@ $(function() {
 <li>check_format_support()
 : <a class="el" href="classreshade_1_1api_1_1device.html#ac8c801359bf2dc7132529ee415589a42">reshade::api::device</a>
 </li>
-<li>clear_attachments()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">reshade::api::command_list</a>
+<li>clear_color
+: <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html#a4f8ba1b2535b7ead09a63aabd7fa9685">reshade::api::render_pass_render_target_desc</a>
+</li>
+<li>clear_depth
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#af871fa4cd402c8fab32bfa0471b394c3">reshade::api::render_pass_depth_stencil_desc</a>
 </li>
 <li>clear_depth_stencil_view()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#aa3b4d365233359fbf12baa251b6afcdd">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#aec807b3414e0dbb540f9cc19a603003c">reshade::api::command_list</a>
 </li>
 <li>clear_render_target_view()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a762b69a9b832da08ed93b05141d815b3">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a45c49db5bbfa3f9d2af9fc2104df088f">reshade::api::command_list</a>
+</li>
+<li>clear_stencil
+: <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html#a8a5d998fa76d2326f90b94274da84f77">reshade::api::render_pass_depth_stencil_desc</a>
 </li>
 <li>clear_unordered_access_view_float()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a88aec374d99a729ffbe67b17fcfc7cbf">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a1f8b40c5878281418930c20dd1331f68">reshade::api::command_list</a>
 </li>
 <li>clear_unordered_access_view_uint()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#ae3323486f307ba6597650fad83cb5306">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a14798fa8181e98fc629589802cf70c47">reshade::api::command_list</a>
 </li>
 <li>clipping_invocations
 : <a class="el" href="structreshade_1_1api_1_1pipeline__statistics.html#a5711be13dec9dfdab4cb30c3e405aa1e">reshade::api::pipeline_statistics</a>
@@ -104,12 +110,6 @@ $(function() {
 </li>
 <li>color_blend_op
 : <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a7a7bef844568ddc483e05cb8d485b293">reshade::api::blend_desc</a>
-</li>
-<li>color_or_depth_load_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#ac1f196776d3ce6f04692809286861df1">reshade::api::attachment_desc</a>
-</li>
-<li>color_or_depth_store_op
-: <a class="el" href="structreshade_1_1api_1_1attachment__desc.html#a1dccd5365fe24e5cad3c5bbb2ed8f612">reshade::api::attachment_desc</a>
 </li>
 <li>compare_op
 : <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a5b28db944b7af466641dd54264861cba">reshade::api::sampler_desc</a>
@@ -127,7 +127,7 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a7aa7b61b5bf66f9e86a226e51076639a">reshade::api::command_list</a>
 </li>
 <li>copy_buffer_to_texture()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#aee54137890e2e293daa5b8c2bd85d22a">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#aa1777a04cdb5abe369a7d0f31a0f2f11">reshade::api::command_list</a>
 </li>
 <li>copy_query_pool_results()
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">reshade::api::command_list</a>
@@ -136,10 +136,10 @@ $(function() {
 : <a class="el" href="classreshade_1_1api_1_1command__list.html#a2f682681e028fbd85c57cb38078cb62a">reshade::api::command_list</a>
 </li>
 <li>copy_texture_region()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a2078a3d5b0c5be6978e7206fa3253921">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#abab90d8d41f7c26d9dfcd87b8d99260d">reshade::api::command_list</a>
 </li>
 <li>copy_texture_to_buffer()
-: <a class="el" href="classreshade_1_1api_1_1command__list.html#a3db597a5b5871661747d7b12bd76cb26">reshade::api::command_list</a>
+: <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e5cc3cda123a1c706d32f1034c03672">reshade::api::command_list</a>
 </li>
 <li>count
 : <a class="el" href="structreshade_1_1api_1_1constant__range.html#a0af6f201e190039ab9700dbdc06ea1be">reshade::api::constant_range</a>
@@ -151,9 +151,6 @@ $(function() {
 </li>
 <li>create_descriptor_sets()
 : <a class="el" href="classreshade_1_1api_1_1device.html#aa78d543ec7e83c531d189c4710bd7a1d">reshade::api::device</a>
-</li>
-<li>create_framebuffer()
-: <a class="el" href="classreshade_1_1api_1_1device.html#ae8b6bdff693d3bdfa46936110a1343bf">reshade::api::device</a>
 </li>
 <li>create_pipeline()
 : <a class="el" href="classreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177">reshade::api::device</a>
@@ -167,11 +164,8 @@ $(function() {
 <li>create_query_pool()
 : <a class="el" href="classreshade_1_1api_1_1device.html#a24df37d021d5a2e08fd23dc71cf344d5">reshade::api::device</a>
 </li>
-<li>create_render_pass()
-: <a class="el" href="classreshade_1_1api_1_1device.html#a09acb216e58eebc8699891a9c33e5370">reshade::api::device</a>
-</li>
 <li>create_resource()
-: <a class="el" href="classreshade_1_1api_1_1device.html#a56b7fb04c40c32e9773ce84292f5f950">reshade::api::device</a>
+: <a class="el" href="classreshade_1_1api_1_1device.html#aabf1752bd0c35e3eb0a603f8d9adaa2a">reshade::api::device</a>
 </li>
 <li>create_resource_view()
 : <a class="el" href="classreshade_1_1api_1_1device.html#accab11c320901c945e8ca9ad64d796f5">reshade::api::device</a>

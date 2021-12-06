@@ -98,14 +98,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b1203d24668090d42df08ea2cc99bd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7">barrier</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *resources, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> *old_states, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> *new_states)=0</td></tr>
 <tr class="memdesc:a4b1203d24668090d42df08ea2cc99bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a barrier for the specified <em>resources</em>  to the command stream.  <a href="classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7">More...</a><br /></td></tr>
 <tr class="separator:a4b1203d24668090d42df08ea2cc99bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ca6199d26aaabf624c32ed32b99425"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425">begin_render_pass</a> (<a class="el" href="structreshade_1_1api_1_1render__pass.html">render_pass</a> pass, <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a> <a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a>, uint32_t clear_value_count=0, const void *clear_values=nullptr)=0</td></tr>
-<tr class="memdesc:a74ca6199d26aaabf624c32ed32b99425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render pass by binding its render targets and depth-stencil buffer.  <a href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425">More...</a><br /></td></tr>
-<tr class="separator:a74ca6199d26aaabf624c32ed32b99425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b9644e936983d75ca1244150c7f956"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956">begin_render_pass</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html">render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html">render_pass_depth_stencil_desc</a> *ds=nullptr)=0</td></tr>
+<tr class="memdesc:a75b9644e936983d75ca1244150c7f956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render pass and binds render target and depth-stencil resource views.  <a href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956">More...</a><br /></td></tr>
+<tr class="separator:a75b9644e936983d75ca1244150c7f956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">end_render_pass</a> ()=0</td></tr>
-<tr class="memdesc:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested.  <a href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">More...</a><br /></td></tr>
+<tr class="memdesc:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a>. Render passes cannot be nested.  <a href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace">More...</a><br /></td></tr>
 <tr class="separator:a4e7e0b86b35be07c2e03a2ea19843ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5bd17b2cb03863913efda6e01d972"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">bind_render_targets_and_depth_stencil</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *rtvs, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv={ 0 })=0</td></tr>
-<tr class="memdesc:a72b5bd17b2cb03863913efda6e01d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">More...</a><br /></td></tr>
+<tr class="memdesc:a72b5bd17b2cb03863913efda6e01d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">More...</a><br /></td></tr>
 <tr class="separator:a72b5bd17b2cb03863913efda6e01d972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">bind_pipeline</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> type, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>)=0</td></tr>
 <tr class="memdesc:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a pipeline state object.  <a href="classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">More...</a><br /></td></tr>
@@ -116,12 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4457eb23164ccfe161c39e2eba2a928"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928">bind_pipeline_states</a> (uint32_t count, const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> *states, const uint32_t *values)=0</td></tr>
 <tr class="memdesc:af4457eb23164ccfe161c39e2eba2a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>states</em>  to the specified <em>values</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object.  <a href="classreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928">More...</a><br /></td></tr>
 <tr class="separator:af4457eb23164ccfe161c39e2eba2a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ecd4856d716dd4a18e8451e9c22e047"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a0ecd4856d716dd4a18e8451e9c22e047">bind_viewports</a> (uint32_t first, uint32_t count, const float *viewports)=0</td></tr>
-<tr class="memdesc:a0ecd4856d716dd4a18e8451e9c22e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of viewports to the rasterizer stage.  <a href="classreshade_1_1api_1_1command__list.html#a0ecd4856d716dd4a18e8451e9c22e047">More...</a><br /></td></tr>
-<tr class="separator:a0ecd4856d716dd4a18e8451e9c22e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd4cc7db442c168b67f26c2ff00a2ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a0dd4cc7db442c168b67f26c2ff00a2ae">bind_scissor_rects</a> (uint32_t first, uint32_t count, const int32_t *rects)=0</td></tr>
-<tr class="memdesc:a0dd4cc7db442c168b67f26c2ff00a2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of scissor rectangles to the rasterizer stage.  <a href="classreshade_1_1api_1_1command__list.html#a0dd4cc7db442c168b67f26c2ff00a2ae">More...</a><br /></td></tr>
-<tr class="separator:a0dd4cc7db442c168b67f26c2ff00a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557b2f95f05e3d05a8cf02bbd199cf5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a">bind_viewports</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1viewport.html">viewport</a> *viewports)=0</td></tr>
+<tr class="memdesc:a557b2f95f05e3d05a8cf02bbd199cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of viewports to the rasterizer stage.  <a href="classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a">More...</a><br /></td></tr>
+<tr class="separator:a557b2f95f05e3d05a8cf02bbd199cf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84688340495260d6634bfe2247bb0a34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a84688340495260d6634bfe2247bb0a34">bind_scissor_rects</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects)=0</td></tr>
+<tr class="memdesc:a84688340495260d6634bfe2247bb0a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of scissor rectangles to the rasterizer stage.  <a href="classreshade_1_1api_1_1command__list.html#a84688340495260d6634bfe2247bb0a34">More...</a><br /></td></tr>
+<tr class="separator:a84688340495260d6634bfe2247bb0a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e432c00882dbaa27b99177d33d5b398"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a5e432c00882dbaa27b99177d33d5b398">push_constants</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, uint32_t first, uint32_t count, const void *values)=0</td></tr>
 <tr class="memdesc:a5e432c00882dbaa27b99177d33d5b398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly updates constant values in the specified shader pipeline stages.  <a href="classreshade_1_1api_1_1command__list.html#a5e432c00882dbaa27b99177d33d5b398">More...</a><br /></td></tr>
 <tr class="separator:a5e432c00882dbaa27b99177d33d5b398"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,33 +161,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7aa7b61b5bf66f9e86a226e51076639a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a7aa7b61b5bf66f9e86a226e51076639a">copy_buffer_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint64_t source_offset, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint64_t size)=0</td></tr>
 <tr class="memdesc:a7aa7b61b5bf66f9e86a226e51076639a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a linear memory region from the <em>source</em>  buffer to the <em>dest</em> ination buffer.  <a href="classreshade_1_1api_1_1command__list.html#a7aa7b61b5bf66f9e86a226e51076639a">More...</a><br /></td></tr>
 <tr class="separator:a7aa7b61b5bf66f9e86a226e51076639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee54137890e2e293daa5b8c2bd85d22a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aee54137890e2e293daa5b8c2bd85d22a">copy_buffer_to_texture</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const int32_t dest_box[6]=nullptr)=0</td></tr>
-<tr class="memdesc:aee54137890e2e293daa5b8c2bd85d22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a texture region from the <em>source</em>  buffer to the <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#aee54137890e2e293daa5b8c2bd85d22a">More...</a><br /></td></tr>
-<tr class="separator:aee54137890e2e293daa5b8c2bd85d22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2078a3d5b0c5be6978e7206fa3253921"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a2078a3d5b0c5be6978e7206fa3253921">copy_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const int32_t dest_box[6], <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">filter_mode</a> filter=<a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a61d050ff6497ed0a132fc6360ace094b">filter_mode::min_mag_mip_point</a>)=0</td></tr>
-<tr class="memdesc:a2078a3d5b0c5be6978e7206fa3253921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies or blits a texture region from the <em>source</em>  texture to the <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#a2078a3d5b0c5be6978e7206fa3253921">More...</a><br /></td></tr>
-<tr class="separator:a2078a3d5b0c5be6978e7206fa3253921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db597a5b5871661747d7b12bd76cb26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a3db597a5b5871661747d7b12bd76cb26">copy_texture_to_buffer</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t row_length=0, uint32_t slice_height=0)=0</td></tr>
-<tr class="memdesc:a3db597a5b5871661747d7b12bd76cb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a texture region from the <em>source</em>  texture to the <em>dest</em> ination buffer.  <a href="classreshade_1_1api_1_1command__list.html#a3db597a5b5871661747d7b12bd76cb26">More...</a><br /></td></tr>
-<tr class="separator:a3db597a5b5871661747d7b12bd76cb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1285c0ce3e3fa8a2ce11b75af7e3dec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#ad1285c0ce3e3fa8a2ce11b75af7e3dec">resolve_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const int32_t source_box[6], <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const int32_t dest_offset[3], <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>)=0</td></tr>
-<tr class="memdesc:ad1285c0ce3e3fa8a2ce11b75af7e3dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#ad1285c0ce3e3fa8a2ce11b75af7e3dec">More...</a><br /></td></tr>
-<tr class="separator:ad1285c0ce3e3fa8a2ce11b75af7e3dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">clear_attachments</a> (<a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a> clear_flags, const float color[4], float depth, uint8_t stencil, uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="classreshade_1_1api_1_1command__list.html#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">More...</a><br /></td></tr>
-<tr class="separator:ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b4d365233359fbf12baa251b6afcdd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aa3b4d365233359fbf12baa251b6afcdd">clear_depth_stencil_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv, <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a> clear_flags, float depth, uint8_t stencil, uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:aa3b4d365233359fbf12baa251b6afcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the depth-stencil view.  <a href="classreshade_1_1api_1_1command__list.html#aa3b4d365233359fbf12baa251b6afcdd">More...</a><br /></td></tr>
-<tr class="separator:aa3b4d365233359fbf12baa251b6afcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762b69a9b832da08ed93b05141d815b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a762b69a9b832da08ed93b05141d815b3">clear_render_target_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv, const float color[4], uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:a762b69a9b832da08ed93b05141d815b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the render target view.  <a href="classreshade_1_1api_1_1command__list.html#a762b69a9b832da08ed93b05141d815b3">More...</a><br /></td></tr>
-<tr class="separator:a762b69a9b832da08ed93b05141d815b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3323486f307ba6597650fad83cb5306"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#ae3323486f307ba6597650fad83cb5306">clear_unordered_access_view_uint</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> uav, const uint32_t values[4], uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:ae3323486f307ba6597650fad83cb5306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the unordered access view.  <a href="classreshade_1_1api_1_1command__list.html#ae3323486f307ba6597650fad83cb5306">More...</a><br /></td></tr>
-<tr class="separator:ae3323486f307ba6597650fad83cb5306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88aec374d99a729ffbe67b17fcfc7cbf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a88aec374d99a729ffbe67b17fcfc7cbf">clear_unordered_access_view_float</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> uav, const float values[4], uint32_t rect_count=0, const int32_t *rects=nullptr)=0</td></tr>
-<tr class="memdesc:a88aec374d99a729ffbe67b17fcfc7cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the unordered access view.  <a href="classreshade_1_1api_1_1command__list.html#a88aec374d99a729ffbe67b17fcfc7cbf">More...</a><br /></td></tr>
-<tr class="separator:a88aec374d99a729ffbe67b17fcfc7cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1777a04cdb5abe369a7d0f31a0f2f11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aa1777a04cdb5abe369a7d0f31a0f2f11">copy_buffer_to_texture</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *dest_box=nullptr)=0</td></tr>
+<tr class="memdesc:aa1777a04cdb5abe369a7d0f31a0f2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a texture region from the <em>source</em>  buffer to the <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#aa1777a04cdb5abe369a7d0f31a0f2f11">More...</a><br /></td></tr>
+<tr class="separator:aa1777a04cdb5abe369a7d0f31a0f2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab90d8d41f7c26d9dfcd87b8d99260d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#abab90d8d41f7c26d9dfcd87b8d99260d">copy_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *dest_box, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">filter_mode</a> filter=<a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a61d050ff6497ed0a132fc6360ace094b">filter_mode::min_mag_mip_point</a>)=0</td></tr>
+<tr class="memdesc:abab90d8d41f7c26d9dfcd87b8d99260d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies or blits a texture region from the <em>source</em>  texture to the <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#abab90d8d41f7c26d9dfcd87b8d99260d">More...</a><br /></td></tr>
+<tr class="separator:abab90d8d41f7c26d9dfcd87b8d99260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5cc3cda123a1c706d32f1034c03672"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a4e5cc3cda123a1c706d32f1034c03672">copy_texture_to_buffer</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t row_length=0, uint32_t slice_height=0)=0</td></tr>
+<tr class="memdesc:a4e5cc3cda123a1c706d32f1034c03672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a texture region from the <em>source</em>  texture to the <em>dest</em> ination buffer.  <a href="classreshade_1_1api_1_1command__list.html#a4e5cc3cda123a1c706d32f1034c03672">More...</a><br /></td></tr>
+<tr class="separator:a4e5cc3cda123a1c706d32f1034c03672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca53c2e27415f08f91737d10b131847"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#acca53c2e27415f08f91737d10b131847">resolve_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *source_rect, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>)=0</td></tr>
+<tr class="memdesc:acca53c2e27415f08f91737d10b131847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture.  <a href="classreshade_1_1api_1_1command__list.html#acca53c2e27415f08f91737d10b131847">More...</a><br /></td></tr>
+<tr class="separator:acca53c2e27415f08f91737d10b131847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec807b3414e0dbb540f9cc19a603003c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aec807b3414e0dbb540f9cc19a603003c">clear_depth_stencil_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv, const float *depth, const uint8_t *stencil, uint32_t rect_count=0, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects=nullptr)=0</td></tr>
+<tr class="memdesc:aec807b3414e0dbb540f9cc19a603003c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the depth-stencil view.  <a href="classreshade_1_1api_1_1command__list.html#aec807b3414e0dbb540f9cc19a603003c">More...</a><br /></td></tr>
+<tr class="separator:aec807b3414e0dbb540f9cc19a603003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c49db5bbfa3f9d2af9fc2104df088f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a45c49db5bbfa3f9d2af9fc2104df088f">clear_render_target_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv, const float color[4], uint32_t rect_count=0, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects=nullptr)=0</td></tr>
+<tr class="memdesc:a45c49db5bbfa3f9d2af9fc2104df088f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the render target view.  <a href="classreshade_1_1api_1_1command__list.html#a45c49db5bbfa3f9d2af9fc2104df088f">More...</a><br /></td></tr>
+<tr class="separator:a45c49db5bbfa3f9d2af9fc2104df088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14798fa8181e98fc629589802cf70c47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a14798fa8181e98fc629589802cf70c47">clear_unordered_access_view_uint</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> uav, const uint32_t values[4], uint32_t rect_count=0, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects=nullptr)=0</td></tr>
+<tr class="memdesc:a14798fa8181e98fc629589802cf70c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the unordered access view.  <a href="classreshade_1_1api_1_1command__list.html#a14798fa8181e98fc629589802cf70c47">More...</a><br /></td></tr>
+<tr class="separator:a14798fa8181e98fc629589802cf70c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8b40c5878281418930c20dd1331f68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#a1f8b40c5878281418930c20dd1331f68">clear_unordered_access_view_float</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> uav, const float values[4], uint32_t rect_count=0, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects=nullptr)=0</td></tr>
+<tr class="memdesc:a1f8b40c5878281418930c20dd1331f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the unordered access view.  <a href="classreshade_1_1api_1_1command__list.html#a1f8b40c5878281418930c20dd1331f68">More...</a><br /></td></tr>
+<tr class="separator:a1f8b40c5878281418930c20dd1331f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab066738ef9831bba807081671846fea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">generate_mipmaps</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv)=0</td></tr>
 <tr class="memdesc:aab066738ef9831bba807081671846fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mip and stops with the smallest level that is specified by the view.  <a href="classreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">More...</a><br /></td></tr>
 <tr class="separator:aab066738ef9831bba807081671846fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,8 +446,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a74ca6199d26aaabf624c32ed32b99425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74ca6199d26aaabf624c32ed32b99425">&#9670;&nbsp;</a></span>begin_render_pass()</h2>
+<a id="a75b9644e936983d75ca1244150c7f956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b9644e936983d75ca1244150c7f956">&#9670;&nbsp;</a></span>begin_render_pass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -461,26 +458,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void reshade::api::command_list::begin_render_pass </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1render__pass.html">render_pass</a>&#160;</td>
-          <td class="paramname"><em>pass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1framebuffer.html">framebuffer</a>&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>clear_value_count</em> = <code>0</code>, </td>
+          <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>clear_values</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html">render_pass_render_target_desc</a> *&#160;</td>
+          <td class="paramname"><em>rts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html">render_pass_depth_stencil_desc</a> *&#160;</td>
+          <td class="paramname"><em>ds</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -495,13 +486,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Begins a render pass by binding its render targets and depth-stencil buffer. </p>
+<p>Begins a render pass and binds render target and depth-stencil resource views. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pass</td><td>Render pass to begin.</td></tr>
-    <tr><td class="paramname">framebuffer</td><td>Framebuffer to bind.</td></tr>
-    <tr><td class="paramname">clear_value_count</td><td>Number of clear values, or zero if there are no attachments with the <a class="el" href="namespacereshade_1_1api.html#ab65b587cb324272f805862577227115da01bc6f8efa4202821e95f4fdf6298b30">attachment_load_op::clear</a> operation in the render pass.</td></tr>
-    <tr><td class="paramname">clear_values</td><td>Pointer to an array of clear values, with four 32-bit elements for each attachment in the framebuffer.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of render target views to bind.</td></tr>
+    <tr><td class="paramname">rts</td><td>Pointer to an array of render target descriptions.</td></tr>
+    <tr><td class="paramname">ds</td><td>Optional pointer to a depth-stencil description, or <code>nullptr</code> to bind none.</td></tr>
   </table>
   </dd>
 </dl>
@@ -867,7 +857,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
+<p>Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
 <p>This is not supported (and will do nothing) in Vulkan. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -880,8 +870,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0dd4cc7db442c168b67f26c2ff00a2ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd4cc7db442c168b67f26c2ff00a2ae">&#9670;&nbsp;</a></span>bind_scissor_rects()</h2>
+<a id="a84688340495260d6634bfe2247bb0a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84688340495260d6634bfe2247bb0a34">&#9670;&nbsp;</a></span>bind_scissor_rects()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +894,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
           <td class="paramname"><em>rects</em>&#160;</td>
         </tr>
         <tr>
@@ -925,7 +915,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">first</td><td>Index of the first scissor rectangle to bind. In D3D9, D3D10, D3D11 and D3D12 this has to be 0.</td></tr>
     <tr><td class="paramname">count</td><td>Number of scissor rectangles to bind. In D3D9 this has to be 1.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of scissor rectangles in the format <code>{ left 0, top 0, right 0, bottom 0, left 1, top 1, right 1, ... }</code>.</td></tr>
+    <tr><td class="paramname">rects</td><td>Pointer to an array of scissor rectangles.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1057,8 +1047,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ecd4856d716dd4a18e8451e9c22e047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ecd4856d716dd4a18e8451e9c22e047">&#9670;&nbsp;</a></span>bind_viewports()</h2>
+<a id="a557b2f95f05e3d05a8cf02bbd199cf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557b2f95f05e3d05a8cf02bbd199cf5a">&#9670;&nbsp;</a></span>bind_viewports()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1081,7 +1071,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1viewport.html">viewport</a> *&#160;</td>
           <td class="paramname"><em>viewports</em>&#160;</td>
         </tr>
         <tr>
@@ -1102,88 +1092,15 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">first</td><td>Index of the first viewport to bind. In D3D9, D3D10, D3D11 and D3D12 this has to be 0.</td></tr>
     <tr><td class="paramname">count</td><td>Number of viewports to bind. In D3D9 this has to be 1.</td></tr>
-    <tr><td class="paramname">viewports</td><td>Pointer to an array of viewports in the format <code>{ x 0, y 0, width 0, height 0, min depth 0, max depth 0, x 1, y 1, width 1, height 1, ... }</code>.</td></tr>
+    <tr><td class="paramname">viewports</td><td>Pointer to an array of viewports.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab3dfe8b8e6c59a4a5b77e0c7d80d7c51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3dfe8b8e6c59a4a5b77e0c7d80d7c51">&#9670;&nbsp;</a></span>clear_attachments()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void reshade::api::command_list::clear_attachments </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a>&#160;</td>
-          <td class="paramname"><em>clear_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>color</em>[4], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>stencil</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>rect_count</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
-          <td class="paramname"><em>rects</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears all attachments of the current render pass. Can only be called between <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a> and <a class="el" href="classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">clear_flags</td><td>Combination of flags to identify which attachment types to clear.</td></tr>
-    <tr><td class="paramname">color</td><td>Value to clear render targets with. Only used if <em>clear_flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a70dda5dfb8053dc6d1c492574bce9bfd">attachment_type::color</a>.</td></tr>
-    <tr><td class="paramname">depth</td><td>Value to clear the depth buffer with. Only used if <em>clear_flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a12a055bf01a31369fe81ac35d85c7bc1">attachment_type::depth</a>.</td></tr>
-    <tr><td class="paramname">stencil</td><td>Value to clear the stencil buffer with. Only used if <em>clear_flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a667f218c5ed2c9cf25734500472e7c4a">attachment_type::stencil</a>.</td></tr>
-    <tr><td class="paramname">rect_count</td><td>Number of rectangles to clear in the attachment resources, or zero to clear the whole resources.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles, in the format <code>{ left, top, right, bottom }</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa3b4d365233359fbf12baa251b6afcdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b4d365233359fbf12baa251b6afcdd">&#9670;&nbsp;</a></span>clear_depth_stencil_view()</h2>
+<a id="aec807b3414e0dbb540f9cc19a603003c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec807b3414e0dbb540f9cc19a603003c">&#9670;&nbsp;</a></span>clear_depth_stencil_view()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1200,19 +1117,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1">attachment_type</a>&#160;</td>
-          <td class="paramname"><em>clear_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>depth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>stencil</em>, </td>
         </tr>
         <tr>
@@ -1224,7 +1135,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
           <td class="paramname"><em>rects</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1245,19 +1156,18 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dsv</td><td>Resource view handle of the depth-stencil.</td></tr>
-    <tr><td class="paramname">clear_flags</td><td>Can be <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a12a055bf01a31369fe81ac35d85c7bc1">attachment_type::depth</a> or <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a667f218c5ed2c9cf25734500472e7c4a">attachment_type::stencil</a> or both.</td></tr>
-    <tr><td class="paramname">depth</td><td>Value to clear the depth buffer with. Only used if <em>clear_flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a12a055bf01a31369fe81ac35d85c7bc1">attachment_type::depth</a>.</td></tr>
-    <tr><td class="paramname">stencil</td><td>Value to clear the stencil buffer with. Only used if <em>clear_flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ac46c745f2574a875d598dad1275b2fa1a667f218c5ed2c9cf25734500472e7c4a">attachment_type::stencil</a>.</td></tr>
+    <tr><td class="paramname">depth</td><td>Optional value to clear the depth buffer with.</td></tr>
+    <tr><td class="paramname">stencil</td><td>Optional value to clear the stencil buffer with.</td></tr>
     <tr><td class="paramname">rect_count</td><td>Number of rectangles to clear in the depth-stencil resource, or zero to clear the whole resource.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles, in the format <code>{ left, top, right, bottom }</code>.</td></tr>
+    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a762b69a9b832da08ed93b05141d815b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762b69a9b832da08ed93b05141d815b3">&#9670;&nbsp;</a></span>clear_render_target_view()</h2>
+<a id="a45c49db5bbfa3f9d2af9fc2104df088f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c49db5bbfa3f9d2af9fc2104df088f">&#9670;&nbsp;</a></span>clear_render_target_view()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1286,7 +1196,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
           <td class="paramname"><em>rects</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1309,15 +1219,15 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">rtv</td><td>Resource view handle of the render target.</td></tr>
     <tr><td class="paramname">color</td><td>Value to clear the resource with.</td></tr>
     <tr><td class="paramname">rect_count</td><td>Number of rectangles to clear in the render target resource, or zero to clear the whole resource.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles, in the format <code>{ left, top, right, bottom }</code>.</td></tr>
+    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a88aec374d99a729ffbe67b17fcfc7cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88aec374d99a729ffbe67b17fcfc7cbf">&#9670;&nbsp;</a></span>clear_unordered_access_view_float()</h2>
+<a id="a1f8b40c5878281418930c20dd1331f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8b40c5878281418930c20dd1331f68">&#9670;&nbsp;</a></span>clear_unordered_access_view_float()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1346,7 +1256,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
           <td class="paramname"><em>rects</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1369,15 +1279,15 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">uav</td><td>Resource view handle of the unordered access view.</td></tr>
     <tr><td class="paramname">values</td><td>Value to clear the resource with.</td></tr>
     <tr><td class="paramname">rect_count</td><td>Number of rectangles to clear in the unordered access resource, or zero to clear the whole resource.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles, in the format <code>{ left, top, right, bottom }</code>.</td></tr>
+    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae3323486f307ba6597650fad83cb5306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3323486f307ba6597650fad83cb5306">&#9670;&nbsp;</a></span>clear_unordered_access_view_uint()</h2>
+<a id="a14798fa8181e98fc629589802cf70c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14798fa8181e98fc629589802cf70c47">&#9670;&nbsp;</a></span>clear_unordered_access_view_uint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1406,7 +1316,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
           <td class="paramname"><em>rects</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1429,7 +1339,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">uav</td><td>Resource view handle of the unordered access view.</td></tr>
     <tr><td class="paramname">values</td><td>Value to clear the resource with.</td></tr>
     <tr><td class="paramname">rect_count</td><td>Number of rectangles to clear in the unordered access resource, or zero to clear the whole resource.</td></tr>
-    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles, in the format <code>{ left, top, right, bottom }</code>.</td></tr>
+    <tr><td class="paramname">rects</td><td>Pointer to an array of rectangles.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1503,8 +1413,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aee54137890e2e293daa5b8c2bd85d22a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee54137890e2e293daa5b8c2bd85d22a">&#9670;&nbsp;</a></span>copy_buffer_to_texture()</h2>
+<a id="aa1777a04cdb5abe369a7d0f31a0f2f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1777a04cdb5abe369a7d0f31a0f2f11">&#9670;&nbsp;</a></span>copy_buffer_to_texture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1551,8 +1461,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>dest_box</em>[6] = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *&#160;</td>
+          <td class="paramname"><em>dest_box</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1577,7 +1487,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">slice_height</td><td>Number of rows from one slice to the next (in the buffer) or zero if data is tightly packed.</td></tr>
     <tr><td class="paramname">dest</td><td>Texture resource to copy to.</td></tr>
     <tr><td class="paramname">dest_subresource</td><td>Index of the subresource of the <em>dest</em> ination texture to copy to.</td></tr>
-    <tr><td class="paramname">dest_box</td><td>A 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>dest</em> ination texture to copy to, in the format <code>{ left, top, front, right, bottom, back }</code>.</td></tr>
+    <tr><td class="paramname">dest_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>dest</em> ination texture to copy to.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1711,8 +1621,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2078a3d5b0c5be6978e7206fa3253921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2078a3d5b0c5be6978e7206fa3253921">&#9670;&nbsp;</a></span>copy_texture_region()</h2>
+<a id="abab90d8d41f7c26d9dfcd87b8d99260d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab90d8d41f7c26d9dfcd87b8d99260d">&#9670;&nbsp;</a></span>copy_texture_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1735,8 +1645,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>source_box</em>[6], </td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *&#160;</td>
+          <td class="paramname"><em>source_box</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1753,8 +1663,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>dest_box</em>[6], </td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *&#160;</td>
+          <td class="paramname"><em>dest_box</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1781,10 +1691,10 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to copy from.</td></tr>
     <tr><td class="paramname">source_subresource</td><td>Index of the subresource of the <em>source</em>  texture to copy from.</td></tr>
-    <tr><td class="paramname">source_box</td><td>A 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to blit from, in the format <code>{ left, top, front, right, bottom, back }</code>.</td></tr>
+    <tr><td class="paramname">source_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to blit from.</td></tr>
     <tr><td class="paramname">dest</td><td>Texture resource to copy to.</td></tr>
     <tr><td class="paramname">dest_subresource</td><td>Index of the subresource of the <em>dest</em> ination texture to copy to.</td></tr>
-    <tr><td class="paramname">dest_box</td><td>A 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>dest</em> ination texture to blit to, in the format <code>{ left, top, front, right, bottom, back }</code>.</td></tr>
+    <tr><td class="paramname">dest_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>dest</em> ination texture to blit to.</td></tr>
     <tr><td class="paramname">filter</td><td>Filter to apply when copy requires scaling.</td></tr>
   </table>
   </dd>
@@ -1792,8 +1702,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3db597a5b5871661747d7b12bd76cb26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db597a5b5871661747d7b12bd76cb26">&#9670;&nbsp;</a></span>copy_texture_to_buffer()</h2>
+<a id="a4e5cc3cda123a1c706d32f1034c03672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5cc3cda123a1c706d32f1034c03672">&#9670;&nbsp;</a></span>copy_texture_to_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1816,8 +1726,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>source_box</em>[6], </td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *&#160;</td>
+          <td class="paramname"><em>source_box</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1862,7 +1772,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to copy from.</td></tr>
     <tr><td class="paramname">source_subresource</td><td>Index of the subresource of the <em>source</em>  texture to copy from.</td></tr>
-    <tr><td class="paramname">source_box</td><td>A 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to copy from, in the format <code>{ left, top, front, right, bottom, back }</code>.</td></tr>
+    <tr><td class="paramname">source_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to copy from.</td></tr>
     <tr><td class="paramname">dest</td><td>Buffer resource to copy to.</td></tr>
     <tr><td class="paramname">dest_offset</td><td>Offset (in bytes) into the <em>dest</em> ination buffer to start copying to.</td></tr>
     <tr><td class="paramname">row_length</td><td>Number of pixels from one row to the next (in the buffer), or zero if data is tightly packed.</td></tr>
@@ -1978,7 +1888,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">vertex_count</td><td>Number of vertices to draw.</td></tr>
     <tr><td class="paramname">instance_count</td><td>Number of instances to draw. In D3D9 this has to be 1.</td></tr>
     <tr><td class="paramname">first_vertex</td><td>Index of the first vertex.</td></tr>
-    <tr><td class="paramname">first_instance</td><td>A value added to each index before reading per-instance data from a vertex buffer. In D3D9 this has to be 0.</td></tr>
+    <tr><td class="paramname">first_instance</td><td>Value added to each index before reading per-instance data from a vertex buffer. In D3D9 this has to be 0.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2042,9 +1952,9 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">index_count</td><td>Number of indices read from the index buffer for each instance.</td></tr>
     <tr><td class="paramname">instance_count</td><td>Number of instances to draw. In D3D9 this has to be 1.</td></tr>
-    <tr><td class="paramname">first_index</td><td>The location of the first index read from the index buffer.</td></tr>
-    <tr><td class="paramname">vertex_offset</td><td>A value added to each index before reading per-vertex data from a vertex buffer.</td></tr>
-    <tr><td class="paramname">first_instance</td><td>A value added to each index before reading per-instance data from a vertex buffer. In D3D9 this has to be 0.</td></tr>
+    <tr><td class="paramname">first_index</td><td>Location of the first index read from the index buffer.</td></tr>
+    <tr><td class="paramname">vertex_offset</td><td>Value added to each index before reading per-vertex data from a vertex buffer.</td></tr>
+    <tr><td class="paramname">first_instance</td><td>Value added to each index before reading per-instance data from a vertex buffer. In D3D9 this has to be 0.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2220,7 +2130,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a74ca6199d26aaabf624c32ed32b99425" title="Begins a render pass by binding its render targets and depth-stencil buffer.">begin_render_pass</a>. Render passes cannot be nested. </p>
+<p>Ends a render pass. This must be preceeded by a call to <a class="el" href="classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a>. Render passes cannot be nested. </p>
 
 </div>
 </div>
@@ -2252,7 +2162,7 @@ Public Member Functions</h2></td></tr>
 <p>This will invalidate all previous descriptor bindings, which will need to be reset by calls to <a class="el" href="classreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f" title="Binds a single descriptor set.">bind_descriptor_set</a> or <a class="el" href="classreshade_1_1api_1_1command__list.html#ab0d6c6e63040c1046cd5e8d91eb03c27" title="Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with a...">push_descriptors</a>. The resource the shader resource view points to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059aa24632445528325a6af3096b89d7e043">resource_usage::shader_resource</a> state and has to have been created with the <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">resource_flags::generate_mipmaps</a> flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">srv</td><td>The shader resource view to update.</td></tr>
+    <tr><td class="paramname">srv</td><td>Shader resource view to update.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2437,8 +2347,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1285c0ce3e3fa8a2ce11b75af7e3dec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1285c0ce3e3fa8a2ce11b75af7e3dec">&#9670;&nbsp;</a></span>resolve_texture_region()</h2>
+<a id="acca53c2e27415f08f91737d10b131847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca53c2e27415f08f91737d10b131847">&#9670;&nbsp;</a></span>resolve_texture_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2461,8 +2371,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>source_box</em>[6], </td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *&#160;</td>
+          <td class="paramname"><em>source_rect</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2479,8 +2389,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>dest_offset</em>[3], </td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>dest_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>dest_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2507,10 +2423,11 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to resolve from.</td></tr>
     <tr><td class="paramname">source_subresource</td><td>Index of the subresource of the <em>source</em>  texture to resolve from.</td></tr>
-    <tr><td class="paramname">source_box</td><td>A 2D rectangle (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to resolve, in the format <code>{ left, top, front, right, bottom, back }</code>. In D3D10 and D3D11 this has to be <code>nullptr</code>.</td></tr>
+    <tr><td class="paramname">source_rect</td><td>Optional rectangle (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to resolve. In D3D10 and D3D11 this has to be <code>nullptr</code>.</td></tr>
     <tr><td class="paramname">dest</td><td>Texture resource to resolve to.</td></tr>
     <tr><td class="paramname">dest_subresource</td><td>Index of the subresource of the <em>dest</em> ination texture to resolve to.</td></tr>
-    <tr><td class="paramname">dest_offset</td><td>Offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to, in the format <code>{ left, top, front }</code>. In D3D10 and D3D11 this has to be <code>nullptr</code>.</td></tr>
+    <tr><td class="paramname">dest_x</td><td>Optional X offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to. In D3D10 and D3D11 this has to be zero.</td></tr>
+    <tr><td class="paramname">dest_y</td><td>Optional Y offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to. In D3D10 and D3D11 this has to be zero.</td></tr>
     <tr><td class="paramname">format</td><td>Format of the resource data.</td></tr>
   </table>
   </dd>
