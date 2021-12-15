@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['end_5fdebug_5fevent_829',['end_debug_event',['../classreshade_1_1api_1_1command__list.html#a4e85530ee6c2c43eb0d3dfb256e6cc10',1,'reshade::api::command_list::end_debug_event()'],['../classreshade_1_1api_1_1command__queue.html#ab087350244e15d195c82f546f896a96c',1,'reshade::api::command_queue::end_debug_event()']]],
-  ['end_5fquery_830',['end_query',['../classreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137',1,'reshade::api::command_list']]],
-  ['end_5frender_5fpass_831',['end_render_pass',['../classreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace',1,'reshade::api::command_list']]],
-  ['enumerate_5ftechniques_832',['enumerate_techniques',['../classreshade_1_1api_1_1effect__runtime.html#a66e79bd63d18041b78630b13feba8795',1,'reshade::api::effect_runtime::enumerate_techniques(const char *effect_name, void(*callback)(effect_runtime *runtime, effect_technique technique, void *user_data), void *user_data)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a8eaa9445777ac2efcaae119afa47e619',1,'reshade::api::effect_runtime::enumerate_techniques(const char *effect_name, F lambda)']]],
-  ['enumerate_5ftexture_5fvariables_833',['enumerate_texture_variables',['../classreshade_1_1api_1_1effect__runtime.html#aab6060e2706fbb4565232d063792e316',1,'reshade::api::effect_runtime::enumerate_texture_variables(const char *effect_name, void(*callback)(effect_runtime *runtime, effect_texture_variable variable, void *user_data), void *user_data)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a143268666922be8424acc15c67c4fb89',1,'reshade::api::effect_runtime::enumerate_texture_variables(const char *effect_name, F lambda)']]],
-  ['enumerate_5funiform_5fvariables_834',['enumerate_uniform_variables',['../classreshade_1_1api_1_1effect__runtime.html#a679323f424259781b8f0a3f2eac4209a',1,'reshade::api::effect_runtime::enumerate_uniform_variables(const char *effect_name, void(*callback)(effect_runtime *runtime, effect_uniform_variable variable, void *user_data), void *user_data)=0'],['../classreshade_1_1api_1_1effect__runtime.html#a04003b88ccce5159a942f395fdc73347',1,'reshade::api::effect_runtime::enumerate_uniform_variables(const char *effect_name, F lambda)']]]
+  ['destroy_5fpipeline_825',['destroy_pipeline',['../classreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446',1,'reshade::api::device']]],
+  ['destroy_5fpipeline_5flayout_826',['destroy_pipeline_layout',['../classreshade_1_1api_1_1device.html#a879a3aad5be3008e74cd217f054ad4cd',1,'reshade::api::device']]],
+  ['destroy_5fprivate_5fdata_827',['destroy_private_data',['../classreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d',1,'reshade::api::api_object']]],
+  ['destroy_5fquery_5fpool_828',['destroy_query_pool',['../classreshade_1_1api_1_1device.html#a30741d1b12988825e71563bb89afac97',1,'reshade::api::device']]],
+  ['destroy_5fresource_829',['destroy_resource',['../classreshade_1_1api_1_1device.html#a5ae91e50ef93d690eb9eb4c5b5b34a42',1,'reshade::api::device']]],
+  ['destroy_5fresource_5fview_830',['destroy_resource_view',['../classreshade_1_1api_1_1device.html#ac755893b5ac2f31f5913911a2e235d0a',1,'reshade::api::device']]],
+  ['destroy_5fsampler_831',['destroy_sampler',['../classreshade_1_1api_1_1device.html#aa538dd791e64d81d62493ee28c9a8a3c',1,'reshade::api::device']]],
+  ['dispatch_832',['dispatch',['../classreshade_1_1api_1_1command__list.html#a2d1b3d51f9849f69e9c3819a89751b9e',1,'reshade::api::command_list']]],
+  ['draw_833',['draw',['../classreshade_1_1api_1_1command__list.html#a1979928ce2b057d783fab63efab846b0',1,'reshade::api::command_list']]],
+  ['draw_5findexed_834',['draw_indexed',['../classreshade_1_1api_1_1command__list.html#acc63fba83dae2e56c79eb79bc3b3820e',1,'reshade::api::command_list']]],
+  ['draw_5for_5fdispatch_5findirect_835',['draw_or_dispatch_indirect',['../classreshade_1_1api_1_1command__list.html#a85bbf10afa86718f636a431910ddb0f4',1,'reshade::api::command_list']]]
 ];

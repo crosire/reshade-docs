@@ -102,35 +102,35 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a071f02a5ebf65f298e82c6f76b33f37a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a071f02a5ebf65f298e82c6f76b33f37a">format</a></td></tr>
 <tr class="memdesc:a071f02a5ebf65f298e82c6f76b33f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format the view should reinterpret the resource data to (can be different than the format of the resource as long as they are compatible).  <a href="structreshade_1_1api_1_1resource__view__desc.html#a071f02a5ebf65f298e82c6f76b33f37a">More...</a><br /></td></tr>
 <tr class="separator:a071f02a5ebf65f298e82c6f76b33f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0742f86d3ae32977aed18334a98078"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a32ac0371bf52f1b6d26c2d430563ae75"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a409f02a75657187a197170f9a11d4391"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#af0253b5e9dcd232f1b82a219cf40f607">offset</a></td></tr>
-<tr class="memdesc:a409f02a75657187a197170f9a11d4391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset from the start of the buffer resource (in bytes).  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d12.html#a409f02a75657187a197170f9a11d4391">More...</a><br /></td></tr>
-<tr class="separator:a409f02a75657187a197170f9a11d4391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec1feb3cff0216367ffae69855495bc"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a1928f5d5612bf992177ec5408d008b49">size</a></td></tr>
-<tr class="memdesc:acec1feb3cff0216367ffae69855495bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements this view covers in the buffer resource (in bytes).  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d12.html#acec1feb3cff0216367ffae69855495bc">More...</a><br /></td></tr>
-<tr class="separator:acec1feb3cff0216367ffae69855495bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ac0371bf52f1b6d26c2d430563ae75"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a8f9321b7fa8211b19d711ec038cb296e">buffer</a></td></tr>
-<tr class="memdesc:a32ac0371bf52f1b6d26c2d430563ae75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when view type is a buffer.  <a href="unionreshade_1_1api_1_1resource__view__desc_1_1_0d10.html#a32ac0371bf52f1b6d26c2d430563ae75">More...</a><br /></td></tr>
-<tr class="separator:a32ac0371bf52f1b6d26c2d430563ae75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d58f992456e593a4494f1b65db9e58"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a731621b8ad8c63fd465bbb43446a1f26"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a8a1389094e3ac67edc0e468f7bac4faf">first_level</a></td></tr>
-<tr class="memdesc:a731621b8ad8c63fd465bbb43446a1f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the most detailed mipmap level to use. This number has to be between zero and the maximum number of mipmap levels in the texture minus 1.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a731621b8ad8c63fd465bbb43446a1f26">More...</a><br /></td></tr>
-<tr class="separator:a731621b8ad8c63fd465bbb43446a1f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43">level_count</a></td></tr>
-<tr class="memdesc:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels for the view of the texture. Set to -1 (UINT32_MAX) to indicate that all mipmap levels down to the least detailed should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a1fdfc8c988902483cb0f3e5f804fbbe9">More...</a><br /></td></tr>
-<tr class="separator:a1fdfc8c988902483cb0f3e5f804fbbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a0277cbfb28fc3069fac94f19946a52c8">first_layer</a></td></tr>
-<tr class="memdesc:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first array layer of the texture array to use. This value is ignored if the texture is not layered.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#ae2ed3c5d6c58c9e6e0b70adad7e4e49f">More...</a><br /></td></tr>
-<tr class="separator:ae2ed3c5d6c58c9e6e0b70adad7e4e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#ac88a915a7f4cc3099435e39eb9c18b48">layer_count</a></td></tr>
-<tr class="memdesc:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (UINT32_MAX) to indicate that all array layers should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d10_1_1_0d13.html#a19737e9b378a5e5d1afbd2ffcbb2d66d">More...</a><br /></td></tr>
-<tr class="separator:a19737e9b378a5e5d1afbd2ffcbb2d66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d58f992456e593a4494f1b65db9e58"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a3980d6ff8495009ecd40324472d618e8">texture</a></td></tr>
-<tr class="memdesc:a52d58f992456e593a4494f1b65db9e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when view type is a texture.  <a href="unionreshade_1_1api_1_1resource__view__desc_1_1_0d10.html#a52d58f992456e593a4494f1b65db9e58">More...</a><br /></td></tr>
-<tr class="separator:a52d58f992456e593a4494f1b65db9e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0742f86d3ae32977aed18334a98078"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7f0742f86d3ae32977aed18334a98078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db520e2bad4841bb7eba5f9b1aff213"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a9e15295ad559e45abb416cfa82db4e27"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ac7cf9e65e4c2a74f887441fa325be6e7"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#af0253b5e9dcd232f1b82a219cf40f607">offset</a></td></tr>
+<tr class="memdesc:ac7cf9e65e4c2a74f887441fa325be6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset from the start of the buffer resource (in bytes).  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d13.html#ac7cf9e65e4c2a74f887441fa325be6e7">More...</a><br /></td></tr>
+<tr class="separator:ac7cf9e65e4c2a74f887441fa325be6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba9516a3ff81e66735421b82f59425a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a1928f5d5612bf992177ec5408d008b49">size</a></td></tr>
+<tr class="memdesc:acba9516a3ff81e66735421b82f59425a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements this view covers in the buffer resource (in bytes). Set to -1 (UINT64_MAX) to indicate that the entire buffer resource should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d13.html#acba9516a3ff81e66735421b82f59425a">More...</a><br /></td></tr>
+<tr class="separator:acba9516a3ff81e66735421b82f59425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e15295ad559e45abb416cfa82db4e27"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#ae516c1e00e6298323c874fd7c2a468bf">buffer</a></td></tr>
+<tr class="memdesc:a9e15295ad559e45abb416cfa82db4e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when view type is a buffer.  <a href="unionreshade_1_1api_1_1resource__view__desc_1_1_0d11.html#a9e15295ad559e45abb416cfa82db4e27">More...</a><br /></td></tr>
+<tr class="separator:a9e15295ad559e45abb416cfa82db4e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ba20e7dabcd63f9a08e5a882417345"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aee1332ea91c8ee97c3e50390f6bde8a8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a8a1389094e3ac67edc0e468f7bac4faf">first_level</a></td></tr>
+<tr class="memdesc:aee1332ea91c8ee97c3e50390f6bde8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the most detailed mipmap level to use. This number has to be between zero and the maximum number of mipmap levels in the texture minus 1.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d14.html#aee1332ea91c8ee97c3e50390f6bde8a8">More...</a><br /></td></tr>
+<tr class="separator:aee1332ea91c8ee97c3e50390f6bde8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2967487fee356888b32acbc731963b71"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43">level_count</a></td></tr>
+<tr class="memdesc:a2967487fee356888b32acbc731963b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels for the view of the texture. Set to -1 (UINT32_MAX) to indicate that all mipmap levels down to the least detailed should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d14.html#a2967487fee356888b32acbc731963b71">More...</a><br /></td></tr>
+<tr class="separator:a2967487fee356888b32acbc731963b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1c5a7f209e1fb2498b54f39d730d17"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a0277cbfb28fc3069fac94f19946a52c8">first_layer</a></td></tr>
+<tr class="memdesc:aeb1c5a7f209e1fb2498b54f39d730d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first array layer of the texture array to use. This value is ignored if the texture is not layered.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d14.html#aeb1c5a7f209e1fb2498b54f39d730d17">More...</a><br /></td></tr>
+<tr class="separator:aeb1c5a7f209e1fb2498b54f39d730d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861408d127c6f352dd1956352b440c98"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#ac88a915a7f4cc3099435e39eb9c18b48">layer_count</a></td></tr>
+<tr class="memdesc:a861408d127c6f352dd1956352b440c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of array layers for the view of the texture array. This value is ignored if the texture is not layered. Set to -1 (UINT32_MAX) to indicate that all array layers should be used.  <a href="structreshade_1_1api_1_1resource__view__desc_1_1_0d11_1_1_0d14.html#a861408d127c6f352dd1956352b440c98">More...</a><br /></td></tr>
+<tr class="separator:a861408d127c6f352dd1956352b440c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ba20e7dabcd63f9a08e5a882417345"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a6507ac0376ab85cb15fbc14aa7695a48">texture</a></td></tr>
+<tr class="memdesc:ac5ba20e7dabcd63f9a08e5a882417345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when view type is a texture.  <a href="unionreshade_1_1api_1_1resource__view__desc_1_1_0d11.html#ac5ba20e7dabcd63f9a08e5a882417345">More...</a><br /></td></tr>
+<tr class="separator:ac5ba20e7dabcd63f9a08e5a882417345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db520e2bad4841bb7eba5f9b1aff213"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2db520e2bad4841bb7eba5f9b1aff213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a resource view, which specifies how to interpret the data of a resource. </p>
@@ -343,8 +343,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7f0742f86d3ae32977aed18334a98078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f0742f86d3ae32977aed18334a98078">&#9670;&nbsp;</a></span></h2>
+<a id="a2db520e2bad4841bb7eba5f9b1aff213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db520e2bad4841bb7eba5f9b1aff213">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,8 +357,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f9321b7fa8211b19d711ec038cb296e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f9321b7fa8211b19d711ec038cb296e">&#9670;&nbsp;</a></span></h2>
+<a id="ae516c1e00e6298323c874fd7c2a468bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae516c1e00e6298323c874fd7c2a468bf">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,12 +481,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Number of elements this view covers in the buffer resource (in bytes). </p>
+<p>Number of elements this view covers in the buffer resource (in bytes). Set to -1 (UINT64_MAX) to indicate that the entire buffer resource should be used. </p>
 
 </div>
 </div>
-<a id="a3980d6ff8495009ecd40324472d618e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3980d6ff8495009ecd40324472d618e8">&#9670;&nbsp;</a></span></h2>
+<a id="a6507ac0376ab85cb15fbc14aa7695a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6507ac0376ab85cb15fbc14aa7695a48">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">

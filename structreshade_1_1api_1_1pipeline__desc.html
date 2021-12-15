@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structreshade_1_1api_1_1pipeline__desc-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -80,6 +81,13 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9a94dad44554a25ef3e363534d011bc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a9a94dad44554a25ef3e363534d011bc3">pipeline_desc</a> ()</td></tr>
+<tr class="separator:a9a94dad44554a25ef3e363534d011bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1549da14918fc2550b858f00d7f01502"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a1549da14918fc2550b858f00d7f01502">pipeline_desc</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae45ac7e8c0db6af76e70c4504da305f7">type</a>)</td></tr>
+<tr class="separator:a1549da14918fc2550b858f00d7f01502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae45ac7e8c0db6af76e70c4504da305f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae45ac7e8c0db6af76e70c4504da305f7">type</a></td></tr>
@@ -88,71 +96,123 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad08495bd06266870bd5ed1c5d5d4d3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ad08495bd06266870bd5ed1c5d5d4d3eb">layout</a></td></tr>
 <tr class="memdesc:ad08495bd06266870bd5ed1c5d5d4d3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor set and constant layout of the pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc.html#ad08495bd06266870bd5ed1c5d5d4d3eb">More...</a><br /></td></tr>
 <tr class="separator:ad08495bd06266870bd5ed1c5d5d4d3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8438aca44fb35f7795b9f63c706d3863"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a5b25bed7367578e1f363ea64a93204eb"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ac8707d9868c2bf73c5672baee47da8d6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ac3b16011fe84c5d4a086cc758a20e1d3">shader</a></td></tr>
-<tr class="memdesc:ac8707d9868c2bf73c5672baee47da8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d2.html#ac8707d9868c2bf73c5672baee47da8d6">More...</a><br /></td></tr>
-<tr class="separator:ac8707d9868c2bf73c5672baee47da8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b25bed7367578e1f363ea64a93204eb"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae7dd3e2478bbdf48e48aeecc8c151c48">compute</a></td></tr>
-<tr class="memdesc:a5b25bed7367578e1f363ea64a93204eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when pipeline type is <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ae800d043f85c0cb5ffc1248b95f6f467">pipeline_stage::all_compute</a> or a subset of it.  <a href="unionreshade_1_1api_1_1pipeline__desc_1_1_0d0.html#a5b25bed7367578e1f363ea64a93204eb">More...</a><br /></td></tr>
-<tr class="separator:a5b25bed7367578e1f363ea64a93204eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c78c8b92eb8527b7fd402a9dc31af7"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a2334662ad4fab5263abd9e0da0736d5c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aa33fce4a24b0a580fde08428f9769ce6">vertex_shader</a></td></tr>
-<tr class="memdesc:a2334662ad4fab5263abd9e0da0736d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a2334662ad4fab5263abd9e0da0736d5c">More...</a><br /></td></tr>
-<tr class="separator:a2334662ad4fab5263abd9e0da0736d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81db85e94c7f6bb95431bc4912d04bd4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a52713c572c8fcaea5087ef6f246cb377">hull_shader</a></td></tr>
-<tr class="memdesc:a81db85e94c7f6bb95431bc4912d04bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional hull shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a81db85e94c7f6bb95431bc4912d04bd4">More...</a><br /></td></tr>
-<tr class="separator:a81db85e94c7f6bb95431bc4912d04bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d18a188cc20b2182884cdd43d3df0a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae10abff571bed23d8bc307093e34aab2">domain_shader</a></td></tr>
-<tr class="memdesc:ad2d18a188cc20b2182884cdd43d3df0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional domain shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#ad2d18a188cc20b2182884cdd43d3df0a">More...</a><br /></td></tr>
-<tr class="separator:ad2d18a188cc20b2182884cdd43d3df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a714186e1546cf721efd49ea0e82ac521"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aa84422627c15624168add3cd50ec4c19">geometry_shader</a></td></tr>
-<tr class="memdesc:a714186e1546cf721efd49ea0e82ac521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional geometry shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a714186e1546cf721efd49ea0e82ac521">More...</a><br /></td></tr>
-<tr class="separator:a714186e1546cf721efd49ea0e82ac521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a40dabbd133f33b9abb19ce8368bb5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a3d379121eef81f0d3a32edbfc2ec386b">pixel_shader</a></td></tr>
-<tr class="memdesc:ac9a40dabbd133f33b9abb19ce8368bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#ac9a40dabbd133f33b9abb19ce8368bb5">More...</a><br /></td></tr>
-<tr class="separator:ac9a40dabbd133f33b9abb19ce8368bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d2265100577c2803fac1f409defdda"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1input__element.html">input_element</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a74ce286a064843d4ce80a9d4b84be118">input_layout</a> [16]</td></tr>
-<tr class="memdesc:a92d2265100577c2803fac1f409defdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex layout for the input-assembler stage. This list is terminated with an element that has its format set to <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aad921d60486366258809553a3db49a4a">format::unknown</a>.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a92d2265100577c2803fac1f409defdda">More...</a><br /></td></tr>
-<tr class="separator:a92d2265100577c2803fac1f409defdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70036440c0aa05dc86c5e7ccaa54ef24"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a">primitive_topology</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2eed86c5def828a46c625a231f8deb9f">topology</a></td></tr>
-<tr class="memdesc:a70036440c0aa05dc86c5e7ccaa54ef24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primitive topology to use when rendering.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a70036440c0aa05dc86c5e7ccaa54ef24">More...</a><br /></td></tr>
-<tr class="separator:a70036440c0aa05dc86c5e7ccaa54ef24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93266241c2e93ad84377258d2ef8f838"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html">rasterizer_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#adfd83c765d9001046b49f6613b05795a">rasterizer_state</a></td></tr>
-<tr class="memdesc:a93266241c2e93ad84377258d2ef8f838"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the rasterizer stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a93266241c2e93ad84377258d2ef8f838">More...</a><br /></td></tr>
-<tr class="separator:a93266241c2e93ad84377258d2ef8f838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89fced64e79f73fdd8cf69d866b22699"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1blend__desc.html">blend_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ab099198a0565161ad0d62b1733d0924e">blend_state</a></td></tr>
-<tr class="memdesc:a89fced64e79f73fdd8cf69d866b22699"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the output-merger stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a89fced64e79f73fdd8cf69d866b22699">More...</a><br /></td></tr>
-<tr class="separator:a89fced64e79f73fdd8cf69d866b22699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5116e9227c99d2339763a5fba1124a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html">depth_stencil_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a04a57daef2f1b701745795a98968de7e">depth_stencil_state</a></td></tr>
-<tr class="memdesc:a6a5116e9227c99d2339763a5fba1124a"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the depth-stencil stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a6a5116e9227c99d2339763a5fba1124a">More...</a><br /></td></tr>
-<tr class="separator:a6a5116e9227c99d2339763a5fba1124a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab0d44bdddeb021039a2f1f5e6a1696"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aac2afaab8409bb4185cb6256fc1d5b29">depth_stencil_format</a></td></tr>
-<tr class="memdesc:a6ab0d44bdddeb021039a2f1f5e6a1696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format of the depth-stencil view that may be used with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a6ab0d44bdddeb021039a2f1f5e6a1696">More...</a><br /></td></tr>
-<tr class="separator:a6ab0d44bdddeb021039a2f1f5e6a1696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e669995fa28d84ab76df2b5c1926bca"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2c2f6fa83974e98109a5c71233b9ef19">render_target_formats</a> [8]</td></tr>
-<tr class="memdesc:a1e669995fa28d84ab76df2b5c1926bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats of the render target views that may be used with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a1e669995fa28d84ab76df2b5c1926bca">More...</a><br /></td></tr>
-<tr class="separator:a1e669995fa28d84ab76df2b5c1926bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a9d93f1df03785b35d57450bb4679f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a685671610bd1453a2ce58dbea0ecbb01">sample_mask</a></td></tr>
-<tr class="memdesc:a77a9d93f1df03785b35d57450bb4679f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask applied to the coverage mask for a fragment during rasterization.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a77a9d93f1df03785b35d57450bb4679f">More...</a><br /></td></tr>
-<tr class="separator:a77a9d93f1df03785b35d57450bb4679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d4003ddcfd0f9d7a4e5133d120f214"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a014349a9bcefd77317cdd792747e2701">sample_count</a></td></tr>
-<tr class="memdesc:a05d4003ddcfd0f9d7a4e5133d120f214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples used in rasterization.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#a05d4003ddcfd0f9d7a4e5133d120f214">More...</a><br /></td></tr>
-<tr class="separator:a05d4003ddcfd0f9d7a4e5133d120f214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5404d9832696ca6080952b409cfa588"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aed27da86c0ef62a21dfe1eabd49c665e">viewport_count</a></td></tr>
-<tr class="memdesc:ad5404d9832696ca6080952b409cfa588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of viewports that may be bound via <a class="el" href="classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a" title="Binds an array of viewports to the rasterizer stage.">command_list::bind_viewports</a> with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d0_1_1_0d3.html#ad5404d9832696ca6080952b409cfa588">More...</a><br /></td></tr>
-<tr class="separator:ad5404d9832696ca6080952b409cfa588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c78c8b92eb8527b7fd402a9dc31af7"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a769633a8b5a12c351cd25218e93e2280">graphics</a></td></tr>
-<tr class="memdesc:ae2c78c8b92eb8527b7fd402a9dc31af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when pipeline type is <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037af8233e13bc830eaed7841d3dd1286347">pipeline_stage::all_graphics</a> or a subset of it.  <a href="unionreshade_1_1api_1_1pipeline__desc_1_1_0d0.html#ae2c78c8b92eb8527b7fd402a9dc31af7">More...</a><br /></td></tr>
-<tr class="separator:ae2c78c8b92eb8527b7fd402a9dc31af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8438aca44fb35f7795b9f63c706d3863"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a8438aca44fb35f7795b9f63c706d3863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f798ec8c9868f06e496f3185ec68c"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ac233686c356d486382260c4bf757cbd3"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a3c5c8f63e5bba042433db87406b7f22f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ac3b16011fe84c5d4a086cc758a20e1d3">shader</a></td></tr>
+<tr class="memdesc:a3c5c8f63e5bba042433db87406b7f22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d5.html#a3c5c8f63e5bba042433db87406b7f22f">More...</a><br /></td></tr>
+<tr class="separator:a3c5c8f63e5bba042433db87406b7f22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac233686c356d486382260c4bf757cbd3"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a24d1a622328c051a8ad0bb4bf448a197">compute</a></td></tr>
+<tr class="memdesc:ac233686c356d486382260c4bf757cbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when pipeline type is <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ae800d043f85c0cb5ffc1248b95f6f467">pipeline_stage::all_compute</a> or a subset of it.  <a href="unionreshade_1_1api_1_1pipeline__desc_1_1_0d3.html#ac233686c356d486382260c4bf757cbd3">More...</a><br /></td></tr>
+<tr class="separator:ac233686c356d486382260c4bf757cbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c075aa2a63521b0d19cb3d7f87e6ac"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:adcaca4feb96435794890a99a11a6a748"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aa33fce4a24b0a580fde08428f9769ce6">vertex_shader</a></td></tr>
+<tr class="memdesc:adcaca4feb96435794890a99a11a6a748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#adcaca4feb96435794890a99a11a6a748">More...</a><br /></td></tr>
+<tr class="separator:adcaca4feb96435794890a99a11a6a748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab585165fc72842ef674d388a1a38ac05"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a52713c572c8fcaea5087ef6f246cb377">hull_shader</a></td></tr>
+<tr class="memdesc:ab585165fc72842ef674d388a1a38ac05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional hull shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#ab585165fc72842ef674d388a1a38ac05">More...</a><br /></td></tr>
+<tr class="separator:ab585165fc72842ef674d388a1a38ac05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4707710906f0bc15f3039024890a2eba"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ae10abff571bed23d8bc307093e34aab2">domain_shader</a></td></tr>
+<tr class="memdesc:a4707710906f0bc15f3039024890a2eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional domain shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a4707710906f0bc15f3039024890a2eba">More...</a><br /></td></tr>
+<tr class="separator:a4707710906f0bc15f3039024890a2eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281ad27e17d0465b89ea937df5fd6b72"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aa84422627c15624168add3cd50ec4c19">geometry_shader</a></td></tr>
+<tr class="memdesc:a281ad27e17d0465b89ea937df5fd6b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional geometry shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a281ad27e17d0465b89ea937df5fd6b72">More...</a><br /></td></tr>
+<tr class="separator:a281ad27e17d0465b89ea937df5fd6b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c669eb3343cf60b8cb14581925b3673"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__desc.html">shader_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a3d379121eef81f0d3a32edbfc2ec386b">pixel_shader</a></td></tr>
+<tr class="memdesc:a5c669eb3343cf60b8cb14581925b3673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel shader to use.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a5c669eb3343cf60b8cb14581925b3673">More...</a><br /></td></tr>
+<tr class="separator:a5c669eb3343cf60b8cb14581925b3673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c7cde17e09a0597f46e8331da7f4f7"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1input__element.html">input_element</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a74ce286a064843d4ce80a9d4b84be118">input_layout</a> [16]</td></tr>
+<tr class="memdesc:a59c7cde17e09a0597f46e8331da7f4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex layout for the input-assembler stage. This list is terminated with an element that has its format set to <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aad921d60486366258809553a3db49a4a">format::unknown</a>.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a59c7cde17e09a0597f46e8331da7f4f7">More...</a><br /></td></tr>
+<tr class="separator:a59c7cde17e09a0597f46e8331da7f4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663963086d0149405362ae3515da89aa"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a">primitive_topology</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2eed86c5def828a46c625a231f8deb9f">topology</a></td></tr>
+<tr class="memdesc:a663963086d0149405362ae3515da89aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primitive topology to use when rendering.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a663963086d0149405362ae3515da89aa">More...</a><br /></td></tr>
+<tr class="separator:a663963086d0149405362ae3515da89aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60140e37b604ad597a8dd39876e12a98"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html">rasterizer_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#adfd83c765d9001046b49f6613b05795a">rasterizer_state</a></td></tr>
+<tr class="memdesc:a60140e37b604ad597a8dd39876e12a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the rasterizer stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a60140e37b604ad597a8dd39876e12a98">More...</a><br /></td></tr>
+<tr class="separator:a60140e37b604ad597a8dd39876e12a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2aade1371885f0cf71fc87a5e7d0af"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1blend__desc.html">blend_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#ab099198a0565161ad0d62b1733d0924e">blend_state</a></td></tr>
+<tr class="memdesc:a5f2aade1371885f0cf71fc87a5e7d0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the output-merger stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a5f2aade1371885f0cf71fc87a5e7d0af">More...</a><br /></td></tr>
+<tr class="separator:a5f2aade1371885f0cf71fc87a5e7d0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a717f169b257f5a383754a95a2d31b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html">depth_stencil_desc</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a04a57daef2f1b701745795a98968de7e">depth_stencil_state</a></td></tr>
+<tr class="memdesc:a43a717f169b257f5a383754a95a2d31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the depth-stencil stage.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a43a717f169b257f5a383754a95a2d31b">More...</a><br /></td></tr>
+<tr class="separator:a43a717f169b257f5a383754a95a2d31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c6030b78c35590f13ba989619b4e2d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aac2afaab8409bb4185cb6256fc1d5b29">depth_stencil_format</a></td></tr>
+<tr class="memdesc:ab7c6030b78c35590f13ba989619b4e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format of the depth-stencil view that may be used with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#ab7c6030b78c35590f13ba989619b4e2d">More...</a><br /></td></tr>
+<tr class="separator:ab7c6030b78c35590f13ba989619b4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74acc085e6b486479c2c3e87a8597d15"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a2c2f6fa83974e98109a5c71233b9ef19">render_target_formats</a> [8]</td></tr>
+<tr class="memdesc:a74acc085e6b486479c2c3e87a8597d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats of the render target views that may be used with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a74acc085e6b486479c2c3e87a8597d15">More...</a><br /></td></tr>
+<tr class="separator:a74acc085e6b486479c2c3e87a8597d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf364715e8c1be79cec545fd377360c2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a685671610bd1453a2ce58dbea0ecbb01">sample_mask</a></td></tr>
+<tr class="memdesc:aaf364715e8c1be79cec545fd377360c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask applied to the coverage mask for a fragment during rasterization.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#aaf364715e8c1be79cec545fd377360c2">More...</a><br /></td></tr>
+<tr class="separator:aaf364715e8c1be79cec545fd377360c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592058f139bd6b2fcc64e94000481ac8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a014349a9bcefd77317cdd792747e2701">sample_count</a></td></tr>
+<tr class="memdesc:a592058f139bd6b2fcc64e94000481ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples used in rasterization.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#a592058f139bd6b2fcc64e94000481ac8">More...</a><br /></td></tr>
+<tr class="separator:a592058f139bd6b2fcc64e94000481ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab606a0c3aec7af0dcc4f5a573d692f73"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#aed27da86c0ef62a21dfe1eabd49c665e">viewport_count</a></td></tr>
+<tr class="memdesc:ab606a0c3aec7af0dcc4f5a573d692f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of viewports that may be bound via <a class="el" href="classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a" title="Binds an array of viewports to the rasterizer stage.">command_list::bind_viewports</a> with this pipeline.  <a href="structreshade_1_1api_1_1pipeline__desc_1_1_0d3_1_1_0d6.html#ab606a0c3aec7af0dcc4f5a573d692f73">More...</a><br /></td></tr>
+<tr class="separator:ab606a0c3aec7af0dcc4f5a573d692f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c075aa2a63521b0d19cb3d7f87e6ac"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1pipeline__desc.html#a5697abbf92662f8eb5781bc7dbe624b4">graphics</a></td></tr>
+<tr class="memdesc:ac5c075aa2a63521b0d19cb3d7f87e6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when pipeline type is <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037af8233e13bc830eaed7841d3dd1286347">pipeline_stage::all_graphics</a> or a subset of it.  <a href="unionreshade_1_1api_1_1pipeline__desc_1_1_0d3.html#ac5c075aa2a63521b0d19cb3d7f87e6ac">More...</a><br /></td></tr>
+<tr class="separator:ac5c075aa2a63521b0d19cb3d7f87e6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f798ec8c9868f06e496f3185ec68c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aaa3f798ec8c9868f06e496f3185ec68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a pipeline state object. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8438aca44fb35f7795b9f63c706d3863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8438aca44fb35f7795b9f63c706d3863">&#9670;&nbsp;</a></span></h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9a94dad44554a25ef3e363534d011bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a94dad44554a25ef3e363534d011bc3">&#9670;&nbsp;</a></span>pipeline_desc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reshade::api::pipeline_desc::pipeline_desc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1549da14918fc2550b858f00d7f01502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1549da14918fc2550b858f00d7f01502">&#9670;&nbsp;</a></span>pipeline_desc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reshade::api::pipeline_desc::pipeline_desc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaa3f798ec8c9868f06e496f3185ec68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f798ec8c9868f06e496f3185ec68c">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,8 +242,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7dd3e2478bbdf48e48aeecc8c151c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7dd3e2478bbdf48e48aeecc8c151c48">&#9670;&nbsp;</a></span></h2>
+<a id="a24d1a622328c051a8ad0bb4bf448a197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d1a622328c051a8ad0bb4bf448a197">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,8 +325,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a769633a8b5a12c351cd25218e93e2280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a769633a8b5a12c351cd25218e93e2280">&#9670;&nbsp;</a></span></h2>
+<a id="a5697abbf92662f8eb5781bc7dbe624b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5697abbf92662f8eb5781bc7dbe624b4">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">

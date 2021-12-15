@@ -82,11 +82,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a95551052c351201839e68b272b133ec0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a95551052c351201839e68b272b133ec0">offset</a></td></tr>
-<tr class="memdesc:a95551052c351201839e68b272b133ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset (in descriptors) of this range in the descriptor set.  <a href="structreshade_1_1api_1_1descriptor__range.html#a95551052c351201839e68b272b133ec0">More...</a><br /></td></tr>
-<tr class="separator:a95551052c351201839e68b272b133ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6aa5a25e834d8d6c671fdd55385853"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a4a6aa5a25e834d8d6c671fdd55385853">binding</a></td></tr>
-<tr class="memdesc:a4a6aa5a25e834d8d6c671fdd55385853"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL/Vulkan binding index (<code>layout(binding=X)</code> in GLSL).  <a href="structreshade_1_1api_1_1descriptor__range.html#a4a6aa5a25e834d8d6c671fdd55385853">More...</a><br /></td></tr>
+<tr class="memdesc:a4a6aa5a25e834d8d6c671fdd55385853"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL/Vulkan binding index (<code>layout(binding=X)</code> in GLSL). In D3D this is equivalent to the offset (in descriptors) of this range in the descriptor set (since each binding can only have an array size of 1).  <a href="structreshade_1_1api_1_1descriptor__range.html#a4a6aa5a25e834d8d6c671fdd55385853">More...</a><br /></td></tr>
 <tr class="separator:a4a6aa5a25e834d8d6c671fdd55385853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b2a5dbc5e30e4064775cd376de1e98"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a25b2a5dbc5e30e4064775cd376de1e98">dx_register_index</a></td></tr>
 <tr class="memdesc:a25b2a5dbc5e30e4064775cd376de1e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">D3D9/D3D10/D3D11/D3D12 shader register index (<code>register(xX)</code> in HLSL).  <a href="structreshade_1_1api_1_1descriptor__range.html#a25b2a5dbc5e30e4064775cd376de1e98">More...</a><br /></td></tr>
@@ -97,15 +94,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a64d8e5e397063b1c884af5c120520b3b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a64d8e5e397063b1c884af5c120520b3b">count</a></td></tr>
 <tr class="memdesc:a64d8e5e397063b1c884af5c120520b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of descriptors in this range.  <a href="structreshade_1_1api_1_1descriptor__range.html#a64d8e5e397063b1c884af5c120520b3b">More...</a><br /></td></tr>
 <tr class="separator:a64d8e5e397063b1c884af5c120520b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361db1c69700142f317278c4c69eda50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a361db1c69700142f317278c4c69eda50">visibility</a></td></tr>
+<tr class="memdesc:a361db1c69700142f317278c4c69eda50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader pipeline stages that can make use of the descriptors in this range.  <a href="structreshade_1_1api_1_1descriptor__range.html#a361db1c69700142f317278c4c69eda50">More...</a><br /></td></tr>
+<tr class="separator:a361db1c69700142f317278c4c69eda50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb72670d546254369afb83c954058d29"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#adb72670d546254369afb83c954058d29">array_size</a></td></tr>
 <tr class="memdesc:adb72670d546254369afb83c954058d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the array in case this is an array binding. Only meaningful in Vulkan, in OpenGL and other APIs this has to be 1 (since each GLSL array element gets a separate binding index there). If this is less than the total number of descriptors specified in <a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a64d8e5e397063b1c884af5c120520b3b" title="Number of descriptors in this range.">count</a>, then the remaining descriptors are assigned a separate binding index (with an array size of 1), incrementing with each additional descriptor.  <a href="structreshade_1_1api_1_1descriptor__range.html#adb72670d546254369afb83c954058d29">More...</a><br /></td></tr>
 <tr class="separator:adb72670d546254369afb83c954058d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb651e4ed20fffd6e869e6de6af989ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">descriptor_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#afb651e4ed20fffd6e869e6de6af989ec">type</a></td></tr>
 <tr class="memdesc:afb651e4ed20fffd6e869e6de6af989ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the descriptors in this range.  <a href="structreshade_1_1api_1_1descriptor__range.html#afb651e4ed20fffd6e869e6de6af989ec">More...</a><br /></td></tr>
 <tr class="separator:afb651e4ed20fffd6e869e6de6af989ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361db1c69700142f317278c4c69eda50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a361db1c69700142f317278c4c69eda50">visibility</a></td></tr>
-<tr class="memdesc:a361db1c69700142f317278c4c69eda50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader pipeline stages that can make use of the descriptors in this range.  <a href="structreshade_1_1api_1_1descriptor__range.html#a361db1c69700142f317278c4c69eda50">More...</a><br /></td></tr>
-<tr class="separator:a361db1c69700142f317278c4c69eda50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a range of descriptors in a descriptor set layout. </p>
@@ -138,7 +135,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>OpenGL/Vulkan binding index (<code>layout(binding=X)</code> in GLSL). </p>
+<p>OpenGL/Vulkan binding index (<code>layout(binding=X)</code> in GLSL). In D3D this is equivalent to the offset (in descriptors) of this range in the descriptor set (since each binding can only have an array size of 1). </p>
 
 </div>
 </div>
@@ -187,22 +184,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>D3D12 register space (<code>register(..., spaceX)</code> in HLSL). </p>
-
-</div>
-</div>
-<a id="a95551052c351201839e68b272b133ec0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95551052c351201839e68b272b133ec0">&#9670;&nbsp;</a></span>offset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t reshade::api::descriptor_range::offset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Offset (in descriptors) of this range in the descriptor set. </p>
 
 </div>
 </div>
