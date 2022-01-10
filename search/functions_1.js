@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['barrier_788',['barrier',['../classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7',1,'reshade::api::command_list::barrier(uint32_t count, const resource *resources, const resource_usage *old_states, const resource_usage *new_states)=0'],['../classreshade_1_1api_1_1command__list.html#a73e3d799c04a6e232b707b0c49666c73',1,'reshade::api::command_list::barrier(resource resource, resource_usage old_state, resource_usage new_state)']]],
-  ['begin_5fdebug_5fevent_789',['begin_debug_event',['../classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec',1,'reshade::api::command_list::begin_debug_event()'],['../classreshade_1_1api_1_1command__queue.html#aa7e46ec7df98903a65014d199e5ea756',1,'reshade::api::command_queue::begin_debug_event()']]],
-  ['begin_5fquery_790',['begin_query',['../classreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37',1,'reshade::api::command_list']]],
-  ['begin_5frender_5fpass_791',['begin_render_pass',['../classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956',1,'reshade::api::command_list']]],
-  ['bind_5fdescriptor_5fset_792',['bind_descriptor_set',['../classreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f',1,'reshade::api::command_list']]],
-  ['bind_5fdescriptor_5fsets_793',['bind_descriptor_sets',['../classreshade_1_1api_1_1command__list.html#ab820089bf7025927cc56a509dc540220',1,'reshade::api::command_list']]],
-  ['bind_5findex_5fbuffer_794',['bind_index_buffer',['../classreshade_1_1api_1_1command__list.html#a8aa24a66cda78ff105d1975a297e4314',1,'reshade::api::command_list']]],
-  ['bind_5fpipeline_795',['bind_pipeline',['../classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659',1,'reshade::api::command_list']]],
-  ['bind_5fpipeline_5fstate_796',['bind_pipeline_state',['../classreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798',1,'reshade::api::command_list']]],
-  ['bind_5fpipeline_5fstates_797',['bind_pipeline_states',['../classreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928',1,'reshade::api::command_list']]],
-  ['bind_5frender_5ftargets_5fand_5fdepth_5fstencil_798',['bind_render_targets_and_depth_stencil',['../classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972',1,'reshade::api::command_list']]],
-  ['bind_5fscissor_5frects_799',['bind_scissor_rects',['../classreshade_1_1api_1_1command__list.html#a84688340495260d6634bfe2247bb0a34',1,'reshade::api::command_list']]],
-  ['bind_5fvertex_5fbuffer_800',['bind_vertex_buffer',['../classreshade_1_1api_1_1command__list.html#a8618e997b035a86daa8c7c9357af90a6',1,'reshade::api::command_list']]],
-  ['bind_5fvertex_5fbuffers_801',['bind_vertex_buffers',['../classreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d',1,'reshade::api::command_list']]],
-  ['bind_5fviewports_802',['bind_viewports',['../classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a',1,'reshade::api::command_list']]]
+  ['barrier_791',['barrier',['../classreshade_1_1api_1_1command__list.html#a4b1203d24668090d42df08ea2cc99bd7',1,'reshade::api::command_list::barrier(uint32_t count, const resource *resources, const resource_usage *old_states, const resource_usage *new_states)=0'],['../classreshade_1_1api_1_1command__list.html#a73e3d799c04a6e232b707b0c49666c73',1,'reshade::api::command_list::barrier(resource resource, resource_usage old_state, resource_usage new_state)']]],
+  ['begin_5fdebug_5fevent_792',['begin_debug_event',['../classreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec',1,'reshade::api::command_list::begin_debug_event()'],['../classreshade_1_1api_1_1command__queue.html#aa7e46ec7df98903a65014d199e5ea756',1,'reshade::api::command_queue::begin_debug_event()']]],
+  ['begin_5fquery_793',['begin_query',['../classreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37',1,'reshade::api::command_list']]],
+  ['begin_5frender_5fpass_794',['begin_render_pass',['../classreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956',1,'reshade::api::command_list']]],
+  ['bind_5fdescriptor_5fset_795',['bind_descriptor_set',['../classreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f',1,'reshade::api::command_list']]],
+  ['bind_5fdescriptor_5fsets_796',['bind_descriptor_sets',['../classreshade_1_1api_1_1command__list.html#ab820089bf7025927cc56a509dc540220',1,'reshade::api::command_list']]],
+  ['bind_5findex_5fbuffer_797',['bind_index_buffer',['../classreshade_1_1api_1_1command__list.html#a8aa24a66cda78ff105d1975a297e4314',1,'reshade::api::command_list']]],
+  ['bind_5fpipeline_798',['bind_pipeline',['../classreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659',1,'reshade::api::command_list']]],
+  ['bind_5fpipeline_5fstate_799',['bind_pipeline_state',['../classreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798',1,'reshade::api::command_list']]],
+  ['bind_5fpipeline_5fstates_800',['bind_pipeline_states',['../classreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928',1,'reshade::api::command_list']]],
+  ['bind_5frender_5ftargets_5fand_5fdepth_5fstencil_801',['bind_render_targets_and_depth_stencil',['../classreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972',1,'reshade::api::command_list']]],
+  ['bind_5fscissor_5frects_802',['bind_scissor_rects',['../classreshade_1_1api_1_1command__list.html#a84688340495260d6634bfe2247bb0a34',1,'reshade::api::command_list']]],
+  ['bind_5fvertex_5fbuffer_803',['bind_vertex_buffer',['../classreshade_1_1api_1_1command__list.html#a8618e997b035a86daa8c7c9357af90a6',1,'reshade::api::command_list']]],
+  ['bind_5fvertex_5fbuffers_804',['bind_vertex_buffers',['../classreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d',1,'reshade::api::command_list']]],
+  ['bind_5fviewports_805',['bind_viewports',['../classreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a',1,'reshade::api::command_list']]]
 ];

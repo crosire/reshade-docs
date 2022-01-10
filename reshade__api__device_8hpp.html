@@ -70,7 +70,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">reshade_api_device.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -155,6 +156,33 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
 <tr class="separator:ac1f75e72812269a7815296a0f248f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">reshade::api::command_queue_type</a> { <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca73b0472d43069103642ffa07997ff20a">reshade::api::graphics</a>
+, <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca77e73f3a185e16d1f08ca5e057710b9d">reshade::api::compute</a>
+, <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca12cba3ee81cf4a793796a51b6327c678">reshade::api::copy</a>
+ }</td></tr>
+<tr class="memdesc:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available command queue types, as returned by command_queue::get_type.  <a href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">More...</a><br /></td></tr>
+<tr class="separator:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa221e0273a164bc9dbec936858cfb4e0"><td class="memItemLeft" align="right" valign="top">constexpr command_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa221e0273a164bc9dbec936858cfb4e0">reshade::api::operator~</a> (command_queue_type a)</td></tr>
+<tr class="separator:aa221e0273a164bc9dbec936858cfb4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2c3cfd31ae87ee47b499f2c6f6327c"><td class="memItemLeft" align="right" valign="top">command_queue_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aef2c3cfd31ae87ee47b499f2c6f6327c">reshade::api::operator&amp;=</a> (command_queue_type &amp;a, command_queue_type b)</td></tr>
+<tr class="separator:aef2c3cfd31ae87ee47b499f2c6f6327c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e1908aa78950f42f0ce7262f8c711a"><td class="memItemLeft" align="right" valign="top">constexpr command_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a37e1908aa78950f42f0ce7262f8c711a">reshade::api::operator&amp;</a> (command_queue_type a, command_queue_type b)</td></tr>
+<tr class="separator:a37e1908aa78950f42f0ce7262f8c711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8388761e64787e92b48e9fff4d4876"><td class="memItemLeft" align="right" valign="top">command_queue_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#abf8388761e64787e92b48e9fff4d4876">reshade::api::operator|=</a> (command_queue_type &amp;a, command_queue_type b)</td></tr>
+<tr class="separator:abf8388761e64787e92b48e9fff4d4876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78be13cced4d992efc8737e46d3740c"><td class="memItemLeft" align="right" valign="top">constexpr command_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af78be13cced4d992efc8737e46d3740c">reshade::api::operator|</a> (command_queue_type a, command_queue_type b)</td></tr>
+<tr class="separator:af78be13cced4d992efc8737e46d3740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cca04331292b5bd0b04a5e2eb763c5"><td class="memItemLeft" align="right" valign="top">command_queue_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a18cca04331292b5bd0b04a5e2eb763c5">reshade::api::operator^=</a> (command_queue_type &amp;a, command_queue_type b)</td></tr>
+<tr class="separator:a18cca04331292b5bd0b04a5e2eb763c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2d9fbb58f0dffb7902cd9b781e5661"><td class="memItemLeft" align="right" valign="top">constexpr command_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9b2d9fbb58f0dffb7902cd9b781e5661">reshade::api::operator^</a> (command_queue_type a, command_queue_type b)</td></tr>
+<tr class="separator:a9b2d9fbb58f0dffb7902cd9b781e5661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98d628df4b768e774e2ef4f8ae52229"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af98d628df4b768e774e2ef4f8ae52229">reshade::api::operator==</a> (command_queue_type lhs, uint32_t rhs)</td></tr>
+<tr class="separator:af98d628df4b768e774e2ef4f8ae52229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b6db0bf5d79d395ad39fafcd5b537b"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a50b6db0bf5d79d395ad39fafcd5b537b">reshade::api::operator!=</a> (command_queue_type lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a50b6db0bf5d79d395ad39fafcd5b537b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
