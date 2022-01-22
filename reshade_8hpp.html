@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="reshade__events_8hpp_source.html">reshade_events.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="reshade__overlay_8hpp_source.html">reshade_overlay.hpp</a>&quot;</code><br />
+<code>#include &quot;reshade_overlay.hpp&quot;</code><br />
 <code>#include &lt;charconv&gt;</code><br />
 <code>#include &lt;Windows.h&gt;</code><br />
 </div>
@@ -139,10 +139,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">reshade::unregister_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
 <tr class="memdesc:ab85d6da3c11d36a58e9ef519a0f83780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a callback for the specified event (via template) that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event (via template) with ReShade.">register_event</a>.  <a href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">More...</a><br /></td></tr>
 <tr class="separator:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">reshade::register_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
+<tr class="memitem:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">reshade::register_overlay</a> (const char *title, void(*callback)(<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
 <tr class="memdesc:afdb7ad56c410fefee6bf6e1466fc938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an overlay with ReShade.  <a href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">More...</a><br /></td></tr>
 <tr class="separator:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a703aada3667d2098df03bcbe62d39109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a703aada3667d2098df03bcbe62d39109">reshade::unregister_overlay</a> (const char *title, void(*callback)(<a class="el" href="classreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
+<tr class="memitem:a703aada3667d2098df03bcbe62d39109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a703aada3667d2098df03bcbe62d39109">reshade::unregister_overlay</a> (const char *title, void(*callback)(<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
 <tr class="memdesc:a703aada3667d2098df03bcbe62d39109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e" title="Registers an overlay with ReShade.">register_overlay</a>.  <a href="namespacereshade.html#a703aada3667d2098df03bcbe62d39109">More...</a><br /></td></tr>
 <tr class="separator:a703aada3667d2098df03bcbe62d39109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
