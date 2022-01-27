@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['input_5fassembler_5fprimitives_1061',['input_assembler_primitives',['../structreshade_1_1api_1_1pipeline__statistics.html#a2c6df200a1a91560cd8be895bec24adf',1,'reshade::api::pipeline_statistics']]],
-  ['input_5fassembler_5fvertices_1062',['input_assembler_vertices',['../structreshade_1_1api_1_1pipeline__statistics.html#addbe2d6240507bdb112de161f31ed704',1,'reshade::api::pipeline_statistics']]],
-  ['input_5flayout_1063',['input_layout',['../structreshade_1_1api_1_1pipeline__desc.html#a74ce286a064843d4ce80a9d4b84be118',1,'reshade::api::pipeline_desc']]],
-  ['instance_5fstep_5frate_1064',['instance_step_rate',['../structreshade_1_1api_1_1input__element.html#a3114025f9e49110c9c251ede54ae9540',1,'reshade::api::input_element']]]
+  ['layer_5fcount_1045',['layer_count',['../structreshade_1_1api_1_1resource__view__desc.html#ac88a915a7f4cc3099435e39eb9c18b48',1,'reshade::api::resource_view_desc']]],
+  ['left_1046',['left',['../structreshade_1_1api_1_1rect.html#a39d32ba5f2755e689cc7bbff5577b9ed',1,'reshade::api::rect::left()'],['../structreshade_1_1api_1_1subresource__box.html#a59bbf3652275d854aa65b0f437ed52a2',1,'reshade::api::subresource_box::left()']]],
+  ['level_5fcount_1047',['level_count',['../structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43',1,'reshade::api::resource_view_desc']]],
+  ['levels_1048',['levels',['../structreshade_1_1api_1_1resource__desc.html#a6de7bc82494f15a4cdf3f75fc1a0a46a',1,'reshade::api::resource_desc']]],
+  ['load_5fop_1049',['load_op',['../structreshade_1_1api_1_1render__pass__render__target__desc.html#aa841b5c7e2f69bc0c84140156974c4c7',1,'reshade::api::render_pass_render_target_desc']]],
+  ['location_1050',['location',['../structreshade_1_1api_1_1input__element.html#a659edfe5da82d9634968ca52c5298f1a',1,'reshade::api::input_element']]],
+  ['logic_5fop_1051',['logic_op',['../structreshade_1_1api_1_1blend__desc.html#a9dc70536a1edb05dc531a3a2deb1693f',1,'reshade::api::blend_desc']]],
+  ['logic_5fop_5fenable_1052',['logic_op_enable',['../structreshade_1_1api_1_1blend__desc.html#a19e4e6b554e493db02ec710df5657755',1,'reshade::api::blend_desc']]]
 ];

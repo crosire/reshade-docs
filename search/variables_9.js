@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['layer_5fcount_1065',['layer_count',['../structreshade_1_1api_1_1resource__view__desc.html#ac88a915a7f4cc3099435e39eb9c18b48',1,'reshade::api::resource_view_desc']]],
-  ['layout_1066',['layout',['../structreshade_1_1api_1_1pipeline__desc.html#ad08495bd06266870bd5ed1c5d5d4d3eb',1,'reshade::api::pipeline_desc']]],
-  ['left_1067',['left',['../structreshade_1_1api_1_1rect.html#a39d32ba5f2755e689cc7bbff5577b9ed',1,'reshade::api::rect::left()'],['../structreshade_1_1api_1_1subresource__box.html#a59bbf3652275d854aa65b0f437ed52a2',1,'reshade::api::subresource_box::left()']]],
-  ['level_5fcount_1068',['level_count',['../structreshade_1_1api_1_1resource__view__desc.html#a4c4d95110305f52a8523390bf6205f43',1,'reshade::api::resource_view_desc']]],
-  ['levels_1069',['levels',['../structreshade_1_1api_1_1resource__desc.html#a6de7bc82494f15a4cdf3f75fc1a0a46a',1,'reshade::api::resource_desc']]],
-  ['load_5fop_1070',['load_op',['../structreshade_1_1api_1_1render__pass__render__target__desc.html#aa841b5c7e2f69bc0c84140156974c4c7',1,'reshade::api::render_pass_render_target_desc']]],
-  ['location_1071',['location',['../structreshade_1_1api_1_1input__element.html#a659edfe5da82d9634968ca52c5298f1a',1,'reshade::api::input_element']]],
-  ['logic_5fop_1072',['logic_op',['../structreshade_1_1api_1_1blend__desc.html#a9dc70536a1edb05dc531a3a2deb1693f',1,'reshade::api::blend_desc']]],
-  ['logic_5fop_5fenable_1073',['logic_op_enable',['../structreshade_1_1api_1_1blend__desc.html#a19e4e6b554e493db02ec710df5657755',1,'reshade::api::blend_desc']]]
+  ['max_5fanisotropy_1053',['max_anisotropy',['../structreshade_1_1api_1_1sampler__desc.html#a96469a14cf98300bedecf83bd22e0c57',1,'reshade::api::sampler_desc']]],
+  ['max_5fdepth_1054',['max_depth',['../structreshade_1_1api_1_1viewport.html#ae6e19ca376c5d354c44c9b8f2a572991',1,'reshade::api::viewport']]],
+  ['max_5flod_1055',['max_lod',['../structreshade_1_1api_1_1sampler__desc.html#a2c89ccde9aea2adfb411bf277a79f11c',1,'reshade::api::sampler_desc']]],
+  ['min_5fdepth_1056',['min_depth',['../structreshade_1_1api_1_1viewport.html#a2b00bffb1a100af4c0df939de5d0dce2',1,'reshade::api::viewport']]],
+  ['min_5flod_1057',['min_lod',['../structreshade_1_1api_1_1sampler__desc.html#a6a97f6b326c327da780b841f360531a0',1,'reshade::api::sampler_desc']]],
+  ['mip_5flod_5fbias_1058',['mip_lod_bias',['../structreshade_1_1api_1_1sampler__desc.html#a1b52e338119dadb8487fc4240f2f0fcf',1,'reshade::api::sampler_desc']]],
+  ['multisample_5fenable_1059',['multisample_enable',['../structreshade_1_1api_1_1rasterizer__desc.html#a31aabc12733f78706739b24f71fee2ae',1,'reshade::api::rasterizer_desc']]]
 ];

@@ -186,6 +186,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::bind_vertex_buffers &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::bind_stream_output_buffers &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::draw &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::draw_indexed &gt;</b></td></tr>
@@ -224,6 +226,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reset_command_list &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::close_command_list &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::execute_command_list &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::execute_secondary_command_list &gt;</b></td></tr>
@@ -240,7 +244,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_uniform_value &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_technique_enabled &gt;</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_technique_state &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -309,41 +313,44 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfae57ceb034a5e4b9b91e5bdd0d5239d1f">bind_descriptor_sets</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa19a4f637b2ebbbd4c2fee7fd98ccd593">bind_index_buffer</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa5bd667ff1d3e8e790e8a561cdbecf460">bind_vertex_buffers</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa817491bc777731f0f0c6e485f28e4d86">draw</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfae9e19bfe4d21f74acc5370a1fa9b3f46">bind_stream_output_buffers</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa817491bc777731f0f0c6e485f28e4d86">draw</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa9dddf2a4f7d94594ec2ea98407a410e1">dispatch</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa60f6e59e82570d137160b1441acb473e">copy_resource</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa60f6e59e82570d137160b1441acb473e">copy_resource</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa4ebf42358198546667376f080fadd527">copy_texture_to_buffer</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa4ebf42358198546667376f080fadd527">copy_texture_to_buffer</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa148388d5a5ef8f4fc725bfb3ceb87e75">clear_render_target_view</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa627ab3110236aee8fdd14b724bd0c918">clear_unordered_access_view_uint</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa627ab3110236aee8fdd14b724bd0c918">clear_unordered_access_view_uint</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa566fdc58bbbfe166bca2402eaf4e289e">begin_query</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaa2b081b43d883190dab6a9b7c88b8840">end_query</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaa292dfd59680988598edc50e2f1e4c88">copy_query_pool_results</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaa2b081b43d883190dab6a9b7c88b8840">end_query</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfaa292dfd59680988598edc50e2f1e4c88">copy_query_pool_results</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa47ed49958e2500d72e305f85ed316c91">present</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa47ed49958e2500d72e305f85ed316c91">present</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
+, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
 , <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
-, <a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfac37289d0563a4163bfd815e94464e13b">reshade_set_technique_enabled</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#ade35954538c5f2529c2170104f9f5dbfa152e970f4d55f18e729d66d00ca1c444">reshade_set_technique_state</a>
 <br />
  }</td></tr>
 <tr class="separator:ade35954538c5f2529c2170104f9f5dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1172,13 +1179,15 @@ ID3D12Device::CreateComputePipelineState </li>
 <li>
 ID3D12Device::CreateGraphicsPipelineState </li>
 <li>
+ID3D12Device2::CreatePipelineState </li>
+<li>
 glLinkProgram </li>
 <li>
 vkCreateComputePipelines </li>
 <li>
 vkCreateGraphicsPipelines </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, const <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html" title="Describes a pipeline state object.">api::pipeline_desc</a> &amp;desc, uint32_t dynamic_state_count, const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9" title="A list of all possible render pipeline states that can be set independent of pipeline state objects.">api::dynamic_state</a> *dynamic_states, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html" title="Describes a pipeline sub-object.">api::pipeline_subobject</a> *subobjects, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
 <p>May be called multiple times with the same pipeline handle (whenever the pipeline is updated or its reference count is incremented). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfaf5e25b252edd1495a86264c53d2dc4a9"></a>create_pipeline&#160;</td><td class="fielddoc"><p>Called on pipeline creation, before: </p><ul>
@@ -1239,13 +1248,15 @@ ID3D12Device::CreateComputePipelineState </li>
 <li>
 ID3D12Device::CreateGraphicsPipelineState </li>
 <li>
+ID3D12Device2::CreatePipelineState </li>
+<li>
 glShaderSource </li>
 <li>
 vkCreateComputePipelines </li>
 <li>
 vkCreateGraphicsPipelines </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html" title="Describes a pipeline state object.">api::pipeline_desc</a> &amp;desc, uint32_t dynamic_state_count, const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9" title="A list of all possible render pipeline states that can be set independent of pipeline state objects.">api::dynamic_state</a> *dynamic_states)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html" title="Describes a pipeline sub-object.">api::pipeline_subobject</a> *subobjects)</code></p>
 <p>To overwrite the pipeline description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfab7ae7557e06d4f07955aecbd74076d11"></a>destroy_pipeline&#160;</td><td class="fielddoc"><p>Called on pipeline destruction, before: </p><ul>
@@ -1422,6 +1433,8 @@ IDirect3DDevice9::SetPixelShader </li>
 <li>
 IDirect3DDevice9::SetVertexDeclaration </li>
 <li>
+IDirect3DDevice9::ProcessVertices </li>
+<li>
 ID3D10Device::VSSetShader </li>
 <li>
 ID3D10Device::GSSetShader </li>
@@ -1464,7 +1477,7 @@ glUseProgram </li>
 <li>
 vkCmdBindPipeline </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037" title="A list of flags that represent the available pipeline stages in the render pipeline.">api::pipeline_stage</a> type, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037" title="A list of flags that represent the available pipeline stages in the render pipeline.">api::pipeline_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa1bbbb486e0b6eb11d8804470441d077f"></a>bind_pipeline_states&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1702,11 +1715,35 @@ vkCmdBindVertexBuffers </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint32_t *strides)</code></p>
 </td></tr>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfae9e19bfe4d21f74acc5370a1fa9b3f46"></a>bind_stream_output_buffers&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
+<li>
+IDirect3DDevice9::ProcessVertices </li>
+<li>
+ID3D10Device::SOSetTargets </li>
+<li>
+ID3D11DeviceContext::SOSetTargets </li>
+<li>
+ID3D12GraphicsCommandList::SOSetTargets </li>
+<li>
+glBindBufferBase </li>
+<li>
+glBindBufferRange </li>
+<li>
+glBindBuffersBase </li>
+<li>
+glBindBuffersRange </li>
+<li>
+vkCmdBindTransformFeedbackBuffersEXT </li>
+</ul>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes)</code></p>
+</td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa817491bc777731f0f0c6e485f28e4d86"></a>draw&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
 IDirect3DDevice9::DrawPrimitive </li>
 <li>
 IDirect3DDevice9::DrawPrimitiveUP </li>
+<li>
+IDirect3DDevice9::ProcessVertices </li>
 <li>
 ID3D10Device::Draw </li>
 <li>
@@ -2040,6 +2077,16 @@ vkBeginCommandBuffer </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa3338cdcfc48cc06ab2a12754ef8f0b21"></a>close_command_list&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
+<li>
+ID3D11DeviceContext::FinishCommandList </li>
+<li>
+ID3D12GraphicsCommandList::Close </li>
+<li>
+vkEndCommandBuffer </li>
+</ul>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
+</td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa18cc3997f77dab4af507a3cfa891ee60"></a>execute_command_list&#160;</td><td class="fielddoc"><p>Called when a command list is submitted to a command queue, before: </p><ul>
 <li>
 ID3D11DeviceContext::ExecuteCommandList </li>
@@ -2082,10 +2129,10 @@ vkQueuePresentKHR </li>
 <li>
 IVRCompositor::Submit </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *source_rect, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dest_rect, uint32_t dirty_rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dirty_rects)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa0debd9c686ef45c9de4971096cc33498"></a>reshade_present&#160;</td><td class="fielddoc"><p>Called after ReShade has rendered its overlay. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa493e32cfe5b57c202fdd8f0c3e3cee1f"></a>reshade_begin_effects&#160;</td><td class="fielddoc"><p>Called right before ReShade effects are rendered. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
@@ -2100,7 +2147,7 @@ IVRCompositor::Submit </li>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html" title="An opaque handle to a uniform variable in an effect.">api::effect_uniform_variable</a> variable, const void *data, size_t size)</code></p>
 <p>To prevent the variable from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfac37289d0563a4163bfd815e94464e13b"></a>reshade_set_technique_enabled&#160;</td><td class="fielddoc"><p>Called before a technique is enabled or disabled. </p>
+<tr><td class="fieldname"><a id="ade35954538c5f2529c2170104f9f5dbfa152e970f4d55f18e729d66d00ca1c444"></a>reshade_set_technique_state&#160;</td><td class="fielddoc"><p>Called before a technique is enabled or disabled. </p>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, bool enabled)</code></p>
 <p>To prevent the technique from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>

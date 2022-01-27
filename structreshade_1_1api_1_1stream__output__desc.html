@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ReShade: Class Members</title>
+<title>ReShade: reshade::api::stream_output_desc Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,7 +47,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,26 +61,52 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1stream__output__desc.html">stream_output_desc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structreshade_1_1api_1_1stream__output__desc-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">reshade::api::stream_output_desc Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>texture
-: <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a595a03969a3e92ef8a5788bc1b2edffe">reshade::api::resource_desc</a>
-, <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#aa6f7e43110baa0495d0a2c5d2f4de6d1">reshade::api::resource_view_desc</a>
-</li>
-<li>top
-: <a class="el" href="structreshade_1_1api_1_1rect.html#a263c1e40f85e7de56db14179068879a9">reshade::api::rect</a>
-, <a class="el" href="structreshade_1_1api_1_1subresource__box.html#a832b83e67fd0db4c5a40eb1616eb8143">reshade::api::subresource_box</a>
-</li>
-<li>type
-: <a class="el" href="structreshade_1_1api_1_1descriptor__range.html#afb651e4ed20fffd6e869e6de6af989ec">reshade::api::descriptor_range</a>
-, <a class="el" href="structreshade_1_1api_1_1descriptor__set__update.html#a80cef2fa754458a75ebe7976667a819f">reshade::api::descriptor_set_update</a>
-, <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html#a25c6a56ecce5abdd050be884b51d0b75">reshade::api::pipeline_layout_param</a>
-, <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html#afebca22e69dd34805ede11d0dc940505">reshade::api::pipeline_subobject</a>
-, <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a546dc487a4ee624a775c92f7720b4ed4">reshade::api::resource_desc</a>
-, <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html#a9cceb53085c459566dac4047261746fc">reshade::api::resource_view_desc</a>
-</li>
+<p>Describes the state of the stream-output stage.  
+ <a href="structreshade_1_1api_1_1stream__output__desc.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aaa4d2c2b5bfe082e187ccf64ec1f8247"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1stream__output__desc.html#aaa4d2c2b5bfe082e187ccf64ec1f8247">rasterized_stream</a></td></tr>
+<tr class="memdesc:aaa4d2c2b5bfe082e187ccf64ec1f8247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the stream output stream to be sent to the rasterizer stage.  <a href="structreshade_1_1api_1_1stream__output__desc.html#aaa4d2c2b5bfe082e187ccf64ec1f8247">More...</a><br /></td></tr>
+<tr class="separator:aaa4d2c2b5bfe082e187ccf64ec1f8247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes the state of the stream-output stage. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaa4d2c2b5bfe082e187ccf64ec1f8247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4d2c2b5bfe082e187ccf64ec1f8247">&#9670;&nbsp;</a></span>rasterized_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reshade::api::stream_output_desc::rasterized_stream</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index of the stream output stream to be sent to the rasterizer stage. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

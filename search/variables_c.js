@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['pixel_5fshader_1082',['pixel_shader',['../structreshade_1_1api_1_1pipeline__desc.html#a3d379121eef81f0d3a32edbfc2ec386b',1,'reshade::api::pipeline_desc']]],
-  ['pixel_5fshader_5finvocations_1083',['pixel_shader_invocations',['../structreshade_1_1api_1_1pipeline__statistics.html#a65eb18605146e63f8db6f172411eb74f',1,'reshade::api::pipeline_statistics']]],
-  ['push_5fconstants_1084',['push_constants',['../structreshade_1_1api_1_1pipeline__layout__param.html#af64096c509a6ad821de8b6ff944bd9e0',1,'reshade::api::pipeline_layout_param']]],
-  ['push_5fdescriptors_1085',['push_descriptors',['../structreshade_1_1api_1_1pipeline__layout__param.html#a019f43c5c0edb2f9919d967288c322cb',1,'reshade::api::pipeline_layout_param']]]
+  ['ranges_1063',['ranges',['../structreshade_1_1api_1_1pipeline__layout__param.html#a384b521d52c68cfe0112a8d6afb1f1a3',1,'reshade::api::pipeline_layout_param']]],
+  ['rasterized_5fstream_1064',['rasterized_stream',['../structreshade_1_1api_1_1stream__output__desc.html#aaa4d2c2b5bfe082e187ccf64ec1f8247',1,'reshade::api::stream_output_desc']]],
+  ['render_5ftarget_5fwrite_5fmask_1065',['render_target_write_mask',['../structreshade_1_1api_1_1blend__desc.html#aa60429daeccfd10f1e237996571bc4ab',1,'reshade::api::blend_desc']]],
+  ['right_1066',['right',['../structreshade_1_1api_1_1rect.html#a497b7be13a8d4c61371b6e898f8b9d34',1,'reshade::api::rect::right()'],['../structreshade_1_1api_1_1subresource__box.html#a1fd34c6ac3d7f0090707bc3574ad7b12',1,'reshade::api::subresource_box::right()']]],
+  ['row_5fpitch_1067',['row_pitch',['../structreshade_1_1api_1_1subresource__data.html#ac7aa0764dcf2319c9493a36f4036100c',1,'reshade::api::subresource_data']]]
 ];

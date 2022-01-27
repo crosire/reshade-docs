@@ -145,11 +145,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">update_texture_region</a> (const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, uint32_t subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *box=nullptr)=0</td></tr>
 <tr class="memdesc:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a texture resource.  <a href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">More...</a><br /></td></tr>
 <tr class="separator:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a672cf33a670ee07bd01b4c7238919177"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177">create_pipeline</a> (const <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html">pipeline_desc</a> &amp;desc, uint32_t dynamic_state_count, const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> *dynamic_states, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *out_handle)=0</td></tr>
-<tr class="memdesc:a672cf33a670ee07bd01b4c7238919177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline state object.  <a href="structreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177">More...</a><br /></td></tr>
-<tr class="separator:a672cf33a670ee07bd01b4c7238919177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b7e653153a8c04faa02dd078ad8791"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791">create_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html">pipeline_subobject</a> *subobjects, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *out_handle)=0</td></tr>
+<tr class="memdesc:af4b7e653153a8c04faa02dd078ad8791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline state object.  <a href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791">More...</a><br /></td></tr>
+<tr class="separator:af4b7e653153a8c04faa02dd078ad8791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f7a9ea9083f19d8043fd426b5ed446"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446">destroy_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> handle)=0</td></tr>
-<tr class="memdesc:a37f7a9ea9083f19d8043fd426b5ed446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177" title="Creates a new pipeline state object.">create_pipeline</a>.  <a href="structreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446">More...</a><br /></td></tr>
+<tr class="memdesc:a37f7a9ea9083f19d8043fd426b5ed446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791" title="Creates a new pipeline state object.">create_pipeline</a>.  <a href="structreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446">More...</a><br /></td></tr>
 <tr class="separator:a37f7a9ea9083f19d8043fd426b5ed446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc428a980b8d2537aa4040ae4ee338b0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0">create_pipeline_layout</a> (uint32_t param_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> *params, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> *out_handle)=0</td></tr>
 <tr class="memdesc:adc428a980b8d2537aa4040ae4ee338b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline layout.  <a href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0">More...</a><br /></td></tr>
@@ -485,8 +485,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a672cf33a670ee07bd01b4c7238919177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a672cf33a670ee07bd01b4c7238919177">&#9670;&nbsp;</a></span>create_pipeline()</h2>
+<a id="af4b7e653153a8c04faa02dd078ad8791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b7e653153a8c04faa02dd078ad8791">&#9670;&nbsp;</a></span>create_pipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,20 +497,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool reshade::api::device::create_pipeline </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1pipeline__desc.html">pipeline_desc</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em>, </td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a>&#160;</td>
+          <td class="paramname"><em>layout</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dynamic_state_count</em>, </td>
+          <td class="paramname"><em>subobject_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> *&#160;</td>
-          <td class="paramname"><em>dynamic_states</em>, </td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html">pipeline_subobject</a> *&#160;</td>
+          <td class="paramname"><em>subobjects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -534,10 +534,10 @@ Public Member Functions</h2></td></tr>
 <p>Creates a new pipeline state object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">desc</td><td>Description of the pipeline state object to create.</td></tr>
-    <tr><td class="paramname">dynamic_state_count</td><td>Number of dynamic pipeline states.</td></tr>
-    <tr><td class="paramname">dynamic_states</td><td>Optional pointer to an array of pipeline states that may be dynamically updated via <a class="el" href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928" title="Updates the specfified pipeline states  to the specified values . This is only valid for states that ...">command_list::bind_pipeline_states</a> after binding the created pipeline state object.</td></tr>
     <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created pipeline state object.</td></tr>
+    <tr><td class="paramname">layout</td><td>Pipeline layout to use.</td></tr>
+    <tr><td class="paramname">subobject_count</td><td>Number of sub-objects.</td></tr>
+    <tr><td class="paramname">subobjects</td><td>Pointer to an array of sub-objects that describe this pipeline.</td></tr>
   </table>
   </dd>
 </dl>
@@ -848,7 +848,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a672cf33a670ee07bd01b4c7238919177" title="Creates a new pipeline state object.">create_pipeline</a>. </p>
+<p>Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791" title="Creates a new pipeline state object.">create_pipeline</a>. </p>
 
 </div>
 </div>

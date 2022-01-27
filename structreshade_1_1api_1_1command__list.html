@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72b5bd17b2cb03863913efda6e01d972"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">bind_render_targets_and_depth_stencil</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *rtvs, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv={ 0 })=0</td></tr>
 <tr class="memdesc:a72b5bd17b2cb03863913efda6e01d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="structreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a> and <a class="el" href="structreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>.  <a href="structreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972">More...</a><br /></td></tr>
 <tr class="separator:a72b5bd17b2cb03863913efda6e01d972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">bind_pipeline</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> type, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>)=0</td></tr>
-<tr class="memdesc:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#a95a1f846cbf1a3bfeafbe3a33e06f659">More...</a><br /></td></tr>
-<tr class="separator:a95a1f846cbf1a3bfeafbe3a33e06f659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc22fd6a89454e4ac11497d8290e1b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#abbc22fd6a89454e4ac11497d8290e1b2">bind_pipeline</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>)=0</td></tr>
+<tr class="memdesc:abbc22fd6a89454e4ac11497d8290e1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#abbc22fd6a89454e4ac11497d8290e1b2">More...</a><br /></td></tr>
+<tr class="separator:abbc22fd6a89454e4ac11497d8290e1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804b3aa8c3f0e465e98762c27fc75798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798">bind_pipeline_state</a> (<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> state, uint32_t value)</td></tr>
 <tr class="memdesc:a804b3aa8c3f0e465e98762c27fc75798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>state</em>  to the specified <em>value</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798">More...</a><br /></td></tr>
 <tr class="separator:a804b3aa8c3f0e465e98762c27fc75798"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a199bb68035b8cc0a70b3335d8eea545d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d">bind_vertex_buffers</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *buffers, const uint64_t *offsets, const uint32_t *strides)=0</td></tr>
 <tr class="memdesc:a199bb68035b8cc0a70b3335d8eea545d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of vertex buffers to the input-assembler stage.  <a href="structreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d">More...</a><br /></td></tr>
 <tr class="separator:a199bb68035b8cc0a70b3335d8eea545d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f18132c48b6d5361f2b9e88218b59c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a3f18132c48b6d5361f2b9e88218b59c3">bind_stream_output_buffers</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes)=0</td></tr>
+<tr class="memdesc:a3f18132c48b6d5361f2b9e88218b59c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of buffers to the stream-output stage.  <a href="structreshade_1_1api_1_1command__list.html#a3f18132c48b6d5361f2b9e88218b59c3">More...</a><br /></td></tr>
+<tr class="separator:a3f18132c48b6d5361f2b9e88218b59c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1979928ce2b057d783fab63efab846b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a1979928ce2b057d783fab63efab846b0">draw</a> (uint32_t vertex_count, uint32_t instance_count, uint32_t first_vertex, uint32_t first_instance)=0</td></tr>
 <tr class="memdesc:a1979928ce2b057d783fab63efab846b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws non-indexed primitives.  <a href="structreshade_1_1api_1_1command__list.html#a1979928ce2b057d783fab63efab846b0">More...</a><br /></td></tr>
 <tr class="separator:a1979928ce2b057d783fab63efab846b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -675,8 +678,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a95a1f846cbf1a3bfeafbe3a33e06f659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a1f846cbf1a3bfeafbe3a33e06f659">&#9670;&nbsp;</a></span>bind_pipeline()</h2>
+<a id="abbc22fd6a89454e4ac11497d8290e1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc22fd6a89454e4ac11497d8290e1b2">&#9670;&nbsp;</a></span>bind_pipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -688,7 +691,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::command_list::bind_pipeline </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramname"><em>stages</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -712,7 +715,7 @@ Public Member Functions</h2></td></tr>
 <p>Binds a pipeline state object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Pipeline stage to bind the pipeline state object to.</td></tr>
+    <tr><td class="paramname">stages</td><td>Pipeline stages to update with state from the pipeline state object.</td></tr>
     <tr><td class="paramname">pipeline</td><td>Pipeline state object to bind.</td></tr>
   </table>
   </dd>
@@ -922,6 +925,72 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3f18132c48b6d5361f2b9e88218b59c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f18132c48b6d5361f2b9e88218b59c3">&#9670;&nbsp;</a></span>bind_stream_output_buffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::command_list::bind_stream_output_buffers </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t *&#160;</td>
+          <td class="paramname"><em>offsets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t *&#160;</td>
+          <td class="paramname"><em>max_sizes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds an array of buffers to the stream-output stage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>First stream-output slot for binding.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of stream-output targets to bind.</td></tr>
+    <tr><td class="paramname">buffers</td><td>Pointer to an array of buffer resources. These resources must have been created with the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ae87dd9ecbaae1056b5941e6e1f4645a1">resource_usage::stream_output</a> usage.</td></tr>
+    <tr><td class="paramname">offsets</td><td>Pointer to an array of offset values, one for each buffer. Each offset is the number of bytes from the start of the buffer to the first element to write to.</td></tr>
+    <tr><td class="paramname">max_sizes</td><td>Optional pointer to an array of size values, one for each buffer. Can be <code>nullptr</code> or have elements set to UINT64_MAX to use the entire buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8618e997b035a86daa8c7c9357af90a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8618e997b035a86daa8c7c9357af90a6">&#9670;&nbsp;</a></span>bind_vertex_buffer()</h2>
 
@@ -1039,8 +1108,8 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">first</td><td>First input slot for binding.</td></tr>
     <tr><td class="paramname">count</td><td>Number of vertex buffers to bind.</td></tr>
     <tr><td class="paramname">buffers</td><td>Pointer to an array of vertex buffer resources. These resources must have been created with the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9a89a832efcc2557585b289cc295f7f5">resource_usage::vertex_buffer</a> usage.</td></tr>
-    <tr><td class="paramname">offsets</td><td>Pointer to an array of offset values, with one for each buffer in <em>buffers</em> . Each offset is the number of bytes from the start of the vertex buffer to the first vertex element to use.</td></tr>
-    <tr><td class="paramname">strides</td><td>Pointer to an array of stride values, with one for each buffer in <em>strides</em> . Each stride is the size (in bytes) of the vertex element that will be used from that vertex buffer (is added to an element offset to advance to the next).</td></tr>
+    <tr><td class="paramname">offsets</td><td>Pointer to an array of offset values, one for each buffer. Each offset is the number of bytes from the start of the vertex buffer to the first vertex element to use.</td></tr>
+    <tr><td class="paramname">strides</td><td>Pointer to an array of stride values, one for each buffer. Each stride is the size (in bytes) of the vertex element that will be used from that vertex buffer (is added to an element offset to advance to the next).</td></tr>
   </table>
   </dd>
 </dl>
