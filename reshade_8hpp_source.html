@@ -73,7 +73,7 @@ $(function() {
 <div class="contents">
 <a href="reshade_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2021 Patrick Mours</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * License: https://github.com/crosire/reshade#license</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * SPDX-License-Identifier: BSD-3-Clause OR MIT</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
@@ -83,7 +83,7 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;charconv&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="reshade_8hpp.html#a974030b932e8959bbb3ebe9e47f8a1b0">   13</a></span>&#160;<span class="preprocessor">#define RESHADE_API_VERSION 1</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="reshade_8hpp.html#a974030b932e8959bbb3ebe9e47f8a1b0">   13</a></span>&#160;<span class="preprocessor">#define RESHADE_API_VERSION 2</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="comment">// Use the kernel32 variant of module enumeration functions so it can be safely called from &#39;DllMain&#39;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9">   16</a></span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> BOOL WINAPI <a class="code" href="reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9">K32EnumProcessModules</a>(HANDLE hProcess, HMODULE *lphModule, DWORD cb, LPDWORD lpcbNeeded);</div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">char</span> value_string[32] = <span class="stringliteral">&quot;&quot;</span>; <span class="keywordtype">size_t</span> value_length = <span class="keyword">sizeof</span>(value_string) - 1;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">config_get_value</a>(runtime, section, key, value_string, &amp;value_length))</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> std::from_chars(value_string, value_string + value_length, value).ec != std::errc();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> std::from_chars(value_string, value_string + value_length, value).ec == std::errc {};</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="namespacereshade.html#ae6f79046e8a75504a24fb869fc8d3d43">   96</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacereshade.html#ae6f79046e8a75504a24fb869fc8d3d43">config_get_value&lt;bool&gt;</a>(<a class="code" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, <span class="keyword">const</span> <span class="keywordtype">char</span> *section, <span class="keyword">const</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">bool</span> &amp;value)</div>

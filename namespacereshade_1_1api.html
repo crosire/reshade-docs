@@ -412,6 +412,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:adbd317502610c902e7097163f5a9bb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available data and texture formats. This is mostly compatible with 'DXGI_FORMAT'.  <a href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">More...</a><br /></td></tr>
 <tr class="separator:adbd317502610c902e7097163f5a9bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3d450b53804612b18ec38edffa10e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a">unknown</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a854525ea125c8aa2c118e3c980840309">srgb_nonlinear</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2e1bd279fd321004766c44c326adc676">extended_srgb_linear</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7af0f35dd538a8bc039e81e72b7b1a201c">hdr10_st2084</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe">hdr10_hlg</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a8f3d450b53804612b18ec38edffa10e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available color space types for presentation.  <a href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">More...</a><br /></td></tr>
+<tr class="separator:a8f3d450b53804612b18ec38edffa10e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea2b5bc093b09bd81f51de433bde9d202a">vertex</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea1947b668c33bedc07d0ce26418b262c6">hull</a>
@@ -641,6 +652,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a0188f3f091ff883d0c9bf4fd73e8f6af">sample_count</a>
 , <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a07d5b26ee0fc0e6054bc538e334d9dcf">viewport_count</a>
 , <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a56009880edb86cf5e2b83dc674625123">dynamic_pipeline_states</a>
+, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0af3da839a1a1e724c58fa27e71ac515ee">max_vertex_count</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a19a6ecfd7f40581e1b59a1f71ba061e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline sub-object types.  <a href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0">More...</a><br /></td></tr>
@@ -867,13 +879,13 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a76b8af40b571deeadfdd39d7934ac4e0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0">render_pass_load_op</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0aec4d1eb36b22d19728e9d1d23ca84d1c">load</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a01bc6f8efa4202821e95f4fdf6298b30">clear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a70f68bb2f748b85de6526bfe236ea1e9">discard</a>
-, <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0abe7bbe0cf3947e795861f1fa966bab58">dont_care</a>
+, <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a1f10cb8847408f7122a1c4bfdc2d85ee">no_access</a>
  }</td></tr>
 <tr class="memdesc:a76b8af40b571deeadfdd39d7934ac4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how the contents of a render target or depth-stencil view are treated at the start of a render pass.  <a href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0">More...</a><br /></td></tr>
 <tr class="separator:a76b8af40b571deeadfdd39d7934ac4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308904edbcf77033d864f59e485d8264"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264">render_pass_store_op</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264a8cd892b7b97ef9489ae4479d3f4ef0fc">store</a>
 , <a class="el" href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264a70f68bb2f748b85de6526bfe236ea1e9">discard</a>
-, <a class="el" href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264abe7bbe0cf3947e795861f1fa966bab58">dont_care</a>
+, <a class="el" href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264a1f10cb8847408f7122a1c4bfdc2d85ee">no_access</a>
  }</td></tr>
 <tr class="memdesc:a308904edbcf77033d864f59e485d8264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how the contents of a render target or depth-stencil view are treated at the end of a render pass.  <a href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264">More...</a><br /></td></tr>
 <tr class="separator:a308904edbcf77033d864f59e485d8264"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1187,6 +1199,37 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a2564182ea0455f1640c124d18814a272ae6f7f3d18ec49e9285059f6f75d8e436"></a>reverse_subtract&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2564182ea0455f1640c124d18814a272ad8bd79cc131920d5de426f914d17405a"></a>min&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2564182ea0455f1640c124d18814a272a2ffe4e77325d9a7152f7086ea7aa5114"></a>max&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8f3d450b53804612b18ec38edffa10e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3d450b53804612b18ec38edffa10e7">&#9670;&nbsp;</a></span>color_space</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">reshade::api::color_space</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The available color space types for presentation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a854525ea125c8aa2c118e3c980840309"></a>srgb_nonlinear&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a2e1bd279fd321004766c44c326adc676"></a>extended_srgb_linear&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7af0f35dd538a8bc039e81e72b7b1a201c"></a>hdr10_st2084&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe"></a>hdr10_hlg&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1994,6 +2037,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a56009880edb86cf5e2b83dc674625123"></a>dynamic_pipeline_states&#160;</td><td class="fielddoc"><p>States that may be dynamically updated via <a class="el" href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928" title="Updates the specfified pipeline states  to the specified values . This is only valid for states that ...">command_list::bind_pipeline_states</a> after binding this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9" title="A list of all possible render pipeline states that can be set independent of pipeline state objects.">dynamic_state</a> values. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0af3da839a1a1e724c58fa27e71ac515ee"></a>max_vertex_count&#160;</td><td class="fielddoc"><p>Maximum number of vertices a draw call with this pipeline will draw. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2126,7 +2171,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a76b8af40b571deeadfdd39d7934ac4e0aec4d1eb36b22d19728e9d1d23ca84d1c"></a>load&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a76b8af40b571deeadfdd39d7934ac4e0a01bc6f8efa4202821e95f4fdf6298b30"></a>clear&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a76b8af40b571deeadfdd39d7934ac4e0a70f68bb2f748b85de6526bfe236ea1e9"></a>discard&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a76b8af40b571deeadfdd39d7934ac4e0abe7bbe0cf3947e795861f1fa966bab58"></a>dont_care&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a76b8af40b571deeadfdd39d7934ac4e0a1f10cb8847408f7122a1c4bfdc2d85ee"></a>no_access&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2155,7 +2200,7 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a308904edbcf77033d864f59e485d8264a8cd892b7b97ef9489ae4479d3f4ef0fc"></a>store&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a308904edbcf77033d864f59e485d8264a70f68bb2f748b85de6526bfe236ea1e9"></a>discard&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a308904edbcf77033d864f59e485d8264abe7bbe0cf3947e795861f1fa966bab58"></a>dont_care&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a308904edbcf77033d864f59e485d8264a1f10cb8847408f7122a1c4bfdc2d85ee"></a>no_access&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
