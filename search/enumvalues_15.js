@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['x24_5funorm_5fg8_5fuint_1632',['x24_unorm_g8_uint',['../namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aec289696ea794abe20cbf7777bedbe6d',1,'reshade::api']]],
-  ['x32_5ffloat_5fg8_5fuint_1633',['x32_float_g8_uint',['../namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aa3e6f4284db57bd343dc6bcef42b507f',1,'reshade::api']]]
+  ['wireframe_1642',['wireframe',['../namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c',1,'reshade::api']]],
+  ['wrap_1643',['wrap',['../namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4eaccfc59a528a109fa4204e8ea06e8b68b',1,'reshade::api']]],
+  ['write_5fdiscard_1644',['write_discard',['../namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f',1,'reshade::api']]],
+  ['write_5fonly_1645',['write_only',['../namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a2629564984b808cf7e6cfc61a0286d69',1,'reshade::api']]]
 ];

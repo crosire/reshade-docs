@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['vertex_1623',['vertex',['../namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea2b5bc093b09bd81f51de433bde9d202a',1,'reshade::api']]],
-  ['vertex_5fbuffer_1624',['vertex_buffer',['../namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9a89a832efcc2557585b289cc295f7f5',1,'reshade::api']]],
-  ['vertex_5fshader_1625',['vertex_shader',['../namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7',1,'reshade::api::vertex_shader()'],['../namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0ad518a62c8c7391ec1b42cab11af3d5b7',1,'reshade::api::vertex_shader()']]],
-  ['viewport_5fcount_1626',['viewport_count',['../namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a07d5b26ee0fc0e6054bc538e334d9dcf',1,'reshade::api']]],
-  ['vulkan_1627',['vulkan',['../namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa8473f19e6529e22157459e75b4cbf485',1,'reshade::api']]]
+  ['undefined_1628',['undefined',['../namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a5e543256c480ac577d30f76f9120eb74',1,'reshade::api::undefined()'],['../namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa5e543256c480ac577d30f76f9120eb74',1,'reshade::api::undefined()']]],
+  ['unknown_1629',['unknown',['../namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95caad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54faad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()'],['../namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a',1,'reshade::api::unknown()']]],
+  ['unmap_5fbuffer_5fregion_1630',['unmap_buffer_region',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aacafbf15ea06e8061b30fb1f4dd040171',1,'reshade']]],
+  ['unmap_5ftexture_5fregion_1631',['unmap_texture_region',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa34549cc0bf687589daa836a2310bf78d',1,'reshade']]],
+  ['unordered_5faccess_1632',['unordered_access',['../namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9d625a0527071357b9b7ba12d608c8cd',1,'reshade::api']]],
+  ['unordered_5faccess_5fview_1633',['unordered_access_view',['../namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a',1,'reshade::api']]],
+  ['update_5fbuffer_5fregion_1634',['update_buffer_region',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa9086e81e0f09156072dd02012308b4e6',1,'reshade']]],
+  ['update_5fdescriptor_5fsets_1635',['update_descriptor_sets',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa06ac05b6d3f4e9964d7700aa6ab2f2aa',1,'reshade']]],
+  ['update_5ftexture_5fregion_1636',['update_texture_region',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa77b7aa9f57b7d2179b93aadb18760da4',1,'reshade']]]
 ];

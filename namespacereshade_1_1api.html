@@ -105,6 +105,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__queue.html">command_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command queue, used to execute command lists on the GPU.  <a href="structreshade_1_1api_1_1command__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html">swapchain_desc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a swap chain and its back buffer resources.  <a href="structreshade_1_1api_1_1swapchain__desc.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html">swapchain</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A swap chain, used to present images to the screen.  <a href="structreshade_1_1api_1_1swapchain.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,84 +582,87 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aae7d7946aa0047daaed3121d34463184f">triangle_list</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa01edf5f1ae6135daec55d230c83d3885">triangle_strip</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa59fbed48ae7f4867148a651f10c7d254">triangle_fan</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa198508c811ed5c90e856d706fe922283">quad_list</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa03b71bf225907a5c75505b5c0e1df6cd">quad_strip</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa7c7112bb8e15834572aa716a4cda6164">line_list_adj</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaeb6fb8c640c26f42d488e8b520d1f32a">line_strip_adj</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaeb6fb8c640c26f42d488e8b520d1f32a">line_strip_adj</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa83ab94d0ea40364f4c9a6ee3c7e2e761">triangle_list_adj</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa0f6cd39bb290a84498f0c09379016235">triangle_strip_adj</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa0f6cd39bb290a84498f0c09379016235">triangle_strip_adj</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa4aa80e9f2f33b54bd5c900e5f6e15111">patch_list_01_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa3a0b69e9864e625f39f825a1dc0c10da">patch_list_02_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa3a0b69e9864e625f39f825a1dc0c10da">patch_list_02_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa5d91cb3c5b86bd3ffb3a35ac057e03c6">patch_list_03_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa98d59afb2c7dc4639c392742801459e8">patch_list_04_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa98d59afb2c7dc4639c392742801459e8">patch_list_04_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa0ad25e4fd70afd99ab5eed961d44e66d">patch_list_05_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aacff193bc4917582772bfd6cb89547118">patch_list_06_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aacff193bc4917582772bfd6cb89547118">patch_list_06_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aadf9f86d6b6514eec9052d3cf83c20429">patch_list_07_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa0cb4cc10d89f7badd811fc094363ba1b">patch_list_08_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa0cb4cc10d89f7badd811fc094363ba1b">patch_list_08_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aab507ed7446957995fd81fed844f0dcac">patch_list_09_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa2c64bdf2ed3cd78b05f059fa067886d4">patch_list_10_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa2c64bdf2ed3cd78b05f059fa067886d4">patch_list_10_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aac42ad65579bc970ddff665a83583c47a">patch_list_11_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa2a72907e789e8835b2cba8c61e842d0b">patch_list_12_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa2a72907e789e8835b2cba8c61e842d0b">patch_list_12_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa940d1f2615172b225d427327e5bd6431">patch_list_13_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa7ee4c815caf989aa6d5efaedb7940eaa">patch_list_14_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa7ee4c815caf989aa6d5efaedb7940eaa">patch_list_14_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa34ead6ea489967bd57657dfadaf4d060">patch_list_15_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa54fac45c213b67be75d5136e96b7f680">patch_list_16_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa54fac45c213b67be75d5136e96b7f680">patch_list_16_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa40170de9b734173b5fe15508c1ed6595">patch_list_17_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa530e3c4a6dd5fccc495dc948e947599c">patch_list_18_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa530e3c4a6dd5fccc495dc948e947599c">patch_list_18_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa500b311d089fdb16f5b3af39938ee372">patch_list_19_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa40ac8f2a93bb929dc4c6c21a3bd8f589">patch_list_20_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa40ac8f2a93bb929dc4c6c21a3bd8f589">patch_list_20_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa3f3410df8009bc5d78f048e2f7cc6857">patch_list_21_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaa3c3c2cbb796de21e9cb87f6727eebbb">patch_list_22_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaa3c3c2cbb796de21e9cb87f6727eebbb">patch_list_22_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa9346583855a7cb4e98607a9fe14f73f7">patch_list_23_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aad488975a7b4eb6547b82666a578a3e3f">patch_list_24_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aad488975a7b4eb6547b82666a578a3e3f">patch_list_24_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa36ae003695a4c2709a0e655d0dc9faf2">patch_list_25_cp</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaf2f46993e4d711b1259121b773ae7197">patch_list_26_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aaf2f46993e4d711b1259121b773ae7197">patch_list_26_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa9c405f831751c94289067e68cef34174">patch_list_27_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aac97ff9fa724f7333e64ed38be1d9a31d">patch_list_28_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aadf7ce49a892ca171ce766b375b75c34d">patch_list_29_cp</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa7e75f2a2e63c54380d24223ad90f8972">patch_list_30_cp</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aac97ff9fa724f7333e64ed38be1d9a31d">patch_list_28_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aadf7ce49a892ca171ce766b375b75c34d">patch_list_29_cp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa7e75f2a2e63c54380d24223ad90f8972">patch_list_30_cp</a>
 , <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa042647ef2354af01a371d472e56b1ecc">patch_list_31_cp</a>
-, <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aac911dda6938babd8ab80ba02c5b7b5d9">patch_list_32_cp</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aac911dda6938babd8ab80ba02c5b7b5d9">patch_list_32_cp</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a311c948b96b180e8e828a9663fcb523a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how the pipeline interprets vertex data that is bound to the vertex input stage and subsequently renders it.  <a href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a">More...</a><br /></td></tr>
 <tr class="separator:a311c948b96b180e8e828a9663fcb523a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a6ecfd7f40581e1b59a1f71ba061e0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0">pipeline_subobject_type</a> { <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0aad921d60486366258809553a3db49a4a">unknown</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0ad518a62c8c7391ec1b42cab11af3d5b7">vertex_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a8eed65ef8eb2ee8071f7c536474e4302">hull_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a6ac0c15df8ea63f803bc4ed2f1d7adc4">domain_shader</a>
+<tr class="memitem:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">pipeline_subobject_type</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a">unknown</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aad518a62c8c7391ec1b42cab11af3d5b7">vertex_shader</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa8eed65ef8eb2ee8071f7c536474e4302">hull_shader</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa6ac0c15df8ea63f803bc4ed2f1d7adc4">domain_shader</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0aa4f11a78f74864cfd78ab5119c3dee7b">geometry_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0ac06071f3aaa47b68b58330ce08d31ff8">pixel_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a3fab409c137d7ba5f6c7cf647a3d3d62">compute_shader</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a799d4a7a00b83276f3550e8f655c14d0">input_layout</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaa4f11a78f74864cfd78ab5119c3dee7b">geometry_shader</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aac06071f3aaa47b68b58330ce08d31ff8">pixel_shader</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa3fab409c137d7ba5f6c7cf647a3d3d62">compute_shader</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa799d4a7a00b83276f3550e8f655c14d0">input_layout</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0af7360c0e9808b9b119382c2839a3dce8">stream_output_state</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a003a3da7f984af5579356078c6084879">blend_state</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a4129a46416ea7dd38fa4872755f13949">rasterizer_state</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0ae1db2ae950bdc9cef978898e180f1a30">depth_stencil_state</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaf7360c0e9808b9b119382c2839a3dce8">stream_output_state</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa003a3da7f984af5579356078c6084879">blend_state</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa4129a46416ea7dd38fa4872755f13949">rasterizer_state</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aae1db2ae950bdc9cef978898e180f1a30">depth_stencil_state</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0aa68468e78da5883715a658f79aacb6cc">primitive_topology</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0af304ab6dd6e7186fcd562bece9e27caa">depth_stencil_format</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0ab4d54ab739b1c037251891e07a365ca4">render_target_formats</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a0323747a7d7d71c6b0f24453641377a0">sample_mask</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaa68468e78da5883715a658f79aacb6cc">primitive_topology</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaf304ab6dd6e7186fcd562bece9e27caa">depth_stencil_format</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aab4d54ab739b1c037251891e07a365ca4">render_target_formats</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa0323747a7d7d71c6b0f24453641377a0">sample_mask</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a0188f3f091ff883d0c9bf4fd73e8f6af">sample_count</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a07d5b26ee0fc0e6054bc538e334d9dcf">viewport_count</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0a56009880edb86cf5e2b83dc674625123">dynamic_pipeline_states</a>
-, <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0af3da839a1a1e724c58fa27e71ac515ee">max_vertex_count</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa0188f3f091ff883d0c9bf4fd73e8f6af">sample_count</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa07d5b26ee0fc0e6054bc538e334d9dcf">viewport_count</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123">dynamic_pipeline_states</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaf3da839a1a1e724c58fa27e71ac515ee">max_vertex_count</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a19a6ecfd7f40581e1b59a1f71ba061e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline sub-object types.  <a href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0">More...</a><br /></td></tr>
-<tr class="separator:a19a6ecfd7f40581e1b59a1f71ba061e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline sub-object types.  <a href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">More...</a><br /></td></tr>
+<tr class="separator:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ac82b069d30cccaca8928394832bf1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a73a6a553fd8c616be53e8c1094f06e8f">occlusion</a>
 , <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a48fdaf72248e2d78f44578f5584ba962">binary_occlusion</a>
@@ -1967,8 +1973,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a19a6ecfd7f40581e1b59a1f71ba061e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a6ecfd7f40581e1b59a1f71ba061e0">&#9670;&nbsp;</a></span>pipeline_subobject_type</h2>
+<a id="ad62e21a3e52b83de83ad42ca5bebbd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62e21a3e52b83de83ad42ca5bebbd6a">&#9670;&nbsp;</a></span>pipeline_subobject_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1977,7 +1983,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacereshade_1_1api.html#a19a6ecfd7f40581e1b59a1f71ba061e0">reshade::api::pipeline_subobject_type</a></td>
+          <td class="memname">enum <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">reshade::api::pipeline_subobject_type</a> : uint32_t</td>
         </tr>
       </table>
   </td>
@@ -1989,55 +1995,55 @@ Functions</h2></td></tr>
 
 <p>The available pipeline sub-object types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0ad518a62c8c7391ec1b42cab11af3d5b7"></a>vertex_shader&#160;</td><td class="fielddoc"><p>Vertex shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aad518a62c8c7391ec1b42cab11af3d5b7"></a>vertex_shader&#160;</td><td class="fielddoc"><p>Vertex shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea2b5bc093b09bd81f51de433bde9d202a">shader_stage::vertex</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7">pipeline_stage::vertex_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a8eed65ef8eb2ee8071f7c536474e4302"></a>hull_shader&#160;</td><td class="fielddoc"><p>Hull shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa8eed65ef8eb2ee8071f7c536474e4302"></a>hull_shader&#160;</td><td class="fielddoc"><p>Hull shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea1947b668c33bedc07d0ce26418b262c6">shader_stage::hull</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a8eed65ef8eb2ee8071f7c536474e4302">pipeline_stage::hull_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a6ac0c15df8ea63f803bc4ed2f1d7adc4"></a>domain_shader&#160;</td><td class="fielddoc"><p>Domain shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa6ac0c15df8ea63f803bc4ed2f1d7adc4"></a>domain_shader&#160;</td><td class="fielddoc"><p>Domain shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eeaad5f82e879a9c5d6b5b442eb37e50551">shader_stage::domain</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a6ac0c15df8ea63f803bc4ed2f1d7adc4">pipeline_stage::domain_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0aa4f11a78f74864cfd78ab5119c3dee7b"></a>geometry_shader&#160;</td><td class="fielddoc"><p>Geometry shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaa4f11a78f74864cfd78ab5119c3dee7b"></a>geometry_shader&#160;</td><td class="fielddoc"><p>Geometry shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eeaed7daeb157cd9b31e53896ad3c771a26">shader_stage::geometry</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037aa4f11a78f74864cfd78ab5119c3dee7b">pipeline_stage::geometry_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0ac06071f3aaa47b68b58330ce08d31ff8"></a>pixel_shader&#160;</td><td class="fielddoc"><p>Pixel shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aac06071f3aaa47b68b58330ce08d31ff8"></a>pixel_shader&#160;</td><td class="fielddoc"><p>Pixel shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eeaab4086ecd47c568d5ba5739d4078988f">shader_stage::pixel</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ac06071f3aaa47b68b58330ce08d31ff8">pipeline_stage::pixel_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a3fab409c137d7ba5f6c7cf647a3d3d62"></a>compute_shader&#160;</td><td class="fielddoc"><p>Compute shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa3fab409c137d7ba5f6c7cf647a3d3d62"></a>compute_shader&#160;</td><td class="fielddoc"><p>Compute shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea77e73f3a185e16d1f08ca5e057710b9d">shader_stage::compute</a>, <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a3fab409c137d7ba5f6c7cf647a3d3d62">pipeline_stage::compute_shader</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a799d4a7a00b83276f3550e8f655c14d0"></a>input_layout&#160;</td><td class="fielddoc"><p>Vertex layout for the input-assembler stage. Sub-object data is a pointer to an array of <a class="el" href="structreshade_1_1api_1_1input__element.html" title="Describes a single element in the vertex layout for the input-assembler stage.">input_element</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa799d4a7a00b83276f3550e8f655c14d0"></a>input_layout&#160;</td><td class="fielddoc"><p>Vertex layout for the input-assembler stage. Sub-object data is a pointer to an array of <a class="el" href="structreshade_1_1api_1_1input__element.html" title="Describes a single element in the vertex layout for the input-assembler stage.">input_element</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037adb0dee5f1d2ff3fa9af336a9b3381e3b">pipeline_stage::input_assembler</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0af7360c0e9808b9b119382c2839a3dce8"></a>stream_output_state&#160;</td><td class="fielddoc"><p>State of the stream-output stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1stream__output__desc.html" title="Describes the state of the stream-output stage.">stream_output_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaf7360c0e9808b9b119382c2839a3dce8"></a>stream_output_state&#160;</td><td class="fielddoc"><p>State of the stream-output stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1stream__output__desc.html" title="Describes the state of the stream-output stage.">stream_output_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ae87dd9ecbaae1056b5941e6e1f4645a1">pipeline_stage::stream_output</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a003a3da7f984af5579356078c6084879"></a>blend_state&#160;</td><td class="fielddoc"><p>State of the output-merger stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1blend__desc.html" title="Describes the state of the output-merger stage.">blend_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa003a3da7f984af5579356078c6084879"></a>blend_state&#160;</td><td class="fielddoc"><p>State of the output-merger stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1blend__desc.html" title="Describes the state of the output-merger stage.">blend_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a5dc1902f8db5680c746a9769279d9219">pipeline_stage::output_merger</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a4129a46416ea7dd38fa4872755f13949"></a>rasterizer_state&#160;</td><td class="fielddoc"><p>State of the rasterizer stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html" title="Describes the state of the rasterizer stage.">rasterizer_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa4129a46416ea7dd38fa4872755f13949"></a>rasterizer_state&#160;</td><td class="fielddoc"><p>State of the rasterizer stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html" title="Describes the state of the rasterizer stage.">rasterizer_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037af2433c1ef69a433c4f3f8c4445dfaa99">pipeline_stage::rasterizer</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0ae1db2ae950bdc9cef978898e180f1a30"></a>depth_stencil_state&#160;</td><td class="fielddoc"><p>State of the depth-stencil stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html" title="Describes the state of the depth-stencil stage.">depth_stencil_desc</a>. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aae1db2ae950bdc9cef978898e180f1a30"></a>depth_stencil_state&#160;</td><td class="fielddoc"><p>State of the depth-stencil stage. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1depth__stencil__desc.html" title="Describes the state of the depth-stencil stage.">depth_stencil_desc</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a4cc2150334d039ce9f2a6b7e8e285e3e">pipeline_stage::depth_stencil</a></dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0aa68468e78da5883715a658f79aacb6cc"></a>primitive_topology&#160;</td><td class="fielddoc"><p>Primitive topology to use when rendering. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a" title="Specifies how the pipeline interprets vertex data that is bound to the vertex input stage and subsequ...">primitive_topology</a> value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaa68468e78da5883715a658f79aacb6cc"></a>primitive_topology&#160;</td><td class="fielddoc"><p>Primitive topology to use when rendering. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a" title="Specifies how the pipeline interprets vertex data that is bound to the vertex input stage and subsequ...">primitive_topology</a> value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0af304ab6dd6e7186fcd562bece9e27caa"></a>depth_stencil_format&#160;</td><td class="fielddoc"><p>Format of the depth-stencil view that may be used with this pipeline. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaf304ab6dd6e7186fcd562bece9e27caa"></a>depth_stencil_format&#160;</td><td class="fielddoc"><p>Format of the depth-stencil view that may be used with this pipeline. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0ab4d54ab739b1c037251891e07a365ca4"></a>render_target_formats&#160;</td><td class="fielddoc"><p>Formats of the render target views that may be used with this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> values. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aab4d54ab739b1c037251891e07a365ca4"></a>render_target_formats&#160;</td><td class="fielddoc"><p>Formats of the render target views that may be used with this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> values. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a0323747a7d7d71c6b0f24453641377a0"></a>sample_mask&#160;</td><td class="fielddoc"><p>Mask applied to the coverage mask for a fragment during rasterization. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa0323747a7d7d71c6b0f24453641377a0"></a>sample_mask&#160;</td><td class="fielddoc"><p>Mask applied to the coverage mask for a fragment during rasterization. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a0188f3f091ff883d0c9bf4fd73e8f6af"></a>sample_count&#160;</td><td class="fielddoc"><p>Number of samples used in rasterization. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa0188f3f091ff883d0c9bf4fd73e8f6af"></a>sample_count&#160;</td><td class="fielddoc"><p>Number of samples used in rasterization. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a07d5b26ee0fc0e6054bc538e334d9dcf"></a>viewport_count&#160;</td><td class="fielddoc"><p>Maximum number of viewports that may be bound via <a class="el" href="structreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a" title="Binds an array of viewports to the rasterizer stage.">command_list::bind_viewports</a> with this pipeline. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa07d5b26ee0fc0e6054bc538e334d9dcf"></a>viewport_count&#160;</td><td class="fielddoc"><p>Maximum number of viewports that may be bound via <a class="el" href="structreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a" title="Binds an array of viewports to the rasterizer stage.">command_list::bind_viewports</a> with this pipeline. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0a56009880edb86cf5e2b83dc674625123"></a>dynamic_pipeline_states&#160;</td><td class="fielddoc"><p>States that may be dynamically updated via <a class="el" href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928" title="Updates the specfified pipeline states  to the specified values . This is only valid for states that ...">command_list::bind_pipeline_states</a> after binding this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9" title="A list of all possible render pipeline states that can be set independent of pipeline state objects.">dynamic_state</a> values. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123"></a>dynamic_pipeline_states&#160;</td><td class="fielddoc"><p>States that may be dynamically updated via <a class="el" href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928" title="Updates the specfified pipeline states  to the specified values . This is only valid for states that ...">command_list::bind_pipeline_states</a> after binding this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9" title="A list of all possible render pipeline states that can be set independent of pipeline state objects.">dynamic_state</a> values. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19a6ecfd7f40581e1b59a1f71ba061e0af3da839a1a1e724c58fa27e71ac515ee"></a>max_vertex_count&#160;</td><td class="fielddoc"><p>Maximum number of vertices a draw call with this pipeline will draw. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaf3da839a1a1e724c58fa27e71ac515ee"></a>max_vertex_count&#160;</td><td class="fielddoc"><p>Maximum number of vertices a draw call with this pipeline will draw. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
 </table>
 
@@ -2072,6 +2078,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aae7d7946aa0047daaed3121d34463184f"></a>triangle_list&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa01edf5f1ae6135daec55d230c83d3885"></a>triangle_strip&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa59fbed48ae7f4867148a651f10c7d254"></a>triangle_fan&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa198508c811ed5c90e856d706fe922283"></a>quad_list&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa03b71bf225907a5c75505b5c0e1df6cd"></a>quad_strip&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa7c7112bb8e15834572aa716a4cda6164"></a>line_list_adj&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aaeb6fb8c640c26f42d488e8b520d1f32a"></a>line_strip_adj&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a311c948b96b180e8e828a9663fcb523aa83ab94d0ea40364f4c9a6ee3c7e2e761"></a>triangle_list_adj&#160;</td><td class="fielddoc"></td></tr>

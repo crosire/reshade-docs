@@ -2,7 +2,7 @@ var searchData=
 [
   ['a8_5funorm_0',['a8_unorm',['../namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aee8058c7bd2fd7206c0cbc102c63ee63',1,'reshade::api']]],
   ['add_1',['add',['../namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272a34ec78fcc91ffb1e54cd85e4a0924332',1,'reshade::api']]],
-  ['addon_5fevent_2',['addon_event',['../namespacereshade.html#ade35954538c5f2529c2170104f9f5dbf',1,'reshade']]],
+  ['addon_5fevent_2',['addon_event',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a',1,'reshade']]],
   ['address_5fu_3',['address_u',['../structreshade_1_1api_1_1sampler__desc.html#a25e41aab8cc7db08ecc1bd8aa5f2bb54',1,'reshade::api::sampler_desc']]],
   ['address_5fv_4',['address_v',['../structreshade_1_1api_1_1sampler__desc.html#aac200e634d71e622c95a21bbb2f7be87',1,'reshade::api::sampler_desc']]],
   ['address_5fw_5',['address_w',['../structreshade_1_1api_1_1sampler__desc.html#ad3e8c1f64ac84646bae5886db641278d',1,'reshade::api::sampler_desc']]],

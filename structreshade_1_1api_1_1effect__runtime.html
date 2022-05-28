@@ -291,6 +291,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cf330fba36f5e5dab3d21731f9dd572"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a6cf330fba36f5e5dab3d21731f9dd572">set_preprocessor_definition</a> (const char *name, const char *value)=0</td></tr>
 <tr class="memdesc:a6cf330fba36f5e5dab3d21731f9dd572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a global preprocessor definition to the specified <em>value</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a6cf330fba36f5e5dab3d21731f9dd572">More...</a><br /></td></tr>
 <tr class="separator:a6cf330fba36f5e5dab3d21731f9dd572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8144c8f730e48a9700b054dac1b35b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a8a8144c8f730e48a9700b054dac1b35b">render_technique</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html">command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv_srgb={ 0 })=0</td></tr>
+<tr class="memdesc:a8a8144c8f730e48a9700b054dac1b35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a <em>technique</em>  to the specified render targets (regardless of the state of this technique).  <a href="structreshade_1_1api_1_1effect__runtime.html#a8a8144c8f730e48a9700b054dac1b35b">More...</a><br /></td></tr>
+<tr class="separator:a8a8144c8f730e48a9700b054dac1b35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
 <tr class="memitem:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">get_hwnd</a> () const =0</td></tr>
 <tr class="memdesc:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the window handle of the window this swap chain was created with, or <code>nullptr</code> if this is an offscreen swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">More...</a><br /></td></tr>
@@ -3027,6 +3030,66 @@ template&lt;size_t SIZE&gt; </div>
 <p>The width and height of the specified render target have to match those reported by <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a2e91582bfc7d36b939def1d93a11d384" title="Gets the current buffer dimensions of the swap chain as used with effect rendering....">effect_runtime::get_screenshot_width_and_height</a>! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
+    <tr><td class="paramname">rtv</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>false</code>.</td></tr>
+    <tr><td class="paramname">rtv_srgb</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>true</code>, or zero in which case the view from <em>rtv</em>  is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a8144c8f730e48a9700b054dac1b35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8144c8f730e48a9700b054dac1b35b">&#9670;&nbsp;</a></span>render_technique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::render_technique </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a>&#160;</td>
+          <td class="paramname"><em>technique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1command__list.html">command_list</a> *&#160;</td>
+          <td class="paramname"><em>cmd_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
+          <td class="paramname"><em>rtv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
+          <td class="paramname"><em>rtv_srgb</em> = <code>{&#160;0&#160;}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies a <em>technique</em>  to the specified render targets (regardless of the state of this technique). </p>
+<p>The width and height of the specified render target have to match those reported by <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a2e91582bfc7d36b939def1d93a11d384" title="Gets the current buffer dimensions of the swap chain as used with effect rendering....">effect_runtime::get_screenshot_width_and_height</a>! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
     <tr><td class="paramname">rtv</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>false</code>.</td></tr>
     <tr><td class="paramname">rtv_srgb</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>true</code>, or zero in which case the view from <em>rtv</em>  is used.</td></tr>

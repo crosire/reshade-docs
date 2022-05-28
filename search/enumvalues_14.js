@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['wireframe_1628',['wireframe',['../namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c',1,'reshade::api']]],
-  ['wrap_1629',['wrap',['../namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4eaccfc59a528a109fa4204e8ea06e8b68b',1,'reshade::api']]],
-  ['write_5fdiscard_1630',['write_discard',['../namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f',1,'reshade::api']]],
-  ['write_5fonly_1631',['write_only',['../namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a2629564984b808cf7e6cfc61a0286d69',1,'reshade::api']]]
+  ['vertex_1637',['vertex',['../namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea2b5bc093b09bd81f51de433bde9d202a',1,'reshade::api']]],
+  ['vertex_5fbuffer_1638',['vertex_buffer',['../namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9a89a832efcc2557585b289cc295f7f5',1,'reshade::api']]],
+  ['vertex_5fshader_1639',['vertex_shader',['../namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7',1,'reshade::api::vertex_shader()'],['../namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aad518a62c8c7391ec1b42cab11af3d5b7',1,'reshade::api::vertex_shader()']]],
+  ['viewport_5fcount_1640',['viewport_count',['../namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa07d5b26ee0fc0e6054bc538e334d9dcf',1,'reshade::api']]],
+  ['vulkan_1641',['vulkan',['../namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa8473f19e6529e22157459e75b4cbf485',1,'reshade::api']]]
 ];
