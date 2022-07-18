@@ -1403,7 +1403,11 @@ vkGetQueryPoolResults </li>
 <li>
 ID3D12GraphicsCommandList::ResourceBarrier </li>
 <li>
+ID3D12GraphicsCommandList7::Barrier </li>
+<li>
 vkCmdPipelineBarrier </li>
+<li>
+vkCmdPipelineBarrier2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *resources, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059" title="A list of flags that specify how a resource is to be used. This needs to be specified during creation...">api::resource_usage</a> *old_states, const <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059" title="A list of flags that specify how a resource is to be used. This needs to be specified during creation...">api::resource_usage</a> *new_states)</code></p>
 </td></tr>
@@ -1413,7 +1417,11 @@ ID3D12GraphicsCommandList4::BeginRenderPass </li>
 <li>
 vkCmdBeginRenderPass </li>
 <li>
+vkCmdBeginRenderPass2 </li>
+<li>
 vkCmdNextSubpass </li>
+<li>
+vkCmdNextSubpass2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
 </td></tr>
@@ -1423,7 +1431,11 @@ ID3D12GraphicsCommandList4::EndRenderPass </li>
 <li>
 vkCmdEndRenderPass </li>
 <li>
+vkCmdEndRenderPass2 </li>
+<li>
 vkCmdNextSubpass </li>
+<li>
+vkCmdNextSubpass2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
@@ -1891,6 +1903,8 @@ glCopyBufferSubData </li>
 glCopyNamedBufferSubData </li>
 <li>
 vkCmdCopyBuffer </li>
+<li>
+vkCmdCopyBuffer2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint64_t size)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
@@ -1900,6 +1914,8 @@ vkCmdCopyBuffer </li>
 ID3D12GraphicsCommandList::CopyTextureRegion </li>
 <li>
 vkCmdCopyBufferToImage </li>
+<li>
+vkCmdCopyBufferToImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
@@ -1936,7 +1952,11 @@ glCopyTextureSubImage3D </li>
 <li>
 vkCmdBlitImage </li>
 <li>
+vkCmdBlitImage2 </li>
+<li>
 vkCmdCopyImage </li>
+<li>
+vkCmdCopyImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384" title="The available filtering modes used for texture sampling operations.">api::filter_mode</a> filter)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
@@ -1946,6 +1966,8 @@ vkCmdCopyImage </li>
 ID3D12GraphicsCommandList::CopyTextureRegion </li>
 <li>
 vkCmdCopyImageToBuffer </li>
+<li>
+vkCmdCopyImageToBuffer2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint32_t row_length, uint32_t slice_height)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
@@ -1967,6 +1989,8 @@ glBlitFramebuffer </li>
 glBlitNamedFramebuffer </li>
 <li>
 vkCmdResolveImage </li>
+<li>
+vkCmdResolveImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. </p>
@@ -2065,6 +2089,8 @@ glGenerateTextureMipmap </li>
 ID3D12GraphicsCommandList::BeginQuery </li>
 <li>
 vkCmdBeginQuery </li>
+<li>
+vkCmdBeginQueryIndexedEXT </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1query__pool.html" title="An opaque handle to a query pool.">api::query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="The available query types.">api::query_type</a> type, uint32_t index)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. </p>
@@ -2075,7 +2101,11 @@ ID3D12GraphicsCommandList::EndQuery </li>
 <li>
 vkCmdEndQuery </li>
 <li>
+vkCmdEndQueryIndexedEXT </li>
+<li>
 vkCmdWriteTimestamp </li>
+<li>
+vkCmdWriteTimestamp2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1query__pool.html" title="An opaque handle to a query pool.">api::query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="The available query types.">api::query_type</a> type, uint32_t index)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. </p>
@@ -2107,17 +2137,25 @@ vkEndCommandBuffer </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60"></a>execute_command_list&#160;</td><td class="fielddoc"><p>Called when a command list is submitted to a command queue, before: </p><ul>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60"></a>execute_command_list&#160;</td><td class="fielddoc"><p>Called when a command list is submitted to a command queue (or an immediate command list is flushed), before: </p><ul>
 <li>
-ID3D11DeviceContext::ExecuteCommandList </li>
+IDirect3DDevice9::EndScene </li>
+<li>
+ID3D10Device::Flush </li>
+<li>
+ID3D11DeviceContext::Flush </li>
 <li>
 ID3D12CommandQueue::ExecuteCommandLists </li>
+<li>
+glFlush </li>
 <li>
 vkQueueSubmit </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa0445abed43e2b11b1b89fa6ca918a22c"></a>execute_secondary_command_list&#160;</td><td class="fielddoc"><p>Called when a secondary command list is executed on a primary command list, before: </p><ul>
+<li>
+ID3D11DeviceContext::ExecuteCommandList </li>
 <li>
 ID3D12GraphicsCommandList::ExecuteBundle </li>
 <li>
