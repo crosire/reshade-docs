@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6b07a88ebb6eded988abd97c45bcdb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the state of a <em>technique</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a6b07a88ebb6eded988abd97c45bcdb2e">More...</a><br /></td></tr>
 <tr class="separator:a6b07a88ebb6eded988abd97c45bcdb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4262c38f9775e900b268adfe37d2324e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a4262c38f9775e900b268adfe37d2324e">set_technique_state</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, bool enabled)=0</td></tr>
-<tr class="memdesc:a4262c38f9775e900b268adfe37d2324e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disable the specified <em>technique</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a4262c38f9775e900b268adfe37d2324e">More...</a><br /></td></tr>
+<tr class="memdesc:a4262c38f9775e900b268adfe37d2324e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified <em>technique</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a4262c38f9775e900b268adfe37d2324e">More...</a><br /></td></tr>
 <tr class="separator:a4262c38f9775e900b268adfe37d2324e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0854d9a3296681587ccfd02effe22a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ad0854d9a3296681587ccfd02effe22a5">get_preprocessor_definition</a> (const char *name, char *value, size_t *length) const =0</td></tr>
 <tr class="memdesc:ad0854d9a3296681587ccfd02effe22a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of global preprocessor definition.  <a href="structreshade_1_1api_1_1effect__runtime.html#ad0854d9a3296681587ccfd02effe22a5">More...</a><br /></td></tr>
@@ -294,6 +294,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a8144c8f730e48a9700b054dac1b35b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a8a8144c8f730e48a9700b054dac1b35b">render_technique</a> (<a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html">command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv_srgb={ 0 })=0</td></tr>
 <tr class="memdesc:a8a8144c8f730e48a9700b054dac1b35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a <em>technique</em>  to the specified render targets (regardless of the state of this technique).  <a href="structreshade_1_1api_1_1effect__runtime.html#a8a8144c8f730e48a9700b054dac1b35b">More...</a><br /></td></tr>
 <tr class="separator:a8a8144c8f730e48a9700b054dac1b35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2745f2f7b0cb6bb78d61dd615f2fde32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a2745f2f7b0cb6bb78d61dd615f2fde32">get_effects_state</a> () const =0</td></tr>
+<tr class="memdesc:a2745f2f7b0cb6bb78d61dd615f2fde32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether effects are enabled or disabled.  <a href="structreshade_1_1api_1_1effect__runtime.html#a2745f2f7b0cb6bb78d61dd615f2fde32">More...</a><br /></td></tr>
+<tr class="separator:a2745f2f7b0cb6bb78d61dd615f2fde32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb390b9215d2642b4c7489abd38a94da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#aeb390b9215d2642b4c7489abd38a94da">set_effects_state</a> (bool enabled)=0</td></tr>
+<tr class="memdesc:aeb390b9215d2642b4c7489abd38a94da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables all effects.  <a href="structreshade_1_1api_1_1effect__runtime.html#aeb390b9215d2642b4c7489abd38a94da">More...</a><br /></td></tr>
+<tr class="separator:aeb390b9215d2642b4c7489abd38a94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0f02ce24adba5d5b73600edc6651f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a7b0f02ce24adba5d5b73600edc6651f8">get_current_preset_path</a> (char *path, size_t *length) const =0</td></tr>
+<tr class="memdesc:a7b0f02ce24adba5d5b73600edc6651f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file path to the currently active preset.  <a href="structreshade_1_1api_1_1effect__runtime.html#a7b0f02ce24adba5d5b73600edc6651f8">More...</a><br /></td></tr>
+<tr class="separator:a7b0f02ce24adba5d5b73600edc6651f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5cd68a36c938a3627ff63fef4fc552"><td class="memTemplParams" colspan="2">template&lt;size_t SIZE&gt; </td></tr>
+<tr class="memitem:a4c5cd68a36c938a3627ff63fef4fc552"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a4c5cd68a36c938a3627ff63fef4fc552">get_current_preset_path</a> (char(&amp;path)[SIZE]) const</td></tr>
+<tr class="separator:a4c5cd68a36c938a3627ff63fef4fc552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8">set_current_preset_path</a> (const char *path)=0</td></tr>
+<tr class="memdesc:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the currently active preset and then switches to the specified new preset.  <a href="structreshade_1_1api_1_1effect__runtime.html#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8">More...</a><br /></td></tr>
+<tr class="separator:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
 <tr class="memitem:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">get_hwnd</a> () const =0</td></tr>
 <tr class="memdesc:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the window handle of the window this swap chain was created with, or <code>nullptr</code> if this is an offscreen swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">More...</a><br /></td></tr>
@@ -1938,6 +1953,106 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="a7b0f02ce24adba5d5b73600edc6651f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0f02ce24adba5d5b73600edc6651f8">&#9670;&nbsp;</a></span>get_current_preset_path() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::get_current_preset_path </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the file path to the currently active preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Pointer to a string buffer that is filled with the file path to the preset.</td></tr>
+    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c5cd68a36c938a3627ff63fef4fc552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5cd68a36c938a3627ff63fef4fc552">&#9670;&nbsp;</a></span>get_current_preset_path() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::api::effect_runtime::get_current_preset_path </td>
+          <td>(</td>
+          <td class="paramtype">char(&amp;)&#160;</td>
+          <td class="paramname"><em>path</em>[SIZE]</td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2745f2f7b0cb6bb78d61dd615f2fde32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2745f2f7b0cb6bb78d61dd615f2fde32">&#9670;&nbsp;</a></span>get_effects_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::effect_runtime::get_effects_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets whether effects are enabled or disabled. </p>
+
+</div>
+</div>
 <a id="affa955fa275f1c7a884859b2910d6a1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affa955fa275f1c7a884859b2910d6a1c">&#9670;&nbsp;</a></span>get_mouse_cursor_position()</h2>
 
@@ -3099,6 +3214,74 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8">&#9670;&nbsp;</a></span>set_current_preset_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_current_preset_path </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the currently active preset and then switches to the specified new preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>File path to the preset to switch to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb390b9215d2642b4c7489abd38a94da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb390b9215d2642b4c7489abd38a94da">&#9670;&nbsp;</a></span>set_effects_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_effects_state </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables or disables all effects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>Set to <code>true</code> to enable effects, or <code>false</code> to disable them.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6cf330fba36f5e5dab3d21731f9dd572"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cf330fba36f5e5dab3d21731f9dd572">&#9670;&nbsp;</a></span>set_preprocessor_definition()</h2>
 
@@ -3178,7 +3361,7 @@ template&lt;size_t SIZE&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Enables or disable the specified <em>technique</em> . </p>
+<p>Enables or disables the specified <em>technique</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>

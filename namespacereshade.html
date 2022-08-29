@@ -250,6 +250,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_screenshot &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_render_technique &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -357,6 +359,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444">reshade_set_technique_state</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
 <br />
  }</td></tr>
 <tr class="separator:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1422,6 +1425,8 @@ vkCmdBeginRenderPass2 </li>
 vkCmdNextSubpass </li>
 <li>
 vkCmdNextSubpass2 </li>
+<li>
+vkCmdBeginRendering </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
 </td></tr>
@@ -1436,6 +1441,8 @@ vkCmdEndRenderPass2 </li>
 vkCmdNextSubpass </li>
 <li>
 vkCmdNextSubpass2 </li>
+<li>
+vkCmdEndRendering </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
 </td></tr>
@@ -1744,6 +1751,8 @@ glBindVertexBuffer </li>
 glBindVertexBuffers </li>
 <li>
 vkCmdBindVertexBuffers </li>
+<li>
+vkCmdBindVertexBuffers2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint32_t *strides)</code></p>
 </td></tr>
@@ -2215,6 +2224,9 @@ IVRCompositor::Submit </li>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729"></a>reshade_screenshot&#160;</td><td class="fielddoc"><p>Called after a screenshot was taken and saved to disk. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *filename)</code></p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a"></a>reshade_render_technique&#160;</td><td class="fielddoc"><p>Called for each technique after it was rendered, usually between reshade_begin_effects and reshade_finish_effects. </p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
 </td></tr>
 </table>
 
