@@ -111,10 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abbc22fd6a89454e4ac11497d8290e1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#abbc22fd6a89454e4ac11497d8290e1b2">More...</a><br /></td></tr>
 <tr class="separator:abbc22fd6a89454e4ac11497d8290e1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804b3aa8c3f0e465e98762c27fc75798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798">bind_pipeline_state</a> (<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> state, uint32_t value)</td></tr>
-<tr class="memdesc:a804b3aa8c3f0e465e98762c27fc75798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>state</em>  to the specified <em>value</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798">More...</a><br /></td></tr>
+<tr class="memdesc:a804b3aa8c3f0e465e98762c27fc75798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>state</em>  to the specified <em>value</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object (<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123" title="States that may be dynamically updated via command_list::bind_pipeline_states after binding this pipe...">pipeline_subobject_type::dynamic_pipeline_states</a>).  <a href="structreshade_1_1api_1_1command__list.html#a804b3aa8c3f0e465e98762c27fc75798">More...</a><br /></td></tr>
 <tr class="separator:a804b3aa8c3f0e465e98762c27fc75798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4457eb23164ccfe161c39e2eba2a928"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928">bind_pipeline_states</a> (uint32_t count, const <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> *states, const uint32_t *values)=0</td></tr>
-<tr class="memdesc:af4457eb23164ccfe161c39e2eba2a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>states</em>  to the specified <em>values</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object.  <a href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928">More...</a><br /></td></tr>
+<tr class="memdesc:af4457eb23164ccfe161c39e2eba2a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specfified pipeline <em>states</em>  to the specified <em>values</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object (<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123" title="States that may be dynamically updated via command_list::bind_pipeline_states after binding this pipe...">pipeline_subobject_type::dynamic_pipeline_states</a>).  <a href="structreshade_1_1api_1_1command__list.html#af4457eb23164ccfe161c39e2eba2a928">More...</a><br /></td></tr>
 <tr class="separator:af4457eb23164ccfe161c39e2eba2a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557b2f95f05e3d05a8cf02bbd199cf5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a">bind_viewports</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1viewport.html">viewport</a> *viewports)=0</td></tr>
 <tr class="memdesc:a557b2f95f05e3d05a8cf02bbd199cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of viewports to the rasterizer stage.  <a href="structreshade_1_1api_1_1command__list.html#a557b2f95f05e3d05a8cf02bbd199cf5a">More...</a><br /></td></tr>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1f8b40c5878281418930c20dd1331f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the unordered access view.  <a href="structreshade_1_1api_1_1command__list.html#a1f8b40c5878281418930c20dd1331f68">More...</a><br /></td></tr>
 <tr class="separator:a1f8b40c5878281418930c20dd1331f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab066738ef9831bba807081671846fea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">generate_mipmaps</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv)=0</td></tr>
-<tr class="memdesc:aab066738ef9831bba807081671846fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mip and stops with the smallest level that is specified by the view.  <a href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">More...</a><br /></td></tr>
+<tr class="memdesc:aab066738ef9831bba807081671846fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mipmap chain and stops with the smallest level that is specified by the view.  <a href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">More...</a><br /></td></tr>
 <tr class="separator:aab066738ef9831bba807081671846fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a51df1782d51eb18624174d395ead37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">begin_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
 <tr class="memdesc:a1a51df1782d51eb18624174d395ead37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a query.  <a href="structreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">More...</a><br /></td></tr>
@@ -198,7 +198,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6c22d4af96e4a160676fe0d898de7137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a query.  <a href="structreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">More...</a><br /></td></tr>
 <tr class="separator:a6c22d4af96e4a160676fe0d898de7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae1beb797978b3ccf3292039edfcef7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">copy_query_pool_results</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first, uint32_t count, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t stride)=0</td></tr>
-<tr class="memdesc:a2ae1beb797978b3ccf3292039edfcef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the results of queries in a query pool to a buffer resource.  <a href="structreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">More...</a><br /></td></tr>
+<tr class="memdesc:a2ae1beb797978b3ccf3292039edfcef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the results of queries in a query pool to a buffer resource.  <a href="structreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">More...</a><br /></td></tr>
 <tr class="separator:a2ae1beb797978b3ccf3292039edfcef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">begin_debug_event</a> (const char *label, const float color[4]=nullptr)=0</td></tr>
 <tr class="memdesc:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a debug event region in the command list.  <a href="structreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">More...</a><br /></td></tr>
@@ -757,7 +757,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the specfified pipeline <em>state</em>  to the specified <em>value</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object. </p>
+<p>Updates the specfified pipeline <em>state</em>  to the specified <em>value</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object (<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123" title="States that may be dynamically updated via command_list::bind_pipeline_states after binding this pipe...">pipeline_subobject_type::dynamic_pipeline_states</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>Pipeline state to update.</td></tr>
@@ -808,7 +808,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the specfified pipeline <em>states</em>  to the specified <em>values</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object. </p>
+<p>Updates the specfified pipeline <em>states</em>  to the specified <em>values</em> . This is only valid for states that have been listed in the dynamic states provided at creation of the currently bound pipeline state object (<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa56009880edb86cf5e2b83dc674625123" title="States that may be dynamically updated via command_list::bind_pipeline_states after binding this pipe...">pipeline_subobject_type::dynamic_pipeline_states</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of pipeline states to update.</td></tr>
@@ -861,7 +861,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds individual render target and depth-stencil resource views. This must not be called between <a class="el" href="structreshade_1_1api_1_1command__list.html#a75b9644e936983d75ca1244150c7f956" title="Begins a render pass and binds render target and depth-stencil resource views.">begin_render_pass</a> and <a class="el" href="structreshade_1_1api_1_1command__list.html#a4e7e0b86b35be07c2e03a2ea19843ace" title="Ends a render pass. This must be preceeded by a call to begin_render_pass. Render passes cannot be ne...">end_render_pass</a>. </p>
-<p>This is not supported (and will do nothing) in Vulkan. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a987b2aa4a2dd7ad21a312488fe3cf9db" title="Specifies whether binding individual render target and depth-stencil resource views is supported....">device_caps::bind_render_targets_and_depth_stencil</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of render target views to bind.</td></tr>
@@ -914,10 +914,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds an array of scissor rectangles to the rasterizer stage. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a4e134cc959165e70f2e8152111b941c6" title="Specifies whther more than one viewport is supported. If this feature is not present,...">device_caps::multi_viewport</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">first</td><td>Index of the first scissor rectangle to bind. In D3D9, D3D10, D3D11 and D3D12 this has to be 0.</td></tr>
-    <tr><td class="paramname">count</td><td>Number of scissor rectangles to bind. In D3D9 this has to be 1.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of scissor rectangles to bind.</td></tr>
     <tr><td class="paramname">rects</td><td>Pointer to an array of scissor rectangles.</td></tr>
   </table>
   </dd>
@@ -1157,10 +1158,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds an array of viewports to the rasterizer stage. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a4e134cc959165e70f2e8152111b941c6" title="Specifies whther more than one viewport is supported. If this feature is not present,...">device_caps::multi_viewport</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">first</td><td>Index of the first viewport to bind. In D3D9, D3D10, D3D11 and D3D12 this has to be 0.</td></tr>
-    <tr><td class="paramname">count</td><td>Number of viewports to bind. In D3D9 this has to be 1.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of viewports to bind.</td></tr>
     <tr><td class="paramname">viewports</td><td>Pointer to an array of viewports.</td></tr>
   </table>
   </dd>
@@ -1468,7 +1470,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copies a linear memory region from the <em>source</em>  buffer to the <em>dest</em> ination buffer. </p>
-<p>This is not supported (and will do nothing) in D3D9. The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">resource_usage::copy_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<p>The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">resource_usage::copy_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a80257d98cf24fac3db951337ebad0423" title="Specifies whether copying between buffers is supported. If this feature is not present,...">device_caps::copy_buffer_region</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Buffer resource to copy from.</td></tr>
@@ -1548,6 +1551,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Copies a texture region from the <em>source</em>  buffer to the <em>dest</em> ination texture. </p>
 <p>The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">resource_usage::copy_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aad18153d559de9119fdc4802cc36b681" title="Specifies whether copying between buffers and textures is supported. If this feature is not present,...">device_caps::copy_buffer_to_texture</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Buffer resource to copy from.</td></tr>
@@ -1627,8 +1631,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copy the results of queries in a query pool to a buffer resource. </p>
+<p>Copies the results of queries in a query pool to a buffer resource. </p>
 <p>The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa292dfd59680988598edc50e2f1e4c88" title="Specifies whether copying query results to a buffer is supported. If this feature is not present,...">device_caps::copy_query_pool_results</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pool</td><td>Query pool that manages the results of the queries.</td></tr>
@@ -1756,6 +1761,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Copies or blits a texture region from the <em>source</em>  texture to the <em>dest</em> ination texture. </p>
 <p>The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">resource_usage::copy_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ae120bede29a8f2b624d7f55078d7a15f" title="Specifies whether blitting between resources is supported. If this feature is not present,...">device_caps::blit</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to copy from.</td></tr>
@@ -1837,6 +1843,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Copies a texture region from the <em>source</em>  texture to the <em>dest</em> ination buffer. </p>
 <p>The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">resource_usage::copy_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aad18153d559de9119fdc4802cc36b681" title="Specifies whether copying between buffers and textures is supported. If this feature is not present,...">device_caps::copy_buffer_to_texture</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to copy from.</td></tr>
@@ -1893,7 +1900,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a compute shader dispatch. </p>
-<p>This is not supported (and will do nothing) in D3D9 and D3D10. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3fab409c137d7ba5f6c7cf647a3d3d62" title="Specifies whether compute shaders are supported. If this feature is not present, the pipeline_stage::...">device_caps::compute_shader</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_count_x</td><td>Number of thread groups dispatched in the x direction.</td></tr>
@@ -1952,6 +1959,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draws non-indexed primitives. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afac290d641e57a4ab6d0a086ceba380d" title="Specifies whether instancing is supported. If this feature is not present, the &quot;instance_count&quot; and &quot;...">device_caps::draw_instanced</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vertex_count</td><td>Number of vertices to draw.</td></tr>
@@ -2017,6 +2025,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draws indexed primitives. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afac290d641e57a4ab6d0a086ceba380d" title="Specifies whether instancing is supported. If this feature is not present, the &quot;instance_count&quot; and &quot;...">device_caps::draw_instanced</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index_count</td><td>Number of indices read from the index buffer for each instance.</td></tr>
@@ -2083,7 +2092,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes indirect draw or dispatch commands. </p>
-<p>This is not supported (and will do nothing) in D3D9 and D3D10. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3299ec3835b4d48e817b73a6051b5055" title="Specifies whether indirect draw or dispatch calls are supported. If this feature is not present,...">device_caps::draw_or_dispatch_indirect</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Specifies whether this is an indirect draw, indexed draw or dispatch command.</td></tr>
@@ -2227,7 +2236,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mip and stops with the smallest level that is specified by the view. </p>
+<p>Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mipmap chain and stops with the smallest level that is specified by the view. </p>
 <p>This will invalidate all previous descriptor bindings, which will need to be reset by calls to <a class="el" href="structreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f" title="Binds a single descriptor set.">bind_descriptor_set</a> or <a class="el" href="structreshade_1_1api_1_1command__list.html#ab0d6c6e63040c1046cd5e8d91eb03c27" title="Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with a...">push_descriptors</a>. The resource the shader resource view points to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059aa24632445528325a6af3096b89d7e043">resource_usage::shader_resource</a> state and has to have been created with the <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">resource_flags::generate_mipmaps</a> flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2343,6 +2352,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Directly updates constant values in the specified shader pipeline stages. </p>
 <p>In D3D9 this updates the values of uniform registers, in D3D10/11 and OpenGL the constant buffer specified in the pipeline layout, in D3D12 it sets root constants and in Vulkan push constants.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a137624fb0450850037b499662edad3b0" title="Specifies whether partial push constant updates are supported. If this feature is not present,...">device_caps::partial_push_constant_updates</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stages</td><td>Shader stages that will use the updated constants.</td></tr>
@@ -2404,6 +2414,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with an array of descriptors. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a1ad28dfe8e08a1a3e97dfa5d3b428d6a" title="Specifies whether partial push descriptor updates are supported. If this feature is not present,...">device_caps::partial_push_descriptor_updates</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stages</td><td>Shader stages that will use the updated descriptors.</td></tr>
@@ -2494,16 +2505,17 @@ Public Member Functions</h2></td></tr>
 
 <p>Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture. </p>
 <p>The <em>source</em>  resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">resource_usage::resolve_source</a> state. The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">resource_usage::resolve_dest</a> state. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a6f1f028740db5e31adf9939e134f93b4" title="Specifies whether resolving a region of a resource rather than its entirety is supported....">device_caps::resolve_region</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Texture resource to resolve from.</td></tr>
     <tr><td class="paramname">source_subresource</td><td>Index of the subresource of the <em>source</em>  texture to resolve from.</td></tr>
-    <tr><td class="paramname">source_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to resolve. In D3D10 and D3D11 this has to be <code>nullptr</code>.</td></tr>
+    <tr><td class="paramname">source_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>source</em>  texture to resolve.</td></tr>
     <tr><td class="paramname">dest</td><td>Texture resource to resolve to.</td></tr>
     <tr><td class="paramname">dest_subresource</td><td>Index of the subresource of the <em>dest</em> ination texture to resolve to.</td></tr>
-    <tr><td class="paramname">dest_x</td><td>Optional X offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to. In D3D10 and D3D11 this has to be zero.</td></tr>
-    <tr><td class="paramname">dest_y</td><td>Optional Y offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to. In D3D10 and D3D11 this has to be zero.</td></tr>
-    <tr><td class="paramname">dest_z</td><td>Optional Z offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to. In D3D10 and D3D11 this has to be zero.</td></tr>
+    <tr><td class="paramname">dest_x</td><td>Optional X offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to.</td></tr>
+    <tr><td class="paramname">dest_y</td><td>Optional Y offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to.</td></tr>
+    <tr><td class="paramname">dest_z</td><td>Optional Z offset (in texels) that defines the region in the <em>dest</em> ination texture to resolve to.</td></tr>
     <tr><td class="paramname">format</td><td>Format of the resource data.</td></tr>
   </table>
   </dd>
