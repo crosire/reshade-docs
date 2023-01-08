@@ -573,10 +573,12 @@ IDXGISwapChain::ResizeBuffers </li>
 <li>
 IDXGISwapChain3::ResizeBuffers1 </li>
 <li>
+wglSetPixelFormat </li>
+<li>
 vkCreateSwapchainKHR </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1swapchain__desc.html" title="Describes a swap chain and its back buffer resources.">api::swapchain_desc</a> &amp;desc, void *hwnd)</code></p>
-<p>To overwrite the swap chain description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. Is not called in OpenGL (since it is not possible to influence swap chain creation there). </p>
+<p>To overwrite the swap chain description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9"></a>destroy_swapchain&#160;</td><td class="fielddoc"><p>Called on swap chain destruction, before: </p><ul>
 <li>
