@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">reshade.hpp File Reference</div>  </div>
@@ -94,19 +95,28 @@ Macros</h2></td></tr>
 <tr class="memitem:a974030b932e8959bbb3ebe9e47f8a1b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reshade_8hpp.html#a974030b932e8959bbb3ebe9e47f8a1b0">RESHADE_API_VERSION</a></td></tr>
 <tr class="separator:a974030b932e8959bbb3ebe9e47f8a1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7e63197214062e42f350af39eec1fc2a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">reshade::log_level</a> { <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282">reshade::error</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd">reshade::warning</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c">reshade::info</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d">reshade::debug</a>
+ }</td></tr>
+<tr class="separator:a7e63197214062e42f350af39eec1fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a19928cf52e91e8f04d029615c821dbd9"><td class="memItemLeft" align="right" valign="top">BOOL WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9">K32EnumProcessModules</a> (HANDLE hProcess, HMODULE *lphModule, DWORD cb, LPDWORD lpcbNeeded)</td></tr>
 <tr class="separator:a19928cf52e91e8f04d029615c821dbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f5c0b5a0cea257bb1c7d133085f7ec"><td class="memItemLeft" align="right" valign="top">HMODULE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#a03f5c0b5a0cea257bb1c7d133085f7ec">reshade::internal::get_reshade_module_handle</a> ()</td></tr>
-<tr class="memdesc:a03f5c0b5a0cea257bb1c7d133085f7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the ReShade module.  <a href="namespacereshade_1_1internal.html#a03f5c0b5a0cea257bb1c7d133085f7ec">More...</a><br /></td></tr>
-<tr class="separator:a03f5c0b5a0cea257bb1c7d133085f7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9fda2d7772eb4ee084be028e20accc5"><td class="memItemLeft" align="right" valign="top">HMODULE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#ae9fda2d7772eb4ee084be028e20accc5">reshade::internal::get_current_module_handle</a> ()</td></tr>
-<tr class="memdesc:ae9fda2d7772eb4ee084be028e20accc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the current add-on module.  <a href="namespacereshade_1_1internal.html#ae9fda2d7772eb4ee084be028e20accc5">More...</a><br /></td></tr>
-<tr class="separator:ae9fda2d7772eb4ee084be028e20accc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">reshade::log_message</a> (int level, const char *message)</td></tr>
-<tr class="memdesc:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">More...</a><br /></td></tr>
-<tr class="separator:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f49291b3e85dd89efa7c99dd641eedb"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#a6f49291b3e85dd89efa7c99dd641eedb">reshade::internal::get_reshade_module_handle</a> (HMODULE reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a6f49291b3e85dd89efa7c99dd641eedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the ReShade module.  <a href="namespacereshade_1_1internal.html#a6f49291b3e85dd89efa7c99dd641eedb">More...</a><br /></td></tr>
+<tr class="separator:a6f49291b3e85dd89efa7c99dd641eedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#ae31ad702bcc85b7d7633f2a78e5cd6ca">reshade::internal::get_current_module_handle</a> (HMODULE addon_module=nullptr)</td></tr>
+<tr class="memdesc:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the current add-on module.  <a href="namespacereshade_1_1internal.html#ae31ad702bcc85b7d7633f2a78e5cd6ca">More...</a><br /></td></tr>
+<tr class="separator:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">reshade::log_message</a> (log_level level, const char *message)</td></tr>
+<tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
+<tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190fee8c081a933e0fa3b133b58f93bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">reshade::config_get_value</a> (api::effect_runtime *runtime, const char *section, const char *key, char *value, size_t *length)</td></tr>
 <tr class="memdesc:a190fee8c081a933e0fa3b133b58f93bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">More...</a><br /></td></tr>
 <tr class="separator:a190fee8c081a933e0fa3b133b58f93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,12 +135,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a34f6711171b677e4168126b5e44be4e3"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a34f6711171b677e4168126b5e44be4e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a34f6711171b677e4168126b5e44be4e3">reshade::config_set_value&lt; bool &gt;</a> (api::effect_runtime *runtime, const char *section, const char *key, const bool &amp;value)</td></tr>
 <tr class="separator:a34f6711171b677e4168126b5e44be4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de21e80da98494dc6ed9832d79e34e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">reshade::register_addon</a> (HMODULE module)</td></tr>
-<tr class="memdesc:a8de21e80da98494dc6ed9832d79e34e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">More...</a><br /></td></tr>
-<tr class="separator:a8de21e80da98494dc6ed9832d79e34e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1">reshade::unregister_addon</a> (HMODULE module)</td></tr>
-<tr class="memdesc:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module. Call this in 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1">More...</a><br /></td></tr>
-<tr class="separator:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293150d8fd80712da20c1c5c4c65603a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a293150d8fd80712da20c1c5c4c65603a">reshade::register_addon</a> (HMODULE addon_module, HMODULE reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a293150d8fd80712da20c1c5c4c65603a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#a293150d8fd80712da20c1c5c4c65603a">More...</a><br /></td></tr>
+<tr class="separator:a293150d8fd80712da20c1c5c4c65603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039d91e9992db4ebacd3f1827399b4e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a039d91e9992db4ebacd3f1827399b4e5">reshade::unregister_addon</a> (HMODULE addon_module, HMODULE reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a039d91e9992db4ebacd3f1827399b4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a039d91e9992db4ebacd3f1827399b4e5">More...</a><br /></td></tr>
+<tr class="separator:a039d91e9992db4ebacd3f1827399b4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplParams" colspan="2">template&lt;reshade::addon_event ev&gt; </td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">reshade::register_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
 <tr class="memdesc:ab97d139bc8e9a577d60e1b7739003543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for the specified event (via template) with ReShade.  <a href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">More...</a><br /></td></tr>

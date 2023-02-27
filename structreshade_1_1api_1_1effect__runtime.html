@@ -309,6 +309,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8">set_current_preset_path</a> (const char *path)=0</td></tr>
 <tr class="memdesc:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the currently active preset and then switches to the specified new preset.  <a href="structreshade_1_1api_1_1effect__runtime.html#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8">More...</a><br /></td></tr>
 <tr class="separator:ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7b7cf23b101a18794e04fb24fa2185"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#afb7b7cf23b101a18794e04fb24fa2185">reorder_techniques</a> (size_t count, const <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> *techniques)=0</td></tr>
+<tr class="memdesc:afb7b7cf23b101a18794e04fb24fa2185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the rendering order of loaded techniques to that of the specified technique list.  <a href="structreshade_1_1api_1_1effect__runtime.html#afb7b7cf23b101a18794e04fb24fa2185">More...</a><br /></td></tr>
+<tr class="separator:afb7b7cf23b101a18794e04fb24fa2185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a0e7ef0e7c0e23b0afa76dea9e9906093">block_input_next_frame</a> ()</td></tr>
+<tr class="memdesc:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes ReShade block any keyboard and mouse input from reaching the game for the duration of the next frame. Call this every frame for as long as input should be blocked. This can be used to ensure input is only applied to overlays created in a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20" title="Called between the ImGui::NewFrame and ImGui::EndFrame calls for the ReShade overlay....">addon_event::reshade_overlay</a> callback.  <a href="structreshade_1_1api_1_1effect__runtime.html#a0e7ef0e7c0e23b0afa76dea9e9906093">More...</a><br /></td></tr>
+<tr class="separator:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
 <tr class="memitem:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">get_hwnd</a> () const =0</td></tr>
 <tr class="memdesc:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the window handle of the window this swap chain was created with, or <code>nullptr</code> if this is an offscreen swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">More...</a><br /></td></tr>
@@ -356,6 +362,33 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A ReShade effect runtime, used to control effects. </p>
 <p>A separate runtime is instantiated for every swap chain.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0e7ef0e7c0e23b0afa76dea9e9906093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7ef0e7c0e23b0afa76dea9e9906093">&#9670;&nbsp;</a></span>block_input_next_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::block_input_next_frame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes ReShade block any keyboard and mouse input from reaching the game for the duration of the next frame. Call this every frame for as long as input should be blocked. This can be used to ensure input is only applied to overlays created in a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20" title="Called between the ImGui::NewFrame and ImGui::EndFrame calls for the ReShade overlay....">addon_event::reshade_overlay</a> callback. </p>
+
+</div>
+</div>
 <a id="ab609325cb3f2d1c2f2c0b69c37acd199"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab609325cb3f2d1c2f2c0b69c37acd199">&#9670;&nbsp;</a></span>capture_screenshot()</h2>
 
@@ -3208,6 +3241,51 @@ template&lt;size_t SIZE&gt; </div>
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
     <tr><td class="paramname">rtv</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>false</code>.</td></tr>
     <tr><td class="paramname">rtv_srgb</td><td>Render target view to use for passes that write to the back buffer with <code>SRGBWriteEnabled</code> state set to <code>true</code>, or zero in which case the view from <em>rtv</em>  is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb7b7cf23b101a18794e04fb24fa2185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7b7cf23b101a18794e04fb24fa2185">&#9670;&nbsp;</a></span>reorder_techniques()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::reorder_techniques </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> *&#160;</td>
+          <td class="paramname"><em>techniques</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the rendering order of loaded techniques to that of the specified technique list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>Number of handles in the technique list.</td></tr>
+    <tr><td class="paramname">techniques</td><td>Array of techniques in the order they should be rendered in.</td></tr>
   </table>
   </dd>
 </dl>

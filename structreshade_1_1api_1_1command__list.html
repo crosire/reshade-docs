@@ -143,9 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a199bb68035b8cc0a70b3335d8eea545d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d">bind_vertex_buffers</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *buffers, const uint64_t *offsets, const uint32_t *strides)=0</td></tr>
 <tr class="memdesc:a199bb68035b8cc0a70b3335d8eea545d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of vertex buffers to the input-assembler stage.  <a href="structreshade_1_1api_1_1command__list.html#a199bb68035b8cc0a70b3335d8eea545d">More...</a><br /></td></tr>
 <tr class="separator:a199bb68035b8cc0a70b3335d8eea545d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f18132c48b6d5361f2b9e88218b59c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a3f18132c48b6d5361f2b9e88218b59c3">bind_stream_output_buffers</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes)=0</td></tr>
-<tr class="memdesc:a3f18132c48b6d5361f2b9e88218b59c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of buffers to the stream-output stage.  <a href="structreshade_1_1api_1_1command__list.html#a3f18132c48b6d5361f2b9e88218b59c3">More...</a><br /></td></tr>
-<tr class="separator:a3f18132c48b6d5361f2b9e88218b59c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5be175dacc3ea67f6bed6801ff2676"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a1b5be175dacc3ea67f6bed6801ff2676">bind_stream_output_buffers</a> (uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes, const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *counter_buffers, const uint64_t *counter_offsets)=0</td></tr>
+<tr class="memdesc:a1b5be175dacc3ea67f6bed6801ff2676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of buffers to the stream-output stage.  <a href="structreshade_1_1api_1_1command__list.html#a1b5be175dacc3ea67f6bed6801ff2676">More...</a><br /></td></tr>
+<tr class="separator:a1b5be175dacc3ea67f6bed6801ff2676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1979928ce2b057d783fab63efab846b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a1979928ce2b057d783fab63efab846b0">draw</a> (uint32_t vertex_count, uint32_t instance_count, uint32_t first_vertex, uint32_t first_instance)=0</td></tr>
 <tr class="memdesc:a1979928ce2b057d783fab63efab846b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws non-indexed primitives.  <a href="structreshade_1_1api_1_1command__list.html#a1979928ce2b057d783fab63efab846b0">More...</a><br /></td></tr>
 <tr class="separator:a1979928ce2b057d783fab63efab846b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -926,8 +926,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f18132c48b6d5361f2b9e88218b59c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f18132c48b6d5361f2b9e88218b59c3">&#9670;&nbsp;</a></span>bind_stream_output_buffers()</h2>
+<a id="a1b5be175dacc3ea67f6bed6801ff2676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5be175dacc3ea67f6bed6801ff2676">&#9670;&nbsp;</a></span>bind_stream_output_buffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,7 +963,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint64_t *&#160;</td>
-          <td class="paramname"><em>max_sizes</em>&#160;</td>
+          <td class="paramname"><em>max_sizes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> *&#160;</td>
+          <td class="paramname"><em>counter_buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t *&#160;</td>
+          <td class="paramname"><em>counter_offsets</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -986,6 +998,8 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">buffers</td><td>Pointer to an array of buffer resources. These resources must have been created with the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ae87dd9ecbaae1056b5941e6e1f4645a1">resource_usage::stream_output</a> usage.</td></tr>
     <tr><td class="paramname">offsets</td><td>Pointer to an array of offset values, one for each buffer. Each offset is the number of bytes from the start of the buffer to the first element to write to.</td></tr>
     <tr><td class="paramname">max_sizes</td><td>Optional pointer to an array of size values, one for each buffer. Can be <code>nullptr</code> or have elements set to UINT64_MAX to use the entire buffer.</td></tr>
+    <tr><td class="paramname">counter_buffers</td><td>Pointer to an array of counter buffer resources. These resources must have been created with the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ae87dd9ecbaae1056b5941e6e1f4645a1">resource_usage::stream_output</a> usage.</td></tr>
+    <tr><td class="paramname">counter_offsets</td><td>Pointer to an array of counter offset values, one for each counter buffer. Each offset is the number of bytes from the start of the counter buffer to the first element to write to.</td></tr>
   </table>
   </dd>
 </dl>

@@ -252,9 +252,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_render_technique &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_current_preset_path &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_reorder_techniques &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a7e63197214062e42f350af39eec1fc2a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a> { <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282">error</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd">warning</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c">info</a>
+, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d">debug</a>
+ }</td></tr>
+<tr class="separator:a7e63197214062e42f350af39eec1fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a">addon_event</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0ce4a4653b06410e17282af7873d5937">init_device</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aadd51261dc8f39fc42b6e7f9029eedc02">destroy_device</a>
@@ -360,15 +370,18 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
 <br />
  }</td></tr>
 <tr class="separator:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">log_message</a> (int level, const char *message)</td></tr>
-<tr class="memdesc:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ab89735a25ed07c53b8c44b3ad31cc49d">More...</a><br /></td></tr>
-<tr class="separator:ab89735a25ed07c53b8c44b3ad31cc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">log_message</a> (<a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a> level, const char *message)</td></tr>
+<tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
+<tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190fee8c081a933e0fa3b133b58f93bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">config_get_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, char *value, size_t *length)</td></tr>
 <tr class="memdesc:a190fee8c081a933e0fa3b133b58f93bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">More...</a><br /></td></tr>
 <tr class="separator:a190fee8c081a933e0fa3b133b58f93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,12 +400,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a34f6711171b677e4168126b5e44be4e3"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a34f6711171b677e4168126b5e44be4e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a34f6711171b677e4168126b5e44be4e3">config_set_value&lt; bool &gt;</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const bool &amp;value)</td></tr>
 <tr class="separator:a34f6711171b677e4168126b5e44be4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de21e80da98494dc6ed9832d79e34e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">register_addon</a> (HMODULE module)</td></tr>
-<tr class="memdesc:a8de21e80da98494dc6ed9832d79e34e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#a8de21e80da98494dc6ed9832d79e34e0">More...</a><br /></td></tr>
-<tr class="separator:a8de21e80da98494dc6ed9832d79e34e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1">unregister_addon</a> (HMODULE module)</td></tr>
-<tr class="memdesc:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module. Call this in 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#abe2d5a09587756f7ee7ee20eb5e773f1">More...</a><br /></td></tr>
-<tr class="separator:abe2d5a09587756f7ee7ee20eb5e773f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293150d8fd80712da20c1c5c4c65603a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a293150d8fd80712da20c1c5c4c65603a">register_addon</a> (HMODULE addon_module, HMODULE reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a293150d8fd80712da20c1c5c4c65603a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#a293150d8fd80712da20c1c5c4c65603a">More...</a><br /></td></tr>
+<tr class="separator:a293150d8fd80712da20c1c5c4c65603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039d91e9992db4ebacd3f1827399b4e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a039d91e9992db4ebacd3f1827399b4e5">unregister_addon</a> (HMODULE addon_module, HMODULE reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a039d91e9992db4ebacd3f1827399b4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a039d91e9992db4ebacd3f1827399b4e5">More...</a><br /></td></tr>
+<tr class="separator:a039d91e9992db4ebacd3f1827399b4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplParams" colspan="2">template&lt;reshade::addon_event ev&gt; </td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">register_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
 <tr class="memdesc:ab97d139bc8e9a577d60e1b7739003543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for the specified event (via template) with ReShade.  <a href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">More...</a><br /></td></tr>
@@ -1620,7 +1633,7 @@ glUniform(...) </li>
 <li>
 vkCmdPushConstants </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee" title="A list of flags that represent the available shader stages in the render pipeline.">api::shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t layout_param, uint32_t first, uint32_t count, const uint32_t *values)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee" title="A list of flags that represent the available shader stages in the render pipeline.">api::shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t layout_param, uint32_t first, uint32_t count, const void *values)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa0856401a21410bc082d6de1ba93632f0"></a>push_descriptors&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1790,7 +1803,7 @@ glBindBuffersRange </li>
 <li>
 vkCmdBindTransformFeedbackBuffersEXT </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *counter_buffers, const uint64_t *counter_offsets)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86"></a>draw&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2237,11 +2250,46 @@ IVRCompositor::Submit </li>
 <p>This is not called for effect runtimes in VR. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729"></a>reshade_screenshot&#160;</td><td class="fielddoc"><p>Called after a screenshot was taken and saved to disk. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *filename)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a"></a>reshade_render_technique&#160;</td><td class="fielddoc"><p>Called for each technique after it was rendered, usually between reshade_begin_effects and reshade_finish_effects. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74"></a>reshade_set_current_preset_path&#160;</td><td class="fielddoc"><p>Called after a preset was loaded and applied. This occurs during reloading or when the user chooses a new preset in the overlay. </p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd"></a>reshade_reorder_techniques&#160;</td><td class="fielddoc"><p>Called when the rendering order of loaded techniques is changed. </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, size_t count, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> *techniques)</code></p>
+<p>To prevent the order from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7e63197214062e42f350af39eec1fc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e63197214062e42f350af39eec1fc2a">&#9670;&nbsp;</a></span>log_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">reshade::log_level</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2573,8 +2621,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="ab89735a25ed07c53b8c44b3ad31cc49d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89735a25ed07c53b8c44b3ad31cc49d">&#9670;&nbsp;</a></span>log_message()</h2>
+<a id="ad1e57c12113f4fdabcdb3f85ea0bad21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e57c12113f4fdabcdb3f85ea0bad21">&#9670;&nbsp;</a></span>log_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2585,7 +2633,7 @@ template&lt;&gt; </div>
         <tr>
           <td class="memname">void reshade::log_message </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
@@ -2610,7 +2658,7 @@ template&lt;&gt; </div>
 <p>Writes a message to ReShade's log. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">level</td><td>Severity level (1 = error, 2 = warning, 3 = info, 4 = debug).</td></tr>
+    <tr><td class="paramname">level</td><td>Severity level.</td></tr>
     <tr><td class="paramname">message</td><td>A null-terminated message string.</td></tr>
   </table>
   </dd>
@@ -2618,8 +2666,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a8de21e80da98494dc6ed9832d79e34e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de21e80da98494dc6ed9832d79e34e0">&#9670;&nbsp;</a></span>register_addon()</h2>
+<a id="a293150d8fd80712da20c1c5c4c65603a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293150d8fd80712da20c1c5c4c65603a">&#9670;&nbsp;</a></span>register_addon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2631,8 +2679,18 @@ template&lt;&gt; </div>
           <td class="memname">bool reshade::register_addon </td>
           <td>(</td>
           <td class="paramtype">HMODULE&#160;</td>
-          <td class="paramname"><em>module</em></td><td>)</td>
+          <td class="paramname"><em>addon_module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramname"><em>reshade_module</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2642,10 +2700,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Registers this module as an add-on with ReShade. Call this in 'DllMain' during process attach, before any of the other API functions! </p>
+<p>Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions! </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">module</td><td>Handle of the current add-on module.</td></tr>
+    <tr><td class="paramname">addon_module</td><td>Handle of the current add-on module.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2735,8 +2793,8 @@ template&lt;reshade::addon_event ev&gt; </div>
 
 </div>
 </div>
-<a id="abe2d5a09587756f7ee7ee20eb5e773f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe2d5a09587756f7ee7ee20eb5e773f1">&#9670;&nbsp;</a></span>unregister_addon()</h2>
+<a id="a039d91e9992db4ebacd3f1827399b4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039d91e9992db4ebacd3f1827399b4e5">&#9670;&nbsp;</a></span>unregister_addon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2748,8 +2806,18 @@ template&lt;reshade::addon_event ev&gt; </div>
           <td class="memname">void reshade::unregister_addon </td>
           <td>(</td>
           <td class="paramtype">HMODULE&#160;</td>
-          <td class="paramname"><em>module</em></td><td>)</td>
+          <td class="paramname"><em>addon_module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramname"><em>reshade_module</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2759,10 +2827,10 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Unregisters this module. Call this in 'DllMain' during process detach, after any of the other API functions. </p>
+<p>Unregisters this module. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">module</td><td>Handle of the current add-on module.</td></tr>
+    <tr><td class="paramname">addon_module</td><td>Handle of the current add-on module.</td></tr>
   </table>
   </dd>
 </dl>
