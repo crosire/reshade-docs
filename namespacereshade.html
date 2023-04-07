@@ -264,6 +264,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c">info</a>
 , <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d">debug</a>
  }</td></tr>
+<tr class="memdesc:a7e63197214062e42f350af39eec1fc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available log severity levels.  <a href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">More...</a><br /></td></tr>
 <tr class="separator:a7e63197214062e42f350af39eec1fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a">addon_event</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0ce4a4653b06410e17282af7873d5937">init_device</a>
@@ -382,9 +383,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">log_message</a> (<a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a> level, const char *message)</td></tr>
 <tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
 <tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190fee8c081a933e0fa3b133b58f93bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">config_get_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, char *value, size_t *length)</td></tr>
-<tr class="memdesc:a190fee8c081a933e0fa3b133b58f93bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">More...</a><br /></td></tr>
-<tr class="separator:a190fee8c081a933e0fa3b133b58f93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dce5382c15212557359af6388d2f4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">get_reshade_base_path</a> (char *path, size_t *path_size)</td></tr>
+<tr class="memdesc:a3dce5382c15212557359af6388d2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file path ReShade uses to resolve relative paths.  <a href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">More...</a><br /></td></tr>
+<tr class="separator:a3dce5382c15212557359af6388d2f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e5a5f1459f9f04f7459db7d5fdfb77"><td class="memTemplParams" colspan="2">template&lt;size_t SIZE&gt; </td></tr>
+<tr class="memitem:ae5e5a5f1459f9f04f7459db7d5fdfb77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ae5e5a5f1459f9f04f7459db7d5fdfb77">get_reshade_base_path</a> (char(&amp;path)[SIZE])</td></tr>
+<tr class="separator:ae5e5a5f1459f9f04f7459db7d5fdfb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae8d6eacb0c8402c403cb6bd3a93327"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a2ae8d6eacb0c8402c403cb6bd3a93327">config_get_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, char *value, size_t *value_size)</td></tr>
+<tr class="memdesc:a2ae8d6eacb0c8402c403cb6bd3a93327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#a2ae8d6eacb0c8402c403cb6bd3a93327">More...</a><br /></td></tr>
+<tr class="separator:a2ae8d6eacb0c8402c403cb6bd3a93327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e346857c236681d97200a171b9e0a7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad9e346857c236681d97200a171b9e0a7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad9e346857c236681d97200a171b9e0a7">config_get_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, T &amp;value)</td></tr>
 <tr class="separator:ad9e346857c236681d97200a171b9e0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1444,6 +1451,7 @@ vkCmdNextSubpass2 </li>
 vkCmdBeginRendering </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
+<p>The depth-stencil description argument is optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2"></a>end_render_pass&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1782,6 +1790,7 @@ vkCmdBindVertexBuffers </li>
 vkCmdBindVertexBuffers2 </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint32_t *strides)</code></p>
+<p>The strides argument is optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aae9e19bfe4d21f74acc5370a1fa9b3f46"></a>bind_stream_output_buffers&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1804,6 +1813,7 @@ glBindBuffersRange </li>
 vkCmdBindTransformFeedbackBuffersEXT </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *buffers, const uint64_t *offsets, const uint64_t *max_sizes, const <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> *counter_buffers, const uint64_t *counter_offsets)</code></p>
+<p>The counter arguments are optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86"></a>draw&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1954,7 +1964,7 @@ vkCmdCopyBufferToImage </li>
 vkCmdCopyBufferToImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aaf8fd0974a2fbc67f3ddc418fbd518aa5"></a>copy_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1995,7 +2005,7 @@ vkCmdCopyImage </li>
 vkCmdCopyImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384" title="The available filtering modes used for texture sampling operations.">api::filter_mode</a> filter)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box arguments are optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4ebf42358198546667376f080fadd527"></a>copy_texture_to_buffer&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2006,7 +2016,7 @@ vkCmdCopyImageToBuffer </li>
 vkCmdCopyImageToBuffer2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint32_t row_length, uint32_t slice_height)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa65ccf1dcac4e95d7c1721708968552b9"></a>resolve_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2029,7 +2039,7 @@ vkCmdResolveImage </li>
 vkCmdResolveImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2058,7 +2068,7 @@ vkCmdClearDepthStencilImage </li>
 vkCmdClearAttachments </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> dsv, const float *depth, const uint8_t *stencil, uint32_t rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *rects)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a8d67848e47e92b279f252dd3f27969cd">api::resource_usage::depth_stencil_write</a> state. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a8d67848e47e92b279f252dd3f27969cd">api::resource_usage::depth_stencil_write</a> state. One of the depth or stencil clear value arguments may be <code>nullptr</code> when the respective component is not cleared. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa148388d5a5ef8f4fc725bfb3ceb87e75"></a>clear_render_target_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2224,6 +2234,7 @@ vkQueuePresentKHR </li>
 IVRCompositor::Submit </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *source_rect, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dest_rect, uint32_t dirty_rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dirty_rects)</code></p>
+<p>The source and destination rectangle arguments are optional and may be <code>nullptr</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498"></a>reshade_present&#160;</td><td class="fielddoc"><p>Called after ReShade has rendered its overlay. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
@@ -2285,6 +2296,8 @@ IVRCompositor::Submit </li>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Available log severity levels. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"></td></tr>
@@ -2295,8 +2308,8 @@ IVRCompositor::Submit </li>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a190fee8c081a933e0fa3b133b58f93bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a190fee8c081a933e0fa3b133b58f93bb">&#9670;&nbsp;</a></span>config_get_value() <span class="overload">[1/2]</span></h2>
+<a id="a2ae8d6eacb0c8402c403cb6bd3a93327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae8d6eacb0c8402c403cb6bd3a93327">&#9670;&nbsp;</a></span>config_get_value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2332,7 +2345,7 @@ IVRCompositor::Submit </li>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>value_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2353,8 +2366,8 @@ IVRCompositor::Submit </li>
     <tr><td class="paramname">runtime</td><td>Optional effect runtime to use the config file from, or <code>nullptr</code> to use the global config file.</td></tr>
     <tr><td class="paramname">section</td><td>Name of the config section.</td></tr>
     <tr><td class="paramname">key</td><td>Name of the config value.</td></tr>
-    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the config value.</td></tr>
-    <tr><td class="paramname">length</td><td>Pointer to an integer that contains the size of the string buffer and upon completion is set to the actual length of the string.</td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to a string buffer that is filled with the config value, or <code>nullptr</code> to query the necessary size.</td></tr>
+    <tr><td class="paramname">value_size</td><td>Pointer to an integer that contains the size of the string buffer and is set to the actual length of the string, including the null-terminator.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2424,7 +2437,7 @@ template&lt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="namespacereshade.html#a190fee8c081a933e0fa3b133b58f93bb">reshade::config_get_value</a>&lt; bool &gt; </td>
+          <td class="memname">bool <a class="el" href="namespacereshade.html#a2ae8d6eacb0c8402c403cb6bd3a93327">reshade::config_get_value</a>&lt; bool &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
           <td class="paramname"><em>runtime</em>, </td>
@@ -2610,6 +2623,79 @@ template&lt;&gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dce5382c15212557359af6388d2f4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dce5382c15212557359af6388d2f4be">&#9670;&nbsp;</a></span>get_reshade_base_path() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::get_reshade_base_path </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>path_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the file path ReShade uses to resolve relative paths. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Pointer to a string buffer that is filled with the file path to the preset, or <code>nullptr</code> to query the necessary size.</td></tr>
+    <tr><td class="paramname">path_size</td><td>Pointer to an integer that contains the size of the string buffer and is set to the actual length of the string, including the null-terminator.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5e5a5f1459f9f04f7459db7d5fdfb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e5a5f1459f9f04f7459db7d5fdfb77">&#9670;&nbsp;</a></span>get_reshade_base_path() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::get_reshade_base_path </td>
+          <td>(</td>
+          <td class="paramtype">char(&amp;)&#160;</td>
+          <td class="paramname"><em>path</em>[SIZE]</td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
