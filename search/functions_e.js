@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['register_5faddon_1005',['register_addon',['../namespacereshade.html#a293150d8fd80712da20c1c5c4c65603a',1,'reshade']]],
+  ['register_5faddon_1005',['register_addon',['../namespacereshade.html#aabe2def0040846612598f4c26b626013',1,'reshade']]],
   ['register_5fevent_1006',['register_event',['../namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543',1,'reshade']]],
   ['register_5foverlay_1007',['register_overlay',['../namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e',1,'reshade']]],
   ['render_5feffects_1008',['render_effects',['../structreshade_1_1api_1_1effect__runtime.html#ad207e2ecf0f15dacc2fdc84b1eed47c9',1,'reshade::api::effect_runtime']]],

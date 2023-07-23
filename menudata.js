@@ -45,12 +45,12 @@ var menudata={children:[
 {text:"t",url:"namespacemembers.html#index_t"},
 {text:"u",url:"namespacemembers.html#index_u"}]},
 {text:"Functions",url:"namespacemembers_func.html",children:[
-{text:"c",url:"namespacemembers_func.html#index_c"},
 {text:"f",url:"namespacemembers_func.html#index_f"},
 {text:"g",url:"namespacemembers_func.html#index_g"},
 {text:"l",url:"namespacemembers_func.html#index_l"},
 {text:"o",url:"namespacemembers_func.html#index_o"},
 {text:"r",url:"namespacemembers_func.html#index_r"},
+{text:"s",url:"namespacemembers_func.html#index_s"},
 {text:"u",url:"namespacemembers_func.html#index_u"}]},
 {text:"Enumerations",url:"namespacemembers_enum.html",children:[
 {text:"a",url:"namespacemembers_enum.html#index_a"},

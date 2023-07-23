@@ -312,9 +312,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb7b7cf23b101a18794e04fb24fa2185"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#afb7b7cf23b101a18794e04fb24fa2185">reorder_techniques</a> (size_t count, const <a class="el" href="structreshade_1_1api_1_1effect__technique.html">effect_technique</a> *techniques)=0</td></tr>
 <tr class="memdesc:afb7b7cf23b101a18794e04fb24fa2185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the rendering order of loaded techniques to that of the specified technique list.  <a href="structreshade_1_1api_1_1effect__runtime.html#afb7b7cf23b101a18794e04fb24fa2185">More...</a><br /></td></tr>
 <tr class="separator:afb7b7cf23b101a18794e04fb24fa2185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a0e7ef0e7c0e23b0afa76dea9e9906093">block_input_next_frame</a> ()</td></tr>
-<tr class="memdesc:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes ReShade block any keyboard and mouse input from reaching the game for the duration of the next frame. Call this every frame for as long as input should be blocked. This can be used to ensure input is only applied to overlays created in a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20" title="Called between the ImGui::NewFrame and ImGui::EndFrame calls for the ReShade overlay....">addon_event::reshade_overlay</a> callback.  <a href="structreshade_1_1api_1_1effect__runtime.html#a0e7ef0e7c0e23b0afa76dea9e9906093">More...</a><br /></td></tr>
-<tr class="separator:a0e7ef0e7c0e23b0afa76dea9e9906093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324085fed6e383ac5a9a55b9cb5aa3dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a324085fed6e383ac5a9a55b9cb5aa3dd">block_input_next_frame</a> ()=0</td></tr>
+<tr class="memdesc:a324085fed6e383ac5a9a55b9cb5aa3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes ReShade block any keyboard and mouse input from reaching the game for the duration of the next frame. Call this every frame for as long as input should be blocked. This can be used to ensure input is only applied to overlays created in a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20" title="Called between the ImGui::NewFrame and ImGui::EndFrame calls for the ReShade overlay....">addon_event::reshade_overlay</a> callback.  <a href="structreshade_1_1api_1_1effect__runtime.html#a324085fed6e383ac5a9a55b9cb5aa3dd">More...</a><br /></td></tr>
+<tr class="separator:a324085fed6e383ac5a9a55b9cb5aa3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d00029e271b5382e2761fd0e6dcdb4f"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a9d00029e271b5382e2761fd0e6dcdb4f">last_key_pressed</a> () const =0</td></tr>
 <tr class="memdesc:a9d00029e271b5382e2761fd0e6dcdb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the virtual key code of the last key that was pressed.  <a href="structreshade_1_1api_1_1effect__runtime.html#a9d00029e271b5382e2761fd0e6dcdb4f">More...</a><br /></td></tr>
 <tr class="separator:a9d00029e271b5382e2761fd0e6dcdb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -398,8 +398,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A ReShade effect runtime, used to control effects. </p>
 <p>A separate runtime is instantiated for every swap chain.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0e7ef0e7c0e23b0afa76dea9e9906093"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e7ef0e7c0e23b0afa76dea9e9906093">&#9670;&nbsp;</a></span>block_input_next_frame()</h2>
+<a id="a324085fed6e383ac5a9a55b9cb5aa3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324085fed6e383ac5a9a55b9cb5aa3dd">&#9670;&nbsp;</a></span>block_input_next_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +416,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3638,7 +3638,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Applies post-processing effects to the specified render targets and prevents the usual rendering of effects before swap chain presentation of the current frame. This can be used to force ReShade to render effects at a certain point during the frame to e.g. avoid effects being applied to user interface elements of the application. </p>
-<p>The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor sets, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. Calling this with <em>rtv</em>  set to zero will cause nothing to be rendered, but uniform variables to still be updated. </p>
+<p>The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. Calling this with <em>rtv</em>  set to zero will cause nothing to be rendered, but uniform variables to still be updated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
@@ -3697,7 +3697,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Applies a <em>technique</em>  to the specified render targets (regardless of the state of this technique). </p>
-<p>The width and height of the specified render target should match those used to render all other effects! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor sets, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. </p>
+<p>The width and height of the specified render target should match those used to render all other effects! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>

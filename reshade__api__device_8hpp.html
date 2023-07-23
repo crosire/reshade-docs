@@ -70,7 +70,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -112,13 +111,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacereshade_1_1api"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html">reshade::api</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a7ef187fa6454ae4fc5733807347595e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reshade__api__device_8hpp.html#a7ef187fa6454ae4fc5733807347595e1">RESHADE_DEFINE_INTERFACE</a>(name)</td></tr>
-<tr class="separator:a7ef187fa6454ae4fc5733807347595e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb622089c4d35ece10cfa8aa5d01d97b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reshade__api__device_8hpp.html#acb622089c4d35ece10cfa8aa5d01d97b">RESHADE_DEFINE_INTERFACE_WITH_BASE</a>(name,  base)</td></tr>
-<tr class="separator:acb622089c4d35ece10cfa8aa5d01d97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a0e2758bd8e3478f957852a26e12d7f5f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">reshade::api::device_api</a> { <br />
@@ -156,7 +148,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ae120bede29a8f2b624d7f55078d7a15f">reshade::api::blit</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a6f1f028740db5e31adf9939e134f93b4">reshade::api::resolve_region</a>
-, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa292dfd59680988598edc50e2f1e4c88">reshade::api::copy_query_pool_results</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ae487ba2c9be37695c211184efc8d76a4">reshade::api::copy_query_heap_results</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a71c304e35a3900da48ebee39edbc6041">reshade::api::sampler_compare</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a6bb09ea98a31d3e6639b2079e816d703">reshade::api::sampler_anisotropic</a>
@@ -202,53 +194,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a50b6db0bf5d79d395ad39fafcd5b537b"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a50b6db0bf5d79d395ad39fafcd5b537b">reshade::api::operator!=</a> (command_queue_type lhs, uint32_t rhs)</td></tr>
 <tr class="separator:a50b6db0bf5d79d395ad39fafcd5b537b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7ef187fa6454ae4fc5733807347595e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ef187fa6454ae4fc5733807347595e1">&#9670;&nbsp;</a></span>RESHADE_DEFINE_INTERFACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RESHADE_DEFINE_INTERFACE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb622089c4d35ece10cfa8aa5d01d97b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb622089c4d35ece10cfa8aa5d01d97b">&#9670;&nbsp;</a></span>RESHADE_DEFINE_INTERFACE_WITH_BASE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RESHADE_DEFINE_INTERFACE_WITH_BASE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

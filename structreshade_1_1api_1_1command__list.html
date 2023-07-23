@@ -125,15 +125,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e432c00882dbaa27b99177d33d5b398"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a5e432c00882dbaa27b99177d33d5b398">push_constants</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, uint32_t first, uint32_t count, const void *values)=0</td></tr>
 <tr class="memdesc:a5e432c00882dbaa27b99177d33d5b398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly updates constant values in the specified shader pipeline stages.  <a href="structreshade_1_1api_1_1command__list.html#a5e432c00882dbaa27b99177d33d5b398">More...</a><br /></td></tr>
 <tr class="separator:a5e432c00882dbaa27b99177d33d5b398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0d6c6e63040c1046cd5e8d91eb03c27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#ab0d6c6e63040c1046cd5e8d91eb03c27">push_descriptors</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, const <a class="el" href="structreshade_1_1api_1_1descriptor__set__update.html">descriptor_set_update</a> &amp;update)=0</td></tr>
-<tr class="memdesc:ab0d6c6e63040c1046cd5e8d91eb03c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with an array of descriptors.  <a href="structreshade_1_1api_1_1command__list.html#ab0d6c6e63040c1046cd5e8d91eb03c27">More...</a><br /></td></tr>
-<tr class="separator:ab0d6c6e63040c1046cd5e8d91eb03c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566efdd2775f002a85dfbecbdd971f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f">bind_descriptor_set</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__set.html">descriptor_set</a> set)</td></tr>
-<tr class="memdesc:a566efdd2775f002a85dfbecbdd971f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a single descriptor set.  <a href="structreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f">More...</a><br /></td></tr>
-<tr class="separator:a566efdd2775f002a85dfbecbdd971f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab820089bf7025927cc56a509dc540220"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#ab820089bf7025927cc56a509dc540220">bind_descriptor_sets</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__set.html">descriptor_set</a> *sets)=0</td></tr>
-<tr class="memdesc:ab820089bf7025927cc56a509dc540220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of descriptor sets.  <a href="structreshade_1_1api_1_1command__list.html#ab820089bf7025927cc56a509dc540220">More...</a><br /></td></tr>
-<tr class="separator:ab820089bf7025927cc56a509dc540220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d8805c699bf00279deb042dd7ffc7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a02d8805c699bf00279deb042dd7ffc7c">push_descriptors</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, const <a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html">descriptor_table_update</a> &amp;update)=0</td></tr>
+<tr class="memdesc:a02d8805c699bf00279deb042dd7ffc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly binds a temporary descriptor table for the specfified shader pipeline stage and updates with an array of descriptors.  <a href="structreshade_1_1api_1_1command__list.html#a02d8805c699bf00279deb042dd7ffc7c">More...</a><br /></td></tr>
+<tr class="separator:a02d8805c699bf00279deb042dd7ffc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8266f2bdeeaea48e6497ed8aff127e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a8266f2bdeeaea48e6497ed8aff127e65">bind_descriptor_table</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> table)</td></tr>
+<tr class="memdesc:a8266f2bdeeaea48e6497ed8aff127e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a single descriptor table.  <a href="structreshade_1_1api_1_1command__list.html#a8266f2bdeeaea48e6497ed8aff127e65">More...</a><br /></td></tr>
+<tr class="separator:a8266f2bdeeaea48e6497ed8aff127e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace034fd1770ba272768d779c62300174"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#ace034fd1770ba272768d779c62300174">bind_descriptor_tables</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *tables)=0</td></tr>
+<tr class="memdesc:ace034fd1770ba272768d779c62300174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an array of descriptor tables.  <a href="structreshade_1_1api_1_1command__list.html#ace034fd1770ba272768d779c62300174">More...</a><br /></td></tr>
+<tr class="separator:ace034fd1770ba272768d779c62300174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aa24a66cda78ff105d1975a297e4314"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a8aa24a66cda78ff105d1975a297e4314">bind_index_buffer</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> buffer, uint64_t offset, uint32_t index_size)=0</td></tr>
 <tr class="memdesc:a8aa24a66cda78ff105d1975a297e4314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an index buffer to the input-assembler stage.  <a href="structreshade_1_1api_1_1command__list.html#a8aa24a66cda78ff105d1975a297e4314">More...</a><br /></td></tr>
 <tr class="separator:a8aa24a66cda78ff105d1975a297e4314"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,15 +191,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab066738ef9831bba807081671846fea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">generate_mipmaps</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> srv)=0</td></tr>
 <tr class="memdesc:aab066738ef9831bba807081671846fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mipmap chain and stops with the smallest level that is specified by the view.  <a href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea">More...</a><br /></td></tr>
 <tr class="separator:aab066738ef9831bba807081671846fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a51df1782d51eb18624174d395ead37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">begin_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
-<tr class="memdesc:a1a51df1782d51eb18624174d395ead37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a query.  <a href="structreshade_1_1api_1_1command__list.html#a1a51df1782d51eb18624174d395ead37">More...</a><br /></td></tr>
-<tr class="separator:a1a51df1782d51eb18624174d395ead37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c22d4af96e4a160676fe0d898de7137"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">end_query</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
-<tr class="memdesc:a6c22d4af96e4a160676fe0d898de7137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a query.  <a href="structreshade_1_1api_1_1command__list.html#a6c22d4af96e4a160676fe0d898de7137">More...</a><br /></td></tr>
-<tr class="separator:a6c22d4af96e4a160676fe0d898de7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae1beb797978b3ccf3292039edfcef7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">copy_query_pool_results</a> (<a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a> pool, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first, uint32_t count, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t stride)=0</td></tr>
-<tr class="memdesc:a2ae1beb797978b3ccf3292039edfcef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the results of queries in a query pool to a buffer resource.  <a href="structreshade_1_1api_1_1command__list.html#a2ae1beb797978b3ccf3292039edfcef7">More...</a><br /></td></tr>
-<tr class="separator:a2ae1beb797978b3ccf3292039edfcef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77d2451ff23f728e6fbaf54558caf46"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#ae77d2451ff23f728e6fbaf54558caf46">begin_query</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
+<tr class="memdesc:ae77d2451ff23f728e6fbaf54558caf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a query.  <a href="structreshade_1_1api_1_1command__list.html#ae77d2451ff23f728e6fbaf54558caf46">More...</a><br /></td></tr>
+<tr class="separator:ae77d2451ff23f728e6fbaf54558caf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4dc0f67f96f6653d362bd33d58598ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#af4dc0f67f96f6653d362bd33d58598ce">end_query</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t index)=0</td></tr>
+<tr class="memdesc:af4dc0f67f96f6653d362bd33d58598ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a query.  <a href="structreshade_1_1api_1_1command__list.html#af4dc0f67f96f6653d362bd33d58598ce">More...</a><br /></td></tr>
+<tr class="separator:af4dc0f67f96f6653d362bd33d58598ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8fab842fa82550d5cda7c7d64c296c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a9d8fab842fa82550d5cda7c7d64c296c">copy_query_heap_results</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first, uint32_t count, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t stride)=0</td></tr>
+<tr class="memdesc:a9d8fab842fa82550d5cda7c7d64c296c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the results of queries in a query heap to a buffer resource.  <a href="structreshade_1_1api_1_1command__list.html#a9d8fab842fa82550d5cda7c7d64c296c">More...</a><br /></td></tr>
+<tr class="separator:a9d8fab842fa82550d5cda7c7d64c296c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">begin_debug_event</a> (const char *label, const float color[4]=nullptr)=0</td></tr>
 <tr class="memdesc:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a debug event region in the command list.  <a href="structreshade_1_1api_1_1command__list.html#a5ad2d3966e63018c8cb1aa8a2db1c2ec">More...</a><br /></td></tr>
 <tr class="separator:a5ad2d3966e63018c8cb1aa8a2db1c2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -397,8 +397,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a51df1782d51eb18624174d395ead37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a51df1782d51eb18624174d395ead37">&#9670;&nbsp;</a></span>begin_query()</h2>
+<a id="ae77d2451ff23f728e6fbaf54558caf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77d2451ff23f728e6fbaf54558caf46">&#9670;&nbsp;</a></span>begin_query()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,8 +409,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void reshade::api::command_list::begin_query </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a>&#160;</td>
-          <td class="paramname"><em>pool</em>, </td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -440,9 +440,9 @@ Public Member Functions</h2></td></tr>
 <p>Begins a query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pool</td><td>Query pool that will manage the results of the query.</td></tr>
+    <tr><td class="paramname">heap</td><td>Query heap that will manage the results of the query.</td></tr>
     <tr><td class="paramname">type</td><td>Type of the query to begin.</td></tr>
-    <tr><td class="paramname">index</td><td>Index of the query in the pool.</td></tr>
+    <tr><td class="paramname">index</td><td>Index of the query in the query heap.</td></tr>
   </table>
   </dd>
 </dl>
@@ -501,8 +501,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a566efdd2775f002a85dfbecbdd971f5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a566efdd2775f002a85dfbecbdd971f5f">&#9670;&nbsp;</a></span>bind_descriptor_set()</h2>
+<a id="a8266f2bdeeaea48e6497ed8aff127e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8266f2bdeeaea48e6497ed8aff127e65">&#9670;&nbsp;</a></span>bind_descriptor_table()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +511,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void reshade::api::command_list::bind_descriptor_set </td>
+          <td class="memname">void reshade::api::command_list::bind_descriptor_table </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a>&#160;</td>
           <td class="paramname"><em>stages</em>, </td>
@@ -531,8 +531,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1descriptor__set.html">descriptor_set</a>&#160;</td>
-          <td class="paramname"><em>set</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a>&#160;</td>
+          <td class="paramname"><em>table</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -547,21 +547,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binds a single descriptor set. </p>
+<p>Binds a single descriptor table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stages</td><td>Shader stages that will use the descriptors.</td></tr>
     <tr><td class="paramname">layout</td><td>Pipeline layout that describes the descriptors.</td></tr>
-    <tr><td class="paramname">param</td><td>Index of the pipeline <em>layout</em>  parameter that describes the descriptor set (root parameter index in D3D12, descriptor set index in Vulkan).</td></tr>
-    <tr><td class="paramname">set</td><td>Descriptor set to bind.</td></tr>
+    <tr><td class="paramname">param</td><td>Index of the pipeline <em>layout</em>  parameter that describes the descriptor table (root parameter index in D3D12, descriptor set index in Vulkan).</td></tr>
+    <tr><td class="paramname">table</td><td>Descriptor table to bind.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab820089bf7025927cc56a509dc540220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab820089bf7025927cc56a509dc540220">&#9670;&nbsp;</a></span>bind_descriptor_sets()</h2>
+<a id="ace034fd1770ba272768d779c62300174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace034fd1770ba272768d779c62300174">&#9670;&nbsp;</a></span>bind_descriptor_tables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,7 +570,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::command_list::bind_descriptor_sets </td>
+          <td class="memname">virtual void reshade::api::command_list::bind_descriptor_tables </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a>&#160;</td>
           <td class="paramname"><em>stages</em>, </td>
@@ -596,8 +596,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1descriptor__set.html">descriptor_set</a> *&#160;</td>
-          <td class="paramname"><em>sets</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *&#160;</td>
+          <td class="paramname"><em>tables</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -612,14 +612,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binds an array of descriptor sets. </p>
+<p>Binds an array of descriptor tables. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stages</td><td>Shader stages that will use the descriptors.</td></tr>
     <tr><td class="paramname">layout</td><td>Pipeline layout that describes the descriptors.</td></tr>
-    <tr><td class="paramname">first</td><td>Index of the first pipeline <em>layout</em>  parameter that describes the first descriptor set to bind.</td></tr>
-    <tr><td class="paramname">count</td><td>Number of descriptor sets to bind.</td></tr>
-    <tr><td class="paramname">sets</td><td>Pointer to an array of descriptor sets to bind.</td></tr>
+    <tr><td class="paramname">first</td><td>Index of the first pipeline <em>layout</em>  parameter that describes the first descriptor table to bind (root parameter index in D3D12, descriptor set index in Vulkan).</td></tr>
+    <tr><td class="paramname">count</td><td>Number of descriptor tables to bind.</td></tr>
+    <tr><td class="paramname">tables</td><td>Pointer to an array of descriptor tables to bind.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1581,8 +1581,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ae1beb797978b3ccf3292039edfcef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae1beb797978b3ccf3292039edfcef7">&#9670;&nbsp;</a></span>copy_query_pool_results()</h2>
+<a id="a9d8fab842fa82550d5cda7c7d64c296c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8fab842fa82550d5cda7c7d64c296c">&#9670;&nbsp;</a></span>copy_query_heap_results()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1591,10 +1591,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void reshade::api::command_list::copy_query_pool_results </td>
+          <td class="memname">virtual void reshade::api::command_list::copy_query_heap_results </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a>&#160;</td>
-          <td class="paramname"><em>pool</em>, </td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1645,14 +1645,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copies the results of queries in a query pool to a buffer resource. </p>
+<p>Copies the results of queries in a query heap to a buffer resource. </p>
 <p>The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa292dfd59680988598edc50e2f1e4c88" title="Specifies whether copying query results to a buffer is supported. If this feature is not present,...">device_caps::copy_query_pool_results</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ae487ba2c9be37695c211184efc8d76a4" title="Specifies whether copying query results to a buffer is supported. If this feature is not present,...">device_caps::copy_query_heap_results</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pool</td><td>Query pool that manages the results of the queries.</td></tr>
+    <tr><td class="paramname">heap</td><td>Query heap that manages the results of the queries.</td></tr>
     <tr><td class="paramname">type</td><td>Type of the queries to copy.</td></tr>
-    <tr><td class="paramname">first</td><td>Index of the first query in the pool to copy the result from.</td></tr>
+    <tr><td class="paramname">first</td><td>Index of the first query in the query heap to copy the result from.</td></tr>
     <tr><td class="paramname">count</td><td>Number of query results to copy.</td></tr>
     <tr><td class="paramname">dest</td><td>Buffer resource to copy to.</td></tr>
     <tr><td class="paramname">dest_offset</td><td>Offset (in bytes) into the <em>dest</em> ination buffer to start copying to.</td></tr>
@@ -2147,8 +2147,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c22d4af96e4a160676fe0d898de7137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c22d4af96e4a160676fe0d898de7137">&#9670;&nbsp;</a></span>end_query()</h2>
+<a id="af4dc0f67f96f6653d362bd33d58598ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4dc0f67f96f6653d362bd33d58598ce">&#9670;&nbsp;</a></span>end_query()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2159,8 +2159,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void reshade::api::command_list::end_query </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__pool.html">query_pool</a>&#160;</td>
-          <td class="paramname"><em>pool</em>, </td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2190,9 +2190,9 @@ Public Member Functions</h2></td></tr>
 <p>Ends a query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pool</td><td>Query pool that will manage the results of the query.</td></tr>
+    <tr><td class="paramname">heap</td><td>Query heap that will manage the results of the query.</td></tr>
     <tr><td class="paramname">type</td><td>Type of the query end.</td></tr>
-    <tr><td class="paramname">index</td><td>Index of the query in the pool.</td></tr>
+    <tr><td class="paramname">index</td><td>Index of the query in the query heap.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2251,7 +2251,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap level of the view to recursively generate the lower levels of the mipmap chain and stops with the smallest level that is specified by the view. </p>
-<p>This will invalidate all previous descriptor bindings, which will need to be reset by calls to <a class="el" href="structreshade_1_1api_1_1command__list.html#a566efdd2775f002a85dfbecbdd971f5f" title="Binds a single descriptor set.">bind_descriptor_set</a> or <a class="el" href="structreshade_1_1api_1_1command__list.html#ab0d6c6e63040c1046cd5e8d91eb03c27" title="Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with a...">push_descriptors</a>. The resource the shader resource view points to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059aa24632445528325a6af3096b89d7e043">resource_usage::shader_resource</a> state and has to have been created with the <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">resource_flags::generate_mipmaps</a> flag. </p>
+<p>This will invalidate all previous descriptor and pipeline bindings, which will need to be reset by calls to <a class="el" href="structreshade_1_1api_1_1command__list.html#ace034fd1770ba272768d779c62300174" title="Binds an array of descriptor tables.">bind_descriptor_tables</a> or <a class="el" href="structreshade_1_1api_1_1command__list.html#a02d8805c699bf00279deb042dd7ffc7c" title="Directly binds a temporary descriptor table for the specfified shader pipeline stage and updates with...">push_descriptors</a> and <a class="el" href="structreshade_1_1api_1_1command__list.html#abbc22fd6a89454e4ac11497d8290e1b2" title="Binds a pipeline state object.">bind_pipeline</a>. The resource the shader resource view points to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059aa24632445528325a6af3096b89d7e043">resource_usage::shader_resource</a> state and has to have been created with the <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">resource_flags::generate_mipmaps</a> flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">srv</td><td>Shader resource view to update.</td></tr>
@@ -2381,8 +2381,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0d6c6e63040c1046cd5e8d91eb03c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0d6c6e63040c1046cd5e8d91eb03c27">&#9670;&nbsp;</a></span>push_descriptors()</h2>
+<a id="a02d8805c699bf00279deb042dd7ffc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d8805c699bf00279deb042dd7ffc7c">&#9670;&nbsp;</a></span>push_descriptors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2411,7 +2411,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1descriptor__set__update.html">descriptor_set_update</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html">descriptor_table_update</a> &amp;&#160;</td>
           <td class="paramname"><em>update</em>&#160;</td>
         </tr>
         <tr>
@@ -2427,14 +2427,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Directly binds a temporary descriptor set for the specfified shader pipeline stage and updates with an array of descriptors. </p>
+<p>Directly binds a temporary descriptor table for the specfified shader pipeline stage and updates with an array of descriptors. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a1ad28dfe8e08a1a3e97dfa5d3b428d6a" title="Specifies whether partial push descriptor updates are supported. If this feature is not present,...">device_caps::partial_push_descriptor_updates</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stages</td><td>Shader stages that will use the updated descriptors.</td></tr>
     <tr><td class="paramname">layout</td><td>Pipeline layout that describes the descriptors.</td></tr>
-    <tr><td class="paramname">param</td><td>Layout parameter index of the descriptor set in the pipeline <em>layout</em>  (root parameter index in D3D12, descriptor set index in Vulkan).</td></tr>
-    <tr><td class="paramname">update</td><td>Range of descriptors to update in the temporary set (<a class="el" href="structreshade_1_1api_1_1descriptor__set__update.html#ae35184aa7b9cae4a2b8a7d8564137e65" title="Descriptor set to update.">descriptor_set_update::set</a> is ignored).</td></tr>
+    <tr><td class="paramname">param</td><td>Layout parameter index of the descriptor table in the pipeline <em>layout</em>  (root parameter index in D3D12, descriptor set index in Vulkan).</td></tr>
+    <tr><td class="paramname">update</td><td>Range of descriptors to update in the temporary descriptor table (<a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html#a1e35e6aa92d43f177c6a7a21abe88e94" title="Descriptor table to update.">descriptor_table_update::table</a> is ignored).</td></tr>
   </table>
   </dd>
 </dl>

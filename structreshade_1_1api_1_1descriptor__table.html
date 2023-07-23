@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ReShade: reshade::api::descriptor_pool Struct Reference</title>
+<title>ReShade: reshade::api::descriptor_table Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1descriptor__pool.html">descriptor_pool</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structreshade_1_1api_1_1descriptor__pool-members.html">List of all members</a>  </div>
+<a href="structreshade_1_1api_1_1descriptor__table-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">reshade::api::descriptor_pool Struct Reference</div>  </div>
+<div class="title">reshade::api::descriptor_table Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An opaque handle to a descriptor pool.  
- <a href="structreshade_1_1api_1_1descriptor__pool.html#details">More...</a></p>
+<p>An opaque handle to a descriptor table in a descriptor heap.  
+ <a href="structreshade_1_1api_1_1descriptor__table.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a62424fbc394e7ba3b69aa0dc38907187"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__pool.html#a62424fbc394e7ba3b69aa0dc38907187">handle</a></td></tr>
-<tr class="separator:a62424fbc394e7ba3b69aa0dc38907187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bba27873848c203fe4fbefa93ea5a2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html#a75bba27873848c203fe4fbefa93ea5a2">handle</a></td></tr>
+<tr class="separator:a75bba27873848c203fe4fbefa93ea5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An opaque handle to a descriptor pool. </p>
-<p>In D3D12 this is a pointer to a 'ID3D12DescriptorHeap' object, in Vulkan a 'VkDescriptorPool' handle.</p>
+<div class="textblock"><p>An opaque handle to a descriptor table in a descriptor heap. </p>
+<p>In Vulkan this is a 'VkDescriptorSet' handle.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a62424fbc394e7ba3b69aa0dc38907187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62424fbc394e7ba3b69aa0dc38907187">&#9670;&nbsp;</a></span>handle</h2>
+<a id="a75bba27873848c203fe4fbefa93ea5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bba27873848c203fe4fbefa93ea5a2">&#9670;&nbsp;</a></span>handle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t reshade::api::descriptor_pool::handle</td>
+          <td class="memname">uint64_t reshade::api::descriptor_table::handle</td>
         </tr>
       </table>
 </div><div class="memdoc">

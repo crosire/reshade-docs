@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['query_5fpool_819',['query_pool',['../structreshade_1_1api_1_1query__pool.html',1,'reshade::api']]]
+  ['query_5fheap_822',['query_heap',['../structreshade_1_1api_1_1query__heap.html',1,'reshade::api']]]
 ];
