@@ -88,7 +88,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque handle to a uniform variable in an effect.  <a href="structreshade_1_1api_1_1effect__uniform__variable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html">effect_runtime</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A ReShade effect runtime, used to control effects.  <a href="structreshade_1_1api_1_1effect__runtime.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A post-processing effect runtime, used to control effects.  <a href="structreshade_1_1api_1_1effect__runtime.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html">api_object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects provided by the ReShade API.  <a href="structreshade_1_1api_1_1api__object.html#details">More...</a><br /></td></tr>
@@ -249,6 +249,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0acf2abea31022a0c3cd4b340acf7f138b">sampler_with_resource_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0af1b6150f303b6aee438c0e1331c1965f">shared_resource</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a39647fe76d7d4f2138899c614e97ef8b">shared_resource_nt_handle</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a65274c70133f904bf23b0794e1e17b6e">resolve_depth_stencil</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
@@ -1485,6 +1487,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0af1b6150f303b6aee438c0e1331c1965f"></a>shared_resource&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">resource_flags::shared</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a39647fe76d7d4f2138899c614e97ef8b"></a>shared_resource_nt_handle&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing with NT handles is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce">resource_flags::shared_nt_handle</a> must not be used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a65274c70133f904bf23b0794e1e17b6e"></a>resolve_depth_stencil&#160;</td><td class="fielddoc"><p>Specifies whether resolving depth-stencil resources is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#af394fff6c8eec9430b2413994c68af77" title="Copies a region from the multisampled source  texture to the non-multisampled dest ination texture.">command_list::resolve_texture_region</a> must not be used with depth-stencil resources. </p>
 </td></tr>
 </table>
 

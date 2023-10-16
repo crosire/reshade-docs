@@ -384,27 +384,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
 <tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dce5382c15212557359af6388d2f4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">get_reshade_base_path</a> (char *path, size_t *path_size)</td></tr>
-<tr class="memdesc:a3dce5382c15212557359af6388d2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file path ReShade uses to resolve relative paths.  <a href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">More...</a><br /></td></tr>
+<tr class="memdesc:a3dce5382c15212557359af6388d2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the base path ReShade uses to resolve relative paths.  <a href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">More...</a><br /></td></tr>
 <tr class="separator:a3dce5382c15212557359af6388d2f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33734a5db740ae4e4f10fe33d045ef81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a33734a5db740ae4e4f10fe33d045ef81">get_config_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, char *value, size_t *value_size)</td></tr>
-<tr class="memdesc:a33734a5db740ae4e4f10fe33d045ef81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files.  <a href="namespacereshade.html#a33734a5db740ae4e4f10fe33d045ef81">More...</a><br /></td></tr>
+<tr class="memdesc:a33734a5db740ae4e4f10fe33d045ef81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from one of ReShade's config files. This can use either the global config file (ReShade.ini next to the application executable), or one local to an effect runtime (ReShade[index].ini in the base path).  <a href="namespacereshade.html#a33734a5db740ae4e4f10fe33d045ef81">More...</a><br /></td></tr>
 <tr class="separator:a33734a5db740ae4e4f10fe33d045ef81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">set_config_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const char *value)</td></tr>
-<tr class="memdesc:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets and saves a value in one of ReShade's config files.  <a href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">More...</a><br /></td></tr>
+<tr class="memdesc:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets and saves a value in one of ReShade's config files. This can use either the global config file (ReShade.ini next to the application executable), or one local to an effect runtime (ReShade[index].ini in the base path).  <a href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">More...</a><br /></td></tr>
 <tr class="separator:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe2def0040846612598f4c26b626013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#aabe2def0040846612598f4c26b626013">register_addon</a> (HMODULE addon_module, [[maybe_unused]] HMODULE reshade_module=nullptr)</td></tr>
 <tr class="memdesc:aabe2def0040846612598f4c26b626013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#aabe2def0040846612598f4c26b626013">More...</a><br /></td></tr>
 <tr class="separator:aabe2def0040846612598f4c26b626013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450eb948a009dd9a8be7fbf3773515c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a450eb948a009dd9a8be7fbf3773515c4">unregister_addon</a> (HMODULE addon_module, [[maybe_unused]] HMODULE reshade_module=nullptr)</td></tr>
-<tr class="memdesc:a450eb948a009dd9a8be7fbf3773515c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a450eb948a009dd9a8be7fbf3773515c4">More...</a><br /></td></tr>
+<tr class="memdesc:a450eb948a009dd9a8be7fbf3773515c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module as an add-on. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a450eb948a009dd9a8be7fbf3773515c4">More...</a><br /></td></tr>
 <tr class="separator:a450eb948a009dd9a8be7fbf3773515c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplParams" colspan="2">template&lt;reshade::addon_event ev&gt; </td></tr>
 <tr class="memitem:ab97d139bc8e9a577d60e1b7739003543"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">register_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
-<tr class="memdesc:ab97d139bc8e9a577d60e1b7739003543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for the specified event (via template) with ReShade.  <a href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">More...</a><br /></td></tr>
+<tr class="memdesc:ab97d139bc8e9a577d60e1b7739003543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for the specified event with ReShade.  <a href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543">More...</a><br /></td></tr>
 <tr class="separator:ab97d139bc8e9a577d60e1b7739003543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memTemplParams" colspan="2">template&lt;reshade::addon_event ev&gt; </td></tr>
 <tr class="memitem:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">unregister_event</a> (typename reshade::addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
-<tr class="memdesc:ab85d6da3c11d36a58e9ef519a0f83780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a callback for the specified event (via template) that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event (via template) with ReShade.">register_event</a>.  <a href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">More...</a><br /></td></tr>
+<tr class="memdesc:ab85d6da3c11d36a58e9ef519a0f83780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a callback from the specified event that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event with ReShade.">register_event</a>.  <a href="namespacereshade.html#ab85d6da3c11d36a58e9ef519a0f83780">More...</a><br /></td></tr>
 <tr class="separator:ab85d6da3c11d36a58e9ef519a0f83780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb7ad56c410fefee6bf6e1466fc938e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">register_overlay</a> (const char *title, void(*callback)(<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> *runtime))</td></tr>
 <tr class="memdesc:afdb7ad56c410fefee6bf6e1466fc938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an overlay with ReShade.  <a href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e">More...</a><br /></td></tr>
@@ -612,10 +612,10 @@ IDXGISwapChain1::ResizeBuffers1 </li>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa229e60ea60746c777399f3785cefba25"></a>init_effect_runtime&#160;</td><td class="fielddoc"><p>Called after effect runtime initialization (which happens after swap chain creation or a swap chain buffer resize). </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa04ce20d6f0247355ba9258db7141a078"></a>destroy_effect_runtime&#160;</td><td class="fielddoc"><p>Called when an effect runtime is reset or destroyed. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1c8cc878ed890c468ca3d5293c419af2"></a>init_sampler&#160;</td><td class="fielddoc"><p>Called after successfull sampler creation from: </p><ul>
 <li>
@@ -1438,7 +1438,7 @@ vkCmdNextSubpass2 </li>
 vkCmdBeginRendering </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
-<p>The depth-stencil description argument is optional and may be <code>nullptr</code>. </p>
+<p>The depth-stencil description argument is optional and may be <code>nullptr</code> (which indicates that no depth-stencil is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2"></a>end_render_pass&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1951,7 +1951,7 @@ vkCmdCopyBufferToImage </li>
 vkCmdCopyBufferToImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint64_t source_offset, uint32_t row_length, uint32_t slice_height, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code> (which indicates the entire subresource is referenced). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aaf8fd0974a2fbc67f3ddc418fbd518aa5"></a>copy_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1992,7 +1992,7 @@ vkCmdCopyImage </li>
 vkCmdCopyImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *dest_box, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384" title="The available filtering modes used for texture sampling operations.">api::filter_mode</a> filter)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box arguments are optional and may be <code>nullptr</code>. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box arguments are optional and may be <code>nullptr</code> (which indicates the entire subresource is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4ebf42358198546667376f080fadd527"></a>copy_texture_to_buffer&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2003,7 +2003,7 @@ vkCmdCopyImageToBuffer </li>
 vkCmdCopyImageToBuffer2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint64_t dest_offset, uint32_t row_length, uint32_t slice_height)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a751fdad2b83af8ed443d3c2d6efd7822">api::resource_usage::copy_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">api::resource_usage::copy_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code> (which indicates the entire subresource is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa65ccf1dcac4e95d7c1721708968552b9"></a>resolve_texture_region&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2026,7 +2026,7 @@ vkCmdResolveImage </li>
 vkCmdResolveImage2 </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
-<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code>. </p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code> (which indicates the entire subresource is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -2225,43 +2225,43 @@ vkQueuePresentKHR </li>
 IVRCompositor::Submit </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *source_rect, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dest_rect, uint32_t dirty_rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dirty_rects)</code></p>
-<p>The source and destination rectangle arguments are optional and may be <code>nullptr</code>. </p>
+<p>The source and destination rectangle arguments are optional and may be <code>nullptr</code> (which indicates the swap chain is presented in its entirety). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498"></a>reshade_present&#160;</td><td class="fielddoc"><p>Called after ReShade has rendered its overlay. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa493e32cfe5b57c202fdd8f0c3e3cee1f"></a>reshade_begin_effects&#160;</td><td class="fielddoc"><p>Called right before ReShade effects are rendered. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253"></a>reshade_finish_effects&#160;</td><td class="fielddoc"><p>Called right after ReShade effects were rendered. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc"></a>reshade_reloaded_effects&#160;</td><td class="fielddoc"><p>Called right after all ReShade effects were reloaded. This occurs during effect runtime initialization or because the user pressed the "Reload" button in the overlay. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc"></a>reshade_reloaded_effects&#160;</td><td class="fielddoc"><p>Called right after all ReShade effects were reloaded. This occurs during effect runtime initialization or because the user pressed the "Reload" button in the overlay. Any <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a>, <a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html" title="An opaque handle to a texture variable in an effect.">api::effect_texture_variable</a> and <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html" title="An opaque handle to a uniform variable in an effect.">api::effect_uniform_variable</a> handles are invalidated when this event occurs and need to be queried again. </p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f"></a>reshade_set_uniform_value&#160;</td><td class="fielddoc"><p>Called before a uniform variable is changed. </p>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html" title="An opaque handle to a uniform variable in an effect.">api::effect_uniform_variable</a> variable, const void *data, size_t size)</code></p>
-<p>To prevent the variable from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f"></a>reshade_set_uniform_value&#160;</td><td class="fielddoc"><p>Called before a uniform variable is changed, with the new value. </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html" title="An opaque handle to a uniform variable in an effect.">api::effect_uniform_variable</a> variable, const void *new_value, size_t new_value_size)</code></p>
+<p>To prevent the variable value from being changed, return <code>true</code>, otherwise return <code>false</code>. The new value has the data type reported by <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a70225a2b788ae100b83d809578c2ab55" title="Gets information about the data type of a uniform variable .">api::effect_runtime::get_uniform_variable_type</a> and the new value size is in bytes. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444"></a>reshade_set_technique_state&#160;</td><td class="fielddoc"><p>Called before a technique is enabled or disabled. </p>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, bool enabled)</code></p>
-<p>To prevent the technique from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444"></a>reshade_set_technique_state&#160;</td><td class="fielddoc"><p>Called before a technique is enabled or disabled, with the new state. </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, bool enabled)</code></p>
+<p>To prevent the technique state from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20"></a>reshade_overlay&#160;</td><td class="fielddoc"><p>Called between the <code>ImGui::NewFrame</code> and <code>ImGui::EndFrame</code> calls for the ReShade overlay. Can be used to perform custom Dear ImGui calls, but it is recommended to instead use <a class="el" href="namespacereshade.html#afdb7ad56c410fefee6bf6e1466fc938e" title="Registers an overlay with ReShade.">register_overlay</a> to register a dedicated overlay. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 <p>This is not called for effect runtimes in VR. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729"></a>reshade_screenshot&#160;</td><td class="fielddoc"><p>Called after a screenshot was taken and saved to disk. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729"></a>reshade_screenshot&#160;</td><td class="fielddoc"><p>Called after a screenshot was taken and saved to disk, with the path to the saved image file. </p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a"></a>reshade_render_technique&#160;</td><td class="fielddoc"><p>Called for each technique after it was rendered, usually between reshade_begin_effects and reshade_finish_effects. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74"></a>reshade_set_current_preset_path&#160;</td><td class="fielddoc"><p>Called after a preset was loaded and applied. This occurs during reloading or when the user chooses a new preset in the overlay. </p>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74"></a>reshade_set_current_preset_path&#160;</td><td class="fielddoc"><p>Called after a preset was loaded and applied. This occurs after effect reloading or when the user chooses a new preset in the overlay. </p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd"></a>reshade_reorder_techniques&#160;</td><td class="fielddoc"><p>Called when the rendering order of loaded techniques is changed. </p>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A ReShade effect runtime, used to control effects.">api::effect_runtime</a> *runtime, size_t count, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> *techniques)</code></p>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd"></a>reshade_reorder_techniques&#160;</td><td class="fielddoc"><p>Called when the rendering order of loaded techniques is changed, with a handle array specifying the new order. </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, size_t count, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> *techniques)</code></p>
 <p>To prevent the order from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 </table>
@@ -2290,10 +2290,14 @@ IVRCompositor::Submit </li>
 
 <p>Available log severity levels. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"><p>| [ERROR] | ... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"><p>| [WARN] | ... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"><p>| [INFO] | ... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"><p>| [DEBUG] | ... </p>
+</td></tr>
 </table>
 
 </div>
@@ -2351,7 +2355,7 @@ IVRCompositor::Submit </li>
 </table>
 </div><div class="memdoc">
 
-<p>Gets a value from one of ReShade's config files. </p>
+<p>Gets a value from one of ReShade's config files. This can use either the global config file (ReShade.ini next to the application executable), or one local to an effect runtime (ReShade[index].ini in the base path). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">runtime</td><td>Optional effect runtime to use the config file from, or <code>nullptr</code> to use the global config file.</td></tr>
@@ -2400,10 +2404,10 @@ IVRCompositor::Submit </li>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the file path ReShade uses to resolve relative paths. </p>
+<p>Gets the base path ReShade uses to resolve relative paths. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>Pointer to a string buffer that is filled with the file path to the preset, or <code>nullptr</code> to query the necessary size.</td></tr>
+    <tr><td class="paramname">path</td><td>Pointer to a string buffer that is filled with the base path, or <code>nullptr</code> to query the necessary size.</td></tr>
     <tr><td class="paramname">path_size</td><td>Pointer to an integer that contains the size of the string buffer and is set to the actual length of the string, including the null-terminator.</td></tr>
   </table>
   </dd>
@@ -2527,11 +2531,17 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a callback for the specified event (via template) with ReShade. </p>
+<p>Registers a callback for the specified event with ReShade. </p>
 <p>The callback function is then called whenever the application performs a task associated with this event (see also the <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a">addon_event</a> enumeration).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Pointer to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ev</td><td>Event to register the callback for.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2630,7 +2640,7 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sets and saves a value in one of ReShade's config files. </p>
+<p>Sets and saves a value in one of ReShade's config files. This can use either the global config file (ReShade.ini next to the application executable), or one local to an effect runtime (ReShade[index].ini in the base path). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">runtime</td><td>Optional effect runtime to use the config file from, or <code>nullptr</code> to use the global config file.</td></tr>
@@ -2677,7 +2687,7 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Unregisters this module. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions. </p>
+<p>Unregisters this module as an add-on. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addon_module</td><td>Handle of the current module.</td></tr>
@@ -2714,10 +2724,16 @@ template&lt;reshade::addon_event ev&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Unregisters a callback for the specified event (via template) that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event (via template) with ReShade.">register_event</a>. </p>
+<p>Unregisters a callback from the specified event that was previously registered via <a class="el" href="namespacereshade.html#ab97d139bc8e9a577d60e1b7739003543" title="Registers a callback for the specified event with ReShade.">register_event</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Pointer to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ev</td><td>Event to unregister the callback from.</td></tr>
   </table>
   </dd>
 </dl>
