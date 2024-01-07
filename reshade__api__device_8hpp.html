@@ -157,14 +157,38 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a39647fe76d7d4f2138899c614e97ef8b">reshade::api::shared_resource_nt_handle</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a65274c70133f904bf23b0794e1e17b6e">reshade::api::resolve_depth_stencil</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a90d2cc566745cd5327bd9e0fe28eb206">reshade::api::shared_fence</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a052fd5318720495e231a0637afc6ade8">reshade::api::shared_fence_nt_handle</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afd742c2f459732c8964d921484a22038">reshade::api::amplification_and_mesh_shader</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">reshade::api::ray_tracing</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
 <tr class="separator:ac1f75e72812269a7815296a0f248f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d43e282e1516074653731962281d7a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">reshade::api::indirect_command</a> { <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
+<tr class="memitem:af23056ea38b16e0e823d9e4a14f80567"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">reshade::api::device_properties</a> { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a41cfc3cf8bc97fc876fa86089936896c">reshade::api::api_version</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567ad5612938744d9340b9b447854c8a18fb">reshade::api::driver_version</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a96b1f972094b863cafcacb8fc48b9bea">reshade::api::vendor_id</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a9379346c996b0535a7a98f25887156a2">reshade::api::device_id</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a67daf92c833c41c95db874e18fcb2786">reshade::api::description</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd">reshade::api::shader_group_handle_size</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567aebdd3a648a48d0bfbbafa533e53e0921">reshade::api::shader_group_alignment</a>
+, <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c">reshade::api::shader_group_handle_alignment</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available properties a device may report.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
+<tr class="separator:af23056ea38b16e0e823d9e4a14f80567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d43e282e1516074653731962281d7a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">reshade::api::indirect_command</a> { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
 , <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a817491bc777731f0f0c6e485f28e4d86">reshade::api::draw</a>
 , <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a3422b1dc8a268d81dd108d0e09f043bd">reshade::api::draw_indexed</a>
 , <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a9dddf2a4f7d94594ec2ea98407a410e1">reshade::api::dispatch</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a6ebf4950378a89563854f1a0a3cd697d">reshade::api::dispatch_mesh</a>
+, <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a1c25336d87cabab6831c8f143c217d8b">reshade::api::dispatch_rays</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a4d43e282e1516074653731962281d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available indirect command types.  <a href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">More...</a><br /></td></tr>
 <tr class="separator:a4d43e282e1516074653731962281d7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>

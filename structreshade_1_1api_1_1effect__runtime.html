@@ -85,7 +85,6 @@ Inheritance diagram for reshade::api::effect_runtime:</div>
  <div class="center">
   <img src="structreshade_1_1api_1_1effect__runtime.png" usemap="#reshade::api::effect_5Fruntime_map" alt=""/>
   <map id="reshade::api::effect_5Fruntime_map" name="reshade::api::effect_5Fruntime_map">
-<area href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen." alt="reshade::api::swapchain" shape="rect" coords="0,112,167,136"/>
 <area href="structreshade_1_1api_1_1device__object.html" title="The base class for objects that are children to a logical render device." alt="reshade::api::device_object" shape="rect" coords="0,56,167,80"/>
 <area href="structreshade_1_1api_1_1api__object.html" title="The base class for objects provided by the ReShade API." alt="reshade::api::api_object" shape="rect" coords="0,0,167,24"/>
   </map>
@@ -93,15 +92,30 @@ Inheritance diagram for reshade::api::effect_runtime:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a94cbf9823a596efad22d1397b068fb83"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a94cbf9823a596efad22d1397b068fb83">get_hwnd</a> () const =0</td></tr>
+<tr class="memdesc:a94cbf9823a596efad22d1397b068fb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle of the window associated with this effect runtime.  <a href="structreshade_1_1api_1_1effect__runtime.html#a94cbf9823a596efad22d1397b068fb83">More...</a><br /></td></tr>
+<tr class="separator:a94cbf9823a596efad22d1397b068fb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317dbd654bfd5b8fe9cfcf8e3563ef86"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a317dbd654bfd5b8fe9cfcf8e3563ef86">get_back_buffer</a> (uint32_t index)=0</td></tr>
+<tr class="memdesc:a317dbd654bfd5b8fe9cfcf8e3563ef86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the back buffer resource at the specified <em>index</em>  in the swap chain associated with this effect runtime.  <a href="structreshade_1_1api_1_1effect__runtime.html#a317dbd654bfd5b8fe9cfcf8e3563ef86">More...</a><br /></td></tr>
+<tr class="separator:a317dbd654bfd5b8fe9cfcf8e3563ef86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1155fbd33a881a2bfbb8b39fb11f87fe"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a1155fbd33a881a2bfbb8b39fb11f87fe">get_back_buffer_count</a> () const =0</td></tr>
+<tr class="memdesc:a1155fbd33a881a2bfbb8b39fb11f87fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of back buffer resources in the swap chain associated with this effect runtime.  <a href="structreshade_1_1api_1_1effect__runtime.html#a1155fbd33a881a2bfbb8b39fb11f87fe">More...</a><br /></td></tr>
+<tr class="separator:a1155fbd33a881a2bfbb8b39fb11f87fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155ceb889ecdf1b173a46d1cc6f32ff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a155ceb889ecdf1b173a46d1cc6f32ff0">get_current_back_buffer</a> ()</td></tr>
+<tr class="memdesc:a155ceb889ecdf1b173a46d1cc6f32ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current back buffer resource.  <a href="structreshade_1_1api_1_1effect__runtime.html#a155ceb889ecdf1b173a46d1cc6f32ff0">More...</a><br /></td></tr>
+<tr class="separator:a155ceb889ecdf1b173a46d1cc6f32ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90612ccb142be49b009f7b4e3fd2163"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ab90612ccb142be49b009f7b4e3fd2163">get_current_back_buffer_index</a> () const =0</td></tr>
+<tr class="memdesc:ab90612ccb142be49b009f7b4e3fd2163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the back buffer resource that can currently be rendered into.  <a href="structreshade_1_1api_1_1effect__runtime.html#ab90612ccb142be49b009f7b4e3fd2163">More...</a><br /></td></tr>
+<tr class="separator:ab90612ccb142be49b009f7b4e3fd2163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca104c8f53ad3e862dd792e40ffb26d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1command__queue.html">command_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#aaca104c8f53ad3e862dd792e40ffb26d">get_command_queue</a> ()=0</td></tr>
 <tr class="memdesc:aaca104c8f53ad3e862dd792e40ffb26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the main graphics command queue associated with this effect runtime. This may potentially be different from the presentation queue and should be used to execute graphics commands on.  <a href="structreshade_1_1api_1_1effect__runtime.html#aaca104c8f53ad3e862dd792e40ffb26d">More...</a><br /></td></tr>
 <tr class="separator:aaca104c8f53ad3e862dd792e40ffb26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d34dfe92c77d5985479ca7b8d4f028"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a74d34dfe92c77d5985479ca7b8d4f028">render_effects</a> (<a class="el" href="structreshade_1_1api_1_1command__list.html">command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> rtv_srgb)=0</td></tr>
 <tr class="memdesc:a74d34dfe92c77d5985479ca7b8d4f028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies post-processing effects to the specified render targets and prevents the usual rendering of effects before swap chain presentation of the current frame. This can be used to force ReShade to render effects at a certain point during the frame to e.g. avoid effects being applied to user interface elements of the application.  <a href="structreshade_1_1api_1_1effect__runtime.html#a74d34dfe92c77d5985479ca7b8d4f028">More...</a><br /></td></tr>
 <tr class="separator:a74d34dfe92c77d5985479ca7b8d4f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab609325cb3f2d1c2f2c0b69c37acd199"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ab609325cb3f2d1c2f2c0b69c37acd199">capture_screenshot</a> (uint8_t *pixels)=0</td></tr>
-<tr class="memdesc:ab609325cb3f2d1c2f2c0b69c37acd199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures a screenshot of the current back buffer resource and returns its image data in 32 bits-per-pixel RGBA format.  <a href="structreshade_1_1api_1_1effect__runtime.html#ab609325cb3f2d1c2f2c0b69c37acd199">More...</a><br /></td></tr>
-<tr class="separator:ab609325cb3f2d1c2f2c0b69c37acd199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41228d4e6e3c0c5dda189e6f8e32a61"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#af41228d4e6e3c0c5dda189e6f8e32a61">capture_screenshot</a> (void *pixels)=0</td></tr>
+<tr class="memdesc:af41228d4e6e3c0c5dda189e6f8e32a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures a screenshot of the current back buffer resource and returns its image data.  <a href="structreshade_1_1api_1_1effect__runtime.html#af41228d4e6e3c0c5dda189e6f8e32a61">More...</a><br /></td></tr>
+<tr class="separator:af41228d4e6e3c0c5dda189e6f8e32a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e91582bfc7d36b939def1d93a11d384"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a2e91582bfc7d36b939def1d93a11d384">get_screenshot_width_and_height</a> (uint32_t *out_width, uint32_t *out_height) const =0</td></tr>
 <tr class="memdesc:a2e91582bfc7d36b939def1d93a11d384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current buffer dimensions of the swap chain.  <a href="structreshade_1_1api_1_1effect__runtime.html#a2e91582bfc7d36b939def1d93a11d384">More...</a><br /></td></tr>
 <tr class="separator:a2e91582bfc7d36b939def1d93a11d384"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,9 +247,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b6d0f3f8793ba479fcb2b836c301270"><td class="memTemplParams" colspan="2">template&lt;size_t SIZE&gt; </td></tr>
 <tr class="memitem:a2b6d0f3f8793ba479fcb2b836c301270"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a2b6d0f3f8793ba479fcb2b836c301270">get_annotation_string_from_texture_variable</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const char *name, char(&amp;value)[SIZE]) const</td></tr>
 <tr class="separator:a2b6d0f3f8793ba479fcb2b836c301270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64615e6be07aea20120b4c8ee4c15f40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">update_texture</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const uint32_t width, const uint32_t height, const uint8_t *pixels)=0</td></tr>
-<tr class="memdesc:a64615e6be07aea20120b4c8ee4c15f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads 32 bits-per-pixel RGBA image data to the specified texture <em>variable</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a64615e6be07aea20120b4c8ee4c15f40">More...</a><br /></td></tr>
-<tr class="separator:a64615e6be07aea20120b4c8ee4c15f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d198596786d485959ec842147fab66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ad7d198596786d485959ec842147fab66">update_texture</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, const uint32_t width, const uint32_t height, const void *pixels)=0</td></tr>
+<tr class="memdesc:ad7d198596786d485959ec842147fab66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads image data to the specified texture <em>variable</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#ad7d198596786d485959ec842147fab66">More...</a><br /></td></tr>
+<tr class="separator:ad7d198596786d485959ec842147fab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c928710344e0d6130affc571e372708"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a3c928710344e0d6130affc571e372708">get_texture_binding</a> (<a class="el" href="structreshade_1_1api_1_1effect__texture__variable.html">effect_texture_variable</a> variable, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_srv, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_srv_srgb) const =0</td></tr>
 <tr class="memdesc:a3c928710344e0d6130affc571e372708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the shader resource view that is bound to the specified texture <em>variable</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#a3c928710344e0d6130affc571e372708">More...</a><br /></td></tr>
 <tr class="separator:a3c928710344e0d6130affc571e372708"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,22 +365,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8455cad343d1050749ddd173677dc7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ab8455cad343d1050749ddd173677dc7b">set_preprocessor_definition_for_effect</a> (const char *effect_name, const char *name, const char *value)=0</td></tr>
 <tr class="memdesc:ab8455cad343d1050749ddd173677dc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a preprocessor definition for the specified effect to the specified <em>value</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#ab8455cad343d1050749ddd173677dc7b">More...</a><br /></td></tr>
 <tr class="separator:ab8455cad343d1050749ddd173677dc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_structreshade_1_1api_1_1swapchain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1swapchain')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1swapchain.html">reshade::api::swapchain</a></td></tr>
-<tr class="memitem:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">get_hwnd</a> () const =0</td></tr>
-<tr class="memdesc:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle of the window this swap chain was created with, or <code>nullptr</code> if this is an offscreen swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a2a78b62d60e1c38f50726c9caba90779">More...</a><br /></td></tr>
-<tr class="separator:a2a78b62d60e1c38f50726c9caba90779 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">get_back_buffer</a> (uint32_t index)=0</td></tr>
-<tr class="memdesc:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the back buffer resource at the specified <em>index</em>  in this swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a02c53e757298e46d0d8bac569b89b700">More...</a><br /></td></tr>
-<tr class="separator:a02c53e757298e46d0d8bac569b89b700 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c3ff43fa1134b2187ca67b4bbe90ae inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a84c3ff43fa1134b2187ca67b4bbe90ae">get_back_buffer_count</a> () const =0</td></tr>
-<tr class="memdesc:a84c3ff43fa1134b2187ca67b4bbe90ae inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of back buffer resources in this swap chain.  <a href="structreshade_1_1api_1_1swapchain.html#a84c3ff43fa1134b2187ca67b4bbe90ae">More...</a><br /></td></tr>
-<tr class="separator:a84c3ff43fa1134b2187ca67b4bbe90ae inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d12fd4e6adb1c8dd7b06c4221e50798 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a4d12fd4e6adb1c8dd7b06c4221e50798">get_current_back_buffer</a> ()</td></tr>
-<tr class="memdesc:a4d12fd4e6adb1c8dd7b06c4221e50798 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current back buffer resource.  <a href="structreshade_1_1api_1_1swapchain.html#a4d12fd4e6adb1c8dd7b06c4221e50798">More...</a><br /></td></tr>
-<tr class="separator:a4d12fd4e6adb1c8dd7b06c4221e50798 inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain.html#a1c0a508cf4c60ae1d29db94665ea90fb">get_current_back_buffer_index</a> () const =0</td></tr>
-<tr class="memdesc:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the back buffer resource that can currently be rendered into.  <a href="structreshade_1_1api_1_1swapchain.html#a1c0a508cf4c60ae1d29db94665ea90fb">More...</a><br /></td></tr>
-<tr class="separator:a1c0a508cf4c60ae1d29db94665ea90fb inherit pub_methods_structreshade_1_1api_1_1swapchain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ad26164b296fb5b9adc4962a66650a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a31ad26164b296fb5b9adc4962a66650a">open_overlay</a> (bool open, <a class="el" href="namespacereshade_1_1api.html#a5f273018cb6c3c536692ec8d3447ccc9">input_source</a> source)=0</td></tr>
+<tr class="memdesc:a31ad26164b296fb5b9adc4962a66650a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open or close the ReShade overlay.  <a href="structreshade_1_1api_1_1effect__runtime.html#a31ad26164b296fb5b9adc4962a66650a">More...</a><br /></td></tr>
+<tr class="separator:a31ad26164b296fb5b9adc4962a66650a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6411fd4369e548396317bbde67677f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a5c6411fd4369e548396317bbde67677f">set_color_space</a> (<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a> <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a>)=0</td></tr>
+<tr class="memdesc:a5c6411fd4369e548396317bbde67677f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides the color space used for presentation.  <a href="structreshade_1_1api_1_1effect__runtime.html#a5c6411fd4369e548396317bbde67677f">More...</a><br /></td></tr>
+<tr class="separator:a5c6411fd4369e548396317bbde67677f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa7b2696b9bec4ed89c0f4ce1c0570e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#affa7b2696b9bec4ed89c0f4ce1c0570e">reset_uniform_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a> variable)=0</td></tr>
+<tr class="memdesc:affa7b2696b9bec4ed89c0f4ce1c0570e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the value of the specified uniform <em>variable</em> .  <a href="structreshade_1_1api_1_1effect__runtime.html#affa7b2696b9bec4ed89c0f4ce1c0570e">More...</a><br /></td></tr>
+<tr class="separator:affa7b2696b9bec4ed89c0f4ce1c0570e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1device__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1device__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1device__object.html">reshade::api::device_object</a></td></tr>
 <tr class="memitem:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1device.html">device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">get_device</a> ()=0</td></tr>
 <tr class="memdesc:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent device for this object.  <a href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">More...</a><br /></td></tr>
@@ -383,15 +390,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62c6353765e5d7d017128f0acdfe1b9d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">get_private_data</a> () const</td></tr>
-<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
+<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
 <tr class="separator:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">create_private_data</a> ()</td></tr>
-<tr class="memdesc:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">More...</a><br /></td></tr>
-<tr class="separator:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">create_private_data</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">More...</a><br /></td></tr>
+<tr class="separator:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">destroy_private_data</a> ()</td></tr>
-<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
+<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
 <tr class="separator:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -425,8 +432,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab609325cb3f2d1c2f2c0b69c37acd199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab609325cb3f2d1c2f2c0b69c37acd199">&#9670;&nbsp;</a></span>capture_screenshot()</h2>
+<a id="af41228d4e6e3c0c5dda189e6f8e32a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41228d4e6e3c0c5dda189e6f8e32a61">&#9670;&nbsp;</a></span>capture_screenshot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,7 +444,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool reshade::api::effect_runtime::capture_screenshot </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>pixels</em></td><td>)</td>
           <td></td>
         </tr>
@@ -449,10 +456,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Captures a screenshot of the current back buffer resource and returns its image data in 32 bits-per-pixel RGBA format. </p>
+<p>Captures a screenshot of the current back buffer resource and returns its image data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pixels</td><td>Pointer to an array of <code>width * height * 4</code> bytes the image data is written to.</td></tr>
+    <tr><td class="paramname">pixels</td><td>Pointer to an array of <code>width * height * bpp</code> bytes the image data is written to (where <code>bpp</code> is the number of bytes per pixel of the back buffer format).</td></tr>
   </table>
   </dd>
 </dl>
@@ -2011,6 +2018,67 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="a317dbd654bfd5b8fe9cfcf8e3563ef86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317dbd654bfd5b8fe9cfcf8e3563ef86">&#9670;&nbsp;</a></span>get_back_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> reshade::api::effect_runtime::get_back_buffer </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the back buffer resource at the specified <em>index</em>  in the swap chain associated with this effect runtime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index of the back buffer. This has to be between zero and the value returned by <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a1155fbd33a881a2bfbb8b39fb11f87fe" title="Gets the number of back buffer resources in the swap chain associated with this effect runtime.">get_back_buffer_count</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1155fbd33a881a2bfbb8b39fb11f87fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1155fbd33a881a2bfbb8b39fb11f87fe">&#9670;&nbsp;</a></span>get_back_buffer_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t reshade::api::effect_runtime::get_back_buffer_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the number of back buffer resources in the swap chain associated with this effect runtime. </p>
+
+</div>
+</div>
 <a id="aaca104c8f53ad3e862dd792e40ffb26d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaca104c8f53ad3e862dd792e40ffb26d">&#9670;&nbsp;</a></span>get_command_queue()</h2>
 
@@ -2035,6 +2103,60 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Gets the main graphics command queue associated with this effect runtime. This may potentially be different from the presentation queue and should be used to execute graphics commands on. </p>
+
+</div>
+</div>
+<a id="a155ceb889ecdf1b173a46d1cc6f32ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155ceb889ecdf1b173a46d1cc6f32ff0">&#9670;&nbsp;</a></span>get_current_back_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> reshade::api::effect_runtime::get_current_back_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current back buffer resource. </p>
+
+</div>
+</div>
+<a id="ab90612ccb142be49b009f7b4e3fd2163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90612ccb142be49b009f7b4e3fd2163">&#9670;&nbsp;</a></span>get_current_back_buffer_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t reshade::api::effect_runtime::get_current_back_buffer_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the index of the back buffer resource that can currently be rendered into. </p>
 
 </div>
 </div>
@@ -2135,6 +2257,33 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Gets whether rendering of effects is enabled or disabled. </p>
+
+</div>
+</div>
+<a id="a94cbf9823a596efad22d1397b068fb83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cbf9823a596efad22d1397b068fb83">&#9670;&nbsp;</a></span>get_hwnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* reshade::api::effect_runtime::get_hwnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the handle of the window associated with this effect runtime. </p>
 
 </div>
 </div>
@@ -3616,6 +3765,52 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="a31ad26164b296fb5b9adc4962a66650a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ad26164b296fb5b9adc4962a66650a">&#9670;&nbsp;</a></span>open_overlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::effect_runtime::open_overlay </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>open</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a5f273018cb6c3c536692ec8d3447ccc9">input_source</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open or close the ReShade overlay. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">open</td><td>Requested overlay state.</td></tr>
+    <tr><td class="paramname">source</td><td>Source of this request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the overlay state was changed, <code>false</code> otherwise.</dd></dl>
+
+</div>
+</div>
 <a id="a74d34dfe92c77d5985479ca7b8d4f028"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74d34dfe92c77d5985479ca7b8d4f028">&#9670;&nbsp;</a></span>render_effects()</h2>
 
@@ -3774,6 +3969,40 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="affa7b2696b9bec4ed89c0f4ce1c0570e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa7b2696b9bec4ed89c0f4ce1c0570e">&#9670;&nbsp;</a></span>reset_uniform_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::reset_uniform_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__uniform__variable.html">effect_uniform_variable</a>&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the value of the specified uniform <em>variable</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a68f090bc5be4810304aca0cfcffa52f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68f090bc5be4810304aca0cfcffa52f7">&#9670;&nbsp;</a></span>save_current_preset()</h2>
 
@@ -3798,6 +4027,34 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Saves the current preset with the current state of the loaded techniques and uniform variables. </p>
+
+</div>
+</div>
+<a id="a5c6411fd4369e548396317bbde67677f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6411fd4369e548396317bbde67677f">&#9670;&nbsp;</a></span>set_color_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::set_color_space </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a>&#160;</td>
+          <td class="paramname"><em>color_space</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overrides the color space used for presentation. </p>
 
 </div>
 </div>
@@ -4515,8 +4772,8 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
-<a id="a64615e6be07aea20120b4c8ee4c15f40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64615e6be07aea20120b4c8ee4c15f40">&#9670;&nbsp;</a></span>update_texture()</h2>
+<a id="ad7d198596786d485959ec842147fab66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d198596786d485959ec842147fab66">&#9670;&nbsp;</a></span>update_texture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4545,7 +4802,7 @@ template&lt;size_t SIZE&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>pixels</em>&#160;</td>
         </tr>
         <tr>
@@ -4561,13 +4818,13 @@ template&lt;size_t SIZE&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Uploads 32 bits-per-pixel RGBA image data to the specified texture <em>variable</em> . </p>
+<p>Uploads image data to the specified texture <em>variable</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the texture variable.</td></tr>
     <tr><td class="paramname">width</td><td>Width of the image data.</td></tr>
     <tr><td class="paramname">height</td><td>Height of the image data.</td></tr>
-    <tr><td class="paramname">pixels</td><td>Pointer to an array of <code>width * height * 4</code> bytes the image data is read from.</td></tr>
+    <tr><td class="paramname">pixels</td><td>Pointer to an array of <code>width * height * bpp</code> bytes the image data is read from (where <code>bpp</code> is the number of bytes per pixel of the texture format).</td></tr>
   </table>
   </dd>
 </dl>

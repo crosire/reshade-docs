@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['sampler_832',['sampler',['../structreshade_1_1api_1_1sampler.html',1,'reshade::api']]],
-  ['sampler_5fdesc_833',['sampler_desc',['../structreshade_1_1api_1_1sampler__desc.html',1,'reshade::api']]],
-  ['sampler_5fwith_5fresource_5fview_834',['sampler_with_resource_view',['../structreshade_1_1api_1_1sampler__with__resource__view.html',1,'reshade::api']]],
-  ['shader_5fdesc_835',['shader_desc',['../structreshade_1_1api_1_1shader__desc.html',1,'reshade::api']]],
-  ['stream_5foutput_5fdesc_836',['stream_output_desc',['../structreshade_1_1api_1_1stream__output__desc.html',1,'reshade::api']]],
-  ['subresource_5fbox_837',['subresource_box',['../structreshade_1_1api_1_1subresource__box.html',1,'reshade::api']]],
-  ['subresource_5fdata_838',['subresource_data',['../structreshade_1_1api_1_1subresource__data.html',1,'reshade::api']]],
-  ['swapchain_839',['swapchain',['../structreshade_1_1api_1_1swapchain.html',1,'reshade::api']]],
-  ['swapchain_5fdesc_840',['swapchain_desc',['../structreshade_1_1api_1_1swapchain__desc.html',1,'reshade::api']]]
+  ['rasterizer_5fdesc_952',['rasterizer_desc',['../structreshade_1_1api_1_1rasterizer__desc.html',1,'reshade::api']]],
+  ['rect_953',['rect',['../structreshade_1_1api_1_1rect.html',1,'reshade::api']]],
+  ['render_5fpass_5fdepth_5fstencil_5fdesc_954',['render_pass_depth_stencil_desc',['../structreshade_1_1api_1_1render__pass__depth__stencil__desc.html',1,'reshade::api']]],
+  ['render_5fpass_5frender_5ftarget_5fdesc_955',['render_pass_render_target_desc',['../structreshade_1_1api_1_1render__pass__render__target__desc.html',1,'reshade::api']]],
+  ['resource_956',['resource',['../structreshade_1_1api_1_1resource.html',1,'reshade::api']]],
+  ['resource_5fdesc_957',['resource_desc',['../structreshade_1_1api_1_1resource__desc.html',1,'reshade::api']]],
+  ['resource_5fview_958',['resource_view',['../structreshade_1_1api_1_1resource__view.html',1,'reshade::api']]],
+  ['resource_5fview_5fdesc_959',['resource_view_desc',['../structreshade_1_1api_1_1resource__view__desc.html',1,'reshade::api']]]
 ];

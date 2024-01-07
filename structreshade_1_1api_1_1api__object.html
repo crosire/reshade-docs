@@ -86,11 +86,11 @@ Inheritance diagram for reshade::api::api_object:</div>
   <img src="structreshade_1_1api_1_1api__object.png" usemap="#reshade::api::api_5Fobject_map" alt=""/>
   <map id="reshade::api::api_5Fobject_map" name="reshade::api::api_5Fobject_map">
 <area href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations." alt="reshade::api::device" shape="rect" coords="0,56,181,80"/>
-<area href="structreshade_1_1api_1_1device__object.html" title="The base class for objects that are children to a logical render device." alt="reshade::api::device_object" shape="rect" coords="191,56,372,80"/>
+<area href="structreshade_1_1api_1_1device__object.html" title="The base class for objects that are children to a logical render device." alt="reshade::api::device_object" shape="rect" coords="286,56,467,80"/>
 <area href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ..." alt="reshade::api::command_list" shape="rect" coords="0,112,181,136"/>
 <area href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU." alt="reshade::api::command_queue" shape="rect" coords="191,112,372,136"/>
-<area href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen." alt="reshade::api::swapchain" shape="rect" coords="382,112,563,136"/>
-<area href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects." alt="reshade::api::effect_runtime" shape="rect" coords="382,168,563,192"/>
+<area href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects." alt="reshade::api::effect_runtime" shape="rect" coords="382,112,563,136"/>
+<area href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen." alt="reshade::api::swapchain" shape="rect" coords="573,112,754,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -107,28 +107,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62c6353765e5d7d017128f0acdfe1b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">get_private_data</a> () const</td></tr>
-<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
+<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
 <tr class="separator:aea4ebd2b91dd992d2207712d612fe987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">create_private_data</a> ()</td></tr>
-<tr class="memdesc:acdf8f8cfb4e662231fccd0c897b7b9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">More...</a><br /></td></tr>
-<tr class="separator:acdf8f8cfb4e662231fccd0c897b7b9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">create_private_data</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:af0c46d2e179175fdfad869b5ee16ca11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">More...</a><br /></td></tr>
+<tr class="separator:af0c46d2e179175fdfad869b5ee16ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">destroy_private_data</a> ()</td></tr>
-<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
+<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
 <tr class="separator:a9be856f3ade1bbe22f661830d688720d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for objects provided by the ReShade API. </p>
 <p>This lets you store and retrieve custom data with objects, e.g. to be able to communicate persistent information between event callbacks.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acdf8f8cfb4e662231fccd0c897b7b9c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdf8f8cfb4e662231fccd0c897b7b9c6">&#9670;&nbsp;</a></span>create_private_data()</h2>
+<a id="af0c46d2e179175fdfad869b5ee16ca11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c46d2e179175fdfad869b5ee16ca11">&#9670;&nbsp;</a></span>create_private_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -136,7 +136,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T&amp; reshade::api::api_object::create_private_data </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -176,7 +177,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>. </p>
+<p>Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>. </p>
 
 </div>
 </div>
@@ -236,7 +237,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>. </p>
+<p>Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>. </p>
 
 </div>
 </div>

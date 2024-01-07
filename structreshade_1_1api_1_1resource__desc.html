@@ -97,41 +97,41 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a546dc487a4ee624a775c92f7720b4ed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">resource_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1resource__desc.html#a546dc487a4ee624a775c92f7720b4ed4">type</a></td></tr>
 <tr class="memdesc:a546dc487a4ee624a775c92f7720b4ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the resource.  <a href="structreshade_1_1api_1_1resource__desc.html#a546dc487a4ee624a775c92f7720b4ed4">More...</a><br /></td></tr>
 <tr class="separator:a546dc487a4ee624a775c92f7720b4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d6f5eda465e2c5852f40e15370059ca"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:aee4f9eecd9c417c575be4b6977dfbd55"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a3219bf063d6c4d4280ac4ba5e7fd40c2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a47571f3e7b0a8a3e45b7ff6c19a2c939">size</a></td></tr>
-<tr class="memdesc:a3219bf063d6c4d4280ac4ba5e7fd40c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the buffer (in bytes).  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d5.html#a3219bf063d6c4d4280ac4ba5e7fd40c2">More...</a><br /></td></tr>
-<tr class="separator:a3219bf063d6c4d4280ac4ba5e7fd40c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27e76851512363cb9b9126459ca21ec"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#afff93022ce3b8ff5bfd9a41e1616b16d">stride</a></td></tr>
-<tr class="memdesc:ab27e76851512363cb9b9126459ca21ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure stride for structured buffers (in bytes), otherwise zero.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d5.html#ab27e76851512363cb9b9126459ca21ec">More...</a><br /></td></tr>
-<tr class="separator:ab27e76851512363cb9b9126459ca21ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee4f9eecd9c417c575be4b6977dfbd55"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#ad77c5c3084d4b58468a600c5c42ff0a7">buffer</a></td></tr>
-<tr class="memdesc:aee4f9eecd9c417c575be4b6977dfbd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when resource type is a buffer.  <a href="unionreshade_1_1api_1_1resource__desc_1_1_0d3.html#aee4f9eecd9c417c575be4b6977dfbd55">More...</a><br /></td></tr>
-<tr class="separator:aee4f9eecd9c417c575be4b6977dfbd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7643e4b999e8b39575eb2f8282ba7f27"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a15689d776affb261bf2bf77fc4887b0e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a526dec27b7a2b1253dd5557b3acea5af">width</a></td></tr>
-<tr class="memdesc:a15689d776affb261bf2bf77fc4887b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the texture (in texels).  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#a15689d776affb261bf2bf77fc4887b0e">More...</a><br /></td></tr>
-<tr class="separator:a15689d776affb261bf2bf77fc4887b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22aec0ef93fdbe54ca2b547b369656cb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a630030523999bbcedd693a99540b8131">height</a></td></tr>
-<tr class="memdesc:a22aec0ef93fdbe54ca2b547b369656cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a 2D or 3D texture, height of the texture (in texels), otherwise 1.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#a22aec0ef93fdbe54ca2b547b369656cb">More...</a><br /></td></tr>
-<tr class="separator:a22aec0ef93fdbe54ca2b547b369656cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab3f495bdca6862124a23226c7cdd426"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a3cedd4b9e69d4646629e5ea2e8a7c837">depth_or_layers</a></td></tr>
-<tr class="memdesc:aab3f495bdca6862124a23226c7cdd426"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a 3D texture, depth of the texture (in texels), otherwise number of array layers.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#aab3f495bdca6862124a23226c7cdd426">More...</a><br /></td></tr>
-<tr class="separator:aab3f495bdca6862124a23226c7cdd426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36a127a6b3cb69673fe1f648528d4f4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a6de7bc82494f15a4cdf3f75fc1a0a46a">levels</a></td></tr>
-<tr class="memdesc:af36a127a6b3cb69673fe1f648528d4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels in the texture, including the base level, so at least 1. Can also be zero in case the exact number of mipmap levels is unknown.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#af36a127a6b3cb69673fe1f648528d4f4">More...</a><br /></td></tr>
-<tr class="separator:af36a127a6b3cb69673fe1f648528d4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a7d69c807bf4a0c2a318c214005489e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#af345224a8e8095ca9fe5635409e0e778">format</a></td></tr>
-<tr class="memdesc:a7a7d69c807bf4a0c2a318c214005489e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data format of each texel in the texture.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#a7a7d69c807bf4a0c2a318c214005489e">More...</a><br /></td></tr>
-<tr class="separator:a7a7d69c807bf4a0c2a318c214005489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a91d5d59f387014fd5c5f8b7a05b53"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#aab918f20ba02fd7e9ee0bab8a3e987a6">samples</a></td></tr>
-<tr class="memdesc:a63a91d5d59f387014fd5c5f8b7a05b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of samples per texel. Set to a value higher than 1 for multisampling.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d3_1_1_0d6.html#a63a91d5d59f387014fd5c5f8b7a05b53">More...</a><br /></td></tr>
-<tr class="separator:a63a91d5d59f387014fd5c5f8b7a05b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7643e4b999e8b39575eb2f8282ba7f27"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a595a03969a3e92ef8a5788bc1b2edffe">texture</a></td></tr>
-<tr class="memdesc:a7643e4b999e8b39575eb2f8282ba7f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when resource type is a texture or surface.  <a href="unionreshade_1_1api_1_1resource__desc_1_1_0d3.html#a7643e4b999e8b39575eb2f8282ba7f27">More...</a><br /></td></tr>
-<tr class="separator:a7643e4b999e8b39575eb2f8282ba7f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d6f5eda465e2c5852f40e15370059ca"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7d6f5eda465e2c5852f40e15370059ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a9382e0b4c429052fc52c69c5d9e13"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a599f7070af15814cd7b3bbd54020d0d5"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a423e83f0e5501ff37f7926eda931ad0e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a47571f3e7b0a8a3e45b7ff6c19a2c939">size</a></td></tr>
+<tr class="memdesc:a423e83f0e5501ff37f7926eda931ad0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the buffer (in bytes).  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d11.html#a423e83f0e5501ff37f7926eda931ad0e">More...</a><br /></td></tr>
+<tr class="separator:a423e83f0e5501ff37f7926eda931ad0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d84d5c0e37556d95facb0befa5ab690"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#afff93022ce3b8ff5bfd9a41e1616b16d">stride</a></td></tr>
+<tr class="memdesc:a7d84d5c0e37556d95facb0befa5ab690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure stride for structured buffers (in bytes), otherwise zero.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d11.html#a7d84d5c0e37556d95facb0befa5ab690">More...</a><br /></td></tr>
+<tr class="separator:a7d84d5c0e37556d95facb0befa5ab690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599f7070af15814cd7b3bbd54020d0d5"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a2ca01826fcff096918e9668d67e60206">buffer</a></td></tr>
+<tr class="memdesc:a599f7070af15814cd7b3bbd54020d0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when resource type is a buffer.  <a href="unionreshade_1_1api_1_1resource__desc_1_1_0d9.html#a599f7070af15814cd7b3bbd54020d0d5">More...</a><br /></td></tr>
+<tr class="separator:a599f7070af15814cd7b3bbd54020d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db60a8339038a8d0700ce42203ed36"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a9a60d4842fe9568bf531782dfe29bccf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a526dec27b7a2b1253dd5557b3acea5af">width</a></td></tr>
+<tr class="memdesc:a9a60d4842fe9568bf531782dfe29bccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the texture (in texels).  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#a9a60d4842fe9568bf531782dfe29bccf">More...</a><br /></td></tr>
+<tr class="separator:a9a60d4842fe9568bf531782dfe29bccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349eefa6b539426b46a745affd92fb87"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a630030523999bbcedd693a99540b8131">height</a></td></tr>
+<tr class="memdesc:a349eefa6b539426b46a745affd92fb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a 2D or 3D texture, height of the texture (in texels), otherwise 1.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#a349eefa6b539426b46a745affd92fb87">More...</a><br /></td></tr>
+<tr class="separator:a349eefa6b539426b46a745affd92fb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e3f39867b10482529ee96e423bc567"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a3cedd4b9e69d4646629e5ea2e8a7c837">depth_or_layers</a></td></tr>
+<tr class="memdesc:ab1e3f39867b10482529ee96e423bc567"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a 3D texture, depth of the texture (in texels), otherwise number of array layers.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#ab1e3f39867b10482529ee96e423bc567">More...</a><br /></td></tr>
+<tr class="separator:ab1e3f39867b10482529ee96e423bc567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bff142ea9937a8d11e25d20540ea2b1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a6de7bc82494f15a4cdf3f75fc1a0a46a">levels</a></td></tr>
+<tr class="memdesc:a8bff142ea9937a8d11e25d20540ea2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of mipmap levels in the texture, including the base level, so at least 1. Can also be zero in case the exact number of mipmap levels is unknown.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#a8bff142ea9937a8d11e25d20540ea2b1">More...</a><br /></td></tr>
+<tr class="separator:a8bff142ea9937a8d11e25d20540ea2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44928527ed205b580251518481aa190"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#af345224a8e8095ca9fe5635409e0e778">format</a></td></tr>
+<tr class="memdesc:aa44928527ed205b580251518481aa190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data format of each texel in the texture.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#aa44928527ed205b580251518481aa190">More...</a><br /></td></tr>
+<tr class="separator:aa44928527ed205b580251518481aa190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365f41d29591c9666f7050201912b6de"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#aab918f20ba02fd7e9ee0bab8a3e987a6">samples</a></td></tr>
+<tr class="memdesc:a365f41d29591c9666f7050201912b6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of samples per texel. Set to a value higher than 1 for multisampling.  <a href="structreshade_1_1api_1_1resource__desc_1_1_0d9_1_1_0d12.html#a365f41d29591c9666f7050201912b6de">More...</a><br /></td></tr>
+<tr class="separator:a365f41d29591c9666f7050201912b6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db60a8339038a8d0700ce42203ed36"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1resource__desc.html#a6bb6674a74e25365deee718c1312eaf4">texture</a></td></tr>
+<tr class="memdesc:a73db60a8339038a8d0700ce42203ed36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when resource type is a texture or surface.  <a href="unionreshade_1_1api_1_1resource__desc_1_1_0d9.html#a73db60a8339038a8d0700ce42203ed36">More...</a><br /></td></tr>
+<tr class="separator:a73db60a8339038a8d0700ce42203ed36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a9382e0b4c429052fc52c69c5d9e13"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af9a9382e0b4c429052fc52c69c5d9e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0046a05aec8abd94ad7e3c239489022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">memory_heap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1resource__desc.html#af0046a05aec8abd94ad7e3c239489022">heap</a></td></tr>
 <tr class="memdesc:af0046a05aec8abd94ad7e3c239489022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory heap the resource allocation is placed in.  <a href="structreshade_1_1api_1_1resource__desc.html#af0046a05aec8abd94ad7e3c239489022">More...</a><br /></td></tr>
 <tr class="separator:af0046a05aec8abd94ad7e3c239489022"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,8 +375,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7d6f5eda465e2c5852f40e15370059ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d6f5eda465e2c5852f40e15370059ca">&#9670;&nbsp;</a></span></h2>
+<a id="af9a9382e0b4c429052fc52c69c5d9e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a9382e0b4c429052fc52c69c5d9e13">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,8 +389,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad77c5c3084d4b58468a600c5c42ff0a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad77c5c3084d4b58468a600c5c42ff0a7">&#9670;&nbsp;</a></span></h2>
+<a id="a2ca01826fcff096918e9668d67e60206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca01826fcff096918e9668d67e60206">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,8 +549,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a595a03969a3e92ef8a5788bc1b2edffe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a595a03969a3e92ef8a5788bc1b2edffe">&#9670;&nbsp;</a></span></h2>
+<a id="a6bb6674a74e25365deee718c1312eaf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb6674a74e25365deee718c1312eaf4">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">

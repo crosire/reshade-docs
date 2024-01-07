@@ -199,6 +199,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a7f5c3ed6d4adee4a1ce215915aa0dff4">set_resource_view_name</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> handle, const char *name)=0</td></tr>
 <tr class="memdesc:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource view, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#a7f5c3ed6d4adee4a1ce215915aa0dff4">More...</a><br /></td></tr>
 <tr class="separator:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18917756c101957eaf0ef7290da36b79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79">create_fence</a> (uint64_t initial_value, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">fence_flags</a> flags, <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> *out_handle, void **shared_handle=nullptr)=0</td></tr>
+<tr class="memdesc:a18917756c101957eaf0ef7290da36b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new fence synchronization object.  <a href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79">More...</a><br /></td></tr>
+<tr class="separator:a18917756c101957eaf0ef7290da36b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0c39789150b0e9dc7e29a3d2cb6e9266">destroy_fence</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> handle)=0</td></tr>
+<tr class="memdesc:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79" title="Creates a new fence synchronization object.">create_fence</a>.  <a href="structreshade_1_1api_1_1device.html#a0c39789150b0e9dc7e29a3d2cb6e9266">More...</a><br /></td></tr>
+<tr class="separator:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff6fe651ef950aafa983636e129c21e"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#abff6fe651ef950aafa983636e129c21e">get_completed_fence_value</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>) const =0</td></tr>
+<tr class="memdesc:abff6fe651ef950aafa983636e129c21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value of the specified fence.  <a href="structreshade_1_1api_1_1device.html#abff6fe651ef950aafa983636e129c21e">More...</a><br /></td></tr>
+<tr class="separator:abff6fe651ef950aafa983636e129c21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae350a7aedc0a7a7e9810d64af5c4572"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aae350a7aedc0a7a7e9810d64af5c4572">wait</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>, uint64_t value, uint64_t timeout=UINT64_MAX)=0</td></tr>
+<tr class="memdesc:aae350a7aedc0a7a7e9810d64af5c4572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the specified fence reached the specified value.  <a href="structreshade_1_1api_1_1device.html#aae350a7aedc0a7a7e9810d64af5c4572">More...</a><br /></td></tr>
+<tr class="separator:aae350a7aedc0a7a7e9810d64af5c4572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dbe233b4b5e0bce79ce059a42607d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a31dbe233b4b5e0bce79ce059a42607d0">signal</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>, uint64_t value)=0</td></tr>
+<tr class="memdesc:a31dbe233b4b5e0bce79ce059a42607d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the specified fence to the specified value.  <a href="structreshade_1_1api_1_1device.html#a31dbe233b4b5e0bce79ce059a42607d0">More...</a><br /></td></tr>
+<tr class="separator:a31dbe233b4b5e0bce79ce059a42607d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41accc4d81ccf1a0d917b2e491ef7310"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a41accc4d81ccf1a0d917b2e491ef7310">get_property</a> (<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">device_properties</a> property, void *data) const =0</td></tr>
+<tr class="memdesc:a41accc4d81ccf1a0d917b2e491ef7310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data for a <em>property</em>  of this device.  <a href="structreshade_1_1api_1_1device.html#a41accc4d81ccf1a0d917b2e491ef7310">More...</a><br /></td></tr>
+<tr class="separator:a41accc4d81ccf1a0d917b2e491ef7310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc1e93d4c81fdbb6f2f556139871c70"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#adbc1e93d4c81fdbb6f2f556139871c70">get_resource_view_gpu_address</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> handle) const =0</td></tr>
+<tr class="memdesc:adbc1e93d4c81fdbb6f2f556139871c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GPU address for a resource view.  <a href="structreshade_1_1api_1_1device.html#adbc1e93d4c81fdbb6f2f556139871c70">More...</a><br /></td></tr>
+<tr class="separator:adbc1e93d4c81fdbb6f2f556139871c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649ca938325986d3d414d38cedfcfd57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a649ca938325986d3d414d38cedfcfd57">get_acceleration_structure_size</a> (<a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a> type, <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> flags, uint32_t input_count, const <a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">acceleration_structure_build_input</a> *inputs, uint64_t *out_size, uint64_t *out_build_scratch_size, uint64_t *out_update_scratch_size) const =0</td></tr>
+<tr class="memdesc:a649ca938325986d3d414d38cedfcfd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the required acceleration structure size needed to build the specified data.  <a href="structreshade_1_1api_1_1device.html#a649ca938325986d3d414d38cedfcfd57">More...</a><br /></td></tr>
+<tr class="separator:a649ca938325986d3d414d38cedfcfd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d9204141e2fec2c510ed33051d5506"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa3d9204141e2fec2c510ed33051d5506">get_pipeline_shader_group_handles</a> (<a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>, uint32_t first, uint32_t count, void *out_handles)=0</td></tr>
+<tr class="memdesc:aa3d9204141e2fec2c510ed33051d5506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the shader group handles for a ray tracing pipeline, to be put into a shader binding table.  <a href="structreshade_1_1api_1_1device.html#aa3d9204141e2fec2c510ed33051d5506">More...</a><br /></td></tr>
+<tr class="separator:aa3d9204141e2fec2c510ed33051d5506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1api__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1api__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1api__object.html">reshade::api::api_object</a></td></tr>
 <tr class="memitem:a4541f0b58f80f16dc6729858e42175a7 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#a4541f0b58f80f16dc6729858e42175a7">get_native</a> () const =0</td></tr>
 <tr class="memdesc:a4541f0b58f80f16dc6729858e42175a7 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the underlying native object for this API object.  <a href="structreshade_1_1api_1_1api__object.html#a4541f0b58f80f16dc6729858e42175a7">More...</a><br /></td></tr>
@@ -211,15 +238,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62c6353765e5d7d017128f0acdfe1b9d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">get_private_data</a> () const</td></tr>
-<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
+<tr class="memdesc:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a reference to user-defined data from the object that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#aea4ebd2b91dd992d2207712d612fe987">More...</a><br /></td></tr>
 <tr class="separator:aea4ebd2b91dd992d2207712d612fe987 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">create_private_data</a> ()</td></tr>
-<tr class="memdesc:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6">More...</a><br /></td></tr>
-<tr class="separator:acdf8f8cfb4e662231fccd0c897b7b9c6 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">create_private_data</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates user-defined data and stores it in the object.  <a href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11">More...</a><br /></td></tr>
+<tr class="separator:af0c46d2e179175fdfad869b5ee16ca11 inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">destroy_private_data</a> ()</td></tr>
-<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#acdf8f8cfb4e662231fccd0c897b7b9c6" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
+<tr class="memdesc:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees user-defined data that was previously allocated via <a class="el" href="structreshade_1_1api_1_1api__object.html#af0c46d2e179175fdfad869b5ee16ca11" title="Allocates user-defined data and stores it in the object.">create_private_data</a>.  <a href="structreshade_1_1api_1_1api__object.html#a9be856f3ade1bbe22f661830d688720d">More...</a><br /></td></tr>
 <tr class="separator:a9be856f3ade1bbe22f661830d688720d inherit pub_methods_structreshade_1_1api_1_1api__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -332,7 +359,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">count</td><td>Number of descriptor tables to allocate.</td></tr>
     <tr><td class="paramname">layout</td><td>Pipeline layout that contains a parameter that describes the descriptor table.</td></tr>
     <tr><td class="paramname">param</td><td>Index of the pipeline layout parameter that describes the descriptor table.</td></tr>
-    <tr><td class="paramname">out_handles</td><td>Pointer to an array of handles with at least <em>count</em>  elements that is filled with the handles of the created descriptor tables.</td></tr>
+    <tr><td class="paramname">out_handles</td><td>Pointer to the first element of an array of handles with at least <em>count</em>  elements that is filled with the handles of the created descriptor tables.</td></tr>
   </table>
   </dd>
 </dl>
@@ -444,7 +471,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of <em>copies</em>  to process.</td></tr>
-    <tr><td class="paramname">copies</td><td>Pointer to an array of descriptor table copies to process.</td></tr>
+    <tr><td class="paramname">copies</td><td>Pointer to the first element of an array of descriptor table copies to process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -482,6 +509,66 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a18917756c101957eaf0ef7290da36b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18917756c101957eaf0ef7290da36b79">&#9670;&nbsp;</a></span>create_fence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::device::create_fence </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>initial_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">fence_flags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> *&#160;</td>
+          <td class="paramname"><em>out_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>shared_handle</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new fence synchronization object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial_value</td><td>The initial value for the fence.</td></tr>
+    <tr><td class="paramname">flags</td><td>Fence creation options.</td></tr>
+    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created fence.</td></tr>
+    <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <em>flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">fence_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created fence. When that variable is a valid handle, the fence is imported from that shared handle.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the fence was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
@@ -536,7 +623,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">layout</td><td>Pipeline layout to use.</td></tr>
     <tr><td class="paramname">subobject_count</td><td>Number of sub-objects.</td></tr>
-    <tr><td class="paramname">subobjects</td><td>Pointer to an array of sub-objects that describe this pipeline.</td></tr>
+    <tr><td class="paramname">subobjects</td><td>Pointer to the first element of an array of sub-objects that describe this pipeline.</td></tr>
     <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created pipeline state object.</td></tr>
   </table>
   </dd>
@@ -589,7 +676,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">param_count</td><td>Number of layout parameters.</td></tr>
-    <tr><td class="paramname">params</td><td>Pointer to an array of layout parameters that describe this pipeline layout.</td></tr>
+    <tr><td class="paramname">params</td><td>Pointer to the first element of an array of layout parameters that describe this pipeline layout.</td></tr>
     <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created pipeline layout.</td></tr>
   </table>
   </dd>
@@ -821,6 +908,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sampler was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+
+</div>
+</div>
+<a id="a0c39789150b0e9dc7e29a3d2cb6e9266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c39789150b0e9dc7e29a3d2cb6e9266">&#9670;&nbsp;</a></span>destroy_fence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::device::destroy_fence </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79" title="Creates a new fence synchronization object.">create_fence</a>. </p>
 
 </div>
 </div>
@@ -1058,6 +1173,87 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a649ca938325986d3d414d38cedfcfd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649ca938325986d3d414d38cedfcfd57">&#9670;&nbsp;</a></span>get_acceleration_structure_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::device::get_acceleration_structure_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>input_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">acceleration_structure_build_input</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>out_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>out_build_scratch_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>out_update_scratch_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the required acceleration structure size needed to build the specified data. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c" title="Specifies whether ray tracing is supported. If this feature is not present, resource_view_type::accel...">device_caps::ray_tracing</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type of the acceleration structure.</td></tr>
+    <tr><td class="paramname">flags</td><td>Acceleration structure build options.</td></tr>
+    <tr><td class="paramname">input_count</td><td>Number of build inputs.</td></tr>
+    <tr><td class="paramname">inputs</td><td>Pointer to the first element of an array of build inputs describing the geometry of the acceleration structure.</td></tr>
+    <tr><td class="paramname">out_size</td><td>Pointer to a variable that is set to the required buffer size for the acceleration structure.</td></tr>
+    <tr><td class="paramname">out_build_scratch_size</td><td>Pointer to a variable that is set to the required scratch buffer size for building the acceleration structure.</td></tr>
+    <tr><td class="paramname">out_update_scratch_size</td><td>Pointer to a variable that is set to the required scratch buffer size for updating the acceleration structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3bfebff854ca583bada18e861c377b9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bfebff854ca583bada18e861c377b9f">&#9670;&nbsp;</a></span>get_api()</h2>
 
@@ -1082,6 +1278,34 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the underlying graphics API used by this device. </p>
+
+</div>
+</div>
+<a id="abff6fe651ef950aafa983636e129c21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff6fe651ef950aafa983636e129c21e">&#9670;&nbsp;</a></span>get_completed_fence_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t reshade::api::device::get_completed_fence_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>&#160;</td>
+          <td class="paramname"><em>fence</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current value of the specified fence. </p>
 
 </div>
 </div>
@@ -1151,6 +1375,113 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa3d9204141e2fec2c510ed33051d5506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d9204141e2fec2c510ed33051d5506">&#9670;&nbsp;</a></span>get_pipeline_shader_group_handles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::device::get_pipeline_shader_group_handles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>&#160;</td>
+          <td class="paramname"><em>pipeline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>out_handles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the shader group handles for a ray tracing pipeline, to be put into a shader binding table. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c" title="Specifies whether ray tracing is supported. If this feature is not present, resource_view_type::accel...">device_caps::ray_tracing</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipeline</td><td>Ray tracing pipeline to query.</td></tr>
+    <tr><td class="paramname">first</td><td>Index of the first shader group in the <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa9f79c06d74f76c5d82c44f18f20e4743" title="Ray tracing shader groups to use. Sub-object data is a pointer to an array of shader_group values.">pipeline_subobject_type::shader_groups</a> array that was used to create the pipeline.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of shader groups to get handles for.</td></tr>
+    <tr><td class="paramname">out_handles</td><td>Pointer to the first element of an array (with elements of the size reported by <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd" title="Size of a shader_group handle as written by device::get_pipeline_shader_group_handles....">device_properties::shader_group_handle_size</a>) that is filled with the handles.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the shader group handles were successfully retrieved, <code>false</code> otherwise.</dd></dl>
+
+</div>
+</div>
+<a id="a41accc4d81ccf1a0d917b2e491ef7310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41accc4d81ccf1a0d917b2e491ef7310">&#9670;&nbsp;</a></span>get_property()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::device::get_property </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">device_properties</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets data for a <em>property</em>  of this device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td>Property to query.</td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to a variable that is set to the value of the property. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567" title="The available properties a device may report.">device_properties</a> enumeration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the property exists and was retrieved, <code>false</code> otherwise.</dd></dl>
+
+</div>
+</div>
 <a id="a27bd0239c41cf7fe9488966f768c8dd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27bd0239c41cf7fe9488966f768c8dd6">&#9670;&nbsp;</a></span>get_query_heap_results()</h2>
 
@@ -1209,7 +1540,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">heap</td><td>Query heap that contains the queries.</td></tr>
     <tr><td class="paramname">first</td><td>Index of the first query in the query heap to copy the results from.</td></tr>
     <tr><td class="paramname">count</td><td>Number of query results to copy.</td></tr>
-    <tr><td class="paramname">results</td><td>Pointer to an array that is filled with the results.</td></tr>
+    <tr><td class="paramname">results</td><td>Pointer to the first element of an array that is filled with the results. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="The available query types.">query_type</a> enumeration.</td></tr>
     <tr><td class="paramname">stride</td><td>Size (in bytes) of each element in the <em>results</em>  array.</td></tr>
   </table>
   </dd>
@@ -1300,6 +1631,41 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the description of the specified resource view. </p>
+
+</div>
+</div>
+<a id="adbc1e93d4c81fdbb6f2f556139871c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc1e93d4c81fdbb6f2f556139871c70">&#9670;&nbsp;</a></span>get_resource_view_gpu_address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t reshade::api::device::get_resource_view_gpu_address </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the GPU address for a resource view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Resource view to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GPU address of the resource view, or zero in case of failure or when no fixed GPU address exists.</dd></dl>
 
 </div>
 </div>
@@ -1527,6 +1893,52 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a31dbe233b4b5e0bce79ce059a42607d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dbe233b4b5e0bce79ce059a42607d0">&#9670;&nbsp;</a></span>signal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::device::signal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>&#160;</td>
+          <td class="paramname"><em>fence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the specified fence to the specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fence</td><td>Fence to update.</td></tr>
+    <tr><td class="paramname">value</td><td>Value the fence should be set to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the signal operation was successful, <code>false</code> otherwise.</dd></dl>
+
+</div>
+</div>
 <a id="a3ae021130dc6b3f7d35b8b4cf88f539c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ae021130dc6b3f7d35b8b4cf88f539c">&#9670;&nbsp;</a></span>unmap_buffer_region()</h2>
 
@@ -1703,7 +2115,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of <em>updates</em>  to process.</td></tr>
-    <tr><td class="paramname">updates</td><td>Pointer to an array of descriptor table updates to process.</td></tr>
+    <tr><td class="paramname">updates</td><td>Pointer to the first element of an array of descriptor table updates to process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1800,6 +2212,59 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aae350a7aedc0a7a7e9810d64af5c4572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae350a7aedc0a7a7e9810d64af5c4572">&#9670;&nbsp;</a></span>wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool reshade::api::device::wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>&#160;</td>
+          <td class="paramname"><em>fence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>UINT64_MAX</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wait until the specified fence reached the specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fence</td><td>Fence to wait on.</td></tr>
+    <tr><td class="paramname">value</td><td>Value the fence has to each or exceed.</td></tr>
+    <tr><td class="paramname">timeout</td><td>Return early after the specified time in nanoseconds, or set to UINT64_MAX to never time out.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the wait operation was successful, <code>false</code> otherwise.</dd></dl>
 
 </div>
 </div>
