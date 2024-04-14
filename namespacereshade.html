@@ -144,6 +144,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::init_pipeline_layout &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::create_pipeline_layout &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::destroy_pipeline_layout &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::copy_descriptor_tables &gt;</b></td></tr>
@@ -240,6 +242,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::present &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::set_fullscreen_state &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_present &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_begin_effects &gt;</b></td></tr>
@@ -257,6 +261,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_screenshot &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_render_technique &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_effects_state &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reshade_set_current_preset_path &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,81 +322,85 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab7ae7557e06d4f07955aecbd74076d11">destroy_pipeline</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaabbebbd3a2ec3bfb6e9ef9861b1bb88c">init_pipeline_layout</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad6f03de8b1ea9c03100a049515f5ad05">create_pipeline_layout</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa885724d68f1d4283d3c23ebf57bbf7cb">destroy_pipeline_layout</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa184f74a588b85a7470f659765db487ff">copy_descriptor_tables</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5e3a1eab6530ccbfb50300f85451c947">update_descriptor_tables</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa184f74a588b85a7470f659765db487ff">copy_descriptor_tables</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5e3a1eab6530ccbfb50300f85451c947">update_descriptor_tables</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaa33038e58f58081547fcc3a657417ea7">init_query_heap</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4bf436f2d4f5e3fb7db0fc13ecd0a4d8">create_query_heap</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac40bb727beec4b39bd1a3b4810f4a217">destroy_query_heap</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa46f6cdfb5ce6aa3c9a3d884ac8cf727d">get_query_heap_results</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac40bb727beec4b39bd1a3b4810f4a217">destroy_query_heap</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa46f6cdfb5ce6aa3c9a3d884ac8cf727d">get_query_heap_results</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aafa9c8ab925b4a1cd4c75b1886fac8f61">barrier</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab86bb0560cdee07cdff03615303d8bf4">begin_render_pass</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2">end_render_pass</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa987b2aa4a2dd7ad21a312488fe3cf9db">bind_render_targets_and_depth_stencil</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2">end_render_pass</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa987b2aa4a2dd7ad21a312488fe3cf9db">bind_render_targets_and_depth_stencil</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0bfc34308f215b079e6593e9b00e9e99">bind_pipeline</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1bbbb486e0b6eb11d8804470441d077f">bind_pipeline_states</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5d9247a016d4496d9a29ffcea4473e41">bind_scissor_rects</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5d9247a016d4496d9a29ffcea4473e41">bind_scissor_rects</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aacf66d15894ab6128d23c652d72e5ac24">push_constants</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4404efc50b88e89ead23e8e409753735">bind_descriptor_tables</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa19a4f637b2ebbbd4c2fee7fd98ccd593">bind_index_buffer</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4404efc50b88e89ead23e8e409753735">bind_descriptor_tables</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa19a4f637b2ebbbd4c2fee7fd98ccd593">bind_index_buffer</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bd667ff1d3e8e790e8a561cdbecf460">bind_vertex_buffers</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae9e19bfe4d21f74acc5370a1fa9b3f46">bind_stream_output_buffers</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86">draw</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86">draw</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa9dddf2a4f7d94594ec2ea98407a410e1">dispatch</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6ebf4950378a89563854f1a0a3cd697d">dispatch_mesh</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c25336d87cabab6831c8f143c217d8b">dispatch_rays</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c25336d87cabab6831c8f143c217d8b">dispatch_rays</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa60f6e59e82570d137160b1441acb473e">copy_resource</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4ebf42358198546667376f080fadd527">copy_texture_to_buffer</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa148388d5a5ef8f4fc725bfb3ceb87e75">clear_render_target_view</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa148388d5a5ef8f4fc725bfb3ceb87e75">clear_render_target_view</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa627ab3110236aee8fdd14b724bd0c918">clear_unordered_access_view_uint</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa566fdc58bbbfe166bca2402eaf4e289e">begin_query</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa566fdc58bbbfe166bca2402eaf4e289e">begin_query</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaa2b081b43d883190dab6a9b7c88b8840">end_query</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae487ba2c9be37695c211184efc8d76a4">copy_query_heap_results</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa8d720d8fd8284febb8596d6c8e808694">copy_acceleration_structure</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7d1b4158b34e43bf4985076617a8ffc5">build_acceleration_structure</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa8d720d8fd8284febb8596d6c8e808694">copy_acceleration_structure</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7d1b4158b34e43bf4985076617a8ffc5">build_acceleration_structure</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa47ed49958e2500d72e305f85ed316c91">present</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0">set_fullscreen_state</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444">reshade_set_technique_state</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b">reshade_open_overlay</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac007f1d2c4d1ae4845dcd0e4e3b44abb">reshade_set_effects_state</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b">reshade_open_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa359cda72183a56b569b9d432fead10ec">reshade_overlay_uniform_variable</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa332c3e50d0712a3de6c974fe0c5d248e">reshade_overlay_technique</a>
 <br />
@@ -411,6 +421,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">set_config_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const char *value)</td></tr>
 <tr class="memdesc:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets and saves a value in one of ReShade's config files. This can use either the global config file (ReShade.ini next to the application executable), or one local to an effect runtime (ReShade[index].ini in the base path).  <a href="namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02">More...</a><br /></td></tr>
 <tr class="separator:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c931767a2e8a4413b785eec69fe0293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a0c931767a2e8a4413b785eec69fe0293">set_config_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const char *value, size_t value_size)</td></tr>
+<tr class="separator:a0c931767a2e8a4413b785eec69fe0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe2def0040846612598f4c26b626013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#aabe2def0040846612598f4c26b626013">register_addon</a> (HMODULE addon_module, [[maybe_unused]] HMODULE reshade_module=nullptr)</td></tr>
 <tr class="memdesc:aabe2def0040846612598f4c26b626013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#aabe2def0040846612598f4c26b626013">More...</a><br /></td></tr>
 <tr class="separator:aabe2def0040846612598f4c26b626013"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1393,6 +1405,15 @@ vkCreatePipelineLayout </li>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, uint32_t param_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html" title="Describes a single parameter in a pipeline layout.">api::pipeline_layout_param</a> *params, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout)</code></p>
 <p>In case of D3D9, D3D10, D3D11 and OpenGL this is called during device initialization as well and behaves as if an implicit global pipeline layout was created. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aad6f03de8b1ea9c03100a049515f5ad05"></a>create_pipeline_layout&#160;</td><td class="fielddoc"><p>Called on pipeline layout creation, before: </p><ul>
+<li>
+ID3D12Device::CreateRootSignature </li>
+<li>
+vkCreatePipelineLayout </li>
+</ul>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, uint32_t &amp;param_count, <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html" title="Describes a single parameter in a pipeline layout.">api::pipeline_layout_param</a> *&amp;params)</code></p>
+<p>Is not called in D3D9, D3D10, D3D11 or OpenGL. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa885724d68f1d4283d3c23ebf57bbf7cb"></a>destroy_pipeline_layout&#160;</td><td class="fielddoc"><p>Called on pipeline layout destruction, before: </p><ul>
 <li>
 ID3D12RootSignature::Release </li>
@@ -2319,6 +2340,17 @@ xrEndFrame </li>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue, <a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *source_rect, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dest_rect, uint32_t dirty_rect_count, const <a class="el" href="structreshade_1_1api_1_1rect.html" title="Describes a rectangle.">api::rect</a> *dirty_rects)</code></p>
 <p>The source and destination rectangle arguments are optional and may be <code>nullptr</code> (which indicates the swap chain is presented in its entirety). </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0"></a>set_fullscreen_state&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
+<li>
+IDXGISwapChain::SetFullscreenState </li>
+<li>
+vkAcquireFullScreenExclusiveModeEXT </li>
+<li>
+vkReleaseFullScreenExclusiveModeEXT </li>
+</ul>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, bool fullscreen, void *hmonitor)</code></p>
+<p>To prevent the fullscreen state from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498"></a>reshade_present&#160;</td><td class="fielddoc"><p>Called after ReShade has rendered its overlay. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
 </td></tr>
@@ -2348,6 +2380,10 @@ xrEndFrame </li>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a"></a>reshade_render_technique&#160;</td><td class="fielddoc"><p>Called for each technique after it was rendered, usually between reshade_begin_effects and reshade_finish_effects. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, <a class="el" href="structreshade_1_1api_1_1effect__technique.html" title="An opaque handle to a technique in an effect.">api::effect_technique</a> technique, <a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> rtv_srgb)</code></p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac007f1d2c4d1ae4845dcd0e4e3b44abb"></a>reshade_set_effects_state&#160;</td><td class="fielddoc"><p>Called when all effects are about to be enabled or disabled. </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, bool enabled)</code></p>
+<p>To prevent the effects state from being changed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74"></a>reshade_set_current_preset_path&#160;</td><td class="fielddoc"><p>Called after a preset was loaded and applied. This occurs after effect reloading or when the user chooses a new preset in the overlay. </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime, const char *path)</code></p>
@@ -2801,7 +2837,7 @@ template&lt;addon_event ev&gt; </div>
 </div>
 </div>
 <a id="a86c7bfd003b4459ba8d3ff3ba94eac02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c7bfd003b4459ba8d3ff3ba94eac02">&#9670;&nbsp;</a></span>set_config_value()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c7bfd003b4459ba8d3ff3ba94eac02">&#9670;&nbsp;</a></span>set_config_value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2856,6 +2892,60 @@ template&lt;addon_event ev&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0c931767a2e8a4413b785eec69fe0293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c931767a2e8a4413b785eec69fe0293">&#9670;&nbsp;</a></span>set_config_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reshade::set_config_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *&#160;</td>
+          <td class="paramname"><em>runtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>value_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

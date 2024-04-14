@@ -533,7 +533,12 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afd9e41db9727a2e919c772eaafe3d23c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">descriptor_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136">sampler</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b">sampler_with_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4">buffer_shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973">buffer_unordered_access_view</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d">texture_shader_resource_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f">shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d">texture_unordered_access_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a">unordered_access_view</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b">constant_buffer</a>
@@ -1775,13 +1780,26 @@ Functions</h2></td></tr>
 
 <p>The available descriptor types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136"></a>sampler&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136"></a>sampler&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1sampler.html" title="An opaque handle to a sampler state object.">sampler</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1sampler__with__resource__view.html" title="A combined sampler and resource view descriptor.">sampler_with_resource_view</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4"></a>buffer_shader_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973"></a>buffer_unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d"></a>texture_shader_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f"></a>shader_resource_view&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d"></a>texture_unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a"></a>unordered_access_view&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b"></a>constant_buffer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca52e8f9839b88cb8eaa612a7f3ee70155"></a>shader_storage_buffer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c"></a>acceleration_structure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b"></a>constant_buffer&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1buffer__range.html" title="A constant buffer resource descriptor.">buffer_range</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca52e8f9839b88cb8eaa612a7f3ee70155"></a>shader_storage_buffer&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1buffer__range.html" title="A constant buffer resource descriptor.">buffer_range</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c"></a>acceleration_structure&#160;</td><td class="fielddoc"><p>Descriptors are an array of acceleration_structure. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1894,7 +1912,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a6bb09ea98a31d3e6639b2079e816d703"></a>sampler_anisotropic&#160;</td><td class="fielddoc"><p>Specifies whether anisotropic filtering is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a8fd7f194e4ee92edc3dcbe2a8fb2b708">filter_mode::anisotropic</a> must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0acf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"><p>Specifies whether combined sampler and resource view descriptors are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b">descriptor_type::sampler_with_resource_view</a> must not be used. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0acf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"><p>Specifies whether combined sampler and resource view descriptors are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b" title="Descriptors are an array of sampler_with_resource_view.">descriptor_type::sampler_with_resource_view</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0af1b6150f303b6aee438c0e1331c1965f"></a>shared_resource&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">resource_flags::shared</a> must not be used. </p>
 </td></tr>
