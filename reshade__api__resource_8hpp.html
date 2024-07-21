@@ -114,10 +114,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a render target view and how it is treated at the start and end of a render pass.  <a href="structreshade_1_1api_1_1render__pass__render__target__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1acceleration__structure__instance.html">reshade::api::acceleration_structure_instance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes an instance in a top-level acceleration structure. The data in acceleration_structure_build_input::instances::buffer should be an array of this structure.  <a href="structreshade_1_1api_1_1acceleration__structure__instance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single instance in a top-level acceleration structure. The data in acceleration_structure_build_input::instances::buffer should be an array of this structure.  <a href="structreshade_1_1api_1_1acceleration__structure__instance.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">reshade::api::acceleration_structure_build_input</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a build input for an acceleration structure build.  <a href="structreshade_1_1api_1_1acceleration__structure__build__input.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a build input for an acceleration structure build operation.  <a href="structreshade_1_1api_1_1acceleration__structure__build__input.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -148,7 +148,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1af9f90eeaf400d228facde6bc48da5cfb">reshade::api::always</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available comparison types.  <a href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1">More...</a><br /></td></tr>
+<tr class="memdesc:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operations.  <a href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1">More...</a><br /></td></tr>
 <tr class="separator:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4674f12273e11e328bfd65fc827c384"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">reshade::api::filter_mode</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a61d050ff6497ed0a132fc6360ace094b">reshade::api::min_mag_mip_point</a>
@@ -177,7 +177,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384afd27e4cfb1b658b32da3c5061fefa2d8">reshade::api::compare_anisotropic</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae4674f12273e11e328bfd65fc827c384"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available filtering modes used for texture sampling operations.  <a href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">More...</a><br /></td></tr>
+<tr class="memdesc:ae4674f12273e11e328bfd65fc827c384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture filtering modes available for texture sampling operations.  <a href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">More...</a><br /></td></tr>
 <tr class="separator:ae4674f12273e11e328bfd65fc827c384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">reshade::api::texture_address_mode</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4eaccfc59a528a109fa4204e8ea06e8b68b">reshade::api::wrap</a>
@@ -188,14 +188,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4ea2a7c770beac8d50004280ca6e3efbfbe">reshade::api::mirror_once</a>
 <br />
  }</td></tr>
-<tr class="memdesc:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies behavior of sampling with texture coordinates outside a texture resource.  <a href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">More...</a><br /></td></tr>
+<tr class="memdesc:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling behavior at texture coordinates outside the bounds of a texture resource.  <a href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">More...</a><br /></td></tr>
 <tr class="separator:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9364d8f6baaafa7a97db157988abd195"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">reshade::api::map_access</a> { <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195abefe72871b2de8f4f0e20108517e31fe">reshade::api::read_only</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a2629564984b808cf7e6cfc61a0286d69">reshade::api::write_only</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a06ad287ea83b37a6f9db3d8d10d72c8f">reshade::api::read_write</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">reshade::api::write_discard</a>
  }</td></tr>
-<tr class="memdesc:a9364d8f6baaafa7a97db157988abd195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available memory mapping access types.  <a href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">More...</a><br /></td></tr>
+<tr class="memdesc:a9364d8f6baaafa7a97db157988abd195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory mapping access types.  <a href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">More...</a><br /></td></tr>
 <tr class="separator:a9364d8f6baaafa7a97db157988abd195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5281da0286a1680c9dec5a6109871daa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">reshade::api::memory_heap</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -207,7 +207,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127">reshade::api::custom</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a5281da0286a1680c9dec5a6109871daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available memory heap types, which give a hint as to where to place the memory allocation for a resource.  <a href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">More...</a><br /></td></tr>
+<tr class="memdesc:a5281da0286a1680c9dec5a6109871daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory heap types, which give a hint as to where to place the allocation for a resource.  <a href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">More...</a><br /></td></tr>
 <tr class="separator:a5281da0286a1680c9dec5a6109871daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a410ac3a673efb3365cd0a2372e71e95c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">reshade::api::resource_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95caad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -219,7 +219,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95cad302e976c9dd527a9521a88c012437c5">reshade::api::surface</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a410ac3a673efb3365cd0a2372e71e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available resource types. The type of a resource is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...).  <a href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">More...</a><br /></td></tr>
+<tr class="memdesc:a410ac3a673efb3365cd0a2372e71e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a resource. This is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...).  <a href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">More...</a><br /></td></tr>
 <tr class="separator:a410ac3a673efb3365cd0a2372e71e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92d24ded74e7f371f805b1d0d609043"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">reshade::api::resource_flags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
@@ -229,11 +229,10 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">reshade::api::shared</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce">reshade::api::shared_nt_handle</a>
-, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a32234519c88d862c5df3934bd134aa9c">reshade::api::structured</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f">reshade::api::sparse_binding</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae92d24ded74e7f371f805b1d0d609043"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that describe additional parameters of a resource.  <a href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">More...</a><br /></td></tr>
+<tr class="memdesc:ae92d24ded74e7f371f805b1d0d609043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a resource.  <a href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">More...</a><br /></td></tr>
 <tr class="separator:ae92d24ded74e7f371f805b1d0d609043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c77e737cfeb069db2fa6f72f35b059"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">reshade::api::resource_usage</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a5e543256c480ac577d30f76f9120eb74">reshade::api::undefined</a>
@@ -265,7 +264,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a6afd338d6448ff9dd25358f1cb1124e8">reshade::api::cpu_access</a>
 <br />
  }</td></tr>
-<tr class="memdesc:af7c77e737cfeb069db2fa6f72f35b059"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that specify how a resource is to be used. This needs to be specified during creation and is also used to transition between different resource states within a command list.  <a href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">More...</a><br /></td></tr>
+<tr class="memdesc:af7c77e737cfeb069db2fa6f72f35b059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify how a resource is used. This needs to be specified during creation and is also used to transition between different resource states within a command list.  <a href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">More...</a><br /></td></tr>
 <tr class="separator:af7c77e737cfeb069db2fa6f72f35b059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f07392518e2fdb200e578bc545cd54f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">reshade::api::resource_view_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54faad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -284,7 +283,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5ce48948fe80f65f45fa4ecebbdc867c">reshade::api::acceleration_structure</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a0f07392518e2fdb200e578bc545cd54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available resource view types. These identify how a resource view interprets the data of its resource.  <a href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">More...</a><br /></td></tr>
+<tr class="memdesc:a0f07392518e2fdb200e578bc545cd54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a resource view. This identifies how a resource view interprets the data of its resource.  <a href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">More...</a><br /></td></tr>
 <tr class="separator:a0f07392518e2fdb200e578bc545cd54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b8af40b571deeadfdd39d7934ac4e0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0">reshade::api::render_pass_load_op</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0aec4d1eb36b22d19728e9d1d23ca84d1c">reshade::api::load</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a01bc6f8efa4202821e95f4fdf6298b30">reshade::api::clear</a>
@@ -303,19 +302,19 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a00f361ffd661fc23c055206a48691d68">reshade::api::bottom_level</a>
 , <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9">reshade::api::generic</a>
  }</td></tr>
-<tr class="memdesc:a1ed6b36717133a7fcfde6ca974064f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure types.  <a href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">More...</a><br /></td></tr>
+<tr class="memdesc:a1ed6b36717133a7fcfde6ca974064f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure.  <a href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">More...</a><br /></td></tr>
 <tr class="separator:a1ed6b36717133a7fcfde6ca974064f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">reshade::api::acceleration_structure_copy_mode</a> { <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7ad329fd777726c300d7a044e482b967e7">reshade::api::clone</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a7cf74ca49c304df8150205fc915cd465">reshade::api::compact</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a235cdd01b87af1e1de37f4746a88d82c">reshade::api::serialize</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a95f98046b7ecfb92a1d8a6006babb282">reshade::api::deserialize</a>
  }</td></tr>
-<tr class="memdesc:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure copy modes.  <a href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">More...</a><br /></td></tr>
+<tr class="memdesc:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure copy operation.  <a href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">More...</a><br /></td></tr>
 <tr class="separator:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f98490dc7498321a92b736be26e971e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">reshade::api::acceleration_structure_build_mode</a> { <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971eab0da275520918e23dd615e2a747528f1">reshade::api::build</a>
 , <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971ea3ac340832f29c11538fbe2d6f75e8bcc">reshade::api::update</a>
  }</td></tr>
-<tr class="memdesc:a0f98490dc7498321a92b736be26e971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build modes.  <a href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">More...</a><br /></td></tr>
+<tr class="memdesc:a0f98490dc7498321a92b736be26e971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure build operation.  <a href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">More...</a><br /></td></tr>
 <tr class="separator:a0f98490dc7498321a92b736be26e971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55963207d90079684f1dc9961dd15ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">reshade::api::acceleration_structure_build_flags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15eaa334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
@@ -327,19 +326,19 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15eaa67e6414968a2f4f9e7c807153a1e4d48">reshade::api::minimize_memory_usage</a>
 <br />
  }</td></tr>
-<tr class="memdesc:aa55963207d90079684f1dc9961dd15ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build flags.  <a href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">More...</a><br /></td></tr>
+<tr class="memdesc:aa55963207d90079684f1dc9961dd15ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters to an acceleration structure build operation.  <a href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">More...</a><br /></td></tr>
 <tr class="separator:aa55963207d90079684f1dc9961dd15ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">reshade::api::acceleration_structure_build_input_type</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a817d7d587258bac88b24567b17bdda87">reshade::api::triangles</a>
 , <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a9f7cf42e0dad89e417c4df57fa80ba25">reshade::api::aabbs</a>
 , <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a6fa9325472628103b7299e0e03a3cb93">reshade::api::instances</a>
  }</td></tr>
-<tr class="memdesc:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build input types.  <a href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">More...</a><br /></td></tr>
+<tr class="memdesc:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure structure build input.  <a href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">More...</a><br /></td></tr>
 <tr class="separator:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">reshade::api::acceleration_structure_build_input_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
 , <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda94619f8a70068b2591c2eed622525b0e">reshade::api::opaque</a>
 , <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda6defd325c4675c45f3af8fc3461ce4c4">reshade::api::no_duplicate_any_hit_invocation</a>
  }</td></tr>
-<tr class="memdesc:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build input flags.  <a href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">More...</a><br /></td></tr>
+<tr class="memdesc:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of an acceleration structure build input.  <a href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">More...</a><br /></td></tr>
 <tr class="separator:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>

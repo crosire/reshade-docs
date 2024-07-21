@@ -93,43 +93,43 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adf3bb442aed5ab6bf45cf61261da503a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6">shader_group_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1shader__group.html#adf3bb442aed5ab6bf45cf61261da503a">type</a></td></tr>
 <tr class="memdesc:adf3bb442aed5ab6bf45cf61261da503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the shader group.  <a href="structreshade_1_1api_1_1shader__group.html#adf3bb442aed5ab6bf45cf61261da503a">More...</a><br /></td></tr>
 <tr class="separator:adf3bb442aed5ab6bf45cf61261da503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5784fb889f79041bb04b7bb1add6c332"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a9e8675a45a58ff04220230069cd20849"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a1c7bcd3810a77a298efcd53803e919f0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
-<tr class="memdesc:a1c7bcd3810a77a298efcd53803e919f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the ray generation shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d5.html#a1c7bcd3810a77a298efcd53803e919f0">More...</a><br /></td></tr>
-<tr class="separator:a1c7bcd3810a77a298efcd53803e919f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8675a45a58ff04220230069cd20849"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#afe8e94fbbf0000e34ec749c6c786e3d3">raygen</a></td></tr>
-<tr class="memdesc:a9e8675a45a58ff04220230069cd20849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a80d6f31723ca0cdb779f044db05c404d">shader_group_type::raygen</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d3.html#a9e8675a45a58ff04220230069cd20849">More...</a><br /></td></tr>
-<tr class="separator:a9e8675a45a58ff04220230069cd20849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb267dcdee7f4c4396803ae9fc709ba"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:aefbded982fcff4023f2eb7029d26d741"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
-<tr class="memdesc:aefbded982fcff4023f2eb7029d26d741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the miss shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d6.html#aefbded982fcff4023f2eb7029d26d741">More...</a><br /></td></tr>
-<tr class="separator:aefbded982fcff4023f2eb7029d26d741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb267dcdee7f4c4396803ae9fc709ba"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#aba0892b8472b8d23ab5aa87e5ba2471d">miss</a></td></tr>
-<tr class="memdesc:addb267dcdee7f4c4396803ae9fc709ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6ade13fc4490fbd29a732bf77eb7476650">shader_group_type::miss</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d3.html#addb267dcdee7f4c4396803ae9fc709ba">More...</a><br /></td></tr>
-<tr class="separator:addb267dcdee7f4c4396803ae9fc709ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed7d1d5d10f75e209395f3ca211a644"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a459c42d15429abd1a824dbb7eedf1ba1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a6ecd793f18a5d116d75660465735d6ef">closest_hit_shader_index</a></td></tr>
-<tr class="memdesc:a459c42d15429abd1a824dbb7eedf1ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the closest-hit shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d7.html#a459c42d15429abd1a824dbb7eedf1ba1">More...</a><br /></td></tr>
-<tr class="separator:a459c42d15429abd1a824dbb7eedf1ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075c0ec184c2ac3b2e31c363a3a2ac9e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a1a7263471828246c31446359f3de9e62">any_hit_shader_index</a></td></tr>
-<tr class="memdesc:a075c0ec184c2ac3b2e31c363a3a2ac9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the any-hit shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d7.html#a075c0ec184c2ac3b2e31c363a3a2ac9e">More...</a><br /></td></tr>
-<tr class="separator:a075c0ec184c2ac3b2e31c363a3a2ac9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96b699acba6ee7bfe64974e6fb2d7850"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a51d01d1d7cdfc97abd34e9251e32dde0">intersection_shader_index</a></td></tr>
-<tr class="memdesc:a96b699acba6ee7bfe64974e6fb2d7850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the intersection shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d7.html#a96b699acba6ee7bfe64974e6fb2d7850">More...</a><br /></td></tr>
-<tr class="separator:a96b699acba6ee7bfe64974e6fb2d7850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed7d1d5d10f75e209395f3ca211a644"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a40d195854c63702555e2c8dacc42ecdd">hit_group</a></td></tr>
-<tr class="memdesc:a7ed7d1d5d10f75e209395f3ca211a644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a9d576d784f2fcf490349de73a3c7362b">shader_group_type::hit_group_triangles</a> or <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6ad996094e1bb59776c72dc00d0676a29e">shader_group_type::hit_group_aabbs</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d3.html#a7ed7d1d5d10f75e209395f3ca211a644">More...</a><br /></td></tr>
-<tr class="separator:a7ed7d1d5d10f75e209395f3ca211a644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1c0c2617c99487dcfa3c6bf76f9e67f"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:aea436206ee6db6f7a232d3580dcb81fc"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
-<tr class="memdesc:aea436206ee6db6f7a232d3580dcb81fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the callable shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d3_1_1_0d8.html#aea436206ee6db6f7a232d3580dcb81fc">More...</a><br /></td></tr>
-<tr class="separator:aea436206ee6db6f7a232d3580dcb81fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1c0c2617c99487dcfa3c6bf76f9e67f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a9658b5abb803126f2422818fdf7a9ab9">callable</a></td></tr>
-<tr class="memdesc:ad1c0c2617c99487dcfa3c6bf76f9e67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a765d2ec94553b7cf4c971e7dfcf0e851">shader_group_type::callable</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d3.html#ad1c0c2617c99487dcfa3c6bf76f9e67f">More...</a><br /></td></tr>
-<tr class="separator:ad1c0c2617c99487dcfa3c6bf76f9e67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5784fb889f79041bb04b7bb1add6c332"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a5784fb889f79041bb04b7bb1add6c332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61132fa6010ea2367b4c51d93786db5"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a43bb1a3a8b4c4399369d7980fe95ad4f"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a7c818ce311c7b4e4d09080b84d1318b6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
+<tr class="memdesc:a7c818ce311c7b4e4d09080b84d1318b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the ray generation shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d6.html#a7c818ce311c7b4e4d09080b84d1318b6">More...</a><br /></td></tr>
+<tr class="separator:a7c818ce311c7b4e4d09080b84d1318b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bb1a3a8b4c4399369d7980fe95ad4f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a40acf8bd74df49a4fb951ea18f3bfa04">raygen</a></td></tr>
+<tr class="memdesc:a43bb1a3a8b4c4399369d7980fe95ad4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a80d6f31723ca0cdb779f044db05c404d">shader_group_type::raygen</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d4.html#a43bb1a3a8b4c4399369d7980fe95ad4f">More...</a><br /></td></tr>
+<tr class="separator:a43bb1a3a8b4c4399369d7980fe95ad4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e157c77fe1ef81bc9cb8701b6e419a"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ab167e230a16fd14886939a3acb93d327"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
+<tr class="memdesc:ab167e230a16fd14886939a3acb93d327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the miss shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d7.html#ab167e230a16fd14886939a3acb93d327">More...</a><br /></td></tr>
+<tr class="separator:ab167e230a16fd14886939a3acb93d327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e157c77fe1ef81bc9cb8701b6e419a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a127649c0a38195f2bc8ebb501d1c7182">miss</a></td></tr>
+<tr class="memdesc:a78e157c77fe1ef81bc9cb8701b6e419a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6ade13fc4490fbd29a732bf77eb7476650">shader_group_type::miss</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d4.html#a78e157c77fe1ef81bc9cb8701b6e419a">More...</a><br /></td></tr>
+<tr class="separator:a78e157c77fe1ef81bc9cb8701b6e419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf412c74d4a5432bde024cdcde51c477"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:afb75affe3a77cad994ecf3efd1851eb4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a6ecd793f18a5d116d75660465735d6ef">closest_hit_shader_index</a></td></tr>
+<tr class="memdesc:afb75affe3a77cad994ecf3efd1851eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the closest-hit shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d8.html#afb75affe3a77cad994ecf3efd1851eb4">More...</a><br /></td></tr>
+<tr class="separator:afb75affe3a77cad994ecf3efd1851eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8de1609fe68814efb9d9d8942f8088"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a1a7263471828246c31446359f3de9e62">any_hit_shader_index</a></td></tr>
+<tr class="memdesc:a8f8de1609fe68814efb9d9d8942f8088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the any-hit shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d8.html#a8f8de1609fe68814efb9d9d8942f8088">More...</a><br /></td></tr>
+<tr class="separator:a8f8de1609fe68814efb9d9d8942f8088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e369402402682c4763ebeb9f4828148"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a51d01d1d7cdfc97abd34e9251e32dde0">intersection_shader_index</a></td></tr>
+<tr class="memdesc:a4e369402402682c4763ebeb9f4828148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the intersection shader pipeline subobject. Set to -1 (UINT32_MAX) to indicate that this shader type is not used in the hit group.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d8.html#a4e369402402682c4763ebeb9f4828148">More...</a><br /></td></tr>
+<tr class="separator:a4e369402402682c4763ebeb9f4828148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf412c74d4a5432bde024cdcde51c477"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a74a0a4cf5e1599a3147eed35b8c4da26">hit_group</a></td></tr>
+<tr class="memdesc:abf412c74d4a5432bde024cdcde51c477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a9d576d784f2fcf490349de73a3c7362b">shader_group_type::hit_group_triangles</a> or <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6ad996094e1bb59776c72dc00d0676a29e">shader_group_type::hit_group_aabbs</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d4.html#abf412c74d4a5432bde024cdcde51c477">More...</a><br /></td></tr>
+<tr class="separator:abf412c74d4a5432bde024cdcde51c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af7d033c160b813ec67bf06cd45cbd6"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:abe7189d96be815541e405f80772f7613"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#a778670e14d3c8e7031fc1171a7316f6d">shader_index</a></td></tr>
+<tr class="memdesc:abe7189d96be815541e405f80772f7613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the shader in the callable shader pipeline subobject.  <a href="structreshade_1_1api_1_1shader__group_1_1_0d4_1_1_0d9.html#abe7189d96be815541e405f80772f7613">More...</a><br /></td></tr>
+<tr class="separator:abe7189d96be815541e405f80772f7613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af7d033c160b813ec67bf06cd45cbd6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structreshade_1_1api_1_1shader__group.html#ad3d6dd7b1291fda8fb66d2491f750e93">callable</a></td></tr>
+<tr class="memdesc:a0af7d033c160b813ec67bf06cd45cbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when type is <a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a765d2ec94553b7cf4c971e7dfcf0e851">shader_group_type::callable</a>.  <a href="unionreshade_1_1api_1_1shader__group_1_1_0d4.html#a0af7d033c160b813ec67bf06cd45cbd6">More...</a><br /></td></tr>
+<tr class="separator:a0af7d033c160b813ec67bf06cd45cbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61132fa6010ea2367b4c51d93786db5"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af61132fa6010ea2367b4c51d93786db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a ray tracing shader group. </p>
@@ -208,8 +208,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5784fb889f79041bb04b7bb1add6c332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5784fb889f79041bb04b7bb1add6c332">&#9670;&nbsp;</a></span></h2>
+<a id="af61132fa6010ea2367b4c51d93786db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61132fa6010ea2367b4c51d93786db5">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,8 +239,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9658b5abb803126f2422818fdf7a9ab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9658b5abb803126f2422818fdf7a9ab9">&#9670;&nbsp;</a></span></h2>
+<a id="ad3d6dd7b1291fda8fb66d2491f750e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d6dd7b1291fda8fb66d2491f750e93">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,8 +272,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a40d195854c63702555e2c8dacc42ecdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40d195854c63702555e2c8dacc42ecdd">&#9670;&nbsp;</a></span></h2>
+<a id="a74a0a4cf5e1599a3147eed35b8c4da26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a0a4cf5e1599a3147eed35b8c4da26">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,8 +305,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aba0892b8472b8d23ab5aa87e5ba2471d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba0892b8472b8d23ab5aa87e5ba2471d">&#9670;&nbsp;</a></span></h2>
+<a id="a127649c0a38195f2bc8ebb501d1c7182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127649c0a38195f2bc8ebb501d1c7182">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,8 +321,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afe8e94fbbf0000e34ec749c6c786e3d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8e94fbbf0000e34ec749c6c786e3d3">&#9670;&nbsp;</a></span></h2>
+<a id="a40acf8bd74df49a4fb951ea18f3bfa04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40acf8bd74df49a4fb951ea18f3bfa04">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">

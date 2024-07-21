@@ -100,27 +100,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8c801359bf2dc7132529ee415589a42"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ac8c801359bf2dc7132529ee415589a42">check_format_support</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> usage) const =0</td></tr>
 <tr class="memdesc:ac8c801359bf2dc7132529ee415589a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified texture <em>format</em>  supports the specified <em>usage</em> .  <a href="structreshade_1_1api_1_1device.html#ac8c801359bf2dc7132529ee415589a42">More...</a><br /></td></tr>
 <tr class="separator:ac8c801359bf2dc7132529ee415589a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4fc06bc8d5fc1b2f185c2f61ed0fb7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a1a4fc06bc8d5fc1b2f185c2f61ed0fb7">create_sampler</a> (const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a> &amp;desc, <a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a> *out_handle)=0</td></tr>
-<tr class="memdesc:a1a4fc06bc8d5fc1b2f185c2f61ed0fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new sampler state object.  <a href="structreshade_1_1api_1_1device.html#a1a4fc06bc8d5fc1b2f185c2f61ed0fb7">More...</a><br /></td></tr>
-<tr class="separator:a1a4fc06bc8d5fc1b2f185c2f61ed0fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa538dd791e64d81d62493ee28c9a8a3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa538dd791e64d81d62493ee28c9a8a3c">destroy_sampler</a> (<a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a> handle)=0</td></tr>
-<tr class="memdesc:aa538dd791e64d81d62493ee28c9a8a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a sampler that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a1a4fc06bc8d5fc1b2f185c2f61ed0fb7" title="Creates a new sampler state object.">create_sampler</a>.  <a href="structreshade_1_1api_1_1device.html#aa538dd791e64d81d62493ee28c9a8a3c">More...</a><br /></td></tr>
-<tr class="separator:aa538dd791e64d81d62493ee28c9a8a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf1752bd0c35e3eb0a603f8d9adaa2a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aabf1752bd0c35e3eb0a603f8d9adaa2a">create_resource</a> (const <a class="el" href="structreshade_1_1api_1_1resource__desc.html">resource_desc</a> &amp;desc, const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> *initial_data, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> initial_state, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *out_handle, void **shared_handle=nullptr)=0</td></tr>
-<tr class="memdesc:aabf1752bd0c35e3eb0a603f8d9adaa2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates a new resource.  <a href="structreshade_1_1api_1_1device.html#aabf1752bd0c35e3eb0a603f8d9adaa2a">More...</a><br /></td></tr>
-<tr class="separator:aabf1752bd0c35e3eb0a603f8d9adaa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae91e50ef93d690eb9eb4c5b5b34a42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a5ae91e50ef93d690eb9eb4c5b5b34a42">destroy_resource</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> handle)=0</td></tr>
-<tr class="memdesc:a5ae91e50ef93d690eb9eb4c5b5b34a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a resource that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aabf1752bd0c35e3eb0a603f8d9adaa2a" title="Allocates and creates a new resource.">create_resource</a> and frees its memory. Make sure the resource is no longer in use on the GPU (via any command list that may reference it and is still being executed) before doing this (e.g. with <a class="el" href="structreshade_1_1api_1_1command__queue.html#afdeba54d425d92eacaf8dbcece6d6b25" title="Waits for all issued GPU operations on this queue to finish before returning. This can be used to ens...">command_queue::wait_idle</a>) and never try to destroy resources created by the application!  <a href="structreshade_1_1api_1_1device.html#a5ae91e50ef93d690eb9eb4c5b5b34a42">More...</a><br /></td></tr>
-<tr class="separator:a5ae91e50ef93d690eb9eb4c5b5b34a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa373f310ab38acf7888818b70f3a9712"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa373f310ab38acf7888818b70f3a9712">create_sampler</a> (const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a> &amp;desc, <a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a> *out_sampler)=0</td></tr>
+<tr class="memdesc:aa373f310ab38acf7888818b70f3a9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new sampler state object.  <a href="structreshade_1_1api_1_1device.html#aa373f310ab38acf7888818b70f3a9712">More...</a><br /></td></tr>
+<tr class="separator:aa373f310ab38acf7888818b70f3a9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375c052610a818e480ae624ad2f8b3ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a375c052610a818e480ae624ad2f8b3ea">destroy_sampler</a> (<a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a> <a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a>)=0</td></tr>
+<tr class="memdesc:a375c052610a818e480ae624ad2f8b3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a sampler that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa373f310ab38acf7888818b70f3a9712" title="Creates a new sampler state object.">create_sampler</a>.  <a href="structreshade_1_1api_1_1device.html#a375c052610a818e480ae624ad2f8b3ea">More...</a><br /></td></tr>
+<tr class="separator:a375c052610a818e480ae624ad2f8b3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae239bacf4993286a23882d7ed28dca65"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65">create_resource</a> (const <a class="el" href="structreshade_1_1api_1_1resource__desc.html">resource_desc</a> &amp;desc, const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> *initial_data, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> initial_state, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *out_resource, void **shared_handle=nullptr)=0</td></tr>
+<tr class="memdesc:ae239bacf4993286a23882d7ed28dca65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates a new resource.  <a href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65">More...</a><br /></td></tr>
+<tr class="separator:ae239bacf4993286a23882d7ed28dca65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18eea959883b0558616438c85de9712"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ab18eea959883b0558616438c85de9712">destroy_resource</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>)=0</td></tr>
+<tr class="memdesc:ab18eea959883b0558616438c85de9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a resource that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65" title="Allocates and creates a new resource.">create_resource</a> and frees its memory. Make sure the resource is no longer in use on the GPU (via any command list that may reference it and is still being executed) before doing this (e.g. with <a class="el" href="structreshade_1_1api_1_1command__queue.html#afdeba54d425d92eacaf8dbcece6d6b25" title="Waits for all issued GPU operations on this queue to finish before returning. This can be used to ens...">command_queue::wait_idle</a>) and never try to destroy resources created by the application!  <a href="structreshade_1_1api_1_1device.html#ab18eea959883b0558616438c85de9712">More...</a><br /></td></tr>
+<tr class="separator:ab18eea959883b0558616438c85de9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adae7d0a26bb34f39aa6c43f2ddf8d853"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource__desc.html">resource_desc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#adae7d0a26bb34f39aa6c43f2ddf8d853">get_resource_desc</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>) const =0</td></tr>
 <tr class="memdesc:adae7d0a26bb34f39aa6c43f2ddf8d853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the description of the specified resource.  <a href="structreshade_1_1api_1_1device.html#adae7d0a26bb34f39aa6c43f2ddf8d853">More...</a><br /></td></tr>
 <tr class="separator:adae7d0a26bb34f39aa6c43f2ddf8d853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accab11c320901c945e8ca9ad64d796f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#accab11c320901c945e8ca9ad64d796f5">create_resource_view</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> usage_type, const <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html">resource_view_desc</a> &amp;desc, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_handle)=0</td></tr>
-<tr class="memdesc:accab11c320901c945e8ca9ad64d796f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new resource view for the specified <em>resource</em> .  <a href="structreshade_1_1api_1_1device.html#accab11c320901c945e8ca9ad64d796f5">More...</a><br /></td></tr>
-<tr class="separator:accab11c320901c945e8ca9ad64d796f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac755893b5ac2f31f5913911a2e235d0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ac755893b5ac2f31f5913911a2e235d0a">destroy_resource_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> handle)=0</td></tr>
-<tr class="memdesc:ac755893b5ac2f31f5913911a2e235d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a resource view that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#accab11c320901c945e8ca9ad64d796f5" title="Creates a new resource view for the specified resource .">create_resource_view</a>.  <a href="structreshade_1_1api_1_1device.html#ac755893b5ac2f31f5913911a2e235d0a">More...</a><br /></td></tr>
-<tr class="separator:ac755893b5ac2f31f5913911a2e235d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324ed7dca08f806ccf0a2b125756b2d4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a324ed7dca08f806ccf0a2b125756b2d4">create_resource_view</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> usage_type, const <a class="el" href="structreshade_1_1api_1_1resource__view__desc.html">resource_view_desc</a> &amp;desc, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *out_view)=0</td></tr>
+<tr class="memdesc:a324ed7dca08f806ccf0a2b125756b2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new resource view for the specified <em>resource</em> .  <a href="structreshade_1_1api_1_1device.html#a324ed7dca08f806ccf0a2b125756b2d4">More...</a><br /></td></tr>
+<tr class="separator:a324ed7dca08f806ccf0a2b125756b2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a939946a63f12236219528fa196131"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a49a939946a63f12236219528fa196131">destroy_resource_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> view)=0</td></tr>
+<tr class="memdesc:a49a939946a63f12236219528fa196131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a resource view that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a324ed7dca08f806ccf0a2b125756b2d4" title="Creates a new resource view for the specified resource .">create_resource_view</a>.  <a href="structreshade_1_1api_1_1device.html#a49a939946a63f12236219528fa196131">More...</a><br /></td></tr>
+<tr class="separator:a49a939946a63f12236219528fa196131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77dfc678aca82c427f2b1eac4580a857"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a77dfc678aca82c427f2b1eac4580a857">get_resource_from_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> view) const =0</td></tr>
 <tr class="memdesc:a77dfc678aca82c427f2b1eac4580a857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the underlying resource the specified resource <em>view</em>  was created for.  <a href="structreshade_1_1api_1_1device.html#a77dfc678aca82c427f2b1eac4580a857">More...</a><br /></td></tr>
 <tr class="separator:a77dfc678aca82c427f2b1eac4580a857"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,30 +145,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">update_texture_region</a> (const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, uint32_t subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *box=nullptr)=0</td></tr>
 <tr class="memdesc:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a texture resource.  <a href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">More...</a><br /></td></tr>
 <tr class="separator:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b7e653153a8c04faa02dd078ad8791"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791">create_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html">pipeline_subobject</a> *subobjects, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *out_handle)=0</td></tr>
-<tr class="memdesc:af4b7e653153a8c04faa02dd078ad8791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline state object.  <a href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791">More...</a><br /></td></tr>
-<tr class="separator:af4b7e653153a8c04faa02dd078ad8791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37f7a9ea9083f19d8043fd426b5ed446"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446">destroy_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> handle)=0</td></tr>
-<tr class="memdesc:a37f7a9ea9083f19d8043fd426b5ed446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791" title="Creates a new pipeline state object.">create_pipeline</a>.  <a href="structreshade_1_1api_1_1device.html#a37f7a9ea9083f19d8043fd426b5ed446">More...</a><br /></td></tr>
-<tr class="separator:a37f7a9ea9083f19d8043fd426b5ed446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc428a980b8d2537aa4040ae4ee338b0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0">create_pipeline_layout</a> (uint32_t param_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> *params, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> *out_handle)=0</td></tr>
-<tr class="memdesc:adc428a980b8d2537aa4040ae4ee338b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline layout.  <a href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0">More...</a><br /></td></tr>
-<tr class="separator:adc428a980b8d2537aa4040ae4ee338b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879a3aad5be3008e74cd217f054ad4cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a879a3aad5be3008e74cd217f054ad4cd">destroy_pipeline_layout</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> handle)=0</td></tr>
-<tr class="memdesc:a879a3aad5be3008e74cd217f054ad4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline layout that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0" title="Creates a new pipeline layout.">create_pipeline_layout</a>.  <a href="structreshade_1_1api_1_1device.html#a879a3aad5be3008e74cd217f054ad4cd">More...</a><br /></td></tr>
-<tr class="separator:a879a3aad5be3008e74cd217f054ad4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c82d04f44d9c6bb85aac4e7a9e24f4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0c82d04f44d9c6bb85aac4e7a9e24f4e">allocate_descriptor_table</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *out_handle)</td></tr>
-<tr class="memdesc:a0c82d04f44d9c6bb85aac4e7a9e24f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a descriptor table from an internal heap.  <a href="structreshade_1_1api_1_1device.html#a0c82d04f44d9c6bb85aac4e7a9e24f4e">More...</a><br /></td></tr>
-<tr class="separator:a0c82d04f44d9c6bb85aac4e7a9e24f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a1f5bd582dae563636ff16403fc416e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0a1f5bd582dae563636ff16403fc416e">allocate_descriptor_tables</a> (uint32_t count, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *out_handles)=0</td></tr>
-<tr class="memdesc:a0a1f5bd582dae563636ff16403fc416e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates one or more descriptor tables from an internal heap.  <a href="structreshade_1_1api_1_1device.html#a0a1f5bd582dae563636ff16403fc416e">More...</a><br /></td></tr>
-<tr class="separator:a0a1f5bd582dae563636ff16403fc416e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89327f05687b516dd4cb34ac5db25e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a89327f05687b516dd4cb34ac5db25e65">free_descriptor_table</a> (<a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> handle)</td></tr>
-<tr class="memdesc:a89327f05687b516dd4cb34ac5db25e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a descriptor table that was previously allocated via create_descriptor_table.  <a href="structreshade_1_1api_1_1device.html#a89327f05687b516dd4cb34ac5db25e65">More...</a><br /></td></tr>
-<tr class="separator:a89327f05687b516dd4cb34ac5db25e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d40445f823eff9cb0018732ffeb91e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa9d40445f823eff9cb0018732ffeb91e">free_descriptor_tables</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *handles)=0</td></tr>
-<tr class="memdesc:aa9d40445f823eff9cb0018732ffeb91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees one or more descriptor tables that were previously allocated via create_descriptor_tables.  <a href="structreshade_1_1api_1_1device.html#aa9d40445f823eff9cb0018732ffeb91e">More...</a><br /></td></tr>
-<tr class="separator:aa9d40445f823eff9cb0018732ffeb91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec37c4e800c7b8bbcaaceceacf891970"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970">create_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html">pipeline_subobject</a> *subobjects, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *out_pipeline)=0</td></tr>
+<tr class="memdesc:aec37c4e800c7b8bbcaaceceacf891970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline state object.  <a href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970">More...</a><br /></td></tr>
+<tr class="separator:aec37c4e800c7b8bbcaaceceacf891970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace10326ecfbd93df4557cc59eaf581c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ace10326ecfbd93df4557cc59eaf581c3">destroy_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>)=0</td></tr>
+<tr class="memdesc:ace10326ecfbd93df4557cc59eaf581c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970" title="Creates a new pipeline state object.">create_pipeline</a>.  <a href="structreshade_1_1api_1_1device.html#ace10326ecfbd93df4557cc59eaf581c3">More...</a><br /></td></tr>
+<tr class="separator:ace10326ecfbd93df4557cc59eaf581c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fcafa0886d2524ed095b62b61f3cd0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a93fcafa0886d2524ed095b62b61f3cd0">create_pipeline_layout</a> (uint32_t param_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a> *params, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> *out_layout)=0</td></tr>
+<tr class="memdesc:a93fcafa0886d2524ed095b62b61f3cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline layout.  <a href="structreshade_1_1api_1_1device.html#a93fcafa0886d2524ed095b62b61f3cd0">More...</a><br /></td></tr>
+<tr class="separator:a93fcafa0886d2524ed095b62b61f3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa26accc399e81e39c0cd3f3ec9e16a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a1aa26accc399e81e39c0cd3f3ec9e16a">destroy_pipeline_layout</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout)=0</td></tr>
+<tr class="memdesc:a1aa26accc399e81e39c0cd3f3ec9e16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a pipeline layout that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a93fcafa0886d2524ed095b62b61f3cd0" title="Creates a new pipeline layout.">create_pipeline_layout</a>.  <a href="structreshade_1_1api_1_1device.html#a1aa26accc399e81e39c0cd3f3ec9e16a">More...</a><br /></td></tr>
+<tr class="separator:a1aa26accc399e81e39c0cd3f3ec9e16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca84e79c9ee85207f81a2c0c46356b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#acca84e79c9ee85207f81a2c0c46356b7">allocate_descriptor_table</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *out_table)</td></tr>
+<tr class="memdesc:acca84e79c9ee85207f81a2c0c46356b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a descriptor table from an internal descriptor heap.  <a href="structreshade_1_1api_1_1device.html#acca84e79c9ee85207f81a2c0c46356b7">More...</a><br /></td></tr>
+<tr class="separator:acca84e79c9ee85207f81a2c0c46356b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12a2d2136325938cbbb04491bed002a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ac12a2d2136325938cbbb04491bed002a">allocate_descriptor_tables</a> (uint32_t count, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t param, <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *out_tables)=0</td></tr>
+<tr class="memdesc:ac12a2d2136325938cbbb04491bed002a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates one or more descriptor tables from an internal descriptor heap.  <a href="structreshade_1_1api_1_1device.html#ac12a2d2136325938cbbb04491bed002a">More...</a><br /></td></tr>
+<tr class="separator:ac12a2d2136325938cbbb04491bed002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03ce344df6886a9877fa2d4020084ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ad03ce344df6886a9877fa2d4020084ea">free_descriptor_table</a> (<a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> table)</td></tr>
+<tr class="memdesc:ad03ce344df6886a9877fa2d4020084ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a descriptor table that was previously allocated via <a class="el" href="structreshade_1_1api_1_1device.html#acca84e79c9ee85207f81a2c0c46356b7" title="Allocates a descriptor table from an internal descriptor heap.">allocate_descriptor_table</a>.  <a href="structreshade_1_1api_1_1device.html#ad03ce344df6886a9877fa2d4020084ea">More...</a><br /></td></tr>
+<tr class="separator:ad03ce344df6886a9877fa2d4020084ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9062c71202fb8e6228dd60fabac5d678"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a9062c71202fb8e6228dd60fabac5d678">free_descriptor_tables</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *tables)=0</td></tr>
+<tr class="memdesc:a9062c71202fb8e6228dd60fabac5d678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees one or more descriptor tables that were previously allocated via <a class="el" href="structreshade_1_1api_1_1device.html#ac12a2d2136325938cbbb04491bed002a" title="Allocates one or more descriptor tables from an internal descriptor heap.">allocate_descriptor_tables</a>.  <a href="structreshade_1_1api_1_1device.html#a9062c71202fb8e6228dd60fabac5d678">More...</a><br /></td></tr>
+<tr class="separator:a9062c71202fb8e6228dd60fabac5d678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8cd0a97a8c4e9cca4d53863d9b32f2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ac8cd0a97a8c4e9cca4d53863d9b32f2d">get_descriptor_heap_offset</a> (<a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> table, uint32_t binding, uint32_t array_offset, <a class="el" href="structreshade_1_1api_1_1descriptor__heap.html">descriptor_heap</a> *out_heap, uint32_t *out_offset) const =0</td></tr>
 <tr class="memdesc:ac8cd0a97a8c4e9cca4d53863d9b32f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the offset (in descriptors) of the specified binding in the underlying descriptor heap of a descriptor table.  <a href="structreshade_1_1api_1_1device.html#ac8cd0a97a8c4e9cca4d53863d9b32f2d">More...</a><br /></td></tr>
 <tr class="separator:ac8cd0a97a8c4e9cca4d53863d9b32f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,27 +184,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d53f2b766c18fafce8b9005d95d6e39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0d53f2b766c18fafce8b9005d95d6e39">update_descriptor_tables</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html">descriptor_table_update</a> *updates)=0</td></tr>
 <tr class="memdesc:a0d53f2b766c18fafce8b9005d95d6e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the contents of multiple descriptor tables with the specified descriptors.  <a href="structreshade_1_1api_1_1device.html#a0d53f2b766c18fafce8b9005d95d6e39">More...</a><br /></td></tr>
 <tr class="separator:a0d53f2b766c18fafce8b9005d95d6e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9bbf9b7c23f74c3b5a39139d4bae646"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ab9bbf9b7c23f74c3b5a39139d4bae646">create_query_heap</a> (<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t size, <a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> *out_handle)=0</td></tr>
-<tr class="memdesc:ab9bbf9b7c23f74c3b5a39139d4bae646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new query heap.  <a href="structreshade_1_1api_1_1device.html#ab9bbf9b7c23f74c3b5a39139d4bae646">More...</a><br /></td></tr>
-<tr class="separator:ab9bbf9b7c23f74c3b5a39139d4bae646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d32df8b75d2ff47ee9018f0338cd5e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a61d32df8b75d2ff47ee9018f0338cd5e">destroy_query_heap</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> handle)=0</td></tr>
-<tr class="memdesc:a61d32df8b75d2ff47ee9018f0338cd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#ab9bbf9b7c23f74c3b5a39139d4bae646" title="Creates a new query heap.">create_query_heap</a>.  <a href="structreshade_1_1api_1_1device.html#a61d32df8b75d2ff47ee9018f0338cd5e">More...</a><br /></td></tr>
-<tr class="separator:a61d32df8b75d2ff47ee9018f0338cd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81d4bd27a64c33a4b65616733f1374d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d">create_query_heap</a> (<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t size, <a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> *out_heap)=0</td></tr>
+<tr class="memdesc:aa81d4bd27a64c33a4b65616733f1374d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new query heap.  <a href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d">More...</a><br /></td></tr>
+<tr class="separator:aa81d4bd27a64c33a4b65616733f1374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe164544bae546e3e7517b836b48f12c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">destroy_query_heap</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap)=0</td></tr>
+<tr class="memdesc:afe164544bae546e3e7517b836b48f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d" title="Creates a new query heap.">create_query_heap</a>.  <a href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">More...</a><br /></td></tr>
+<tr class="separator:afe164544bae546e3e7517b836b48f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bd0239c41cf7fe9488966f768c8dd6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">get_query_heap_results</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, uint32_t first, uint32_t count, void *results, uint32_t stride)=0</td></tr>
 <tr class="memdesc:a27bd0239c41cf7fe9488966f768c8dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the results of queries in a query heap.  <a href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">More...</a><br /></td></tr>
 <tr class="separator:a27bd0239c41cf7fe9488966f768c8dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5456d5ae2caad780c51e4970faae8757"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a5456d5ae2caad780c51e4970faae8757">set_resource_name</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> handle, const char *name)=0</td></tr>
-<tr class="memdesc:a5456d5ae2caad780c51e4970faae8757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#a5456d5ae2caad780c51e4970faae8757">More...</a><br /></td></tr>
-<tr class="separator:a5456d5ae2caad780c51e4970faae8757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a7f5c3ed6d4adee4a1ce215915aa0dff4">set_resource_view_name</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> handle, const char *name)=0</td></tr>
-<tr class="memdesc:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource view, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#a7f5c3ed6d4adee4a1ce215915aa0dff4">More...</a><br /></td></tr>
-<tr class="separator:a7f5c3ed6d4adee4a1ce215915aa0dff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18917756c101957eaf0ef7290da36b79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79">create_fence</a> (uint64_t initial_value, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">fence_flags</a> flags, <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> *out_handle, void **shared_handle=nullptr)=0</td></tr>
-<tr class="memdesc:a18917756c101957eaf0ef7290da36b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new fence synchronization object.  <a href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79">More...</a><br /></td></tr>
-<tr class="separator:a18917756c101957eaf0ef7290da36b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0c39789150b0e9dc7e29a3d2cb6e9266">destroy_fence</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> handle)=0</td></tr>
-<tr class="memdesc:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79" title="Creates a new fence synchronization object.">create_fence</a>.  <a href="structreshade_1_1api_1_1device.html#a0c39789150b0e9dc7e29a3d2cb6e9266">More...</a><br /></td></tr>
-<tr class="separator:a0c39789150b0e9dc7e29a3d2cb6e9266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53b077ce6c8082f8fabe80152401cb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4">set_resource_name</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, const char *name)=0</td></tr>
+<tr class="memdesc:ad53b077ce6c8082f8fabe80152401cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4">More...</a><br /></td></tr>
+<tr class="separator:ad53b077ce6c8082f8fabe80152401cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850c1ab2e44341bf245dd802502ba2b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a850c1ab2e44341bf245dd802502ba2b4">set_resource_view_name</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> view, const char *name)=0</td></tr>
+<tr class="memdesc:a850c1ab2e44341bf245dd802502ba2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource view, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#a850c1ab2e44341bf245dd802502ba2b4">More...</a><br /></td></tr>
+<tr class="separator:a850c1ab2e44341bf245dd802502ba2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcf9fbf5715969fd63b45477906fa77"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a2dcf9fbf5715969fd63b45477906fa77">create_fence</a> (uint64_t initial_value, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">fence_flags</a> flags, <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> *out_fence, void **shared_handle=nullptr)=0</td></tr>
+<tr class="memdesc:a2dcf9fbf5715969fd63b45477906fa77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new fence synchronization object.  <a href="structreshade_1_1api_1_1device.html#a2dcf9fbf5715969fd63b45477906fa77">More...</a><br /></td></tr>
+<tr class="separator:a2dcf9fbf5715969fd63b45477906fa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b87ab7cab52873098ce9abd2a83bc67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a9b87ab7cab52873098ce9abd2a83bc67">destroy_fence</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>)=0</td></tr>
+<tr class="memdesc:a9b87ab7cab52873098ce9abd2a83bc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a2dcf9fbf5715969fd63b45477906fa77" title="Creates a new fence synchronization object.">create_fence</a>.  <a href="structreshade_1_1api_1_1device.html#a9b87ab7cab52873098ce9abd2a83bc67">More...</a><br /></td></tr>
+<tr class="separator:a9b87ab7cab52873098ce9abd2a83bc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff6fe651ef950aafa983636e129c21e"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#abff6fe651ef950aafa983636e129c21e">get_completed_fence_value</a> (<a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> <a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>) const =0</td></tr>
 <tr class="memdesc:abff6fe651ef950aafa983636e129c21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value of the specified fence.  <a href="structreshade_1_1api_1_1device.html#abff6fe651ef950aafa983636e129c21e">More...</a><br /></td></tr>
 <tr class="separator:abff6fe651ef950aafa983636e129c21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +217,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41accc4d81ccf1a0d917b2e491ef7310"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a41accc4d81ccf1a0d917b2e491ef7310">get_property</a> (<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">device_properties</a> property, void *data) const =0</td></tr>
 <tr class="memdesc:a41accc4d81ccf1a0d917b2e491ef7310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data for a <em>property</em>  of this device.  <a href="structreshade_1_1api_1_1device.html#a41accc4d81ccf1a0d917b2e491ef7310">More...</a><br /></td></tr>
 <tr class="separator:a41accc4d81ccf1a0d917b2e491ef7310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc1e93d4c81fdbb6f2f556139871c70"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#adbc1e93d4c81fdbb6f2f556139871c70">get_resource_view_gpu_address</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> handle) const =0</td></tr>
-<tr class="memdesc:adbc1e93d4c81fdbb6f2f556139871c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GPU address for a resource view.  <a href="structreshade_1_1api_1_1device.html#adbc1e93d4c81fdbb6f2f556139871c70">More...</a><br /></td></tr>
-<tr class="separator:adbc1e93d4c81fdbb6f2f556139871c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e87db19e1c170d397e27a9ccc45717"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a92e87db19e1c170d397e27a9ccc45717">get_resource_view_gpu_address</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> view) const =0</td></tr>
+<tr class="memdesc:a92e87db19e1c170d397e27a9ccc45717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GPU address for a resource view.  <a href="structreshade_1_1api_1_1device.html#a92e87db19e1c170d397e27a9ccc45717">More...</a><br /></td></tr>
+<tr class="separator:a92e87db19e1c170d397e27a9ccc45717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649ca938325986d3d414d38cedfcfd57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a649ca938325986d3d414d38cedfcfd57">get_acceleration_structure_size</a> (<a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a> type, <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> flags, uint32_t input_count, const <a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">acceleration_structure_build_input</a> *inputs, uint64_t *out_size, uint64_t *out_build_scratch_size, uint64_t *out_update_scratch_size) const =0</td></tr>
 <tr class="memdesc:a649ca938325986d3d414d38cedfcfd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the required acceleration structure size needed to build the specified data.  <a href="structreshade_1_1api_1_1device.html#a649ca938325986d3d414d38cedfcfd57">More...</a><br /></td></tr>
 <tr class="separator:a649ca938325986d3d414d38cedfcfd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,8 +254,8 @@ Public Member Functions</h2></td></tr>
 <p>Functionally equivalent to a 'IDirect3DDevice9', 'ID3D10Device', 'ID3D11Device', 'ID3D12Device', 'HGLRC' or 'VkDevice'.</p>
 <p>This class is safe to use concurrently from multiple threads in D3D10+ and Vulkan. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0c82d04f44d9c6bb85aac4e7a9e24f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c82d04f44d9c6bb85aac4e7a9e24f4e">&#9670;&nbsp;</a></span>allocate_descriptor_table()</h2>
+<a id="acca84e79c9ee85207f81a2c0c46356b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca84e79c9ee85207f81a2c0c46356b7">&#9670;&nbsp;</a></span>allocate_descriptor_table()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_table</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,21 +294,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocates a descriptor table from an internal heap. </p>
+<p>Allocates a descriptor table from an internal descriptor heap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">layout</td><td>Pipeline layout that contains a parameter that describes the descriptor table.</td></tr>
     <tr><td class="paramname">param</td><td>Index of the pipeline layout parameter that describes the descriptor table.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a a variable that is set to the handles of the created descriptor table.</td></tr>
+    <tr><td class="paramname">out_table</td><td>Pointer to a a variable that is set to the handles of the created descriptor table.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the descriptor table was successfully allocated, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zeroe).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the descriptor table was successfully allocated, <code>false</code> otherwise (in this case <em>out_table</em>  is set to zeroe).</dd></dl>
 
 </div>
 </div>
-<a id="a0a1f5bd582dae563636ff16403fc416e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a1f5bd582dae563636ff16403fc416e">&#9670;&nbsp;</a></span>allocate_descriptor_tables()</h2>
+<a id="ac12a2d2136325938cbbb04491bed002a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12a2d2136325938cbbb04491bed002a">&#9670;&nbsp;</a></span>allocate_descriptor_tables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +338,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *&#160;</td>
-          <td class="paramname"><em>out_handles</em>&#160;</td>
+          <td class="paramname"><em>out_tables</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -353,17 +353,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocates one or more descriptor tables from an internal heap. </p>
+<p>Allocates one or more descriptor tables from an internal descriptor heap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of descriptor tables to allocate.</td></tr>
-    <tr><td class="paramname">layout</td><td>Pipeline layout that contains a parameter that describes the descriptor table.</td></tr>
-    <tr><td class="paramname">param</td><td>Index of the pipeline layout parameter that describes the descriptor table.</td></tr>
-    <tr><td class="paramname">out_handles</td><td>Pointer to the first element of an array of handles with at least <em>count</em>  elements that is filled with the handles of the created descriptor tables.</td></tr>
+    <tr><td class="paramname">layout</td><td>Pipeline layout that contains a parameter that describes the descriptor tables.</td></tr>
+    <tr><td class="paramname">param</td><td>Index of the pipeline layout parameter that describes the descriptor tables.</td></tr>
+    <tr><td class="paramname">out_tables</td><td>Pointer to the first element of an array of handles with at least <em>count</em>  elements that is filled with the handles of the created descriptor tables.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the descriptor tables were successfully allocated, <code>false</code> otherwise (in this case <em>out_handles</em>  is filled with zeroes).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the descriptor tables were successfully allocated, <code>false</code> otherwise (in this case <em>out_tables</em>  is filled with zeroes).</dd></dl>
 
 </div>
 </div>
@@ -512,8 +512,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a18917756c101957eaf0ef7290da36b79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18917756c101957eaf0ef7290da36b79">&#9670;&nbsp;</a></span>create_fence()</h2>
+<a id="a2dcf9fbf5715969fd63b45477906fa77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dcf9fbf5715969fd63b45477906fa77">&#9670;&nbsp;</a></span>create_fence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +537,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>, </td>
+          <td class="paramname"><em>out_fence</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -563,17 +563,17 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>The initial value for the fence.</td></tr>
     <tr><td class="paramname">flags</td><td>Fence creation options.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created fence.</td></tr>
+    <tr><td class="paramname">out_fence</td><td>Pointer to a variable that is set to the handle of the created fence.</td></tr>
     <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <em>flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">fence_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created fence. When that variable is a valid handle, the fence is imported from that shared handle.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the fence was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the fence was successfully created, <code>false</code> otherwise (in this case <em>out_fence</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="af4b7e653153a8c04faa02dd078ad8791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4b7e653153a8c04faa02dd078ad8791">&#9670;&nbsp;</a></span>create_pipeline()</h2>
+<a id="aec37c4e800c7b8bbcaaceceacf891970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec37c4e800c7b8bbcaaceceacf891970">&#9670;&nbsp;</a></span>create_pipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +603,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_pipeline</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -624,16 +624,16 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">layout</td><td>Pipeline layout to use.</td></tr>
     <tr><td class="paramname">subobject_count</td><td>Number of sub-objects.</td></tr>
     <tr><td class="paramname">subobjects</td><td>Pointer to the first element of an array of sub-objects that describe this pipeline.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created pipeline state object.</td></tr>
+    <tr><td class="paramname">out_pipeline</td><td>Pointer to a variable that is set to the handle of the created pipeline state object.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pipeline state object was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pipeline state object was successfully created, <code>false</code> otherwise (in this case <em>out_pipeline</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="adc428a980b8d2537aa4040ae4ee338b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc428a980b8d2537aa4040ae4ee338b0">&#9670;&nbsp;</a></span>create_pipeline_layout()</h2>
+<a id="a93fcafa0886d2524ed095b62b61f3cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fcafa0886d2524ed095b62b61f3cd0">&#9670;&nbsp;</a></span>create_pipeline_layout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +657,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_layout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -677,16 +677,16 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">param_count</td><td>Number of layout parameters.</td></tr>
     <tr><td class="paramname">params</td><td>Pointer to the first element of an array of layout parameters that describe this pipeline layout.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created pipeline layout.</td></tr>
+    <tr><td class="paramname">out_layout</td><td>Pointer to a variable that is set to the handle of the created pipeline layout.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pipeline layout was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pipeline layout was successfully created, <code>false</code> otherwise (in this case <em>out_layout</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="ab9bbf9b7c23f74c3b5a39139d4bae646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9bbf9b7c23f74c3b5a39139d4bae646">&#9670;&nbsp;</a></span>create_query_heap()</h2>
+<a id="aa81d4bd27a64c33a4b65616733f1374d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81d4bd27a64c33a4b65616733f1374d">&#9670;&nbsp;</a></span>create_query_heap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +710,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_heap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -730,16 +730,16 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of queries that will be used with this query heap.</td></tr>
     <tr><td class="paramname">size</td><td>Number of queries to allocate in the query heap.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created query heap.</td></tr>
+    <tr><td class="paramname">out_heap</td><td>Pointer to a variable that is set to the handle of the created query heap.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the query heap was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the query heap was successfully created, <code>false</code> otherwise (in this case <em>out_heap</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="aabf1752bd0c35e3eb0a603f8d9adaa2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabf1752bd0c35e3eb0a603f8d9adaa2a">&#9670;&nbsp;</a></span>create_resource()</h2>
+<a id="ae239bacf4993286a23882d7ed28dca65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae239bacf4993286a23882d7ed28dca65">&#9670;&nbsp;</a></span>create_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,7 +769,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>, </td>
+          <td class="paramname"><em>out_resource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -795,18 +795,18 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Description of the resource to create.</td></tr>
     <tr><td class="paramname">initial_data</td><td>Optional data to upload to the resource after creation. This should point to an array of mapped_subresource, one for each subresource (mipmap levels and array layers). Can be <code>nullptr</code> to indicate no initial data to upload.</td></tr>
-    <tr><td class="paramname">initial_state</td><td>Initial state of the resource after creation. This can later be changed via <a class="el" href="structreshade_1_1api_1_1command__list.html#a73e3d799c04a6e232b707b0c49666c73" title="Adds a barrier for the specified resource  to the command stream. Multiple barriers are more efficien...">command_list::barrier</a>. It should also be part of the <a class="el" href="structreshade_1_1api_1_1resource__desc.html#aa689d420b6e7196894ec2e69849ee786" title="Flags that specify how this resource may be used. This should contain all resource states the resourc...">resource_desc::usage</a> flags of the description.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created resource.</td></tr>
-    <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a60458bbb519805b1c90f51233132712e" title="Flags that describe additional parameters.">resource_desc::flags</a> contains <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">resource_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created resource. When that variable is a valid handle, the resource is imported from that shared handle.</td></tr>
+    <tr><td class="paramname">initial_state</td><td>Initial state of the resource after creation. This can later be changed via <a class="el" href="structreshade_1_1api_1_1command__list.html#a73e3d799c04a6e232b707b0c49666c73" title="Adds a barrier for the specified resource  to the command stream. Multiple barriers are more efficien...">command_list::barrier</a>. It should also be part of the <a class="el" href="structreshade_1_1api_1_1resource__desc.html#aa689d420b6e7196894ec2e69849ee786" title="Flags that specify how this resource is used. This should contain all resource states the resource wi...">resource_desc::usage</a> flags of the description.</td></tr>
+    <tr><td class="paramname">out_resource</td><td>Pointer to a variable that is set to the handle of the created resource.</td></tr>
+    <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <a class="el" href="structreshade_1_1api_1_1resource__desc.html#a60458bbb519805b1c90f51233132712e" title="Flags that specify additional parameters.">resource_desc::flags</a> contains <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e" title="Shared resources can be imported/exported from/to different graphics APIs and/or processes....">resource_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created resource. When that variable is a valid handle, the resource is imported from that shared handle.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the resource was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the resource was successfully created, <code>false</code> otherwise (in this case <em>out_resource</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="accab11c320901c945e8ca9ad64d796f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accab11c320901c945e8ca9ad64d796f5">&#9670;&nbsp;</a></span>create_resource_view()</h2>
+<a id="a324ed7dca08f806ccf0a2b125756b2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324ed7dca08f806ccf0a2b125756b2d4">&#9670;&nbsp;</a></span>create_resource_view()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -836,7 +836,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_view</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -857,16 +857,16 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">resource</td><td>Resource to create the view to.</td></tr>
     <tr><td class="paramname">usage_type</td><td>Usage type of the resource view to create. Set to <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059aa24632445528325a6af3096b89d7e043">resource_usage::shader_resource</a> to create a shader resource view, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a4cc2150334d039ce9f2a6b7e8e285e3e">resource_usage::depth_stencil</a> for a depth-stencil view, <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> for a render target etc.</td></tr>
     <tr><td class="paramname">desc</td><td>Description of the resource view to create.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created resource view.</td></tr>
+    <tr><td class="paramname">out_view</td><td>Pointer to a variable that is set to the handle of the created resource view.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the resource view was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the resource view was successfully created, <code>false</code> otherwise (in this case <em>out_view</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="a1a4fc06bc8d5fc1b2f185c2f61ed0fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4fc06bc8d5fc1b2f185c2f61ed0fb7">&#9670;&nbsp;</a></span>create_sampler()</h2>
+<a id="aa373f310ab38acf7888818b70f3a9712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa373f310ab38acf7888818b70f3a9712">&#9670;&nbsp;</a></span>create_sampler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,7 +884,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a> *&#160;</td>
-          <td class="paramname"><em>out_handle</em>&#160;</td>
+          <td class="paramname"><em>out_sampler</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -903,16 +903,16 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Description of the sampler to create.</td></tr>
-    <tr><td class="paramname">out_handle</td><td>Pointer to a variable that is set to the handle of the created sampler.</td></tr>
+    <tr><td class="paramname">out_sampler</td><td>Pointer to a variable that is set to the handle of the created sampler.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sampler was successfully created, <code>false</code> otherwise (in this case <em>out_handle</em>  is set to zero).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sampler was successfully created, <code>false</code> otherwise (in this case <em>out_sampler</em>  is set to zero).</dd></dl>
 
 </div>
 </div>
-<a id="a0c39789150b0e9dc7e29a3d2cb6e9266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c39789150b0e9dc7e29a3d2cb6e9266">&#9670;&nbsp;</a></span>destroy_fence()</h2>
+<a id="a9b87ab7cab52873098ce9abd2a83bc67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b87ab7cab52873098ce9abd2a83bc67">&#9670;&nbsp;</a></span>destroy_fence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -924,7 +924,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_fence </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1fence.html">fence</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>fence</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -935,12 +935,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a18917756c101957eaf0ef7290da36b79" title="Creates a new fence synchronization object.">create_fence</a>. </p>
+<p>Instantly destroys a fence that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a2dcf9fbf5715969fd63b45477906fa77" title="Creates a new fence synchronization object.">create_fence</a>. </p>
 
 </div>
 </div>
-<a id="a37f7a9ea9083f19d8043fd426b5ed446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37f7a9ea9083f19d8043fd426b5ed446">&#9670;&nbsp;</a></span>destroy_pipeline()</h2>
+<a id="ace10326ecfbd93df4557cc59eaf581c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace10326ecfbd93df4557cc59eaf581c3">&#9670;&nbsp;</a></span>destroy_pipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -952,7 +952,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_pipeline </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>pipeline</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -963,12 +963,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#af4b7e653153a8c04faa02dd078ad8791" title="Creates a new pipeline state object.">create_pipeline</a>. </p>
+<p>Instantly destroys a pipeline state object that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970" title="Creates a new pipeline state object.">create_pipeline</a>. </p>
 
 </div>
 </div>
-<a id="a879a3aad5be3008e74cd217f054ad4cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a879a3aad5be3008e74cd217f054ad4cd">&#9670;&nbsp;</a></span>destroy_pipeline_layout()</h2>
+<a id="a1aa26accc399e81e39c0cd3f3ec9e16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa26accc399e81e39c0cd3f3ec9e16a">&#9670;&nbsp;</a></span>destroy_pipeline_layout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,7 +980,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_pipeline_layout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>layout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -991,12 +991,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a pipeline layout that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#adc428a980b8d2537aa4040ae4ee338b0" title="Creates a new pipeline layout.">create_pipeline_layout</a>. </p>
+<p>Instantly destroys a pipeline layout that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a93fcafa0886d2524ed095b62b61f3cd0" title="Creates a new pipeline layout.">create_pipeline_layout</a>. </p>
 
 </div>
 </div>
-<a id="a61d32df8b75d2ff47ee9018f0338cd5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d32df8b75d2ff47ee9018f0338cd5e">&#9670;&nbsp;</a></span>destroy_query_heap()</h2>
+<a id="afe164544bae546e3e7517b836b48f12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe164544bae546e3e7517b836b48f12c">&#9670;&nbsp;</a></span>destroy_query_heap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1008,7 +1008,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_query_heap </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>heap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1019,12 +1019,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#ab9bbf9b7c23f74c3b5a39139d4bae646" title="Creates a new query heap.">create_query_heap</a>. </p>
+<p>Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d" title="Creates a new query heap.">create_query_heap</a>. </p>
 
 </div>
 </div>
-<a id="a5ae91e50ef93d690eb9eb4c5b5b34a42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae91e50ef93d690eb9eb4c5b5b34a42">&#9670;&nbsp;</a></span>destroy_resource()</h2>
+<a id="ab18eea959883b0558616438c85de9712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18eea959883b0558616438c85de9712">&#9670;&nbsp;</a></span>destroy_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,7 +1036,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1047,12 +1047,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a resource that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aabf1752bd0c35e3eb0a603f8d9adaa2a" title="Allocates and creates a new resource.">create_resource</a> and frees its memory. Make sure the resource is no longer in use on the GPU (via any command list that may reference it and is still being executed) before doing this (e.g. with <a class="el" href="structreshade_1_1api_1_1command__queue.html#afdeba54d425d92eacaf8dbcece6d6b25" title="Waits for all issued GPU operations on this queue to finish before returning. This can be used to ens...">command_queue::wait_idle</a>) and never try to destroy resources created by the application! </p>
+<p>Instantly destroys a resource that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65" title="Allocates and creates a new resource.">create_resource</a> and frees its memory. Make sure the resource is no longer in use on the GPU (via any command list that may reference it and is still being executed) before doing this (e.g. with <a class="el" href="structreshade_1_1api_1_1command__queue.html#afdeba54d425d92eacaf8dbcece6d6b25" title="Waits for all issued GPU operations on this queue to finish before returning. This can be used to ens...">command_queue::wait_idle</a>) and never try to destroy resources created by the application! </p>
 
 </div>
 </div>
-<a id="ac755893b5ac2f31f5913911a2e235d0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac755893b5ac2f31f5913911a2e235d0a">&#9670;&nbsp;</a></span>destroy_resource_view()</h2>
+<a id="a49a939946a63f12236219528fa196131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a939946a63f12236219528fa196131">&#9670;&nbsp;</a></span>destroy_resource_view()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1064,7 +1064,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_resource_view </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1075,12 +1075,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a resource view that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#accab11c320901c945e8ca9ad64d796f5" title="Creates a new resource view for the specified resource .">create_resource_view</a>. </p>
+<p>Instantly destroys a resource view that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a324ed7dca08f806ccf0a2b125756b2d4" title="Creates a new resource view for the specified resource .">create_resource_view</a>. </p>
 
 </div>
 </div>
-<a id="aa538dd791e64d81d62493ee28c9a8a3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa538dd791e64d81d62493ee28c9a8a3c">&#9670;&nbsp;</a></span>destroy_sampler()</h2>
+<a id="a375c052610a818e480ae624ad2f8b3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375c052610a818e480ae624ad2f8b3ea">&#9670;&nbsp;</a></span>destroy_sampler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1092,7 +1092,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::destroy_sampler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1sampler.html">sampler</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>sampler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1103,12 +1103,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a sampler that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a1a4fc06bc8d5fc1b2f185c2f61ed0fb7" title="Creates a new sampler state object.">create_sampler</a>. </p>
+<p>Instantly destroys a sampler that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa373f310ab38acf7888818b70f3a9712" title="Creates a new sampler state object.">create_sampler</a>. </p>
 
 </div>
 </div>
-<a id="a89327f05687b516dd4cb34ac5db25e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89327f05687b516dd4cb34ac5db25e65">&#9670;&nbsp;</a></span>free_descriptor_table()</h2>
+<a id="ad03ce344df6886a9877fa2d4020084ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03ce344df6886a9877fa2d4020084ea">&#9670;&nbsp;</a></span>free_descriptor_table()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1120,7 +1120,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void reshade::api::device::free_descriptor_table </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1131,12 +1131,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Frees a descriptor table that was previously allocated via create_descriptor_table. </p>
+<p>Frees a descriptor table that was previously allocated via <a class="el" href="structreshade_1_1api_1_1device.html#acca84e79c9ee85207f81a2c0c46356b7" title="Allocates a descriptor table from an internal descriptor heap.">allocate_descriptor_table</a>. </p>
 
 </div>
 </div>
-<a id="aa9d40445f823eff9cb0018732ffeb91e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9d40445f823eff9cb0018732ffeb91e">&#9670;&nbsp;</a></span>free_descriptor_tables()</h2>
+<a id="a9062c71202fb8e6228dd60fabac5d678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9062c71202fb8e6228dd60fabac5d678">&#9670;&nbsp;</a></span>free_descriptor_tables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1154,7 +1154,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html">descriptor_table</a> *&#160;</td>
-          <td class="paramname"><em>handles</em>&#160;</td>
+          <td class="paramname"><em>tables</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1169,7 +1169,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Frees one or more descriptor tables that were previously allocated via create_descriptor_tables. </p>
+<p>Frees one or more descriptor tables that were previously allocated via <a class="el" href="structreshade_1_1api_1_1device.html#ac12a2d2136325938cbbb04491bed002a" title="Allocates one or more descriptor tables from an internal descriptor heap.">allocate_descriptor_tables</a>. </p>
 
 </div>
 </div>
@@ -1474,7 +1474,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">property</td><td>Property to query.</td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to a variable that is set to the value of the property. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567" title="The available properties a device may report.">device_properties</a> enumeration.</td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to a variable that is set to the value of the property. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567" title="Properties that may be queried from a device.">device_properties</a> enumeration.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1540,7 +1540,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">heap</td><td>Query heap that contains the queries.</td></tr>
     <tr><td class="paramname">first</td><td>Index of the first query in the query heap to copy the results from.</td></tr>
     <tr><td class="paramname">count</td><td>Number of query results to copy.</td></tr>
-    <tr><td class="paramname">results</td><td>Pointer to the first element of an array that is filled with the results. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="The available query types.">query_type</a> enumeration.</td></tr>
+    <tr><td class="paramname">results</td><td>Pointer to the first element of an array that is filled with the results. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">query_type</a> enumeration.</td></tr>
     <tr><td class="paramname">stride</td><td>Size (in bytes) of each element in the <em>results</em>  array.</td></tr>
   </table>
   </dd>
@@ -1634,8 +1634,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbc1e93d4c81fdbb6f2f556139871c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc1e93d4c81fdbb6f2f556139871c70">&#9670;&nbsp;</a></span>get_resource_view_gpu_address()</h2>
+<a id="a92e87db19e1c170d397e27a9ccc45717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e87db19e1c170d397e27a9ccc45717">&#9670;&nbsp;</a></span>get_resource_view_gpu_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1647,7 +1647,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual uint64_t reshade::api::device::get_resource_view_gpu_address </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1661,7 +1661,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the GPU address for a resource view. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Resource view to query.</td></tr>
+    <tr><td class="paramname">view</td><td>Resource view to query.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1803,8 +1803,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5456d5ae2caad780c51e4970faae8757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5456d5ae2caad780c51e4970faae8757">&#9670;&nbsp;</a></span>set_resource_name()</h2>
+<a id="ad53b077ce6c8082f8fabe80152401cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53b077ce6c8082f8fabe80152401cb4">&#9670;&nbsp;</a></span>set_resource_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1816,7 +1816,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::set_resource_name </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1840,7 +1840,7 @@ Public Member Functions</h2></td></tr>
 <p>Associates a name with a resource, for easier debugging in external tools. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Resource to associate a name with.</td></tr>
+    <tr><td class="paramname">resource</td><td>Resource to associate a name with.</td></tr>
     <tr><td class="paramname">name</td><td>Null-terminated name string.</td></tr>
   </table>
   </dd>
@@ -1848,8 +1848,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f5c3ed6d4adee4a1ce215915aa0dff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5c3ed6d4adee4a1ce215915aa0dff4">&#9670;&nbsp;</a></span>set_resource_view_name()</h2>
+<a id="a850c1ab2e44341bf245dd802502ba2b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850c1ab2e44341bf245dd802502ba2b4">&#9670;&nbsp;</a></span>set_resource_view_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1861,7 +1861,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void reshade::api::device::set_resource_view_name </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>view</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1885,7 +1885,7 @@ Public Member Functions</h2></td></tr>
 <p>Associates a name with a resource view, for easier debugging in external tools. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Resource view to associate a name with.</td></tr>
+    <tr><td class="paramname">view</td><td>Resource view to associate a name with.</td></tr>
     <tr><td class="paramname">name</td><td>Null-terminated name string.</td></tr>
   </table>
   </dd>

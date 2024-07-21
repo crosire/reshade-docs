@@ -123,7 +123,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa8473f19e6529e22157459e75b4cbf485">reshade::api::vulkan</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a0e2758bd8e3478f957852a26e12d7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying render API a device is using, as returned by device::get_api.  <a href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">More...</a><br /></td></tr>
+<tr class="memdesc:a0e2758bd8e3478f957852a26e12d7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying graphics API a device is using.  <a href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">More...</a><br /></td></tr>
 <tr class="separator:a0e2758bd8e3478f957852a26e12d7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1f75e72812269a7815296a0f248f9d0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">reshade::api::device_caps</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3fab409c137d7ba5f6c7cf647a3d3d62">reshade::api::compute_shader</a>
@@ -164,7 +164,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">reshade::api::ray_tracing</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
+<tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional capabilities a device may support, depending on the underlying graphics API and hardware.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
 <tr class="separator:ac1f75e72812269a7815296a0f248f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23056ea38b16e0e823d9e4a14f80567"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">reshade::api::device_properties</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a41cfc3cf8bc97fc876fa86089936896c">reshade::api::api_version</a>
@@ -178,7 +178,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c">reshade::api::shader_group_handle_alignment</a>
 <br />
  }</td></tr>
-<tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available properties a device may report.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
+<tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties that may be queried from a device.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
 <tr class="separator:af23056ea38b16e0e823d9e4a14f80567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d43e282e1516074653731962281d7a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">reshade::api::indirect_command</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -190,13 +190,13 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a1c25336d87cabab6831c8f143c217d8b">reshade::api::dispatch_rays</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a4d43e282e1516074653731962281d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available indirect command types.  <a href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">More...</a><br /></td></tr>
+<tr class="memdesc:a4d43e282e1516074653731962281d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an indirect draw/dispatch command.  <a href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">More...</a><br /></td></tr>
 <tr class="separator:a4d43e282e1516074653731962281d7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">reshade::api::command_queue_type</a> { <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca73b0472d43069103642ffa07997ff20a">reshade::api::graphics</a>
 , <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca77e73f3a185e16d1f08ca5e057710b9d">reshade::api::compute</a>
 , <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca12cba3ee81cf4a793796a51b6327c678">reshade::api::copy</a>
  }</td></tr>
-<tr class="memdesc:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available command queue types, as returned by command_queue::get_type.  <a href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">More...</a><br /></td></tr>
+<tr class="memdesc:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command queue type flags, which can be combined to describe the capabilities of a command queue.  <a href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">More...</a><br /></td></tr>
 <tr class="separator:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['k32enumprocessmodules_469',['K32EnumProcessModules',['../reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9',1,'reshade.hpp']]],
-  ['keep_470',['keep',['../namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4',1,'reshade::api']]],
-  ['keyboard_471',['keyboard',['../namespacereshade_1_1api.html#a5f273018cb6c3c536692ec8d3447ccc9a388a56dbb62a010dc26a378981346247',1,'reshade::api']]]
+  ['k32enumprocessmodules_474',['K32EnumProcessModules',['../reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9',1,'reshade.hpp']]],
+  ['keep_475',['keep',['../namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4',1,'reshade::api']]],
+  ['keyboard_476',['keyboard',['../namespacereshade_1_1api.html#a5f273018cb6c3c536692ec8d3447ccc9a388a56dbb62a010dc26a378981346247',1,'reshade::api']]]
 ];

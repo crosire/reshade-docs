@@ -88,6 +88,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html">reshade::api::descriptor_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a range of descriptors of a descriptor table in a pipeline layout.  <a href="structreshade_1_1api_1_1descriptor__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html">reshade::api::descriptor_range_with_static_samplers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">reshade::api::pipeline_layout_param</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single parameter in a pipeline layout.  <a href="structreshade_1_1api_1_1pipeline__layout__param.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +188,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea7281e42191478acab47aa866fc7cfe55">reshade::api::all_ray_tracing</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available shader stages in the render pipeline.  <a href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">More...</a><br /></td></tr>
+<tr class="memdesc:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the shader stages in the render pipeline.  <a href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">More...</a><br /></td></tr>
 <tr class="separator:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a70b7dcd8b1e829ff8102091b64037"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">reshade::api::pipeline_stage</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7">reshade::api::vertex_shader</a>
@@ -214,7 +216,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad5c604a530acbecea79966dbfbe5b3af">reshade::api::all_shader_stages</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a46a70b7dcd8b1e829ff8102091b64037"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available pipeline stages in the render pipeline.  <a href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">More...</a><br /></td></tr>
+<tr class="memdesc:a46a70b7dcd8b1e829ff8102091b64037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the pipeline stages in the render pipeline.  <a href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">More...</a><br /></td></tr>
 <tr class="separator:a46a70b7dcd8b1e829ff8102091b64037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9e41db9727a2e919c772eaafe3d23c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">reshade::api::descriptor_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136">reshade::api::sampler</a>
@@ -232,20 +234,25 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">reshade::api::acceleration_structure</a>
 <br />
  }</td></tr>
-<tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available descriptor types.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
+<tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a descriptor.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
 <tr class="separator:afd9e41db9727a2e919c772eaafe3d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">reshade::api::pipeline_layout_param_type</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">reshade::api::push_constants</a>
+<tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">reshade::api::pipeline_layout_param_type</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">reshade::api::push_constants</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef">reshade::api::descriptor_table</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">reshade::api::descriptor_table_with_static_samplers</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0">reshade::api::push_descriptors</a>
-, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">reshade::api::push_descriptors_with_ranges</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">reshade::api::push_descriptors_with_ranges</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189">reshade::api::push_descriptors_with_static_samplers</a>
+<br />
  }</td></tr>
-<tr class="memdesc:a833ac63874bc8b79fe4f9dbebb043c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline layout parameter types.  <a href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">More...</a><br /></td></tr>
+<tr class="memdesc:a833ac63874bc8b79fe4f9dbebb043c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a pipeline layout parameter.  <a href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">More...</a><br /></td></tr>
 <tr class="separator:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244b7fb82f03ccd626867b9b91179c1c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">reshade::api::fill_mode</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1caec03f91ae56e478455e3786e91559194">reshade::api::solid</a>
 , <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c">reshade::api::wireframe</a>
 , <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca78ee54aa8f813885fe2fe20d232518b9">reshade::api::point</a>
  }</td></tr>
-<tr class="memdesc:a244b7fb82f03ccd626867b9b91179c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fill mode to use when rendering triangles.  <a href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">More...</a><br /></td></tr>
+<tr class="memdesc:a244b7fb82f03ccd626867b9b91179c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill mode to use when rendering triangles.  <a href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">More...</a><br /></td></tr>
 <tr class="separator:a244b7fb82f03ccd626867b9b91179c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd023e06e2395491f3f16dff979423d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423d">reshade::api::cull_mode</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423da334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
 , <a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423dae6ec529ba185279aa0adcf93e645c7cd">reshade::api::front</a>
@@ -276,7 +283,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3acdaeeeba9b4a4c5ebf042c0215a7bb0e">reshade::api::set</a>
 <br />
  }</td></tr>
-<tr class="memdesc:aca943c62894bd15c346b9dc57335a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available logic operations.  <a href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3">More...</a><br /></td></tr>
+<tr class="memdesc:aca943c62894bd15c346b9dc57335a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logic operations.  <a href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3">More...</a><br /></td></tr>
 <tr class="separator:aca943c62894bd15c346b9dc57335a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2564182ea0455f1640c124d18814a272"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">reshade::api::blend_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272a34ec78fcc91ffb1e54cd85e4a0924332">reshade::api::add</a>
@@ -287,7 +294,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272a2ffe4e77325d9a7152f7086ea7aa5114">reshade::api::max</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a2564182ea0455f1640c124d18814a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available color or alpha blending operations.  <a href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">More...</a><br /></td></tr>
+<tr class="memdesc:a2564182ea0455f1640c124d18814a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color or alpha blending operations.  <a href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">More...</a><br /></td></tr>
 <tr class="separator:a2564182ea0455f1640c124d18814a272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a9636714e63d20134822700257bbbe"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">reshade::api::blend_factor</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbead02c4c4cde7ae76252540d116a40f23a">reshade::api::zero</a>
@@ -315,7 +322,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea2a3569aa7e32caac5490ad6c0a50097f">reshade::api::one_minus_source1_alpha</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available blend factors in color or alpha blending operations.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
+<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend factors in color or alpha blending operations.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
 <tr class="separator:ae6a9636714e63d20134822700257bbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7180736c5cc4f9277edb7b601cc89d85"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">reshade::api::stencil_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4">reshade::api::keep</a>
@@ -329,7 +336,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85afc05f9565a0d3be36cba41084eb987c1">reshade::api::decrement</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a7180736c5cc4f9277edb7b601cc89d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available stencil operations that can be performed during depth-stencil testing.  <a href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">More...</a><br /></td></tr>
+<tr class="memdesc:a7180736c5cc4f9277edb7b601cc89d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil operations that can be performed during depth-stencil testing.  <a href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">More...</a><br /></td></tr>
 <tr class="separator:a7180736c5cc4f9277edb7b601cc89d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311c948b96b180e8e828a9663fcb523a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a">reshade::api::primitive_topology</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa5e543256c480ac577d30f76f9120eb74">reshade::api::undefined</a>
@@ -401,14 +408,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a765d2ec94553b7cf4c971e7dfcf0e851">reshade::api::callable</a>
 <br />
  }</td></tr>
-<tr class="memdesc:acf323fc31e17a5e747c2e2fb7d811da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available ray tracing shader group types.  <a href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6">More...</a><br /></td></tr>
+<tr class="memdesc:acf323fc31e17a5e747c2e2fb7d811da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a ray tracing shader group.  <a href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6">More...</a><br /></td></tr>
 <tr class="separator:acf323fc31e17a5e747c2e2fb7d811da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06986e9de7b7ba67bc98c712b663df1a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">reshade::api::pipeline_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aa334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aad521f765a49c72507257a2620612ee96">reshade::api::library</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aa8d28cfe7f4882fe54bd3f3c0ba53d1f5">reshade::api::skip_triangles</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aac9eecb5d6dac070b1c9d8537b75a5594">reshade::api::skip_aabbs</a>
  }</td></tr>
-<tr class="memdesc:a06986e9de7b7ba67bc98c712b663df1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline creation flags.  <a href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">More...</a><br /></td></tr>
+<tr class="memdesc:a06986e9de7b7ba67bc98c712b663df1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a pipeline.  <a href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">More...</a><br /></td></tr>
 <tr class="separator:a06986e9de7b7ba67bc98c712b663df1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">reshade::api::pipeline_subobject_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -455,7 +462,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa4e5868d676cb634aa75b125a0f741abf">reshade::api::flags</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline sub-object types.  <a href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">More...</a><br /></td></tr>
+<tr class="memdesc:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a pipeline sub-object.  <a href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">More...</a><br /></td></tr>
 <tr class="separator:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ac82b069d30cccaca8928394832bf1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">reshade::api::query_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a73a6a553fd8c616be53e8c1094f06e8f">reshade::api::occlusion</a>
@@ -469,7 +476,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a1987fb7951016d031e63f4115fbd45bc">reshade::api::stream_output_statistics_3</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a12ac82b069d30cccaca8928394832bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available query types.  <a href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">More...</a><br /></td></tr>
+<tr class="memdesc:a12ac82b069d30cccaca8928394832bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a query.  <a href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">More...</a><br /></td></tr>
 <tr class="separator:a12ac82b069d30cccaca8928394832bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e917814c5dd21aa28d2e6564f504d9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">reshade::api::dynamic_state</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
@@ -540,7 +547,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce">reshade::api::shared_nt_handle</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">reshade::api::non_monitored</a>
  }</td></tr>
-<tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that describe fence creation options.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
+<tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a fence.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
 <tr class="separator:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>

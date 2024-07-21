@@ -94,6 +94,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9ac74eda12c9b23c8a19b15d6dc6c0dd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html#a9ac74eda12c9b23c8a19b15d6dc6c0dd">present_flags</a></td></tr>
 <tr class="memdesc:a9ac74eda12c9b23c8a19b15d6dc6c0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap chain creation flags.  <a href="structreshade_1_1api_1_1swapchain__desc.html#a9ac74eda12c9b23c8a19b15d6dc6c0dd">More...</a><br /></td></tr>
 <tr class="separator:a9ac74eda12c9b23c8a19b15d6dc6c0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfd8c31669dca897bd45b52e9190b63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html#a3cfd8c31669dca897bd45b52e9190b63">fullscreen_state</a></td></tr>
+<tr class="memdesc:a3cfd8c31669dca897bd45b52e9190b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial fullscreen state.  <a href="structreshade_1_1api_1_1swapchain__desc.html#a3cfd8c31669dca897bd45b52e9190b63">More...</a><br /></td></tr>
+<tr class="separator:a3cfd8c31669dca897bd45b52e9190b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html#a014fafa9309c2bb6c7d432b5b7cddde8">fullscreen_refresh_rate</a></td></tr>
+<tr class="memdesc:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh rate of the display in fullscreen mode, in Hertz. Set to zero to use the default.  <a href="structreshade_1_1api_1_1swapchain__desc.html#a014fafa9309c2bb6c7d432b5b7cddde8">More...</a><br /></td></tr>
+<tr class="separator:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a swap chain and its back buffer resources. </p>
@@ -130,6 +136,38 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a014fafa9309c2bb6c7d432b5b7cddde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014fafa9309c2bb6c7d432b5b7cddde8">&#9670;&nbsp;</a></span>fullscreen_refresh_rate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float reshade::api::swapchain_desc::fullscreen_refresh_rate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refresh rate of the display in fullscreen mode, in Hertz. Set to zero to use the default. </p>
+
+</div>
+</div>
+<a id="a3cfd8c31669dca897bd45b52e9190b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfd8c31669dca897bd45b52e9190b63">&#9670;&nbsp;</a></span>fullscreen_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reshade::api::swapchain_desc::fullscreen_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initial fullscreen state. </p>
+
+</div>
+</div>
 <a id="a9ac74eda12c9b23c8a19b15d6dc6c0dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ac74eda12c9b23c8a19b15d6dc6c0dd">&#9670;&nbsp;</a></span>present_flags</h2>
 
@@ -143,7 +181,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Swap chain creation flags. </p>
-<p>Depending on the render API this can be a 'D3DPRESENT', 'DXGI_PRESENT', 'PFD_*' or 'VkSwapchainCreateFlagsKHR' value.</p>
+<p>Depending on the graphics API this can be a 'D3DPRESENT', 'DXGI_PRESENT', 'PFD_*' or 'VkSwapchainCreateFlagsKHR' value.</p>
 
 </div>
 </div>
@@ -160,7 +198,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defines how the back buffers should be swapped when a present occurs. </p>
-<p>Depending on the render API this can be a 'D3DSWAPEFFECT', 'DXGI_SWAP_EFFECT', 'WGL_SWAP_METHOD_ARB' or 'VkPresentModeKHR' value.</p>
+<p>Depending on the graphics API this can be a 'D3DSWAPEFFECT', 'DXGI_SWAP_EFFECT', 'WGL_SWAP_METHOD_ARB' or 'VkPresentModeKHR' value.</p>
 
 </div>
 </div>

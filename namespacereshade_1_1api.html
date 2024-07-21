@@ -117,6 +117,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html">descriptor_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a range of descriptors of a descriptor table in a pipeline layout.  <a href="structreshade_1_1api_1_1descriptor__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html">descriptor_range_with_static_samplers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single parameter in a pipeline layout.  <a href="structreshade_1_1api_1_1pipeline__layout__param.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,10 +213,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a render target view and how it is treated at the start and end of a render pass.  <a href="structreshade_1_1api_1_1render__pass__render__target__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1acceleration__structure__instance.html">acceleration_structure_instance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes an instance in a top-level acceleration structure. The data in acceleration_structure_build_input::instances::buffer should be an array of this structure.  <a href="structreshade_1_1api_1_1acceleration__structure__instance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single instance in a top-level acceleration structure. The data in acceleration_structure_build_input::instances::buffer should be an array of this structure.  <a href="structreshade_1_1api_1_1acceleration__structure__instance.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">acceleration_structure_build_input</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a build input for an acceleration structure build.  <a href="structreshade_1_1api_1_1acceleration__structure__build__input.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a build input for an acceleration structure build operation.  <a href="structreshade_1_1api_1_1acceleration__structure__build__input.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -240,7 +242,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa8473f19e6529e22157459e75b4cbf485">vulkan</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a0e2758bd8e3478f957852a26e12d7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying render API a device is using, as returned by device::get_api.  <a href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">More...</a><br /></td></tr>
+<tr class="memdesc:a0e2758bd8e3478f957852a26e12d7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying graphics API a device is using.  <a href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">More...</a><br /></td></tr>
 <tr class="separator:a0e2758bd8e3478f957852a26e12d7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1f75e72812269a7815296a0f248f9d0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">device_caps</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a3fab409c137d7ba5f6c7cf647a3d3d62">compute_shader</a>
@@ -281,7 +283,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">ray_tracing</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available features a device may support.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
+<tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional capabilities a device may support, depending on the underlying graphics API and hardware.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
 <tr class="separator:ac1f75e72812269a7815296a0f248f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23056ea38b16e0e823d9e4a14f80567"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">device_properties</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567a41cfc3cf8bc97fc876fa86089936896c">api_version</a>
@@ -295,7 +297,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c">shader_group_handle_alignment</a>
 <br />
  }</td></tr>
-<tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available properties a device may report.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
+<tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties that may be queried from a device.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
 <tr class="separator:af23056ea38b16e0e823d9e4a14f80567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d43e282e1516074653731962281d7a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">indirect_command</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a">unknown</a>
@@ -307,13 +309,13 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1a1c25336d87cabab6831c8f143c217d8b">dispatch_rays</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a4d43e282e1516074653731962281d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available indirect command types.  <a href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">More...</a><br /></td></tr>
+<tr class="memdesc:a4d43e282e1516074653731962281d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an indirect draw/dispatch command.  <a href="namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1">More...</a><br /></td></tr>
 <tr class="separator:a4d43e282e1516074653731962281d7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">command_queue_type</a> { <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca73b0472d43069103642ffa07997ff20a">graphics</a>
 , <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca77e73f3a185e16d1f08ca5e057710b9d">compute</a>
 , <a class="el" href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2ca12cba3ee81cf4a793796a51b6327c678">copy</a>
  }</td></tr>
-<tr class="memdesc:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available command queue types, as returned by command_queue::get_type.  <a href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">More...</a><br /></td></tr>
+<tr class="memdesc:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command queue type flags, which can be combined to describe the capabilities of a command queue.  <a href="namespacereshade_1_1api.html#a63400fb9d99022d78eed9dfcfdc32e2c">More...</a><br /></td></tr>
 <tr class="separator:a63400fb9d99022d78eed9dfcfdc32e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbd317502610c902e7097163f5a9bb89"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89aad921d60486366258809553a3db49a4a">unknown</a>
@@ -500,7 +502,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77eea7281e42191478acab47aa866fc7cfe55">all_ray_tracing</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available shader stages in the render pipeline.  <a href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">More...</a><br /></td></tr>
+<tr class="memdesc:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the shader stages in the render pipeline.  <a href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">More...</a><br /></td></tr>
 <tr class="separator:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a70b7dcd8b1e829ff8102091b64037"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7">vertex_shader</a>
@@ -528,7 +530,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ad5c604a530acbecea79966dbfbe5b3af">all_shader_stages</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a46a70b7dcd8b1e829ff8102091b64037"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that represent the available pipeline stages in the render pipeline.  <a href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">More...</a><br /></td></tr>
+<tr class="memdesc:a46a70b7dcd8b1e829ff8102091b64037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the pipeline stages in the render pipeline.  <a href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">More...</a><br /></td></tr>
 <tr class="separator:a46a70b7dcd8b1e829ff8102091b64037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9e41db9727a2e919c772eaafe3d23c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">descriptor_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136">sampler</a>
@@ -546,20 +548,25 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">acceleration_structure</a>
 <br />
  }</td></tr>
-<tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available descriptor types.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
+<tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a descriptor.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
 <tr class="separator:afd9e41db9727a2e919c772eaafe3d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">pipeline_layout_param_type</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">push_constants</a>
+<tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">pipeline_layout_param_type</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">push_constants</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef">descriptor_table</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">descriptor_table_with_static_samplers</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
-, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">push_descriptors_with_ranges</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">push_descriptors_with_ranges</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189">push_descriptors_with_static_samplers</a>
+<br />
  }</td></tr>
-<tr class="memdesc:a833ac63874bc8b79fe4f9dbebb043c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline layout parameter types.  <a href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">More...</a><br /></td></tr>
+<tr class="memdesc:a833ac63874bc8b79fe4f9dbebb043c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a pipeline layout parameter.  <a href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">More...</a><br /></td></tr>
 <tr class="separator:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244b7fb82f03ccd626867b9b91179c1c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">fill_mode</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1caec03f91ae56e478455e3786e91559194">solid</a>
 , <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c">wireframe</a>
 , <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca78ee54aa8f813885fe2fe20d232518b9">point</a>
  }</td></tr>
-<tr class="memdesc:a244b7fb82f03ccd626867b9b91179c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fill mode to use when rendering triangles.  <a href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">More...</a><br /></td></tr>
+<tr class="memdesc:a244b7fb82f03ccd626867b9b91179c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill mode to use when rendering triangles.  <a href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1c">More...</a><br /></td></tr>
 <tr class="separator:a244b7fb82f03ccd626867b9b91179c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd023e06e2395491f3f16dff979423d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423d">cull_mode</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423da334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="namespacereshade_1_1api.html#acfd023e06e2395491f3f16dff979423dae6ec529ba185279aa0adcf93e645c7cd">front</a>
@@ -590,7 +597,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3acdaeeeba9b4a4c5ebf042c0215a7bb0e">set</a>
 <br />
  }</td></tr>
-<tr class="memdesc:aca943c62894bd15c346b9dc57335a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available logic operations.  <a href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3">More...</a><br /></td></tr>
+<tr class="memdesc:aca943c62894bd15c346b9dc57335a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logic operations.  <a href="namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3">More...</a><br /></td></tr>
 <tr class="separator:aca943c62894bd15c346b9dc57335a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2564182ea0455f1640c124d18814a272"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">blend_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272a34ec78fcc91ffb1e54cd85e4a0924332">add</a>
@@ -601,7 +608,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272a2ffe4e77325d9a7152f7086ea7aa5114">max</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a2564182ea0455f1640c124d18814a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available color or alpha blending operations.  <a href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">More...</a><br /></td></tr>
+<tr class="memdesc:a2564182ea0455f1640c124d18814a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color or alpha blending operations.  <a href="namespacereshade_1_1api.html#a2564182ea0455f1640c124d18814a272">More...</a><br /></td></tr>
 <tr class="separator:a2564182ea0455f1640c124d18814a272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a9636714e63d20134822700257bbbe"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">blend_factor</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbead02c4c4cde7ae76252540d116a40f23a">zero</a>
@@ -629,7 +636,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea2a3569aa7e32caac5490ad6c0a50097f">one_minus_source1_alpha</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available blend factors in color or alpha blending operations.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
+<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend factors in color or alpha blending operations.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
 <tr class="separator:ae6a9636714e63d20134822700257bbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7180736c5cc4f9277edb7b601cc89d85"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">stencil_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4">keep</a>
@@ -643,7 +650,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85afc05f9565a0d3be36cba41084eb987c1">decrement</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a7180736c5cc4f9277edb7b601cc89d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available stencil operations that can be performed during depth-stencil testing.  <a href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">More...</a><br /></td></tr>
+<tr class="memdesc:a7180736c5cc4f9277edb7b601cc89d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil operations that can be performed during depth-stencil testing.  <a href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">More...</a><br /></td></tr>
 <tr class="separator:a7180736c5cc4f9277edb7b601cc89d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311c948b96b180e8e828a9663fcb523a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a">primitive_topology</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa5e543256c480ac577d30f76f9120eb74">undefined</a>
@@ -715,14 +722,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6a765d2ec94553b7cf4c971e7dfcf0e851">callable</a>
 <br />
  }</td></tr>
-<tr class="memdesc:acf323fc31e17a5e747c2e2fb7d811da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available ray tracing shader group types.  <a href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6">More...</a><br /></td></tr>
+<tr class="memdesc:acf323fc31e17a5e747c2e2fb7d811da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a ray tracing shader group.  <a href="namespacereshade_1_1api.html#acf323fc31e17a5e747c2e2fb7d811da6">More...</a><br /></td></tr>
 <tr class="separator:acf323fc31e17a5e747c2e2fb7d811da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06986e9de7b7ba67bc98c712b663df1a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">pipeline_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aa334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aad521f765a49c72507257a2620612ee96">library</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aa8d28cfe7f4882fe54bd3f3c0ba53d1f5">skip_triangles</a>
 , <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1aac9eecb5d6dac070b1c9d8537b75a5594">skip_aabbs</a>
  }</td></tr>
-<tr class="memdesc:a06986e9de7b7ba67bc98c712b663df1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline creation flags.  <a href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">More...</a><br /></td></tr>
+<tr class="memdesc:a06986e9de7b7ba67bc98c712b663df1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a pipeline.  <a href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a">More...</a><br /></td></tr>
 <tr class="separator:a06986e9de7b7ba67bc98c712b663df1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">pipeline_subobject_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a">unknown</a>
@@ -769,7 +776,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6aa4e5868d676cb634aa75b125a0f741abf">flags</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available pipeline sub-object types.  <a href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">More...</a><br /></td></tr>
+<tr class="memdesc:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a pipeline sub-object.  <a href="namespacereshade_1_1api.html#ad62e21a3e52b83de83ad42ca5bebbd6a">More...</a><br /></td></tr>
 <tr class="separator:ad62e21a3e52b83de83ad42ca5bebbd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ac82b069d30cccaca8928394832bf1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a73a6a553fd8c616be53e8c1094f06e8f">occlusion</a>
@@ -783,7 +790,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1a1987fb7951016d031e63f4115fbd45bc">stream_output_statistics_3</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a12ac82b069d30cccaca8928394832bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available query types.  <a href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">More...</a><br /></td></tr>
+<tr class="memdesc:a12ac82b069d30cccaca8928394832bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a query.  <a href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">More...</a><br /></td></tr>
 <tr class="separator:a12ac82b069d30cccaca8928394832bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e917814c5dd21aa28d2e6564f504d9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">dynamic_state</a> { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aad921d60486366258809553a3db49a4a">unknown</a>
@@ -854,7 +861,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce">shared_nt_handle</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">non_monitored</a>
  }</td></tr>
-<tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that describe fence creation options.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
+<tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a fence.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
 <tr class="separator:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1">compare_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1ac7561db7a418dd39b2201dfe110ab4a4">never</a>
@@ -868,7 +875,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1af9f90eeaf400d228facde6bc48da5cfb">always</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available comparison types.  <a href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1">More...</a><br /></td></tr>
+<tr class="memdesc:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operations.  <a href="namespacereshade_1_1api.html#a2465fcb7513d30f0aee46fbb0c2412c1">More...</a><br /></td></tr>
 <tr class="separator:a2465fcb7513d30f0aee46fbb0c2412c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4674f12273e11e328bfd65fc827c384"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">filter_mode</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a61d050ff6497ed0a132fc6360ace094b">min_mag_mip_point</a>
@@ -897,7 +904,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384afd27e4cfb1b658b32da3c5061fefa2d8">compare_anisotropic</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae4674f12273e11e328bfd65fc827c384"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available filtering modes used for texture sampling operations.  <a href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">More...</a><br /></td></tr>
+<tr class="memdesc:ae4674f12273e11e328bfd65fc827c384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture filtering modes available for texture sampling operations.  <a href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384">More...</a><br /></td></tr>
 <tr class="separator:ae4674f12273e11e328bfd65fc827c384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">texture_address_mode</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4eaccfc59a528a109fa4204e8ea06e8b68b">wrap</a>
@@ -908,14 +915,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4ea2a7c770beac8d50004280ca6e3efbfbe">mirror_once</a>
 <br />
  }</td></tr>
-<tr class="memdesc:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies behavior of sampling with texture coordinates outside a texture resource.  <a href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">More...</a><br /></td></tr>
+<tr class="memdesc:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling behavior at texture coordinates outside the bounds of a texture resource.  <a href="namespacereshade_1_1api.html#adf2a8575b4dee39ecee2ad4eeb398a4e">More...</a><br /></td></tr>
 <tr class="separator:adf2a8575b4dee39ecee2ad4eeb398a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9364d8f6baaafa7a97db157988abd195"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">map_access</a> { <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195abefe72871b2de8f4f0e20108517e31fe">read_only</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a2629564984b808cf7e6cfc61a0286d69">write_only</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195a06ad287ea83b37a6f9db3d8d10d72c8f">read_write</a>
 , <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">write_discard</a>
  }</td></tr>
-<tr class="memdesc:a9364d8f6baaafa7a97db157988abd195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available memory mapping access types.  <a href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">More...</a><br /></td></tr>
+<tr class="memdesc:a9364d8f6baaafa7a97db157988abd195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory mapping access types.  <a href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195">More...</a><br /></td></tr>
 <tr class="separator:a9364d8f6baaafa7a97db157988abd195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5281da0286a1680c9dec5a6109871daa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">memory_heap</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a">unknown</a>
@@ -927,7 +934,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127">custom</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a5281da0286a1680c9dec5a6109871daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available memory heap types, which give a hint as to where to place the memory allocation for a resource.  <a href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">More...</a><br /></td></tr>
+<tr class="memdesc:a5281da0286a1680c9dec5a6109871daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory heap types, which give a hint as to where to place the allocation for a resource.  <a href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">More...</a><br /></td></tr>
 <tr class="separator:a5281da0286a1680c9dec5a6109871daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a410ac3a673efb3365cd0a2372e71e95c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">resource_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95caad921d60486366258809553a3db49a4a">unknown</a>
@@ -939,7 +946,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95cad302e976c9dd527a9521a88c012437c5">surface</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a410ac3a673efb3365cd0a2372e71e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available resource types. The type of a resource is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...).  <a href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">More...</a><br /></td></tr>
+<tr class="memdesc:a410ac3a673efb3365cd0a2372e71e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a resource. This is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...).  <a href="namespacereshade_1_1api.html#a410ac3a673efb3365cd0a2372e71e95c">More...</a><br /></td></tr>
 <tr class="separator:a410ac3a673efb3365cd0a2372e71e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92d24ded74e7f371f805b1d0d609043"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">resource_flags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
@@ -949,11 +956,10 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">shared</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce">shared_nt_handle</a>
-, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a32234519c88d862c5df3934bd134aa9c">structured</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f">sparse_binding</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae92d24ded74e7f371f805b1d0d609043"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that describe additional parameters of a resource.  <a href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">More...</a><br /></td></tr>
+<tr class="memdesc:ae92d24ded74e7f371f805b1d0d609043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a resource.  <a href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">More...</a><br /></td></tr>
 <tr class="separator:ae92d24ded74e7f371f805b1d0d609043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c77e737cfeb069db2fa6f72f35b059"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">resource_usage</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a5e543256c480ac577d30f76f9120eb74">undefined</a>
@@ -985,7 +991,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a6afd338d6448ff9dd25358f1cb1124e8">cpu_access</a>
 <br />
  }</td></tr>
-<tr class="memdesc:af7c77e737cfeb069db2fa6f72f35b059"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of flags that specify how a resource is to be used. This needs to be specified during creation and is also used to transition between different resource states within a command list.  <a href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">More...</a><br /></td></tr>
+<tr class="memdesc:af7c77e737cfeb069db2fa6f72f35b059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify how a resource is used. This needs to be specified during creation and is also used to transition between different resource states within a command list.  <a href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059">More...</a><br /></td></tr>
 <tr class="separator:af7c77e737cfeb069db2fa6f72f35b059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f07392518e2fdb200e578bc545cd54f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">resource_view_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54faad921d60486366258809553a3db49a4a">unknown</a>
@@ -1004,7 +1010,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5ce48948fe80f65f45fa4ecebbdc867c">acceleration_structure</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a0f07392518e2fdb200e578bc545cd54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available resource view types. These identify how a resource view interprets the data of its resource.  <a href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">More...</a><br /></td></tr>
+<tr class="memdesc:a0f07392518e2fdb200e578bc545cd54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a resource view. This identifies how a resource view interprets the data of its resource.  <a href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">More...</a><br /></td></tr>
 <tr class="separator:a0f07392518e2fdb200e578bc545cd54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b8af40b571deeadfdd39d7934ac4e0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0">render_pass_load_op</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0aec4d1eb36b22d19728e9d1d23ca84d1c">load</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a01bc6f8efa4202821e95f4fdf6298b30">clear</a>
@@ -1023,19 +1029,19 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a00f361ffd661fc23c055206a48691d68">bottom_level</a>
 , <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9">generic</a>
  }</td></tr>
-<tr class="memdesc:a1ed6b36717133a7fcfde6ca974064f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure types.  <a href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">More...</a><br /></td></tr>
+<tr class="memdesc:a1ed6b36717133a7fcfde6ca974064f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure.  <a href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">More...</a><br /></td></tr>
 <tr class="separator:a1ed6b36717133a7fcfde6ca974064f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">acceleration_structure_copy_mode</a> { <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7ad329fd777726c300d7a044e482b967e7">clone</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a7cf74ca49c304df8150205fc915cd465">compact</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a235cdd01b87af1e1de37f4746a88d82c">serialize</a>
 , <a class="el" href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7a95f98046b7ecfb92a1d8a6006babb282">deserialize</a>
  }</td></tr>
-<tr class="memdesc:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure copy modes.  <a href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">More...</a><br /></td></tr>
+<tr class="memdesc:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure copy operation.  <a href="namespacereshade_1_1api.html#aa48a7127ac340d0b9bc058a5c31c67e7">More...</a><br /></td></tr>
 <tr class="separator:aa48a7127ac340d0b9bc058a5c31c67e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f98490dc7498321a92b736be26e971e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">acceleration_structure_build_mode</a> { <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971eab0da275520918e23dd615e2a747528f1">build</a>
 , <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971ea3ac340832f29c11538fbe2d6f75e8bcc">update</a>
  }</td></tr>
-<tr class="memdesc:a0f98490dc7498321a92b736be26e971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build modes.  <a href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">More...</a><br /></td></tr>
+<tr class="memdesc:a0f98490dc7498321a92b736be26e971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure build operation.  <a href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">More...</a><br /></td></tr>
 <tr class="separator:a0f98490dc7498321a92b736be26e971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55963207d90079684f1dc9961dd15ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15eaa334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
@@ -1047,19 +1053,19 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15eaa67e6414968a2f4f9e7c807153a1e4d48">minimize_memory_usage</a>
 <br />
  }</td></tr>
-<tr class="memdesc:aa55963207d90079684f1dc9961dd15ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build flags.  <a href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">More...</a><br /></td></tr>
+<tr class="memdesc:aa55963207d90079684f1dc9961dd15ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters to an acceleration structure build operation.  <a href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">More...</a><br /></td></tr>
 <tr class="separator:aa55963207d90079684f1dc9961dd15ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">acceleration_structure_build_input_type</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a817d7d587258bac88b24567b17bdda87">triangles</a>
 , <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a9f7cf42e0dad89e417c4df57fa80ba25">aabbs</a>
 , <a class="el" href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331a6fa9325472628103b7299e0e03a3cb93">instances</a>
  }</td></tr>
-<tr class="memdesc:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build input types.  <a href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">More...</a><br /></td></tr>
+<tr class="memdesc:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure structure build input.  <a href="namespacereshade_1_1api.html#a52e440bae9e3ce8849f0eccd5fcc1331">More...</a><br /></td></tr>
 <tr class="separator:a52e440bae9e3ce8849f0eccd5fcc1331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">acceleration_structure_build_input_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda94619f8a70068b2591c2eed622525b0e">opaque</a>
 , <a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3eda6defd325c4675c45f3af8fc3461ce4c4">no_duplicate_any_hit_invocation</a>
  }</td></tr>
-<tr class="memdesc:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available acceleration structure build input flags.  <a href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">More...</a><br /></td></tr>
+<tr class="memdesc:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of an acceleration structure build input.  <a href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">More...</a><br /></td></tr>
 <tr class="separator:ad5f8102537fe1fa524e5d43b9428e3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -1121,6 +1127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa0eed98c13853a521b28fc32076ca2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa0eed98c13853a521b28fc32076ca2c3">format_to_depth_stencil_typed</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value)</td></tr>
 <tr class="memdesc:aa0eed98c13853a521b28fc32076ca2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the specified format <em>value</em>  to its equivalent depth-stencil variant.  <a href="namespacereshade_1_1api.html#aa0eed98c13853a521b28fc32076ca2c3">More...</a><br /></td></tr>
 <tr class="separator:aa0eed98c13853a521b28fc32076ca2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4011c04f73916501d16e4158f9bcb99"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa4011c04f73916501d16e4158f9bcb99">format_bit_depth</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value)</td></tr>
+<tr class="memdesc:aa4011c04f73916501d16e4158f9bcb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the average component bit depth of the specified format <em>value</em> .  <a href="namespacereshade_1_1api.html#aa4011c04f73916501d16e4158f9bcb99">More...</a><br /></td></tr>
+<tr class="separator:aa4011c04f73916501d16e4158f9bcb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f35c5b27cbabea5c3333d0ac7a7f900"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8f35c5b27cbabea5c3333d0ac7a7f900">format_row_pitch</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value, uint32_t width)</td></tr>
 <tr class="memdesc:a8f35c5b27cbabea5c3333d0ac7a7f900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of bytes a texture row of the specified format <em>value</em>  occupies.  <a href="namespacereshade_1_1api.html#a8f35c5b27cbabea5c3333d0ac7a7f900">More...</a><br /></td></tr>
 <tr class="separator:a8f35c5b27cbabea5c3333d0ac7a7f900"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1401,7 +1410,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure build flags. </p>
+<p>Flags that specify additional parameters to an acceleration structure build operation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa55963207d90079684f1dc9961dd15eaa334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa55963207d90079684f1dc9961dd15eaabfac949d24f46d85dd7fe1c743f4efcf"></a>allow_update&#160;</td><td class="fielddoc"></td></tr>
@@ -1433,7 +1442,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure build input flags. </p>
+<p>Flags that specify additional parameters of an acceleration structure build input. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad5f8102537fe1fa524e5d43b9428e3eda334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad5f8102537fe1fa524e5d43b9428e3eda94619f8a70068b2591c2eed622525b0e"></a>opaque&#160;</td><td class="fielddoc"></td></tr>
@@ -1462,7 +1471,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure build input types. </p>
+<p>Type of an acceleration structure structure build input. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52e440bae9e3ce8849f0eccd5fcc1331a817d7d587258bac88b24567b17bdda87"></a>triangles&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a52e440bae9e3ce8849f0eccd5fcc1331a9f7cf42e0dad89e417c4df57fa80ba25"></a>aabbs&#160;</td><td class="fielddoc"></td></tr>
@@ -1491,7 +1500,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure build modes. </p>
+<p>Type of an acceleration structure build operation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0f98490dc7498321a92b736be26e971eab0da275520918e23dd615e2a747528f1"></a>build&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f98490dc7498321a92b736be26e971ea3ac340832f29c11538fbe2d6f75e8bcc"></a>update&#160;</td><td class="fielddoc"></td></tr>
@@ -1519,7 +1528,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure copy modes. </p>
+<p>Type of an acceleration structure copy operation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa48a7127ac340d0b9bc058a5c31c67e7ad329fd777726c300d7a044e482b967e7"></a>clone&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa48a7127ac340d0b9bc058a5c31c67e7a7cf74ca49c304df8150205fc915cd465"></a>compact&#160;</td><td class="fielddoc"></td></tr>
@@ -1549,7 +1558,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available acceleration structure types. </p>
+<p>Type of an acceleration structure. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a391077a5dd52937ce083ec6458b41c39"></a>top_level&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a00f361ffd661fc23c055206a48691d68"></a>bottom_level&#160;</td><td class="fielddoc"></td></tr>
@@ -1578,7 +1587,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available blend factors in color or alpha blending operations. </p>
+<p>Blend factors in color or alpha blending operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae6a9636714e63d20134822700257bbbead02c4c4cde7ae76252540d116a40f23a"></a>zero&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae6a9636714e63d20134822700257bbbeaf97c5d29941bfb1b2fdab0874906ab82"></a>one&#160;</td><td class="fielddoc"></td></tr>
@@ -1623,7 +1632,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available color or alpha blending operations. </p>
+<p>Color or alpha blending operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2564182ea0455f1640c124d18814a272a34ec78fcc91ffb1e54cd85e4a0924332"></a>add&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2564182ea0455f1640c124d18814a272a97f415c180230ce76bafa74bc058ef5f"></a>subtract&#160;</td><td class="fielddoc"></td></tr>
@@ -1685,7 +1694,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that represent the available command queue types, as returned by <a class="el" href="structreshade_1_1api_1_1command__queue.html#aafbdfe45a99dd03f38b5227256257495" title="Gets the type of the command queue, which specifies what commands can be executed on it.">command_queue::get_type</a>. </p>
+<p>Command queue type flags, which can be combined to describe the capabilities of a command queue. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structreshade_1_1api_1_1command__queue.html#aafbdfe45a99dd03f38b5227256257495" title="Gets the type of the command queue, which specifies what commands can be executed on it.">command_queue::get_type</a></dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a63400fb9d99022d78eed9dfcfdc32e2ca73b0472d43069103642ffa07997ff20a"></a>graphics&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a63400fb9d99022d78eed9dfcfdc32e2ca77e73f3a185e16d1f08ca5e057710b9d"></a>compute&#160;</td><td class="fielddoc"></td></tr>
@@ -1714,7 +1724,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available comparison types. </p>
+<p>Comparison operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2465fcb7513d30f0aee46fbb0c2412c1ac7561db7a418dd39b2201dfe110ab4a4"></a>never&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2465fcb7513d30f0aee46fbb0c2412c1ae37e8d912e8f7b8f9b5ef9452ba47ff1"></a>less&#160;</td><td class="fielddoc"></td></tr>
@@ -1778,7 +1788,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available descriptor types. </p>
+<p>Type of a descriptor. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136"></a>sampler&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1sampler.html" title="An opaque handle to a sampler state object.">sampler</a>. </p>
 </td></tr>
@@ -1824,7 +1834,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The underlying render API a device is using, as returned by <a class="el" href="structreshade_1_1api_1_1device.html#a3bfebff854ca583bada18e861c377b9f" title="Gets the underlying graphics API used by this device.">device::get_api</a>. </p>
+<p>Underlying graphics API a device is using. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structreshade_1_1api_1_1device.html#a3bfebff854ca583bada18e861c377b9f" title="Gets the underlying graphics API used by this device.">device::get_api</a></dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e2758bd8e3478f957852a26e12d7f5fad8ad44e2eff81b33c01349929e1c1f91"></a>d3d9&#160;</td><td class="fielddoc"><p>Direct3D 9 </p>
 <p><a href="https://docs.microsoft.com/windows/win32/direct3d9">https://docs.microsoft.com/windows/win32/direct3d9</a></p>
@@ -1868,7 +1879,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available features a device may support. </p>
+<p>Optional capabilities a device may support, depending on the underlying graphics API and hardware. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structreshade_1_1api_1_1device.html#af25b45894f282a925156c0e4139bc591" title="Checks whether the device supports the specified capability .">device::check_capability</a></dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a3fab409c137d7ba5f6c7cf647a3d3d62"></a>compute_shader&#160;</td><td class="fielddoc"><p>Specifies whether compute shaders are supported. If this feature is not present, the <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a3fab409c137d7ba5f6c7cf647a3d3d62">pipeline_stage::compute_shader</a> stage and <a class="el" href="structreshade_1_1api_1_1command__list.html#a2d1b3d51f9849f69e9c3819a89751b9e" title="Performs a compute shader dispatch.">command_list::dispatch</a> must not be used. </p>
 </td></tr>
@@ -1876,7 +1888,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a3c93a7c75062e942599844e27cf88034"></a>hull_and_domain_shader&#160;</td><td class="fielddoc"><p>Specifies whether hull and domain (tessellation) shaders are supported. If this feature is not present, the <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a8eed65ef8eb2ee8071f7c536474e4302">pipeline_stage::hull_shader</a> and <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a6ac0c15df8ea63f803bc4ed2f1d7adc4">pipeline_stage::domain_shader</a> stages must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0acbf8ba6477522ba81b39f43ee6cebe66"></a>logic_op&#160;</td><td class="fielddoc"><p>Specifies whether logic operations are available in the blend state. If this feature is not present, the <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a19e4e6b554e493db02ec710df5657755" title="Enable or disable a logical operation for each render target.">blend_desc::logic_op_enable</a> and <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a9dc70536a1edb05dc531a3a2deb1693f" title="Logical operation for each render target. Ignored if logic_op_enable is false.">blend_desc::logic_op</a> fields are ignored. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0acbf8ba6477522ba81b39f43ee6cebe66"></a>logic_op&#160;</td><td class="fielddoc"><p>Specifies whether logic operations are available in the blend state. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a19e4e6b554e493db02ec710df5657755" title="Enable or disable a logical operation for each render target.">blend_desc::logic_op_enable</a> and <a class="el" href="structreshade_1_1api_1_1blend__desc.html#a9dc70536a1edb05dc531a3a2deb1693f" title="Logical operation for each render target. Ignored if logic_op_enable is false.">blend_desc::logic_op</a> are ignored. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0ac905a2681ab4baa71ad044bff859bc75"></a>dual_source_blend&#160;</td><td class="fielddoc"><p>Specifies whether blend operations which take two sources are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea098d8379f60f6a1670ed1895db05ed62">blend_factor::source1_color</a>, <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea80a6b377e9ccb89d462efbffb837eec3">blend_factor::one_minus_source1_color</a>, <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea7db9d74d8030f7c09d0f6560a190992a">blend_factor::source1_alpha</a> and <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea2a3569aa7e32caac5490ad6c0a50097f">blend_factor::one_minus_source1_alpha</a> must not be used. </p>
 </td></tr>
@@ -1884,7 +1896,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0aa84ee4d178873e2b7aedf45412213759"></a>fill_mode_non_solid&#160;</td><td class="fielddoc"><p>Specifies whether point and wireframe fill modes are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca78ee54aa8f813885fe2fe20d232518b9">fill_mode::point</a> and <a class="el" href="namespacereshade_1_1api.html#a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c">fill_mode::wireframe</a> must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a09842ebe1ba7bc504e21f27ea94befbf"></a>conservative_rasterization&#160;</td><td class="fielddoc"><p>Specifies whether conservative rasterization is supported. If this feature is not present, the <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html#a84442c237c4d4f85a7fcc14b7153747c" title="Enable or disable conservative rasterization mode.">rasterizer_desc::conservative_rasterization</a> field must be 0. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a09842ebe1ba7bc504e21f27ea94befbf"></a>conservative_rasterization&#160;</td><td class="fielddoc"><p>Specifies whether conservative rasterization is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1rasterizer__desc.html#a84442c237c4d4f85a7fcc14b7153747c" title="Enable or disable conservative rasterization mode.">rasterizer_desc::conservative_rasterization</a> must be 0. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a987b2aa4a2dd7ad21a312488fe3cf9db"></a>bind_render_targets_and_depth_stencil&#160;</td><td class="fielddoc"><p>Specifies whether binding individual render target and depth-stencil resource views is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#a72b5bd17b2cb03863913efda6e01d972" title="Binds individual render target and depth-stencil resource views. This must not be called between begi...">command_list::bind_render_targets_and_depth_stencil</a> must not be used (only render passes). </p>
 </td></tr>
@@ -1908,13 +1920,13 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0ae487ba2c9be37695c211184efc8d76a4"></a>copy_query_heap_results&#160;</td><td class="fielddoc"><p>Specifies whether copying query results to a buffer is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#a9d8fab842fa82550d5cda7c7d64c296c" title="Copies the results of queries in a query heap to a buffer resource.">command_list::copy_query_heap_results</a> must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a71c304e35a3900da48ebee39edbc6041"></a>sampler_compare&#160;</td><td class="fielddoc"><p>Specifies whether comparison sampling is supported. If this feature is not present, the <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a5b28db944b7af466641dd54264861cba" title="Comparison function to use to compare sampled data against existing sampled data.">sampler_desc::compare_op</a> field is ignored and the compare filter types have no effect. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a71c304e35a3900da48ebee39edbc6041"></a>sampler_compare&#160;</td><td class="fielddoc"><p>Specifies whether comparison sampling is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1sampler__desc.html#a5b28db944b7af466641dd54264861cba" title="Comparison function to use to compare sampled data against existing sampled data.">sampler_desc::compare_op</a> is ignored and the compare filter types have no effect. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a6bb09ea98a31d3e6639b2079e816d703"></a>sampler_anisotropic&#160;</td><td class="fielddoc"><p>Specifies whether anisotropic filtering is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae4674f12273e11e328bfd65fc827c384a8fd7f194e4ee92edc3dcbe2a8fb2b708">filter_mode::anisotropic</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0acf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"><p>Specifies whether combined sampler and resource view descriptors are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b" title="Descriptors are an array of sampler_with_resource_view.">descriptor_type::sampler_with_resource_view</a> must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0af1b6150f303b6aee438c0e1331c1965f"></a>shared_resource&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">resource_flags::shared</a> must not be used. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0af1b6150f303b6aee438c0e1331c1965f"></a>shared_resource&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e" title="Shared resources can be imported/exported from/to different graphics APIs and/or processes....">resource_flags::shared</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a39647fe76d7d4f2138899c614e97ef8b"></a>shared_resource_nt_handle&#160;</td><td class="fielddoc"><p>Specifies whether resource sharing with NT handles is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce">resource_flags::shared_nt_handle</a> must not be used. </p>
 </td></tr>
@@ -1952,17 +1964,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available properties a device may report. </p>
+<p>Properties that may be queried from a device. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structreshade_1_1api_1_1device.html#a41accc4d81ccf1a0d917b2e491ef7310" title="Gets data for a property  of this device.">device::get_property</a></dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a41cfc3cf8bc97fc876fa86089936896c"></a>api_version&#160;</td><td class="fielddoc"><p>Version of the underlying render API the device is using. Data is a 32-bit unsigned integer value. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a41cfc3cf8bc97fc876fa86089936896c"></a>api_version&#160;</td><td class="fielddoc"><p>Version of the underlying graphics API the device is using. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567ad5612938744d9340b9b447854c8a18fb"></a>driver_version&#160;</td><td class="fielddoc"><p>Version of the graphics driver that is being used. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a96b1f972094b863cafcacb8fc48b9bea"></a>vendor_id&#160;</td><td class="fielddoc"><p>PCI vendor ID of the primary adapter/physical device associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a96b1f972094b863cafcacb8fc48b9bea"></a>vendor_id&#160;</td><td class="fielddoc"><p>PCI vendor ID of the hardware associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a9379346c996b0535a7a98f25887156a2"></a>device_id&#160;</td><td class="fielddoc"><p>PCI device ID of the primary adapter/physical device associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a9379346c996b0535a7a98f25887156a2"></a>device_id&#160;</td><td class="fielddoc"><p>PCI device ID of the hardware associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a67daf92c833c41c95db874e18fcb2786"></a>description&#160;</td><td class="fielddoc"><p>Description text of the primary adapter/physical device associated with the logical render device. Data is an array of 256 byte-characters representing a null-terminated string. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a67daf92c833c41c95db874e18fcb2786"></a>description&#160;</td><td class="fielddoc"><p>Description text of the hardware associated with the logical render device. Data is an array of 256 byte-sized characters representing a null-terminated string. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd"></a>shader_group_handle_size&#160;</td><td class="fielddoc"><p>Size of a <a class="el" href="structreshade_1_1api_1_1shader__group.html" title="Describes a ray tracing shader group.">shader_group</a> handle as written by <a class="el" href="structreshade_1_1api_1_1device.html#aa3d9204141e2fec2c510ed33051d5506" title="Gets the shader group handles for a ray tracing pipeline, to be put into a shader binding table.">device::get_pipeline_shader_group_handles</a>. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
@@ -1995,7 +2008,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A list of all possible render pipeline states that can be set independent of pipeline state objects. </p>
-<p>Support for these varies between render APIs (e.g. modern APIs like D3D12 and Vulkan support much less dynamic states than D3D9).</p>
+<p>Support for these varies between graphics APIs (e.g. modern APIs like D3D12 and Vulkan support much less dynamic states than D3D9).</p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a5ec1fd982eb3794a8dc6ed6e95c8b773"></a>alpha_test_enable&#160;</td><td class="fielddoc"></td></tr>
@@ -2069,7 +2082,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that describe fence creation options. </p>
+<p>Flags that specify additional parameters of a fence. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaa334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"></td></tr>
@@ -2099,7 +2112,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The fill mode to use when rendering triangles. </p>
+<p>Fill mode to use when rendering triangles. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a244b7fb82f03ccd626867b9b91179c1caec03f91ae56e478455e3786e91559194"></a>solid&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a244b7fb82f03ccd626867b9b91179c1ca4164c2d86edc7084b89afb7e9557d32c"></a>wireframe&#160;</td><td class="fielddoc"></td></tr>
@@ -2128,7 +2141,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available filtering modes used for texture sampling operations. </p>
+<p>Texture filtering modes available for texture sampling operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae4674f12273e11e328bfd65fc827c384a61d050ff6497ed0a132fc6360ace094b"></a>min_mag_mip_point&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae4674f12273e11e328bfd65fc827c384a98fe5830be6d9ee3882a53be8d62fa86"></a>min_mag_point_mip_linear&#160;</td><td class="fielddoc"></td></tr>
@@ -2316,7 +2329,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available indirect command types. </p>
+<p>Type of an indirect draw/dispatch command. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structreshade_1_1api_1_1command__list.html#a85bbf10afa86718f636a431910ddb0f4" title="Executes indirect draw or dispatch commands.">command_list::draw_or_dispatch_indirect</a></dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4d43e282e1516074653731962281d7a1aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4d43e282e1516074653731962281d7a1a817491bc777731f0f0c6e485f28e4d86"></a>draw&#160;</td><td class="fielddoc"></td></tr>
@@ -2379,7 +2393,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available logic operations. </p>
+<p>Logic operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aca943c62894bd15c346b9dc57335a9c3a01bc6f8efa4202821e95f4fdf6298b30"></a>clear&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aca943c62894bd15c346b9dc57335a9c3a2a90cd923ab195168c5bc80f6f3e03ea"></a>bitwise_and&#160;</td><td class="fielddoc"></td></tr>
@@ -2421,7 +2435,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available memory mapping access types. </p>
+<p>Memory mapping access types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9364d8f6baaafa7a97db157988abd195abefe72871b2de8f4f0e20108517e31fe"></a>read_only&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9364d8f6baaafa7a97db157988abd195a2629564984b808cf7e6cfc61a0286d69"></a>write_only&#160;</td><td class="fielddoc"></td></tr>
@@ -2451,7 +2465,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available memory heap types, which give a hint as to where to place the memory allocation for a resource. </p>
+<p>Memory heap types, which give a hint as to where to place the allocation for a resource. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaf08840c4dc862fadbc7c358ab58a6ed9"></a>gpu_only&#160;</td><td class="fielddoc"></td></tr>
@@ -2483,7 +2497,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available pipeline creation flags. </p>
+<p>Flags that specify additional parameters of a pipeline. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a06986e9de7b7ba67bc98c712b663df1aa334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a06986e9de7b7ba67bc98c712b663df1aad521f765a49c72507257a2620612ee96"></a>library&#160;</td><td class="fielddoc"></td></tr>
@@ -2513,12 +2527,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available pipeline layout parameter types. </p>
+<p>Type of a pipeline layout parameter. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24"></a>push_constants&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef"></a>descriptor_table&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e"></a>descriptor_table_with_static_samplers&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0"></a>push_descriptors&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150"></a>push_descriptors_with_ranges&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189"></a>push_descriptors_with_static_samplers&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2543,7 +2559,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that represent the available pipeline stages in the render pipeline. </p>
+<p>Flags that specify the pipeline stages in the render pipeline. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a46a70b7dcd8b1e829ff8102091b64037ad518a62c8c7391ec1b42cab11af3d5b7"></a>vertex_shader&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a46a70b7dcd8b1e829ff8102091b64037a8eed65ef8eb2ee8071f7c536474e4302"></a>hull_shader&#160;</td><td class="fielddoc"></td></tr>
@@ -2588,7 +2604,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available pipeline sub-object types. </p>
+<p>Type of a pipeline sub-object. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aad518a62c8c7391ec1b42cab11af3d5b7"></a>vertex_shader&#160;</td><td class="fielddoc"><p>Vertex shader to use. Sub-object data is a pointer to a <a class="el" href="structreshade_1_1api_1_1shader__desc.html" title="Describes a shader object.">shader_desc</a>. </p>
@@ -2674,7 +2690,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa86d9432e4bfd2b1fc7f1f6565cb45f9c"></a>max_recursion_depth&#160;</td><td class="fielddoc"><p>Maximum recursion depth of shaders executed by this pipeline. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa4e5868d676cb634aa75b125a0f741abf"></a>flags&#160;</td><td class="fielddoc"><p>Additional pipeline creation flags. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a" title="The available pipeline creation flags.">pipeline_flags</a> value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa4e5868d676cb634aa75b125a0f741abf"></a>flags&#160;</td><td class="fielddoc"><p>Additional pipeline creation flags. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#a06986e9de7b7ba67bc98c712b663df1a" title="Flags that specify additional parameters of a pipeline.">pipeline_flags</a> value. </p>
 </td></tr>
 </table>
 
@@ -2771,7 +2787,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available query types. </p>
+<p>Type of a query. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a12ac82b069d30cccaca8928394832bf1a73a6a553fd8c616be53e8c1094f06e8f"></a>occlusion&#160;</td><td class="fielddoc"><p>Number of samples that passed the depth and stencil tests between beginning and end of the query. Data is a 64-bit unsigned integer value. </p>
 </td></tr>
@@ -2869,16 +2885,20 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that describe additional parameters of a resource. </p>
+<p>Flags that specify additional parameters of a resource. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f"></a>dynamic&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043aaa69922e8c300f3e187253e01eec5f63"></a>cube_compatible&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03"></a>generate_mipmaps&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f"></a>dynamic&#160;</td><td class="fielddoc"><p>Dynamic resources can be frequently updated during a frame, with previous contents automatically being shadowed so to no affect already executing operations on the GPU. Required for <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">map_access::write_discard</a>. The flag is not supported in D3D12 or Vulkan. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043aaa69922e8c300f3e187253e01eec5f63"></a>cube_compatible&#160;</td><td class="fielddoc"><p>Required to create <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5560afc38fa6e30d2026ab9dc2835730">resource_view_type::texture_cube</a> or <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5acee56ce2c1861f757c27f6c4ed0399">resource_view_type::texture_cube_array</a> views of the resource. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03"></a>generate_mipmaps&#160;</td><td class="fielddoc"><p>Required to use the resource with <a class="el" href="structreshade_1_1api_1_1command__list.html#aab066738ef9831bba807081671846fea" title="Generates the lower mipmap levels for the specified shader resource view. Uses the largest mipmap lev...">command_list::generate_mipmaps</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"><p>Shared resources can be imported/exported from/to different graphics APIs and/or processes. Required to use the "shared_handle" parameter of <a class="el" href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65" title="Allocates and creates a new resource.">device::create_resource</a>. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce"></a>shared_nt_handle&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a32234519c88d862c5df3934bd134aa9c"></a>structured&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f"></a>sparse_binding&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f"></a>sparse_binding&#160;</td><td class="fielddoc"><p>Resource is backed using sparse memory binding. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2903,7 +2923,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available resource types. The type of a resource is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...). </p>
+<p>Type of a resource. This is specified during creation and is immutable. Various operations may have special requirements on the type of resources they operate on (e.g. copies can only happen between resources of the same type, ...). </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a410ac3a673efb3365cd0a2372e71e95caad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a410ac3a673efb3365cd0a2372e71e95ca7f2db423a49b305459147332fb01cf87"></a>buffer&#160;</td><td class="fielddoc"></td></tr>
@@ -2935,7 +2955,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that specify how a resource is to be used. This needs to be specified during creation and is also used to transition between different resource states within a command list. </p>
+<p>Flags that specify how a resource is used. This needs to be specified during creation and is also used to transition between different resource states within a command list. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af7c77e737cfeb069db2fa6f72f35b059a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af7c77e737cfeb069db2fa6f72f35b059aab150dddbaa3966d354cc6dcd7418ea9"></a>index_buffer&#160;</td><td class="fielddoc"></td></tr>
@@ -2983,7 +3003,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available resource view types. These identify how a resource view interprets the data of its resource. </p>
+<p>Type of a resource view. This identifies how a resource view interprets the data of its resource. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0f07392518e2fdb200e578bc545cd54faad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f07392518e2fdb200e578bc545cd54fa7f2db423a49b305459147332fb01cf87"></a>buffer&#160;</td><td class="fielddoc"></td></tr>
@@ -3021,7 +3041,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available ray tracing shader group types. </p>
+<p>Type of a ray tracing shader group. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acf323fc31e17a5e747c2e2fb7d811da6a80d6f31723ca0cdb779f044db05c404d"></a>raygen&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acf323fc31e17a5e747c2e2fb7d811da6ade13fc4490fbd29a732bf77eb7476650"></a>miss&#160;</td><td class="fielddoc"></td></tr>
@@ -3052,7 +3072,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A list of flags that represent the available shader stages in the render pipeline. </p>
+<p>Flags that specify the shader stages in the render pipeline. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae6d07e51daff3c4ff0b10c4ce20c77eea2b5bc093b09bd81f51de433bde9d202a"></a>vertex&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae6d07e51daff3c4ff0b10c4ce20c77eea1947b668c33bedc07d0ce26418b262c6"></a>hull&#160;</td><td class="fielddoc"></td></tr>
@@ -3096,7 +3116,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available stencil operations that can be performed during depth-stencil testing. </p>
+<p>Stencil operations that can be performed during depth-stencil testing. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4"></a>keep&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7180736c5cc4f9277edb7b601cc89d85ad02c4c4cde7ae76252540d116a40f23a"></a>zero&#160;</td><td class="fielddoc"></td></tr>
@@ -3130,7 +3150,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Specifies behavior of sampling with texture coordinates outside a texture resource. </p>
+<p>Sampling behavior at texture coordinates outside the bounds of a texture resource. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf2a8575b4dee39ecee2ad4eeb398a4eaccfc59a528a109fa4204e8ea06e8b68b"></a>wrap&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adf2a8575b4dee39ecee2ad4eeb398a4eafbe322a89bc0ba531c3f0050e3935f28"></a>mirror&#160;</td><td class="fielddoc"></td></tr>
@@ -3142,6 +3162,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa4011c04f73916501d16e4158f9bcb99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4011c04f73916501d16e4158f9bcb99">&#9670;&nbsp;</a></span>format_bit_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t reshade::api::format_bit_depth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the average component bit depth of the specified format <em>value</em> . </p>
+
+</div>
+</div>
 <a id="a8f35c5b27cbabea5c3333d0ac7a7f900"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f35c5b27cbabea5c3333d0ac7a7f900">&#9670;&nbsp;</a></span>format_row_pitch()</h2>
 
