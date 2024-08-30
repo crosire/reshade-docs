@@ -11,7 +11,7 @@ var searchData=
   ['d3d12_222',['d3d12',['../namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fa1dae544a125c8f47bb4cbf14447abd1f',1,'reshade::api']]],
   ['d3d9_223',['d3d9',['../namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5fad8ad44e2eff81b33c01349929e1c1f91',1,'reshade::api']]],
   ['data_224',['data',['../structreshade_1_1api_1_1subresource__data.html#ab5652b44c5a8fd57ba0b1fc11db86f17',1,'reshade::api::subresource_data::data()'],['../structreshade_1_1api_1_1pipeline__subobject.html#a2c1ba90326de0224c166c244661d690e',1,'reshade::api::pipeline_subobject::data()']]],
-  ['debug_225',['debug',['../namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d',1,'reshade']]],
+  ['debug_225',['debug',['../namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baaad42f6697b035b7580e4fef93be20b4d',1,'reshade::log']]],
   ['decrement_226',['decrement',['../namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85afc05f9565a0d3be36cba41084eb987c1',1,'reshade::api']]],
   ['decrement_5fsaturate_227',['decrement_saturate',['../namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a33f5fb050c3d97a3385a3a0c4ba67a04',1,'reshade::api']]],
   ['depth_228',['depth',['../structreshade_1_1api_1_1subresource__box.html#af40dedfc7d98711efdd94c41f984a0a9',1,'reshade::api::subresource_box']]],

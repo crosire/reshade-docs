@@ -9,7 +9,7 @@ var searchData=
   ['index_5foffset_441',['index_offset',['../structreshade_1_1api_1_1acceleration__structure__build__input.html#ab6ad9b1e861472cfb3eb0a98e021ae6b',1,'reshade::api::acceleration_structure_build_input']]],
   ['indirect_5fargument_442',['indirect_argument',['../namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a5ac04f676f3f586a3d0be24f3294622d',1,'reshade::api']]],
   ['indirect_5fcommand_443',['indirect_command',['../namespacereshade_1_1api.html#a4d43e282e1516074653731962281d7a1',1,'reshade::api']]],
-  ['info_444',['info',['../namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c',1,'reshade']]],
+  ['info_444',['info',['../namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baacaf9b6b99962bf5c2264824231d7a40c',1,'reshade::log']]],
   ['init_5fcommand_5flist_445',['init_command_list',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa55c3115ed47da6152333a6c73cf95b6c',1,'reshade']]],
   ['init_5fcommand_5fqueue_446',['init_command_queue',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa683d20275692dd0dfb59bc9605f74ca5',1,'reshade']]],
   ['init_5fdevice_447',['init_device',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0ce4a4653b06410e17282af7873d5937',1,'reshade']]],

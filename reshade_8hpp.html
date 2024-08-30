@@ -89,6 +89,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacereshade_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html">reshade::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacereshade_1_1log"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1log.html">reshade::log</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -97,27 +99,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7e63197214062e42f350af39eec1fc2a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">reshade::log_level</a> { <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282">reshade::error</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd">reshade::warning</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c">reshade::info</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d">reshade::debug</a>
+<tr class="memitem:a459e92b08701027fa8825be6f8c059ba"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059ba">reshade::log::level</a> { <a class="el" href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baacb5e100e5a9a3e7f6d1fd97512215282">reshade::log::error</a>
+, <a class="el" href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baa7b83d3f08fa392b79e3f553b585971cd">reshade::log::warning</a>
+, <a class="el" href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baacaf9b6b99962bf5c2264824231d7a40c">reshade::log::info</a>
+, <a class="el" href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059baaad42f6697b035b7580e4fef93be20b4d">reshade::log::debug</a>
  }</td></tr>
-<tr class="memdesc:a7e63197214062e42f350af39eec1fc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available log severity levels.  <a href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">More...</a><br /></td></tr>
-<tr class="separator:a7e63197214062e42f350af39eec1fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a459e92b08701027fa8825be6f8c059ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Severity levels for logging.  <a href="namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059ba">More...</a><br /></td></tr>
+<tr class="separator:a459e92b08701027fa8825be6f8c059ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a19928cf52e91e8f04d029615c821dbd9"><td class="memItemLeft" align="right" valign="top">BOOL WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reshade_8hpp.html#a19928cf52e91e8f04d029615c821dbd9">K32EnumProcessModules</a> (HANDLE hProcess, HMODULE *lphModule, DWORD cb, LPDWORD lpcbNeeded)</td></tr>
 <tr class="separator:a19928cf52e91e8f04d029615c821dbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f49291b3e85dd89efa7c99dd641eedb"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#a6f49291b3e85dd89efa7c99dd641eedb">reshade::internal::get_reshade_module_handle</a> (HMODULE reshade_module=nullptr)</td></tr>
-<tr class="memdesc:a6f49291b3e85dd89efa7c99dd641eedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the ReShade module.  <a href="namespacereshade_1_1internal.html#a6f49291b3e85dd89efa7c99dd641eedb">More...</a><br /></td></tr>
-<tr class="separator:a6f49291b3e85dd89efa7c99dd641eedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#ae31ad702bcc85b7d7633f2a78e5cd6ca">reshade::internal::get_current_module_handle</a> (HMODULE addon_module=nullptr)</td></tr>
-<tr class="memdesc:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the current add-on module.  <a href="namespacereshade_1_1internal.html#ae31ad702bcc85b7d7633f2a78e5cd6ca">More...</a><br /></td></tr>
-<tr class="separator:ae31ad702bcc85b7d7633f2a78e5cd6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">reshade::log_message</a> (log_level level, const char *message)</td></tr>
-<tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
-<tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f66c056637bb974f46fd8629b44739"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#aa5f66c056637bb974f46fd8629b44739">reshade::internal::get_reshade_module_handle</a> (HMODULE initial_handle=nullptr)</td></tr>
+<tr class="memdesc:aa5f66c056637bb974f46fd8629b44739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the ReShade module.  <a href="namespacereshade_1_1internal.html#aa5f66c056637bb974f46fd8629b44739">More...</a><br /></td></tr>
+<tr class="separator:aa5f66c056637bb974f46fd8629b44739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bcbc2d1acdf3a98eaa371075efd109"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html#a24bcbc2d1acdf3a98eaa371075efd109">reshade::internal::get_current_module_handle</a> (HMODULE initial_handle=nullptr)</td></tr>
+<tr class="memdesc:a24bcbc2d1acdf3a98eaa371075efd109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the handle to the current add-on module.  <a href="namespacereshade_1_1internal.html#a24bcbc2d1acdf3a98eaa371075efd109">More...</a><br /></td></tr>
+<tr class="separator:a24bcbc2d1acdf3a98eaa371075efd109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dee3f83c14c4b47b979247e58127206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1log.html#a7dee3f83c14c4b47b979247e58127206">reshade::log::message</a> (level level, const char *message)</td></tr>
+<tr class="memdesc:a7dee3f83c14c4b47b979247e58127206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade_1_1log.html#a7dee3f83c14c4b47b979247e58127206">More...</a><br /></td></tr>
+<tr class="separator:a7dee3f83c14c4b47b979247e58127206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dce5382c15212557359af6388d2f4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">reshade::get_reshade_base_path</a> (char *path, size_t *path_size)</td></tr>
 <tr class="memdesc:a3dce5382c15212557359af6388d2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the base path ReShade uses to resolve relative paths.  <a href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">More...</a><br /></td></tr>
 <tr class="separator:a3dce5382c15212557359af6388d2f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>

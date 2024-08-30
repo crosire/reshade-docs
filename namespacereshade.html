@@ -79,6 +79,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacereshade_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1internal.html">internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacereshade_1_1log"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1log.html">log</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -277,13 +279,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7e63197214062e42f350af39eec1fc2a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a> { <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282">error</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd">warning</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c">info</a>
-, <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d">debug</a>
- }</td></tr>
-<tr class="memdesc:a7e63197214062e42f350af39eec1fc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available log severity levels.  <a href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">More...</a><br /></td></tr>
-<tr class="separator:a7e63197214062e42f350af39eec1fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a">addon_event</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0ce4a4653b06410e17282af7873d5937">init_device</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aadd51261dc8f39fc42b6e7f9029eedc02">destroy_device</a>
@@ -409,9 +404,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">log_message</a> (<a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a> level, const char *message)</td></tr>
-<tr class="memdesc:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to ReShade's log.  <a href="namespacereshade.html#ad1e57c12113f4fdabcdb3f85ea0bad21">More...</a><br /></td></tr>
-<tr class="separator:ad1e57c12113f4fdabcdb3f85ea0bad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dce5382c15212557359af6388d2f4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">get_reshade_base_path</a> (char *path, size_t *path_size)</td></tr>
 <tr class="memdesc:a3dce5382c15212557359af6388d2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the base path ReShade uses to resolve relative paths.  <a href="namespacereshade.html#a3dce5382c15212557359af6388d2f4be">More...</a><br /></td></tr>
 <tr class="separator:a3dce5382c15212557359af6388d2f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2122,7 +2114,7 @@ vkCmdResolveImage </li>
 <li>
 vkCmdResolveImage2 </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="Available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code> (which indicates the entire subresource is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -2412,40 +2404,6 @@ vkReleaseFullScreenExclusiveModeEXT </li>
 
 </div>
 </div>
-<a id="a7e63197214062e42f350af39eec1fc2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e63197214062e42f350af39eec1fc2a">&#9670;&nbsp;</a></span>log_level</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">reshade::log_level</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Available log severity levels. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"><p>| [ERROR] | ... </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aa7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"><p>| [WARN] | ... </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aacaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"><p>| [INFO] | ... </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e63197214062e42f350af39eec1fc2aaad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"><p>| [DEBUG] | ... </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a44408c0f3aef6ad2e6fcf8cf40be68d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44408c0f3aef6ad2e6fcf8cf40be68d2">&#9670;&nbsp;</a></span>create_effect_runtime()</h2>
@@ -2655,51 +2613,6 @@ vkReleaseFullScreenExclusiveModeEXT </li>
   <table class="params">
     <tr><td class="paramname">path</td><td>Pointer to a string buffer that is filled with the base path, or <code>nullptr</code> to query the necessary size.</td></tr>
     <tr><td class="paramname">path_size</td><td>Pointer to an integer that contains the size of the string buffer and is set to the actual length of the string, including the null-terminator.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad1e57c12113f4fdabcdb3f85ea0bad21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e57c12113f4fdabcdb3f85ea0bad21">&#9670;&nbsp;</a></span>log_message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reshade::log_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacereshade.html#a7e63197214062e42f350af39eec1fc2a">log_level</a>&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Writes a message to ReShade's log. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>Severity level.</td></tr>
-    <tr><td class="paramname">message</td><td>A null-terminated message string.</td></tr>
   </table>
   </dd>
 </dl>

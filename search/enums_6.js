@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['log_5flevel_1395',['log_level',['../namespacereshade.html#a7e63197214062e42f350af39eec1fc2a',1,'reshade']]],
-  ['logic_5fop_1396',['logic_op',['../namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3',1,'reshade::api']]]
+  ['level_1399',['level',['../namespacereshade_1_1log.html#a459e92b08701027fa8825be6f8c059ba',1,'reshade::log']]],
+  ['logic_5fop_1400',['logic_op',['../namespacereshade_1_1api.html#aca943c62894bd15c346b9dc57335a9c3',1,'reshade::api']]]
 ];

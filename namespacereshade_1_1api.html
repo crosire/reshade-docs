@@ -464,7 +464,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89a1d4e8e6512a28d52cbbaa6530577c4df">intz</a>
 <br />
  }</td></tr>
-<tr class="memdesc:adbd317502610c902e7097163f5a9bb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available data and texture formats. This is mostly compatible with 'DXGI_FORMAT'.  <a href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">More...</a><br /></td></tr>
+<tr class="memdesc:adbd317502610c902e7097163f5a9bb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available data and texture formats. This is mostly compatible with 'DXGI_FORMAT'.  <a href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">More...</a><br /></td></tr>
 <tr class="separator:adbd317502610c902e7097163f5a9bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3d450b53804612b18ec38edffa10e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a">unknown</a>
@@ -636,7 +636,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbea2a3569aa7e32caac5490ad6c0a50097f">one_minus_source1_alpha</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend factors in color or alpha blending operations.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
+<tr class="memdesc:ae6a9636714e63d20134822700257bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend factors in color or alpha blending operations, which modulate values between the pixel shader output and render target.  <a href="namespacereshade_1_1api.html#ae6a9636714e63d20134822700257bbbe">More...</a><br /></td></tr>
 <tr class="separator:ae6a9636714e63d20134822700257bbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7180736c5cc4f9277edb7b601cc89d85"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85">stencil_op</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a7180736c5cc4f9277edb7b601cc89d85a18ccf61d533b600bbf5a963359223fe4">keep</a>
@@ -1587,7 +1587,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Blend factors in color or alpha blending operations. </p>
+<p>Blend factors in color or alpha blending operations, which modulate values between the pixel shader output and render target. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae6a9636714e63d20134822700257bbbead02c4c4cde7ae76252540d116a40f23a"></a>zero&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae6a9636714e63d20134822700257bbbeaf97c5d29941bfb1b2fdab0874906ab82"></a>one&#160;</td><td class="fielddoc"></td></tr>
@@ -2187,7 +2187,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The available data and texture formats. This is mostly compatible with 'DXGI_FORMAT'. </p>
+<p>Available data and texture formats. This is mostly compatible with 'DXGI_FORMAT'. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adbd317502610c902e7097163f5a9bb89aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adbd317502610c902e7097163f5a9bb89ae43baa615cb23e20440225a584e16216"></a>r1_unorm&#160;</td><td class="fielddoc"></td></tr>
@@ -2642,9 +2642,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaa68468e78da5883715a658f79aacb6cc"></a>primitive_topology&#160;</td><td class="fielddoc"><p>Primitive topology to use when rendering. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523a" title="Specifies how the pipeline interprets vertex data that is bound to the vertex input stage and subsequ...">primitive_topology</a> value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaf304ab6dd6e7186fcd562bece9e27caa"></a>depth_stencil_format&#160;</td><td class="fielddoc"><p>Format of the depth-stencil view that may be used with this pipeline. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> value. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aaf304ab6dd6e7186fcd562bece9e27caa"></a>depth_stencil_format&#160;</td><td class="fielddoc"><p>Format of the depth-stencil view that may be used with this pipeline. Sub-object data is a pointer to a <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="Available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aab4d54ab739b1c037251891e07a365ca4"></a>render_target_formats&#160;</td><td class="fielddoc"><p>Formats of the render target views that may be used with this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="The available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> values. </p>
+<tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aab4d54ab739b1c037251891e07a365ca4"></a>render_target_formats&#160;</td><td class="fielddoc"><p>Formats of the render target views that may be used with this pipeline. Sub-object data is a pointer to an array of <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="Available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">format</a> values. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad62e21a3e52b83de83ad42ca5bebbd6aa0323747a7d7d71c6b0f24453641377a0"></a>sample_mask&#160;</td><td class="fielddoc"><p>Mask applied to the coverage mask for a fragment during rasterization. Sub-object data is a pointer to a 32-bit unsigned integer value. </p>
 </td></tr>
