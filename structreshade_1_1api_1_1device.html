@@ -184,11 +184,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d53f2b766c18fafce8b9005d95d6e39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a0d53f2b766c18fafce8b9005d95d6e39">update_descriptor_tables</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html">descriptor_table_update</a> *updates)=0</td></tr>
 <tr class="memdesc:a0d53f2b766c18fafce8b9005d95d6e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the contents of multiple descriptor tables with the specified descriptors.  <a href="structreshade_1_1api_1_1device.html#a0d53f2b766c18fafce8b9005d95d6e39">More...</a><br /></td></tr>
 <tr class="separator:a0d53f2b766c18fafce8b9005d95d6e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81d4bd27a64c33a4b65616733f1374d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d">create_query_heap</a> (<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t size, <a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> *out_heap)=0</td></tr>
-<tr class="memdesc:aa81d4bd27a64c33a4b65616733f1374d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new query heap.  <a href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d">More...</a><br /></td></tr>
-<tr class="separator:aa81d4bd27a64c33a4b65616733f1374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13596c096666cb1bc31e0b565f22bc3b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a13596c096666cb1bc31e0b565f22bc3b">create_query_heap</a> (<a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t count, <a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> *out_heap)=0</td></tr>
+<tr class="memdesc:a13596c096666cb1bc31e0b565f22bc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new query heap.  <a href="structreshade_1_1api_1_1device.html#a13596c096666cb1bc31e0b565f22bc3b">More...</a><br /></td></tr>
+<tr class="separator:a13596c096666cb1bc31e0b565f22bc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe164544bae546e3e7517b836b48f12c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">destroy_query_heap</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap)=0</td></tr>
-<tr class="memdesc:afe164544bae546e3e7517b836b48f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d" title="Creates a new query heap.">create_query_heap</a>.  <a href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">More...</a><br /></td></tr>
+<tr class="memdesc:afe164544bae546e3e7517b836b48f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a13596c096666cb1bc31e0b565f22bc3b" title="Creates a new query heap.">create_query_heap</a>.  <a href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">More...</a><br /></td></tr>
 <tr class="separator:afe164544bae546e3e7517b836b48f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bd0239c41cf7fe9488966f768c8dd6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">get_query_heap_results</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, uint32_t first, uint32_t count, void *results, uint32_t stride)=0</td></tr>
 <tr class="memdesc:a27bd0239c41cf7fe9488966f768c8dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the results of queries in a query heap.  <a href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">More...</a><br /></td></tr>
@@ -685,8 +685,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa81d4bd27a64c33a4b65616733f1374d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa81d4bd27a64c33a4b65616733f1374d">&#9670;&nbsp;</a></span>create_query_heap()</h2>
+<a id="a13596c096666cb1bc31e0b565f22bc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13596c096666cb1bc31e0b565f22bc3b">&#9670;&nbsp;</a></span>create_query_heap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -704,7 +704,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
+          <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -729,7 +729,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of queries that will be used with this query heap.</td></tr>
-    <tr><td class="paramname">size</td><td>Number of queries to allocate in the query heap.</td></tr>
+    <tr><td class="paramname">count</td><td>Number of queries to allocate in the query heap.</td></tr>
     <tr><td class="paramname">out_heap</td><td>Pointer to a variable that is set to the handle of the created query heap.</td></tr>
   </table>
   </dd>
@@ -1019,7 +1019,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#aa81d4bd27a64c33a4b65616733f1374d" title="Creates a new query heap.">create_query_heap</a>. </p>
+<p>Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a13596c096666cb1bc31e0b565f22bc3b" title="Creates a new query heap.">create_query_heap</a>. </p>
 
 </div>
 </div>

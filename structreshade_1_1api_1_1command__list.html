@@ -173,9 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e5cc3cda123a1c706d32f1034c03672"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a4e5cc3cda123a1c706d32f1034c03672">copy_texture_to_buffer</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint32_t row_length=0, uint32_t slice_height=0)=0</td></tr>
 <tr class="memdesc:a4e5cc3cda123a1c706d32f1034c03672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a texture region from the <em>source</em>  texture to the <em>dest</em> ination buffer.  <a href="structreshade_1_1api_1_1command__list.html#a4e5cc3cda123a1c706d32f1034c03672">More...</a><br /></td></tr>
 <tr class="separator:a4e5cc3cda123a1c706d32f1034c03672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af394fff6c8eec9430b2413994c68af77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#af394fff6c8eec9430b2413994c68af77">resolve_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>)=0</td></tr>
-<tr class="memdesc:af394fff6c8eec9430b2413994c68af77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture.  <a href="structreshade_1_1api_1_1command__list.html#af394fff6c8eec9430b2413994c68af77">More...</a><br /></td></tr>
-<tr class="separator:af394fff6c8eec9430b2413994c68af77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a75a84dd8819c4f0213b51096e75d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#af0a75a84dd8819c4f0213b51096e75d2">resolve_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, uint32_t dest_x, uint32_t dest_y, uint32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>)=0</td></tr>
+<tr class="memdesc:af0a75a84dd8819c4f0213b51096e75d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a region from the multisampled <em>source</em>  texture to the non-multisampled <em>dest</em> ination texture.  <a href="structreshade_1_1api_1_1command__list.html#af0a75a84dd8819c4f0213b51096e75d2">More...</a><br /></td></tr>
+<tr class="separator:af0a75a84dd8819c4f0213b51096e75d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec807b3414e0dbb540f9cc19a603003c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#aec807b3414e0dbb540f9cc19a603003c">clear_depth_stencil_view</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dsv, const float *depth, const uint8_t *stencil, uint32_t rect_count=0, const <a class="el" href="structreshade_1_1api_1_1rect.html">rect</a> *rects=nullptr)=0</td></tr>
 <tr class="memdesc:aec807b3414e0dbb540f9cc19a603003c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the resource referenced by the depth-stencil view.  <a href="structreshade_1_1api_1_1command__list.html#aec807b3414e0dbb540f9cc19a603003c">More...</a><br /></td></tr>
 <tr class="separator:aec807b3414e0dbb540f9cc19a603003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +221,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06835f331c0b24b1da475d593c8fe4ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a06835f331c0b24b1da475d593c8fe4ee">build_acceleration_structure</a> (<a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a> type, <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> flags, uint32_t input_count, const <a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html">acceleration_structure_build_input</a> *inputs, <a class="el" href="structreshade_1_1api_1_1resource.html">api::resource</a> scratch, uint64_t scratch_offset, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> source, <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> dest, <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e">acceleration_structure_build_mode</a> mode)=0</td></tr>
 <tr class="memdesc:a06835f331c0b24b1da475d593c8fe4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds or updates an acceleration structure for ray tracing.  <a href="structreshade_1_1api_1_1command__list.html#a06835f331c0b24b1da475d593c8fe4ee">More...</a><br /></td></tr>
 <tr class="separator:a06835f331c0b24b1da475d593c8fe4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01848e100d0722e320bd658cbdc89380"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html#a01848e100d0722e320bd658cbdc89380">query_acceleration_structures</a> (uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *acceleration_structures, <a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first)=0</td></tr>
+<tr class="memdesc:a01848e100d0722e320bd658cbdc89380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries acceleration structure size parameters. This can be used to figure out destination resource requirements for <a class="el" href="structreshade_1_1api_1_1command__list.html#a7e9bbf9377777ba60d6bc12ab01782f5" title="Copies or transforms data from the source  acceleration structure to the dest ination acceleration st...">copy_acceleration_structure</a>.  <a href="structreshade_1_1api_1_1command__list.html#a01848e100d0722e320bd658cbdc89380">More...</a><br /></td></tr>
+<tr class="separator:a01848e100d0722e320bd658cbdc89380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1device__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1device__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1device__object.html">reshade::api::device_object</a></td></tr>
 <tr class="memitem:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1device.html">device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">get_device</a> ()=0</td></tr>
 <tr class="memdesc:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent device for this object.  <a href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">More...</a><br /></td></tr>
@@ -2804,8 +2807,74 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af394fff6c8eec9430b2413994c68af77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af394fff6c8eec9430b2413994c68af77">&#9670;&nbsp;</a></span>resolve_texture_region()</h2>
+<a id="a01848e100d0722e320bd658cbdc89380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01848e100d0722e320bd658cbdc89380">&#9670;&nbsp;</a></span>query_acceleration_structures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::command_list::query_acceleration_structures </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> *&#160;</td>
+          <td class="paramname"><em>acceleration_structures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>first</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries acceleration structure size parameters. This can be used to figure out destination resource requirements for <a class="el" href="structreshade_1_1api_1_1command__list.html#a7e9bbf9377777ba60d6bc12ab01782f5" title="Copies or transforms data from the source  acceleration structure to the dest ination acceleration st...">copy_acceleration_structure</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>Number of acceleration structures to query.</td></tr>
+    <tr><td class="paramname">acceleration_structures</td><td>Pointer to the first element of an array of acceleration structures.</td></tr>
+    <tr><td class="paramname">heap</td><td>Query heap that will manage the results of the query.</td></tr>
+    <tr><td class="paramname">type</td><td>Type of the acceleration structure query.</td></tr>
+    <tr><td class="paramname">first</td><td>Index of the first query in the query heap to write the result to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0a75a84dd8819c4f0213b51096e75d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a75a84dd8819c4f0213b51096e75d2">&#9670;&nbsp;</a></span>resolve_texture_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2846,19 +2915,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dest_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dest_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dest_z</em>, </td>
         </tr>
         <tr>

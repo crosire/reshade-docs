@@ -234,6 +234,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::build_acceleration_structure &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::query_acceleration_structures &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::reset_command_list &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::close_command_list &gt;</b></td></tr>
@@ -372,30 +374,31 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa8d720d8fd8284febb8596d6c8e808694">copy_acceleration_structure</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7d1b4158b34e43bf4985076617a8ffc5">build_acceleration_structure</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa610ebfc421ad6d24033a66014f139569">query_acceleration_structures</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa47ed49958e2500d72e305f85ed316c91">present</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0">set_fullscreen_state</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0">set_fullscreen_state</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444">reshade_set_technique_state</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac007f1d2c4d1ae4845dcd0e4e3b44abb">reshade_set_effects_state</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b">reshade_open_overlay</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b">reshade_open_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa359cda72183a56b569b9d432fead10ec">reshade_overlay_uniform_variable</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa332c3e50d0712a3de6c974fe0c5d248e">reshade_overlay_technique</a>
 <br />
@@ -1448,7 +1451,7 @@ ID3D12Device::CreateQueryHeap </li>
 <li>
 vkCreateQueryPool </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t size, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t count, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4bf436f2d4f5e3fb7db0fc13ecd0a4d8"></a>create_query_heap&#160;</td><td class="fielddoc"><p>Called on query heap creation, before: </p><ul>
 <li>
@@ -1456,7 +1459,7 @@ ID3D12Device::CreateQueryHeap </li>
 <li>
 vkCreateQueryPool </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t &amp;size)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t &amp;count)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aac40bb727beec4b39bd1a3b4810f4a217"></a>destroy_query_heap&#160;</td><td class="fielddoc"><p>Called on query heap destruction, before: </p><ul>
 <li>
@@ -2114,7 +2117,7 @@ vkCmdResolveImage </li>
 <li>
 vkCmdResolveImage2 </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, int32_t dest_x, int32_t dest_y, int32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="Available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> source, uint32_t source_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html" title="Describes a region inside a subresource.">api::subresource_box</a> *source_box, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> dest, uint32_t dest_subresource, uint32_t dest_x, uint32_t dest_y, uint32_t dest_z, <a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89" title="Available data and texture formats. This is mostly compatible with &#39;DXGI_FORMAT&#39;.">api::format</a> format)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. Source resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a20ab132c61a964a35b03e0552c30aeb3">api::resource_usage::resolve_source</a> state. Destination resource will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a17e1cf787fd346e6f1598b2b624f5b8f">api::resource_usage::resolve_dest</a> state. The subresource box argument is optional and may be <code>nullptr</code> (which indicates the entire subresource is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da"></a>clear_depth_stencil_view&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
@@ -2258,6 +2261,14 @@ vkCmdBuildAccelerationStructuresKHR </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10" title="Type of an acceleration structure.">api::acceleration_structure_type</a> type, <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea" title="Flags that specify additional parameters to an acceleration structure build operation.">api::acceleration_structure_build_flags</a> flags, uint32_t input_count, const <a class="el" href="structreshade_1_1api_1_1acceleration__structure__build__input.html" title="Describes a build input for an acceleration structure build operation.">api::acceleration_structure_build_input</a> *inputs, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> scratch, uint64_t scratch_offset, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> source, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> dest, <a class="el" href="namespacereshade_1_1api.html#a0f98490dc7498321a92b736be26e971e" title="Type of an acceleration structure build operation.">api::acceleration_structure_build_mode</a> mode)</code></p>
 <p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. In case of D3D12 and Vulkan, the scratch buffer handle may be zero with the buffer instead referred to via a device address passed in the related offset argument. Scratch buffer will be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a9d625a0527071357b9b7ba12d608c8cd">api::resource_usage::unordered_access</a> resource state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa610ebfc421ad6d24033a66014f139569"></a>query_acceleration_structures&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
+<li>
+ID3D12GraphicsCommandList4::EmitRaytracingAccelerationStructurePostbuildInfo </li>
+<li>
+vkCmdWriteAccelerationStructuresPropertiesKHR </li>
+</ul>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> *acceleration_structures, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t first)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa7ed7d1071683e1647d4a25e512dbcd62"></a>reset_command_list&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
