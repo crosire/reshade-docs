@@ -87,7 +87,20 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An opaque handle to a pipeline layout object. </p>
-<p>In D3D12 this is a pointer to a 'ID3D12RootSignature' object, in Vulkan a 'VkPipelineLayout' handle.</p>
+<p>Depending on the graphics API this can be: </p><ul>
+<li>
+Direct3D 9: An opaque value. </li>
+<li>
+Direct3D 10: An opaque value. </li>
+<li>
+Direct3D 11: An opaque value. </li>
+<li>
+Direct3D 12: A pointer to a 'ID3D12RootSignature' object. </li>
+<li>
+OpenGL: An opaque value. </li>
+<li>
+Vulkan: A 'VkPipelineLayout' handle. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a69a0b8643d9f6d5c95c816ca405742e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69a0b8643d9f6d5c95c816ca405742e3">&#9670;&nbsp;</a></span>handle</h2>

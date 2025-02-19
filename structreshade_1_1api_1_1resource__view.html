@@ -88,7 +88,20 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An opaque handle to a resource view object (depth-stencil, render target, shader resource view, ...). </p>
 <p>Resource views created by the application are only guaranteed to be valid during event callbacks.</p>
-<p>Depending on the graphics API this can be a pointer to a 'IDirect3DResource9', 'ID3D10View' or 'ID3D11View' object, or a 'D3D12_CPU_DESCRIPTOR_HANDLE' (to a view descriptor), 'D3D12_GPU_VIRTUAL_ADDRESS' (to an acceleration structrue), 'VkImageView' or 'VkAccelerationStructureKHR' handle.</p>
+<p>Depending on the graphics API this can be: </p><ul>
+<li>
+Direct3D 9: A pointer to a 'IDirect3DResource9' object. </li>
+<li>
+Direct3D 10: A pointer to a 'ID3D10View' object. </li>
+<li>
+Direct3D 11: A pointer to a 'ID3D11View' object. </li>
+<li>
+Direct3D 12: A 'D3D12_CPU_DESCRIPTOR_HANDLE' (to a view descriptor) or 'D3D12_GPU_VIRTUAL_ADDRESS' (to an acceleration structrue). </li>
+<li>
+OpenGL: The upper 24-bit contain the OpenGL object type (like GL_TEXTURE_BUFFER, GL_TEXTURE_2D, GL_TEXTURE_CUBE_MAP_POSITIVE_X, ...), the lower 32-bit contain the OpenGL object ID. So the object type can be extracted with <code>(handle &gt;&gt; 40)</code>, the object with <code>(handle &amp; 0xFFFFFFFF)</code>. </li>
+<li>
+Vulkan: A 'VkImageView' or 'VkAccelerationStructureKHR' handle. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6d48831b61082e71b853d51e488d0182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d48831b61082e71b853d51e488d0182">&#9670;&nbsp;</a></span>handle</h2>

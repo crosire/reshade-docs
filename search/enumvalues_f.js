@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['quad_5flist_1821',['quad_list',['../namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa198508c811ed5c90e856d706fe922283',1,'reshade::api']]],
-  ['quad_5fstrip_1822',['quad_strip',['../namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa03b71bf225907a5c75505b5c0e1df6cd',1,'reshade::api']]],
-  ['query_5facceleration_5fstructures_1823',['query_acceleration_structures',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa610ebfc421ad6d24033a66014f139569',1,'reshade']]]
+  ['quad_5flist_1843',['quad_list',['../namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa198508c811ed5c90e856d706fe922283',1,'reshade::api']]],
+  ['quad_5fstrip_1844',['quad_strip',['../namespacereshade_1_1api.html#a311c948b96b180e8e828a9663fcb523aa03b71bf225907a5c75505b5c0e1df6cd',1,'reshade::api']]],
+  ['query_5facceleration_5fstructures_1845',['query_acceleration_structures',['../namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa610ebfc421ad6d24033a66014f139569',1,'reshade']]]
 ];

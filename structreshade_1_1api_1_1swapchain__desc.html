@@ -100,6 +100,17 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html#a014fafa9309c2bb6c7d432b5b7cddde8">fullscreen_refresh_rate</a></td></tr>
 <tr class="memdesc:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh rate of the display in fullscreen mode, in Hertz. Set to zero to use the default.  <a href="structreshade_1_1api_1_1swapchain__desc.html#a014fafa9309c2bb6c7d432b5b7cddde8">More...</a><br /></td></tr>
 <tr class="separator:a014fafa9309c2bb6c7d432b5b7cddde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e91de6d51f50b73b70fb435fadeba5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1swapchain__desc.html#a14e91de6d51f50b73b70fb435fadeba5">sync_interval</a></td></tr>
+<tr class="memdesc:a14e91de6d51f50b73b70fb435fadeba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to synchronize presentation of a frame with the vertical blank. </p><ul>
+<li>
+0: Disable synchronization, presentation occurs immediately. </li>
+<li>
+1-4: Synchronize for at least n vertical blanks. </li>
+<li>
+UINT32_MAX: Use the default set by the application. </li>
+</ul>
+ <a href="structreshade_1_1api_1_1swapchain__desc.html#a14e91de6d51f50b73b70fb435fadeba5">More...</a><br /></td></tr>
+<tr class="separator:a14e91de6d51f50b73b70fb435fadeba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a swap chain and its back buffer resources. </p>
@@ -199,6 +210,30 @@ Public Attributes</h2></td></tr>
 
 <p>Defines how the back buffers should be swapped when a present occurs. </p>
 <p>Depending on the graphics API this can be a 'D3DSWAPEFFECT', 'DXGI_SWAP_EFFECT', 'WGL_SWAP_METHOD_ARB' or 'VkPresentModeKHR' value.</p>
+
+</div>
+</div>
+<a id="a14e91de6d51f50b73b70fb435fadeba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e91de6d51f50b73b70fb435fadeba5">&#9670;&nbsp;</a></span>sync_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reshade::api::swapchain_desc::sync_interval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines how to synchronize presentation of a frame with the vertical blank. </p><ul>
+<li>
+0: Disable synchronization, presentation occurs immediately. </li>
+<li>
+1-4: Synchronize for at least n vertical blanks. </li>
+<li>
+UINT32_MAX: Use the default set by the application. </li>
+</ul>
+</p>
 
 </div>
 </div>

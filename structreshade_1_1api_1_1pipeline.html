@@ -87,7 +87,20 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An opaque handle to a pipeline state object. </p>
-<p>In D3D9, D3D10, D3D11 or D3D12 this is a pointer to a 'IDirect3D(...)Shader', 'ID3D10(...)(Shader/State)', 'ID3D11(...)(Shader/State)' or 'ID3D12PipelineState' object, in Vulkan a 'VkPipeline' handle.</p>
+<p>Depending on the graphics API this can be: </p><ul>
+<li>
+Direct3D 9: A pointer to a 'IDirect3D(...)Shader' object. </li>
+<li>
+Direct3D 10: A pointer to a 'ID3D10(...)(Shader/State)' object. </li>
+<li>
+Direct3D 11: A pointer to a 'ID3D11(...)(Shader/State)' object. </li>
+<li>
+Direct3D 12: A pointer to a 'ID3D12PipelineState' object. </li>
+<li>
+OpenGL: An opaque value. </li>
+<li>
+Vulkan: A 'VkPipeline' handle. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a147eceecb3549ea3cc82cda9b77b7e14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a147eceecb3549ea3cc82cda9b77b7e14">&#9670;&nbsp;</a></span>handle</h2>

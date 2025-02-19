@@ -87,7 +87,20 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An opaque handle to a descriptor heap. </p>
-<p>In D3D12 this is a pointer to a 'ID3D12DescriptorHeap' object, in Vulkan a 'VkDescriptorPool' handle.</p>
+<p>Depending on the graphics API this can be: </p><ul>
+<li>
+Direct3D 9: An opaque value. </li>
+<li>
+Direct3D 10: An opaque value. </li>
+<li>
+Direct3D 11: An opaque value. </li>
+<li>
+Direct3D 12: A pointer to a 'ID3D12DescriptorHeap' object. </li>
+<li>
+OpenGL: An opaque value. </li>
+<li>
+Vulkan: A 'VkDescriptorPool' handle. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aafee72795f16fe99755015c38c6cf28c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafee72795f16fe99755015c38c6cf28c">&#9670;&nbsp;</a></span>handle</h2>

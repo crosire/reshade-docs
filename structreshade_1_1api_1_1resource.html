@@ -88,7 +88,20 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An opaque handle to a resource object (buffer, texture, ...). </p>
 <p>Resources created by the application are only guaranteed to be valid during event callbacks.</p>
-<p>Depending on the graphics API this can be a pointer to a 'IDirect3DResource9', 'ID3D10Resource', 'ID3D11Resource' or 'ID3D12Resource' object or a 'VkImage' handle.</p>
+<p>Depending on the graphics API this can be: </p><ul>
+<li>
+Direct3D 9: A pointer to a 'IDirect3DResource9' object. </li>
+<li>
+Direct3D 10: A pointer to a 'ID3D10Resource' object. </li>
+<li>
+Direct3D 11: A pointer to a 'ID3D11Resource' object. </li>
+<li>
+Direct3D 12: A pointer to a 'ID3D12Resource' object. </li>
+<li>
+OpenGL: The upper 24-bit contain the OpenGL object type (like GL_BUFFER, GL_TEXTURE_2D, GL_RENDERBUFFER, ...), the lower 32-bit contain the OpenGL object name. So the object type can be extracted with <code>(handle &gt;&gt; 40)</code>, the object with <code>(handle &amp; 0xFFFFFFFF)</code>. </li>
+<li>
+Vulkan: A 'VkImage' handle. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a378d545ab6e405ee7738458b51a342f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a378d545ab6e405ee7738458b51a342f1">&#9670;&nbsp;</a></span>handle</h2>

@@ -565,7 +565,7 @@ vkDestroyDevice (for every queue associated with the device) </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__queue.html" title="A command queue, used to execute command lists on the GPU.">api::command_queue</a> *queue)</code></p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4b363e79a26e541736e9c156dd549ab7"></a>init_swapchain&#160;</td><td class="fielddoc"><p>Called after successful swap chain creation, from: </p><ul>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4b363e79a26e541736e9c156dd549ab7"></a>init_swapchain&#160;</td><td class="fielddoc"><p>Called after successful swap chain creation (with the resize argument set to <code>false</code>), from: </p><ul>
 <li>
 IDirect3D9::CreateDevice (for the implicit swap chain) </li>
 <li>
@@ -579,13 +579,11 @@ IDXGIFactory2::CreateSwapChain(...) </li>
 <li>
 wglMakeCurrent </li>
 <li>
-wglSwapBuffers (after window was resized) </li>
-<li>
 vkCreateSwapchainKHR </li>
 <li>
 xrCreateSession </li>
 </ul>
-<p>In addition, called when swap chain is resized, after: </p><ul>
+<p>In addition, called when swap chain is resized (with the resize argument set to <code>true</code>, in which case the object is reused), after: </p><ul>
 <li>
 IDirect3DDevice9::Reset (for the implicit swap chain) </li>
 <li>
@@ -594,8 +592,10 @@ IDirect3DDevice9Ex::ResetEx (for the implicit swap chain) </li>
 IDXGISwapChain::ResizeBuffers </li>
 <li>
 IDXGISwapChain3::ResizeBuffers1 </li>
+<li>
+wglSwapBuffers (after window was resized) </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, bool resize)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aae1e39784d890e8fce9d5deafaff9b641"></a>create_swapchain&#160;</td><td class="fielddoc"><p>Called on swap chain creation, before: </p><ul>
 <li>
@@ -624,7 +624,7 @@ vkCreateSwapchainKHR </li>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1swapchain__desc.html" title="Describes a swap chain and its back buffer resources.">api::swapchain_desc</a> &amp;desc, void *hwnd)</code></p>
 <p>To overwrite the swap chain description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9"></a>destroy_swapchain&#160;</td><td class="fielddoc"><p>Called on swap chain destruction, before: </p><ul>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9"></a>destroy_swapchain&#160;</td><td class="fielddoc"><p>Called on swap chain destruction (with the resize argument set to <code>false</code>), before: </p><ul>
 <li>
 IDirect3DDevice9::Release (for the implicit swap chain) </li>
 <li>
@@ -634,13 +634,11 @@ IDXGISwapChain::Release </li>
 <li>
 wglDeleteContext </li>
 <li>
-wglSwapBuffers (after window was resized) </li>
-<li>
 vkDestroySwapchainKHR </li>
 <li>
 xrDestroySession </li>
 </ul>
-<p>In addition, called when swap chain is resized, before: </p><ul>
+<p>In addition, called when swap chain is resized (with the resize argument set to <code>true</code>, in which case the object will be reused), before: </p><ul>
 <li>
 IDirect3DDevice9::Reset (for the implicit swap chain) </li>
 <li>
@@ -649,8 +647,10 @@ IDirect3DDevice9Ex::ResetEx (for the implicit swap chain) </li>
 IDXGISwapChain::ResizeBuffers </li>
 <li>
 IDXGISwapChain1::ResizeBuffers1 </li>
+<li>
+wglSwapBuffers (after window was resized) </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1swapchain.html" title="A swap chain, used to present images to the screen.">api::swapchain</a> *swapchain, bool resize)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa229e60ea60746c777399f3785cefba25"></a>init_effect_runtime&#160;</td><td class="fielddoc"><p>Called after effect runtime initialization (which happens after swap chain creation or a swap chain buffer resize). </p>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html" title="A post-processing effect runtime, used to control effects.">api::effect_runtime</a> *runtime)</code></p>
