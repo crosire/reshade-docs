@@ -88,6 +88,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::init_device &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::create_device &gt;</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::destroy_device &gt;</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>addon_event_traits&lt; addon_event::init_command_list &gt;</b></td></tr>
@@ -283,124 +285,126 @@ Classes</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923a">addon_event</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0ce4a4653b06410e17282af7873d5937">init_device</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6094f2978c6b757b7754aca0bc3ccb98">create_device</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aadd51261dc8f39fc42b6e7f9029eedc02">destroy_device</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa55c3115ed47da6152333a6c73cf95b6c">init_command_list</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa27f5880d5225af672f41edbd185afbbc">destroy_command_list</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa683d20275692dd0dfb59bc9605f74ca5">init_command_queue</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa27f5880d5225af672f41edbd185afbbc">destroy_command_list</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa683d20275692dd0dfb59bc9605f74ca5">init_command_queue</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa870eb83f45b606557b666ff9b4081261">destroy_command_queue</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4b363e79a26e541736e9c156dd549ab7">init_swapchain</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae1e39784d890e8fce9d5deafaff9b641">create_swapchain</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9">destroy_swapchain</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae1e39784d890e8fce9d5deafaff9b641">create_swapchain</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9">destroy_swapchain</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa229e60ea60746c777399f3785cefba25">init_effect_runtime</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04ce20d6f0247355ba9258db7141a078">destroy_effect_runtime</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c8cc878ed890c468ca3d5293c419af2">init_sampler</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa59ec422a0bbf7f3977c5f797eb8737e8">create_sampler</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c8cc878ed890c468ca3d5293c419af2">init_sampler</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa59ec422a0bbf7f3977c5f797eb8737e8">create_sampler</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aadaaf8f8b2ad15fec0f9682eccd173006">destroy_sampler</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aadd7d9b749851d7426e74a16390eaeec8">init_resource</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae893c3a48a7c1f53c98dabc279e04d4b">create_resource</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6d355fa33638804cad321894bb686376">destroy_resource</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae893c3a48a7c1f53c98dabc279e04d4b">create_resource</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6d355fa33638804cad321894bb686376">destroy_resource</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa816b8045a420cb826db4c6384854bf80">init_resource_view</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaff36abc8e0daee3b2fe5410bd5bbdd9a">create_resource_view</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa30bb0baaa3895e66dab1495c953167f0">destroy_resource_view</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3e4c8af685abff398098a3b0a951b47e">map_buffer_region</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa30bb0baaa3895e66dab1495c953167f0">destroy_resource_view</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3e4c8af685abff398098a3b0a951b47e">map_buffer_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aacafbf15ea06e8061b30fb1f4dd040171">unmap_buffer_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7a6f24d4a7ffa9d339d9242024e34008">map_texture_region</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa34549cc0bf687589daa836a2310bf78d">unmap_texture_region</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa9086e81e0f09156072dd02012308b4e6">update_buffer_region</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa34549cc0bf687589daa836a2310bf78d">unmap_texture_region</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa9086e81e0f09156072dd02012308b4e6">update_buffer_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa77b7aa9f57b7d2179b93aadb18760da4">update_texture_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa21182f9a819ec7d8be03b99c155f8be0">init_pipeline</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaf5e25b252edd1495a86264c53d2dc4a9">create_pipeline</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab7ae7557e06d4f07955aecbd74076d11">destroy_pipeline</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaf5e25b252edd1495a86264c53d2dc4a9">create_pipeline</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab7ae7557e06d4f07955aecbd74076d11">destroy_pipeline</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaabbebbd3a2ec3bfb6e9ef9861b1bb88c">init_pipeline_layout</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad6f03de8b1ea9c03100a049515f5ad05">create_pipeline_layout</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa885724d68f1d4283d3c23ebf57bbf7cb">destroy_pipeline_layout</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa184f74a588b85a7470f659765db487ff">copy_descriptor_tables</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa885724d68f1d4283d3c23ebf57bbf7cb">destroy_pipeline_layout</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa184f74a588b85a7470f659765db487ff">copy_descriptor_tables</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5e3a1eab6530ccbfb50300f85451c947">update_descriptor_tables</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaa33038e58f58081547fcc3a657417ea7">init_query_heap</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4bf436f2d4f5e3fb7db0fc13ecd0a4d8">create_query_heap</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac40bb727beec4b39bd1a3b4810f4a217">destroy_query_heap</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4bf436f2d4f5e3fb7db0fc13ecd0a4d8">create_query_heap</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac40bb727beec4b39bd1a3b4810f4a217">destroy_query_heap</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa46f6cdfb5ce6aa3c9a3d884ac8cf727d">get_query_heap_results</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aafa9c8ab925b4a1cd4c75b1886fac8f61">barrier</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab86bb0560cdee07cdff03615303d8bf4">begin_render_pass</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2">end_render_pass</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab86bb0560cdee07cdff03615303d8bf4">begin_render_pass</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2">end_render_pass</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa987b2aa4a2dd7ad21a312488fe3cf9db">bind_render_targets_and_depth_stencil</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0bfc34308f215b079e6593e9b00e9e99">bind_pipeline</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1bbbb486e0b6eb11d8804470441d077f">bind_pipeline_states</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1bbbb486e0b6eb11d8804470441d077f">bind_pipeline_states</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa488ed0dbe783a6825db17eb48720d534">bind_viewports</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5d9247a016d4496d9a29ffcea4473e41">bind_scissor_rects</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aacf66d15894ab6128d23c652d72e5ac24">push_constants</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4404efc50b88e89ead23e8e409753735">bind_descriptor_tables</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4404efc50b88e89ead23e8e409753735">bind_descriptor_tables</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa19a4f637b2ebbbd4c2fee7fd98ccd593">bind_index_buffer</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bd667ff1d3e8e790e8a561cdbecf460">bind_vertex_buffers</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae9e19bfe4d21f74acc5370a1fa9b3f46">bind_stream_output_buffers</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86">draw</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae9e19bfe4d21f74acc5370a1fa9b3f46">bind_stream_output_buffers</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa817491bc777731f0f0c6e485f28e4d86">draw</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3422b1dc8a268d81dd108d0e09f043bd">draw_indexed</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa9dddf2a4f7d94594ec2ea98407a410e1">dispatch</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6ebf4950378a89563854f1a0a3cd697d">dispatch_mesh</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c25336d87cabab6831c8f143c217d8b">dispatch_rays</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa6ebf4950378a89563854f1a0a3cd697d">dispatch_mesh</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c25336d87cabab6831c8f143c217d8b">dispatch_rays</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3299ec3835b4d48e817b73a6051b5055">draw_or_dispatch_indirect</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa60f6e59e82570d137160b1441acb473e">copy_resource</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa80257d98cf24fac3db951337ebad0423">copy_buffer_region</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaad18153d559de9119fdc4802cc36b681">copy_buffer_to_texture</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaf8fd0974a2fbc67f3ddc418fbd518aa5">copy_texture_region</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa4ebf42358198546667376f080fadd527">copy_texture_to_buffer</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa65ccf1dcac4e95d7c1721708968552b9">resolve_texture_region</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1f317a141cd308a81464488dec6466da">clear_depth_stencil_view</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa148388d5a5ef8f4fc725bfb3ceb87e75">clear_render_target_view</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa627ab3110236aee8fdd14b724bd0c918">clear_unordered_access_view_uint</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa776b327f3612924a143fd44229558b02">clear_unordered_access_view_float</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa566fdc58bbbfe166bca2402eaf4e289e">begin_query</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aaa2b081b43d883190dab6a9b7c88b8840">end_query</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae487ba2c9be37695c211184efc8d76a4">copy_query_heap_results</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa8d720d8fd8284febb8596d6c8e808694">copy_acceleration_structure</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae487ba2c9be37695c211184efc8d76a4">copy_query_heap_results</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa8d720d8fd8284febb8596d6c8e808694">copy_acceleration_structure</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7d1b4158b34e43bf4985076617a8ffc5">build_acceleration_structure</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa610ebfc421ad6d24033a66014f139569">query_acceleration_structures</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa7ed7d1071683e1647d4a25e512dbcd62">reset_command_list</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3338cdcfc48cc06ab2a12754ef8f0b21">close_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa18cc3997f77dab4af507a3cfa891ee60">execute_command_list</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0445abed43e2b11b1b89fa6ca918a22c">execute_secondary_command_list</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa47ed49958e2500d72e305f85ed316c91">present</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0">set_fullscreen_state</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa47ed49958e2500d72e305f85ed316c91">present</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa04be19cc4442590c57da9230b35751c0">set_fullscreen_state</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa0debd9c686ef45c9de4971096cc33498">reshade_present</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa493e32cfe5b57c202fdd8f0c3e3cee1f">reshade_begin_effects</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253">reshade_finish_effects</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa45dc76877dfd3bc8354d30b032e99cfc">reshade_reloaded_effects</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f">reshade_set_uniform_value</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444">reshade_set_technique_state</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa1c3cdb532fdbc3fedaf5c6513ae3de20">reshade_overlay</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa3be15235cdff3616d2bc387b4f59b729">reshade_screenshot</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a">reshade_render_technique</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac007f1d2c4d1ae4845dcd0e4e3b44abb">reshade_set_effects_state</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74">reshade_set_current_preset_path</a>
+, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd">reshade_reorder_techniques</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b">reshade_open_overlay</a>
 , <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa359cda72183a56b569b9d432fead10ec">reshade_overlay_uniform_variable</a>
-, <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa332c3e50d0712a3de6c974fe0c5d248e">reshade_overlay_technique</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa332c3e50d0712a3de6c974fe0c5d248e">reshade_overlay_technique</a>
 <br />
  }</td></tr>
 <tr class="separator:a1187cd7f6d411c0a2dc648203c7d923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,6 +502,33 @@ glMakeCurrent </li>
 vkCreateDevice </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">api::device</a> *device)</code></p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa6094f2978c6b757b7754aca0bc3ccb98"></a>create_device&#160;</td><td class="fielddoc"><p>Called on device creation, before: </p><ul>
+<li>
+IDirect3D9::CreateDevice </li>
+<li>
+IDirect3D9Ex::CreateDeviceEx </li>
+<li>
+D3D10CreateDevice </li>
+<li>
+D3D10CreateDevice1 </li>
+<li>
+D3D10CreateDeviceAndSwapChain </li>
+<li>
+D3D10CreateDeviceAndSwapChain1 </li>
+<li>
+D3D11CreateDevice </li>
+<li>
+D3D11CreateDeviceAndSwapChain </li>
+<li>
+D3D12CreateDevice </li>
+<li>
+wglCreateContextAttribsARB </li>
+<li>
+vkCreateInstance </li>
+</ul>
+<p>Callback function signature: <code>bool (<a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f" title="Underlying graphics API a device is using.">api::device_api</a> api, uint32_t &amp;api_version)</code></p>
+<p>To overwrite the API version, modify <code>api_version</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aadd51261dc8f39fc42b6e7f9029eedc02"></a>destroy_device&#160;</td><td class="fielddoc"><p>Called on device destruction, before: </p><ul>
 <li>
@@ -621,7 +652,7 @@ wglSetPixelFormat </li>
 <li>
 vkCreateSwapchainKHR </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1swapchain__desc.html" title="Describes a swap chain and its back buffer resources.">api::swapchain_desc</a> &amp;desc, void *hwnd)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f" title="Underlying graphics API a device is using.">api::device_api</a> api, <a class="el" href="structreshade_1_1api_1_1swapchain__desc.html" title="Describes a swap chain and its back buffer resources.">api::swapchain_desc</a> &amp;desc, void *hwnd)</code></p>
 <p>To overwrite the swap chain description, modify <code>desc</code> in the callback and return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa1b7f8bf06b1ea8362e57087e54bf7af9"></a>destroy_swapchain&#160;</td><td class="fielddoc"><p>Called on swap chain destruction (with the resize argument set to <code>false</code>), before: </p><ul>
