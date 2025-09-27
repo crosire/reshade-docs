@@ -94,10 +94,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects provided by the ReShade API.  <a href="structreshade_1_1api_1_1api__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html">device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A logical render device, used for resource creation and global operations.  <a href="structreshade_1_1api_1_1device.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device, used for resource creation and global operations.  <a href="structreshade_1_1api_1_1device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device__object.html">device_object</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects that are children to a logical render <a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">device</a>.  <a href="structreshade_1_1api_1_1device__object.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects that are children to a <a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">device</a>.  <a href="structreshade_1_1api_1_1device__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html">command_list</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command list, used to enqueue render commands on the CPU, before later executing them in a command queue.  <a href="structreshade_1_1api_1_1command__list.html#details">More...</a><br /></td></tr>
@@ -281,6 +281,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afd742c2f459732c8964d921484a22038">amplification_and_mesh_shader</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">ray_tracing</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a86505407d28808ae2affe4a1e6ca2ed8">update_buffer_region_command</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa67ff7d3200eecbf95b68eecce70343e">update_texture_region_command</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional capabilities a device may support, depending on the underlying graphics API and hardware.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
@@ -295,6 +297,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd">shader_group_handle_size</a>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567aebdd3a648a48d0bfbbafa533e53e0921">shader_group_alignment</a>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c">shader_group_handle_alignment</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567ac4c7c89125a755d81068935e8dafd594">adapter_luid</a>
 <br />
  }</td></tr>
 <tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties that may be queried from a device.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>
@@ -1964,7 +1968,11 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0afd742c2f459732c8964d921484a22038"></a>amplification_and_mesh_shader&#160;</td><td class="fielddoc"><p>Specifies whether amplification and mesh shaders are supported. If this feature is not present, the <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037ab876b2ce5abc88324ef5b910d3bae369">pipeline_stage::amplification_shader</a> and <a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037a1748c36574963a1da040ed0158e22ec8">pipeline_stage::mesh_shader</a> stages and <a class="el" href="structreshade_1_1api_1_1command__list.html#aa5b1812380688731b5ba0b0a448db58e" title="Performs a mesh shader dispatch.">command_list::dispatch_mesh</a> must not be used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c"></a>ray_tracing&#160;</td><td class="fielddoc"><p>Specifies whether ray tracing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5ce48948fe80f65f45fa4ecebbdc867c">resource_view_type::acceleration_structure</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#a4a0733f93fdfe14ae53323755d689ea8" title="Performs a ray tracing dispatch.">command_list::dispatch_rays</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#a7e9bbf9377777ba60d6bc12ab01782f5" title="Copies or transforms data from the source  acceleration structure to the dest ination acceleration st...">command_list::copy_acceleration_structure</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#a06835f331c0b24b1da475d593c8fe4ee" title="Builds or updates an acceleration structure for ray tracing.">command_list::build_acceleration_structure</a> and <a class="el" href="structreshade_1_1api_1_1command__list.html#a01848e100d0722e320bd658cbdc89380" title="Queries acceleration structure size parameters. This can be used to figure out destination resource r...">command_list::query_acceleration_structures</a> must not be used. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c"></a>ray_tracing&#160;</td><td class="fielddoc"><p>Specifies whether ray tracing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5ce48948fe80f65f45fa4ecebbdc867c">resource_view_type::acceleration_structure</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#a4a0733f93fdfe14ae53323755d689ea8" title="Performs a ray tracing dispatch.">command_list::dispatch_rays</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#a7e9bbf9377777ba60d6bc12ab01782f5" title="Copies or transforms data from the source  acceleration structure to the dest ination acceleration st...">command_list::copy_acceleration_structure</a>, <a class="el" href="structreshade_1_1api_1_1command__list.html#af2a96644670b9f72862282521bae1c03" title="Builds or updates an acceleration structure for ray tracing.">command_list::build_acceleration_structure</a> and <a class="el" href="structreshade_1_1api_1_1command__list.html#a01848e100d0722e320bd658cbdc89380" title="Queries acceleration structure size parameters. This can be used to figure out destination resource r...">command_list::query_acceleration_structures</a> must not be used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a86505407d28808ae2affe4a1e6ca2ed8"></a>update_buffer_region_command&#160;</td><td class="fielddoc"><p>Specifies whether deferred buffer updates can be used. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#aea85268ef8ffd8c85d750cc7edc56742" title="Uploads data to a buffer resource when the command list is executed.">command_list::update_buffer_region</a> must not be used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0aa67ff7d3200eecbf95b68eecce70343e"></a>update_texture_region_command&#160;</td><td class="fielddoc"><p>Specifies whether deferred texture updates can be used. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#ae35fe0b1836acb85399accbe9656822a" title="Uploads data to a texture resource when the command list is executed.">command_list::update_texture_region</a> must not be used. </p>
 </td></tr>
 </table>
 
@@ -1997,17 +2005,19 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567ad5612938744d9340b9b447854c8a18fb"></a>driver_version&#160;</td><td class="fielddoc"><p>Version of the graphics driver that is being used. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a96b1f972094b863cafcacb8fc48b9bea"></a>vendor_id&#160;</td><td class="fielddoc"><p>PCI vendor ID of the hardware associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a96b1f972094b863cafcacb8fc48b9bea"></a>vendor_id&#160;</td><td class="fielddoc"><p>PCI vendor ID of the adapter associated with the device. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a9379346c996b0535a7a98f25887156a2"></a>device_id&#160;</td><td class="fielddoc"><p>PCI device ID of the hardware associated with the logical render device. Data is a 32-bit unsigned integer value. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a9379346c996b0535a7a98f25887156a2"></a>device_id&#160;</td><td class="fielddoc"><p>PCI device ID of the adapter associated with the device. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a67daf92c833c41c95db874e18fcb2786"></a>description&#160;</td><td class="fielddoc"><p>Description text of the hardware associated with the logical render device. Data is an array of 256 byte-sized characters representing a null-terminated string. </p>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567a67daf92c833c41c95db874e18fcb2786"></a>description&#160;</td><td class="fielddoc"><p>Description text of the adapter associated with the device. Data is an array of 256 byte-sized characters representing a null-terminated string. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd"></a>shader_group_handle_size&#160;</td><td class="fielddoc"><p>Size of a <a class="el" href="structreshade_1_1api_1_1shader__group.html" title="Describes a ray tracing shader group.">shader_group</a> handle as written by <a class="el" href="structreshade_1_1api_1_1device.html#aa3d9204141e2fec2c510ed33051d5506" title="Gets the shader group handles for a ray tracing pipeline, to be put into a shader binding table.">device::get_pipeline_shader_group_handles</a>. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567aebdd3a648a48d0bfbbafa533e53e0921"></a>shader_group_alignment&#160;</td><td class="fielddoc"><p>Required alignment of the base <a class="el" href="structreshade_1_1api_1_1shader__group.html" title="Describes a ray tracing shader group.">shader_group</a> handle in the buffers passed to <a class="el" href="structreshade_1_1api_1_1command__list.html#a4a0733f93fdfe14ae53323755d689ea8" title="Performs a ray tracing dispatch.">command_list::dispatch_rays</a>. Data is a 32-bit unsigned integer value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c"></a>shader_group_handle_alignment&#160;</td><td class="fielddoc"><p>Required alignment of each <a class="el" href="structreshade_1_1api_1_1shader__group.html" title="Describes a ray tracing shader group.">shader_group</a> handle in the buffers passed to <a class="el" href="structreshade_1_1api_1_1command__list.html#a4a0733f93fdfe14ae53323755d689ea8" title="Performs a ray tracing dispatch.">command_list::dispatch_rays</a>. Data is a 32-bit unsigned integer value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af23056ea38b16e0e823d9e4a14f80567ac4c7c89125a755d81068935e8dafd594"></a>adapter_luid&#160;</td><td class="fielddoc"><p>Local identifier of the adapter associated with the device. Data is a 64-bit unsigned integer value, or more accurately a <code>LUID</code> object. </p>
 </td></tr>
 </table>
 

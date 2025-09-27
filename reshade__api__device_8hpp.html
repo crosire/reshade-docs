@@ -86,10 +86,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects provided by the ReShade API.  <a href="structreshade_1_1api_1_1api__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html">reshade::api::device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A logical render device, used for resource creation and global operations.  <a href="structreshade_1_1api_1_1device.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device, used for resource creation and global operations.  <a href="structreshade_1_1api_1_1device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device__object.html">reshade::api::device_object</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects that are children to a logical render <a class="el" href="structreshade_1_1api_1_1device.html" title="A logical render device, used for resource creation and global operations.">device</a>.  <a href="structreshade_1_1api_1_1device__object.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for objects that are children to a <a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">device</a>.  <a href="structreshade_1_1api_1_1device__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1command__list.html">reshade::api::command_list</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command list, used to enqueue render commands on the CPU, before later executing them in a command queue.  <a href="structreshade_1_1api_1_1command__list.html#details">More...</a><br /></td></tr>
@@ -162,6 +162,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0afd742c2f459732c8964d921484a22038">reshade::api::amplification_and_mesh_shader</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">reshade::api::ray_tracing</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a86505407d28808ae2affe4a1e6ca2ed8">reshade::api::update_buffer_region_command</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa67ff7d3200eecbf95b68eecce70343e">reshade::api::update_texture_region_command</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional capabilities a device may support, depending on the underlying graphics API and hardware.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
@@ -176,6 +178,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567af5d30145b5fceae398a7e46901181dcd">reshade::api::shader_group_handle_size</a>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567aebdd3a648a48d0bfbbafa533e53e0921">reshade::api::shader_group_alignment</a>
 , <a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567acf5d0dc2192479c45fb2b4c1f600b63c">reshade::api::shader_group_handle_alignment</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567ac4c7c89125a755d81068935e8dafd594">reshade::api::adapter_luid</a>
 <br />
  }</td></tr>
 <tr class="memdesc:af23056ea38b16e0e823d9e4a14f80567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties that may be queried from a device.  <a href="namespacereshade_1_1api.html#af23056ea38b16e0e823d9e4a14f80567">More...</a><br /></td></tr>

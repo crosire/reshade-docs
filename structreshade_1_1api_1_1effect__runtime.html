@@ -85,7 +85,7 @@ Inheritance diagram for reshade::api::effect_runtime:</div>
  <div class="center">
   <img src="structreshade_1_1api_1_1effect__runtime.png" usemap="#reshade::api::effect_5Fruntime_map" alt=""/>
   <map id="reshade::api::effect_5Fruntime_map" name="reshade::api::effect_5Fruntime_map">
-<area href="structreshade_1_1api_1_1device__object.html" title="The base class for objects that are children to a logical render device." alt="reshade::api::device_object" shape="rect" coords="0,56,167,80"/>
+<area href="structreshade_1_1api_1_1device__object.html" title="The base class for objects that are children to a device." alt="reshade::api::device_object" shape="rect" coords="0,56,167,80"/>
 <area href="structreshade_1_1api_1_1api__object.html" title="The base class for objects provided by the ReShade API." alt="reshade::api::api_object" shape="rect" coords="0,0,167,24"/>
   </map>
 </div></div>
@@ -380,6 +380,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a123523f97172ff6343066c9dcc0b8a09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a123523f97172ff6343066c9dcc0b8a09">export_current_preset</a> (const char *path) const =0</td></tr>
 <tr class="memdesc:a123523f97172ff6343066c9dcc0b8a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the current preset with the current state of the loaded techniques and uniform variables.  <a href="structreshade_1_1api_1_1effect__runtime.html#a123523f97172ff6343066c9dcc0b8a09">More...</a><br /></td></tr>
 <tr class="separator:a123523f97172ff6343066c9dcc0b8a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66e033e8441142b7ff57855786a9ba1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1effect__runtime.html#ab66e033e8441142b7ff57855786a9ba1">save_screenshot</a> (const char *postfix=nullptr)=0</td></tr>
+<tr class="memdesc:ab66e033e8441142b7ff57855786a9ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures a screenshot of the current back buffer resource and saves it to an image file on disk.  <a href="structreshade_1_1api_1_1effect__runtime.html#ab66e033e8441142b7ff57855786a9ba1">More...</a><br /></td></tr>
+<tr class="separator:ab66e033e8441142b7ff57855786a9ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structreshade_1_1api_1_1device__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structreshade_1_1api_1_1device__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structreshade_1_1api_1_1device__object.html">reshade::api::device_object</a></td></tr>
 <tr class="memitem:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structreshade_1_1api_1_1device.html">device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">get_device</a> ()=0</td></tr>
 <tr class="memdesc:a229e73b034269db13a8e2f483fc64ba3 inherit pub_methods_structreshade_1_1api_1_1device__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent device for this object.  <a href="structreshade_1_1api_1_1device__object.html#a229e73b034269db13a8e2f483fc64ba3">More...</a><br /></td></tr>
@@ -930,6 +933,7 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p>Finds a specific uniform variable in the loaded effects and returns a handle to it. </p>
+<p>This will not find uniform variables when performance mode is enabled, since in that case uniform variables are replaced with constants during effect compilation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">effect_name</td><td>File name of the effect file the variable is declared in, or <code>nullptr</code> to search in all loaded effects.</td></tr>
@@ -938,7 +942,6 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Opaque handle to the uniform variable, or zero in case it was not found.</dd></dl>
-<p>This will not find uniform variables when performance mode is enabled, since in that case uniform variables are replaced with constants during effect compilation. </p>
 
 </div>
 </div>
@@ -3840,6 +3843,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Open or close the ReShade overlay. </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae077aad6c7844337c84a62f60c83a41b" title="Called when the ReShade overlay is about to be opened or closed.">addon_event::reshade_open_overlay</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">open</td><td>Requested overlay state.</td></tr>
@@ -3926,7 +3930,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Applies post-processing effects to the specified render targets and prevents the usual rendering of effects before swap chain presentation of the current frame. This can be used to force ReShade to render effects at a certain point during the frame to e.g. avoid effects being applied to user interface elements of the application. </p>
-<p>The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. Calling this with <em>rtv</em>  set to zero will cause nothing to be rendered, but uniform variables to still be updated. </p>
+<p>The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. Calling this with <em>rtv</em>  set to zero will cause nothing to be rendered, but uniform variables to still be updated. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa493e32cfe5b57c202fdd8f0c3e3cee1f" title="Called right before ReShade effects are rendered.">addon_event::reshade_begin_effects</a> and <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aad2be28c5d0939ad0dae5bc68af595253" title="Called right after ReShade effects were rendered.">addon_event::reshade_finish_effects</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd_list</td><td>Command list to add effect rendering commands to.</td></tr>
@@ -3985,7 +3989,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Applies a <em>technique</em>  to the specified render targets (regardless of the state of this technique). </p>
-<p>The width and height of the specified render target should match those used to render all other effects! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. </p>
+<p>The width and height of the specified render target should match those used to render all other effects! The resource the render target views point to has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059ad45c5bd809b1fc46e5f3a29c44acde8d">resource_usage::render_target</a> state. This call may modify current state on the command list (pipeline, render targets, descriptor tables, ...), so it may be necessary for an add-on to backup and restore state around it if the application does not bind all state again afterwards already. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5834c94153020989bee8c23b7b3ea92a" title="Called for each technique after it was rendered, usually between reshade_begin_effects and reshade_fi...">addon_event::reshade_render_technique</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
@@ -4033,6 +4037,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Changes the rendering order of loaded techniques to that of the specified technique list. </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aae2b224fd2a7d68fb64acbbb44cd671dd" title="Called when the rendering order of loaded techniques is changed, with a handle array specifying the n...">addon_event::reshade_reorder_techniques</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>Number of handles in the technique list.</td></tr>
@@ -4068,6 +4073,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Resets the value of the specified uniform <em>variable</em> . </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f" title="Called before a uniform variable is changed, with the new value.">addon_event::reshade_set_uniform_value</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
@@ -4101,6 +4107,40 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Saves the current preset with the current state of the loaded techniques and uniform variables. </p>
+
+</div>
+</div>
+<a id="ab66e033e8441142b7ff57855786a9ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66e033e8441142b7ff57855786a9ba1">&#9670;&nbsp;</a></span>save_screenshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reshade::api::effect_runtime::save_screenshot </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>postfix</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Captures a screenshot of the current back buffer resource and saves it to an image file on disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">postfix</td><td>Optional string to append to the screenshot filename, or <code>nullptr</code> for no postfix.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -4157,6 +4197,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Saves the currently active preset and then switches to the specified new preset. </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac6a481c23c0f5b7bfcde55eb5ed63b74" title="Called after a preset was loaded and applied. This occurs after effect reloading or when the user cho...">addon_event::reshade_set_current_preset_path</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>File path to the preset to switch to.</td></tr>
@@ -4191,6 +4232,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Enables or disables all effects. </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aac007f1d2c4d1ae4845dcd0e4e3b44abb" title="Called when all effects are about to be enabled or disabled.">addon_event::reshade_set_effects_state</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">enabled</td><td>Set to <code>true</code> to enable effects, or <code>false</code> to disable them.</td></tr>
@@ -4332,6 +4374,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Enables or disables the specified <em>technique</em> . </p>
+<p>Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa152e970f4d55f18e729d66d00ca1c444" title="Called before a technique is enabled or disabled, with the new state.">addon_event::reshade_set_technique_state</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">technique</td><td>Opaque handle to the technique.</td></tr>
@@ -4455,6 +4498,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Sets the value of the specified uniform <em>variable</em>  as boolean values. </p>
+<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f" title="Called before a uniform variable is changed, with the new value.">addon_event::reshade_set_uniform_value</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
@@ -4464,7 +4508,6 @@ template&lt;size_t SIZE&gt; </div>
   </table>
   </dd>
 </dl>
-<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. </p>
 
 </div>
 </div>
@@ -4515,6 +4558,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Sets the value of the specified uniform <em>variable</em>  as floating-point values. </p>
+<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f" title="Called before a uniform variable is changed, with the new value.">addon_event::reshade_set_uniform_value</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
@@ -4524,7 +4568,6 @@ template&lt;size_t SIZE&gt; </div>
   </table>
   </dd>
 </dl>
-<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. </p>
 
 </div>
 </div>
@@ -4641,6 +4684,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Sets the value of the specified uniform <em>variable</em>  as signed integer values. </p>
+<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f" title="Called before a uniform variable is changed, with the new value.">addon_event::reshade_set_uniform_value</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
@@ -4650,7 +4694,6 @@ template&lt;size_t SIZE&gt; </div>
   </table>
   </dd>
 </dl>
-<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. </p>
 
 </div>
 </div>
@@ -4767,6 +4810,7 @@ template&lt;size_t SIZE&gt; </div>
 </div><div class="memdoc">
 
 <p>Sets the value of the specified uniform <em>variable</em>  as unsigned integer values. </p>
+<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. Calling this triggers a <a class="el" href="namespacereshade.html#a1187cd7f6d411c0a2dc648203c7d923aa5bed8e74810d7c5e19630644c2c9b74f" title="Called before a uniform variable is changed, with the new value.">addon_event::reshade_set_uniform_value</a> event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variable</td><td>Opaque handle to the uniform variable.</td></tr>
@@ -4776,7 +4820,6 @@ template&lt;size_t SIZE&gt; </div>
   </table>
   </dd>
 </dl>
-<p>Setting the uniform value will not automatically save the current preset. To make sure the current preset with the changed value is saved to disk, explicitly call <a class="el" href="structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7" title="Saves the current preset with the current state of the loaded techniques and uniform variables.">save_current_preset</a>. </p>
 
 </div>
 </div>

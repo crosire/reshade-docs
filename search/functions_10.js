@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['save_5fcurrent_5fpreset_1206',['save_current_preset',['../structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7',1,'reshade::api::effect_runtime']]],
+  ['save_5fcurrent_5fpreset_1205',['save_current_preset',['../structreshade_1_1api_1_1effect__runtime.html#a68f090bc5be4810304aca0cfcffa52f7',1,'reshade::api::effect_runtime']]],
+  ['save_5fscreenshot_1206',['save_screenshot',['../structreshade_1_1api_1_1effect__runtime.html#ab66e033e8441142b7ff57855786a9ba1',1,'reshade::api::effect_runtime']]],
   ['set_5fcolor_5fspace_1207',['set_color_space',['../structreshade_1_1api_1_1effect__runtime.html#a5c6411fd4369e548396317bbde67677f',1,'reshade::api::effect_runtime']]],
   ['set_5fconfig_5fvalue_1208',['set_config_value',['../namespacereshade.html#a0c931767a2e8a4413b785eec69fe0293',1,'reshade::set_config_value(api::effect_runtime *runtime, const char *section, const char *key, const char *value, size_t value_size)'],['../namespacereshade.html#a86c7bfd003b4459ba8d3ff3ba94eac02',1,'reshade::set_config_value(api::effect_runtime *runtime, const char *section, const char *key, const char *value)']]],
   ['set_5fcurrent_5fpreset_5fpath_1209',['set_current_preset_path',['../structreshade_1_1api_1_1effect__runtime.html#ac0fc47d5fdfd1c1a7a44cd9c75fcf5f8',1,'reshade::api::effect_runtime']]],
