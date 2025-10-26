@@ -979,10 +979,11 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae92d24ded74e7f371f805b1d0d609043"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043">resource_flags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f">dynamic</a>
+, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a80d2e04b3050a67b9727357483610d63">immutable</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043aaa69922e8c300f3e187253e01eec5f63">cube_compatible</a>
-, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">shared</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a479546bce1c2da73f9d7c4260a50cd03">generate_mipmaps</a>
+, <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e">shared</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce">shared_nt_handle</a>
 , <a class="el" href="namespacereshade_1_1api.html#ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f">sparse_binding</a>
 <br />
@@ -2952,6 +2953,8 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f"></a>dynamic&#160;</td><td class="fielddoc"><p>Dynamic resources can be frequently updated during a frame, with previous contents automatically being shadowed so to no affect already executing operations on the GPU. Required for <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">map_access::write_discard</a>. The flag is not supported in D3D12 or Vulkan. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a80d2e04b3050a67b9727357483610d63"></a>immutable&#160;</td><td class="fielddoc"><p>Immutable resources can never be written to again after creationn, either by the CPU or the GPU. The flag is only supported in D3D10 and D3D11. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043aaa69922e8c300f3e187253e01eec5f63"></a>cube_compatible&#160;</td><td class="fielddoc"><p>Required to create <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5560afc38fa6e30d2026ab9dc2835730">resource_view_type::texture_cube</a> or <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5acee56ce2c1861f757c27f6c4ed0399">resource_view_type::texture_cube_array</a> views of the resource. </p>
 </td></tr>
