@@ -24,14 +24,23 @@ jobs:
       - name: Set up MSBuild
         uses: microsoft/setup-msbuild@v1.3.1
 
-      - name: Build
+      - name: Build examples
         run: msbuild './reshade/examples/Examples.sln' /m /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }}
 
-      - name: Upload artifact
+      - name: Upload examples
         uses: actions/upload-artifact@v4
         with:
           name: examples-${{ matrix.configuration }}-${{ matrix.platform }}
           path: './reshade/bin/${{ matrix.platform }}/${{ matrix.configuration }} Examples/*.addon*'
+
+      - name: Build fxc
+        run: msbuild './reshade/ReShadeFXC.vcxproj' /m /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }}
+
+      - name: Upload fxc
+        uses: actions/upload-artifact@v4
+        with:
+          name: fxc-${{ matrix.configuration }}-${{ matrix.platform }}
+          path: './reshade/bin/${{ matrix.platform }}/${{ matrix.configuration }}/fxc.exe'
 
   deploy:
     runs-on: ubuntu-latest
