@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ReShade: reshade::api::descriptor_range_with_static_samplers Struct Reference</title>
+<title>ReShade: reshade::api::descriptor_range_with_flags Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,34 +63,37 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html">descriptor_range_with_static_samplers</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacereshade.html">reshade</a></li><li class="navelem"><a class="el" href="namespacereshade_1_1api.html">api</a></li><li class="navelem"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html">descriptor_range_with_flags</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structreshade_1_1api_1_1descriptor__range__with__static__samplers-members.html">List of all members</a>  </div>
+<a href="structreshade_1_1api_1_1descriptor__range__with__flags-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">reshade::api::descriptor_range_with_static_samplers Struct Reference</div>  </div>
+<div class="title">reshade::api::descriptor_range_with_flags Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="reshade__api__pipeline_8hpp_source.html">reshade_api_pipeline.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for reshade::api::descriptor_range_with_static_samplers:</div>
+Inheritance diagram for reshade::api::descriptor_range_with_flags:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="structreshade_1_1api_1_1descriptor__range__with__static__samplers.png" usemap="#reshade::api::descriptor_5Frange_5Fwith_5Fstatic_5Fsamplers_map" alt=""/>
-  <map id="reshade::api::descriptor_5Frange_5Fwith_5Fstatic_5Fsamplers_map" name="reshade::api::descriptor_5Frange_5Fwith_5Fstatic_5Fsamplers_map">
-<area href="structreshade_1_1api_1_1descriptor__range.html" title="Describes a range of descriptors of a descriptor table in a pipeline layout." alt="reshade::api::descriptor_range" shape="rect" coords="0,0,306,24"/>
+  <img src="structreshade_1_1api_1_1descriptor__range__with__flags.png" usemap="#reshade::api::descriptor_5Frange_5Fwith_5Fflags_map" alt=""/>
+  <map id="reshade::api::descriptor_5Frange_5Fwith_5Fflags_map" name="reshade::api::descriptor_5Frange_5Fwith_5Fflags_map">
+<area href="structreshade_1_1api_1_1descriptor__range.html" title="Describes a range of descriptors of a descriptor table in a pipeline layout." alt="reshade::api::descriptor_range" shape="rect" coords="0,0,247,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2e3c98cb6cb255a0c359e14bdf2fe0a0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html#a2e3c98cb6cb255a0c359e14bdf2fe0a0">static_samplers</a></td></tr>
-<tr class="memdesc:a2e3c98cb6cb255a0c359e14bdf2fe0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional array of sampler descriptions to statically embed into the descriptor table when the descriptor type is <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136" title="Descriptors are an array of sampler.">descriptor_type::sampler</a> or <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b" title="Descriptors are an array of sampler_with_resource_view.">descriptor_type::sampler_with_resource_view</a>.  <a href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html#a2e3c98cb6cb255a0c359e14bdf2fe0a0">More...</a><br /></td></tr>
-<tr class="separator:a2e3c98cb6cb255a0c359e14bdf2fe0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9340e7d6493cd853ae83223e038be35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html#ae9340e7d6493cd853ae83223e038be35">flags</a></td></tr>
+<tr class="memdesc:ae9340e7d6493cd853ae83223e038be35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional flags specifying the volatility of the descriptors and data they reference.  <a href="structreshade_1_1api_1_1descriptor__range__with__flags.html#ae9340e7d6493cd853ae83223e038be35">More...</a><br /></td></tr>
+<tr class="separator:ae9340e7d6493cd853ae83223e038be35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdc43bcc8c46bd9397f9a8793ee8084"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html#aacdc43bcc8c46bd9397f9a8793ee8084">static_samplers</a></td></tr>
+<tr class="memdesc:aacdc43bcc8c46bd9397f9a8793ee8084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional array of sampler descriptions to statically embed into the descriptor table when the descriptor type is <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136" title="Descriptors are an array of sampler.">descriptor_type::sampler</a> or <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b" title="Descriptors are an array of sampler_with_resource_view.">descriptor_type::sampler_with_resource_view</a>.  <a href="structreshade_1_1api_1_1descriptor__range__with__flags.html#aacdc43bcc8c46bd9397f9a8793ee8084">More...</a><br /></td></tr>
+<tr class="separator:aacdc43bcc8c46bd9397f9a8793ee8084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structreshade_1_1api_1_1descriptor__range"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structreshade_1_1api_1_1descriptor__range')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structreshade_1_1api_1_1descriptor__range.html">reshade::api::descriptor_range</a></td></tr>
 <tr class="memitem:a4a6aa5a25e834d8d6c671fdd55385853 inherit pub_attribs_structreshade_1_1api_1_1descriptor__range"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html#a4a6aa5a25e834d8d6c671fdd55385853">binding</a></td></tr>
 <tr class="memdesc:a4a6aa5a25e834d8d6c671fdd55385853 inherit pub_attribs_structreshade_1_1api_1_1descriptor__range"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL/Vulkan binding index (<code>layout(binding=X)</code> in GLSL). In D3D this is equivalent to the offset (in descriptors) of this range in the descriptor table (since each binding can only have an array size of 1).  <a href="structreshade_1_1api_1_1descriptor__range.html#a4a6aa5a25e834d8d6c671fdd55385853">More...</a><br /></td></tr>
@@ -115,14 +118,30 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afb651e4ed20fffd6e869e6de6af989ec inherit pub_attribs_structreshade_1_1api_1_1descriptor__range"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2e3c98cb6cb255a0c359e14bdf2fe0a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3c98cb6cb255a0c359e14bdf2fe0a0">&#9670;&nbsp;</a></span>static_samplers</h2>
+<a id="ae9340e7d6493cd853ae83223e038be35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9340e7d6493cd853ae83223e038be35">&#9670;&nbsp;</a></span>flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a>* reshade::api::descriptor_range_with_static_samplers::static_samplers</td>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> reshade::api::descriptor_range_with_flags::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional flags specifying the volatility of the descriptors and data they reference. </p>
+
+</div>
+</div>
+<a id="aacdc43bcc8c46bd9397f9a8793ee8084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdc43bcc8c46bd9397f9a8793ee8084">&#9670;&nbsp;</a></span>static_samplers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html">sampler_desc</a>* reshade::api::descriptor_range_with_flags::static_samplers</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -117,7 +118,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html">descriptor_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a range of descriptors of a descriptor table in a pipeline layout.  <a href="structreshade_1_1api_1_1descriptor__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html">descriptor_range_with_static_samplers</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html">descriptor_range_with_flags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">pipeline_layout_param</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single parameter in a pipeline layout.  <a href="structreshade_1_1api_1_1pipeline__layout__param.html#details">More...</a><br /></td></tr>
@@ -219,6 +220,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a build input for an acceleration structure build operation.  <a href="structreshade_1_1api_1_1acceleration__structure__build__input.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0ae792d4cf40c386659f4182a666c1e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0ae792d4cf40c386659f4182a666c1e2">descriptor_range_with_static_samplers</a> = <a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html">descriptor_range_with_flags</a></td></tr>
+<tr class="separator:a0ae792d4cf40c386659f4182a666c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a5f273018cb6c3c536692ec8d3447ccc9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5f273018cb6c3c536692ec8d3447ccc9">input_source</a> { <br />
@@ -283,6 +289,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0ab81ff79cf4b62f6bb20b890dacfd241c">ray_tracing</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a86505407d28808ae2affe4a1e6ca2ed8">update_buffer_region_command</a>
 , <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0aa67ff7d3200eecbf95b68eecce70343e">update_texture_region_command</a>
+, <a class="el" href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0a0d99a198e126e3cfec849ccc050c8abe">gpu_upload_heap</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac1f75e72812269a7815296a0f248f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional capabilities a device may support, depending on the underlying graphics API and hardware.  <a href="namespacereshade_1_1api.html#ac1f75e72812269a7815296a0f248f9d0">More...</a><br /></td></tr>
@@ -491,11 +498,14 @@ Enumerations</h2></td></tr>
 <tr class="separator:adbd317502610c902e7097163f5a9bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3d450b53804612b18ec38edffa10e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">color_space</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a">unknown</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a827470794647eabf75ea23bf50c61045">srgb</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a42772cdb542cdd7c8cbd4c625b33def7">scrgb</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7acc8cc11d7c92bd0c63d159d2dd417a45">hdr10_pq</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe">hdr10_hlg</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a854525ea125c8aa2c118e3c980840309">srgb_nonlinear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2e1bd279fd321004766c44c326adc676">extended_srgb_linear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7af0f35dd538a8bc039e81e72b7b1a201c">hdr10_st2084</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe">hdr10_hlg</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a8f3d450b53804612b18ec38edffa10e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available color space types for presentation.  <a href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">More...</a><br /></td></tr>
@@ -558,28 +568,45 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afd9e41db9727a2e919c772eaafe3d23c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">descriptor_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136">sampler</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b">sampler_with_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4">buffer_shader_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973">buffer_unordered_access_view</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d">texture_shader_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d">texture_unordered_access_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f">shader_resource_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a">unordered_access_view</a>
 , <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4">buffer_shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973">buffer_unordered_access_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d">texture_shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d">texture_unordered_access_view</a>
+, <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b">constant_buffer</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5122f30bfb41ef71fcacd7f6d732a19f">constant_buffer_with_dynamic_offset</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca52e8f9839b88cb8eaa612a7f3ee70155">shader_storage_buffer</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">acceleration_structure</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5831ef28d8b794ceb23db9fb92e9f01">shader_storage_buffer_with_dynamic_offset</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">acceleration_structure</a>
 <br />
  }</td></tr>
 <tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a descriptor.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
 <tr class="separator:afd9e41db9727a2e919c772eaafe3d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e17ea2a1d0783e9a546655413d396b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396bad687e97bbef4d3ed131429c782a916e0">descriptors_volatile</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba669d311b56c0523e26940e8ff856345b">data_volatile</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396bac329ad27e91acc2e1eb705806604bcd0">data_static_while_set_at_execute</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba2568360725d5b81460077d69673de07f">data_static</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396baec3e170598d340e0abda7a4403c18559">partially_bound</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad3e17ea2a1d0783e9a546655413d396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the volatility of descriptors and the data they reference.  <a href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">More...</a><br /></td></tr>
+<tr class="separator:ad3e17ea2a1d0783e9a546655413d396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">pipeline_layout_param_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">push_constants</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef">descriptor_table</a>
-, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">descriptor_table_with_static_samplers</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a10f0f3df78fae6334300d82683a9c215">descriptor_table_with_flags</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0">push_descriptors</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">push_descriptors_with_ranges</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ad4b601c09e7e60f06d7f2f1f4d1594ef">push_descriptors_with_ranges_and_flags</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">descriptor_table_with_static_samplers</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189">push_descriptors_with_static_samplers</a>
 <br />
  }</td></tr>
@@ -828,66 +855,68 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad8341ba53158a673d3df7880f61345ed">srgb_write_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aa68468e78da5883715a658f79aacb6cc">primitive_topology</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a71edea6d51e4894bdb48ca1269bb780f">input_element_stride</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0323747a7d7d71c6b0f24453641377a0">sample_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a99c067be40a1980049629602f060e767">alpha_to_coverage_enable</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a822de02da226ff6b2a55f50be3d0e4de">blend_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a99c067be40a1980049629602f060e767">alpha_to_coverage_enable</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a822de02da226ff6b2a55f50be3d0e4de">blend_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a184a624825d1f8db8ffb9155ccd243af">logic_op_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a503611ff9eb00df608839f1df38a44d3">source_color_blend_factor</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a326fa5ae4e4bea1c91e164b6fd26ef18">dest_color_blend_factor</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a10218524a4d127917f1977399ee42524">color_blend_op</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a326fa5ae4e4bea1c91e164b6fd26ef18">dest_color_blend_factor</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a10218524a4d127917f1977399ee42524">color_blend_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab2ea147c733603a72c601272947aaabb">source_alpha_blend_factor</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0cf5b95714f5c6c6d70317b6de5fc114">dest_alpha_blend_factor</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab89ffeb7aa5b92c06fdc13d5a0eafb3b">alpha_blend_op</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1d541f141a154a7f6dd465ca0b768663">blend_constant</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab89ffeb7aa5b92c06fdc13d5a0eafb3b">alpha_blend_op</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1d541f141a154a7f6dd465ca0b768663">blend_constant</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9acbf8ba6477522ba81b39f43ee6cebe66">logic_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a9718d70b339b0e4c1910e48cef640df0">render_target_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7bb0148cade18ac46778bda9380a9dd8">fill_mode</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a83bd7846efcf120627562bf7cfc5465d">cull_mode</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7bb0148cade18ac46778bda9380a9dd8">fill_mode</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a83bd7846efcf120627562bf7cfc5465d">cull_mode</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0d87308f61a76e241a8bbef19fc964bf">front_counter_clockwise</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ace8cd78a19128078d0ee104f4f85bb46">depth_bias</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a706cc048a0558681c14e380036be2760">depth_bias_clamp</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a66cb5bd1941313575f7260f61c8e943a">depth_bias_slope_scaled</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a706cc048a0558681c14e380036be2760">depth_bias_clamp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a66cb5bd1941313575f7260f61c8e943a">depth_bias_slope_scaled</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abb8746e8627ad44fe644f9bfdb5eaa04">depth_clip_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1a264e656b1924ac35c77e28b3c61aca">scissor_enable</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a3f6e87bfe84428d51a213423ec9fb227">multisample_enable</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad54f4402247a0f452cba1ae336614816">antialiased_line_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a3f6e87bfe84428d51a213423ec9fb227">multisample_enable</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad54f4402247a0f452cba1ae336614816">antialiased_line_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a53208ddc4738c8610331c991d8eac00b">depth_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0bd9e1d9c7d0c019bb9d40ae1ca6c7a9">depth_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7920f4199edf22e1e9e4220f93625c7a">depth_func</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9afe21dadce87df50867f780a12f06f36f">stencil_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7920f4199edf22e1e9e4220f93625c7a">depth_func</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9afe21dadce87df50867f780a12f06f36f">stencil_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a95cc7e728f5d56550c104bcccc19227f">front_stencil_read_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aab6031626063fb58986c84b57990a83c">front_stencil_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2055c3f4affbe5c6b698255da4716b83">front_stencil_reference_value</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a634aa12fe739d76c169b60895d71d404">front_stencil_func</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2055c3f4affbe5c6b698255da4716b83">front_stencil_reference_value</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a634aa12fe739d76c169b60895d71d404">front_stencil_func</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a87c663418b4e3ef7da9ca62776bdacea">front_stencil_pass_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aab73984d304ca2b49701f82745143f8c">front_stencil_fail_op</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abc9377d7e811cf06502ca43fba95c8f5">front_stencil_depth_fail_op</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abdb3d39673204624edc57756e60b7d57">back_stencil_read_mask</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abc9377d7e811cf06502ca43fba95c8f5">front_stencil_depth_fail_op</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abdb3d39673204624edc57756e60b7d57">back_stencil_read_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1ed8026cf1edd5566a57dee59a05cdc4">back_stencil_write_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a9f392083f2e736b7824b50d908edea84">back_stencil_reference_value</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aca3118b2537b05e4f9ffef9f5622dbfb">back_stencil_func</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9af08d49f42958da6a835a8bd1a2e7724f">back_stencil_pass_op</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aca3118b2537b05e4f9ffef9f5622dbfb">back_stencil_func</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9af08d49f42958da6a835a8bd1a2e7724f">back_stencil_pass_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ac76e3c104ce55c9fb7566b68292912de">back_stencil_fail_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ae72acae0f6bb86d7894e2cac2b199814">back_stencil_depth_fail_op</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2b7056a4b7087774387eadc0fc71105f">ray_tracing_pipeline_stack_size</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2b7056a4b7087774387eadc0fc71105f">ray_tracing_pipeline_stack_size</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a21e917814c5dd21aa28d2e6564f504d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of all possible render pipeline states that can be set independent of pipeline state objects.  <a href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">More...</a><br /></td></tr>
 <tr class="separator:a21e917814c5dd21aa28d2e6564f504d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">fence_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">non_monitored</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">shared</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce">shared_nt_handle</a>
-, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">non_monitored</a>
  }</td></tr>
 <tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a fence.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
 <tr class="separator:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -954,12 +983,18 @@ Enumerations</h2></td></tr>
 <tr class="separator:a9364d8f6baaafa7a97db157988abd195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5281da0286a1680c9dec5a6109871daa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">memory_heap</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a">unknown</a>
-, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaf08840c4dc862fadbc7c358ab58a6ed9">gpu_only</a>
-, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8072a3d91b33bf61afb73eb62ab25b6e">cpu_to_gpu</a>
-, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaac87449688c5c34bd33ca6a439a58976a">gpu_to_cpu</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa172b03053216c6158fe380805998ad6c">default_</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa76ee3de97a1b8b903319b7c013d8c877">upload</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaa29f31235ac8a8050c0221b44da07ebb">readback</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaab015d15899d38e8021ad9000c0eb9366">cpu_only</a>
-, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127">custom</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127">custom</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa989dd0740007f144b21dd5d7d8ddabac">scratch</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaacf86e1bab784fe60d274ea6d8dd08d54">gpu_upload</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaaf08840c4dc862fadbc7c358ab58a6ed9">gpu_only</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaa8072a3d91b33bf61afb73eb62ab25b6e">cpu_to_gpu</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaac87449688c5c34bd33ca6a439a58976a">gpu_to_cpu</a>
+, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaab015d15899d38e8021ad9000c0eb9366">cpu_only</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a5281da0286a1680c9dec5a6109871daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory heap types, which give a hint as to where to place the allocation for a resource.  <a href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daa">More...</a><br /></td></tr>
@@ -1041,6 +1076,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0f07392518e2fdb200e578bc545cd54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a resource view. This identifies how a resource view interprets the data of its resource.  <a href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54f">More...</a><br /></td></tr>
 <tr class="separator:a0f07392518e2fdb200e578bc545cd54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d316ba31e491e70691c1fda3c0f238e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238ea334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238ea69f2afc2390cec954f7c208b07212d39">resume</a>
+, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238ea497927fb538c4a1572d3b3a98313cab1">suspend</a>
+ }</td></tr>
+<tr class="memdesc:a7d316ba31e491e70691c1fda3c0f238e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a render pass.  <a href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">More...</a><br /></td></tr>
+<tr class="separator:a7d316ba31e491e70691c1fda3c0f238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b8af40b571deeadfdd39d7934ac4e0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0">render_pass_load_op</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0aec4d1eb36b22d19728e9d1d23ca84d1c">load</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a01bc6f8efa4202821e95f4fdf6298b30">clear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a76b8af40b571deeadfdd39d7934ac4e0a70f68bb2f748b85de6526bfe236ea1e9">discard</a>
@@ -1054,9 +1095,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a308904edbcf77033d864f59e485d8264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how the contents of a render target or depth-stencil view are treated at the end of a render pass.  <a href="namespacereshade_1_1api.html#a308904edbcf77033d864f59e485d8264">More...</a><br /></td></tr>
 <tr class="separator:a308904edbcf77033d864f59e485d8264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed6b36717133a7fcfde6ca974064f10"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a> { <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a391077a5dd52937ce083ec6458b41c39">top_level</a>
+<tr class="memitem:a1ed6b36717133a7fcfde6ca974064f10"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">acceleration_structure_type</a> { <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9">generic</a>
+, <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a391077a5dd52937ce083ec6458b41c39">top_level</a>
 , <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a00f361ffd661fc23c055206a48691d68">bottom_level</a>
-, <a class="el" href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9">generic</a>
  }</td></tr>
 <tr class="memdesc:a1ed6b36717133a7fcfde6ca974064f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an acceleration structure.  <a href="namespacereshade_1_1api.html#a1ed6b36717133a7fcfde6ca974064f10">More...</a><br /></td></tr>
 <tr class="separator:a1ed6b36717133a7fcfde6ca974064f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1165,6 +1206,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4db1efac5191f7cc82e5937e33480af2"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4db1efac5191f7cc82e5937e33480af2">format_slice_pitch</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value, uint32_t row_pitch, uint32_t height)</td></tr>
 <tr class="memdesc:a4db1efac5191f7cc82e5937e33480af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of bytes a texture slice of the specified format <em>value</em>  occupies.  <a href="namespacereshade_1_1api.html#a4db1efac5191f7cc82e5937e33480af2">More...</a><br /></td></tr>
 <tr class="separator:a4db1efac5191f7cc82e5937e33480af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ac2b95a103f3a8ab5053a96a4366e3a1a">format_is_typeless</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value)</td></tr>
+<tr class="memdesc:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified format <em>value</em>  is a typeless format.  <a href="namespacereshade_1_1api.html#ac2b95a103f3a8ab5053a96a4366e3a1a">More...</a><br /></td></tr>
+<tr class="separator:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacd021408d4387a0a4f687d3460b682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#acacd021408d4387a0a4f687d3460b682">format_is_block_compressed</a> (<a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a> value)</td></tr>
+<tr class="memdesc:acacd021408d4387a0a4f687d3460b682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified format <em>value</em>  is a block compressed (BC) format.  <a href="namespacereshade_1_1api.html#acacd021408d4387a0a4f687d3460b682">More...</a><br /></td></tr>
+<tr class="separator:acacd021408d4387a0a4f687d3460b682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af320109b5f9cfc7f4909b8c7c919545b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af320109b5f9cfc7f4909b8c7c919545b">operator~</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> a)</td></tr>
 <tr class="separator:af320109b5f9cfc7f4909b8c7c919545b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacef138e97ae5efdfa31d957ce68f0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aacef138e97ae5efdfa31d957ce68f0f3">operator&amp;=</a> (<a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">shader_stage</a> b)</td></tr>
@@ -1201,6 +1248,24 @@ Functions</h2></td></tr>
 <tr class="separator:a38566063476aa493bd0cbab0a7d0a225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec5752edf7c6f705edb4f37b2d1e8da"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7ec5752edf7c6f705edb4f37b2d1e8da">operator!=</a> (<a class="el" href="namespacereshade_1_1api.html#a46a70b7dcd8b1e829ff8102091b64037">pipeline_stage</a> lhs, uint32_t rhs)</td></tr>
 <tr class="separator:a7ec5752edf7c6f705edb4f37b2d1e8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1ee34b36be8e7d692c7bee8accf81e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9c1ee34b36be8e7d692c7bee8accf81e">operator~</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> a)</td></tr>
+<tr class="separator:a9c1ee34b36be8e7d692c7bee8accf81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28f4e80c40ab8f7d50f0a4661ec445b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa28f4e80c40ab8f7d50f0a4661ec445b">operator&amp;=</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:aa28f4e80c40ab8f7d50f0a4661ec445b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980ad38258cc50bcad8b8d38bb1a983f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a980ad38258cc50bcad8b8d38bb1a983f">operator&amp;</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:a980ad38258cc50bcad8b8d38bb1a983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58496d07579956483d387dce9ea7598c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a58496d07579956483d387dce9ea7598c">operator|=</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:a58496d07579956483d387dce9ea7598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bb40929101a1b41df75fb4e3af52a0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a19bb40929101a1b41df75fb4e3af52a0">operator|</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:a19bb40929101a1b41df75fb4e3af52a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dce9f4ab60704faf073936301ae4410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9dce9f4ab60704faf073936301ae4410">operator^=</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:a9dce9f4ab60704faf073936301ae4410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa589ed8f7c9984aaa587b7adab217c73"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa589ed8f7c9984aaa587b7adab217c73">operator^</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> b)</td></tr>
+<tr class="separator:aa589ed8f7c9984aaa587b7adab217c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0846cbeda341e61d0e0921a0c48a79"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a3c0846cbeda341e61d0e0921a0c48a79">operator==</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a3c0846cbeda341e61d0e0921a0c48a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4190de0fe8962e037b93e83ca804dcbb"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4190de0fe8962e037b93e83ca804dcbb">operator!=</a> (<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a4190de0fe8962e037b93e83ca804dcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5382ab4d7db1c6c94917541d105313bb"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5382ab4d7db1c6c94917541d105313bb">operator&lt;</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> lhs, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> rhs)</td></tr>
 <tr class="separator:a5382ab4d7db1c6c94917541d105313bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1943868f37cc91899ccf52169d8d3c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5a1943868f37cc91899ccf52169d8d3c">operator!=</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> lhs, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> rhs)</td></tr>
@@ -1381,6 +1446,24 @@ Functions</h2></td></tr>
 <tr class="separator:a7d86378e0571e13476f2266968400127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae7e5bbc3e56af5b685fbd457c9a5dc"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9ae7e5bbc3e56af5b685fbd457c9a5dc">operator==</a> (<a class="el" href="structreshade_1_1api_1_1resource__view.html">resource_view</a> lhs, uint64_t rhs)</td></tr>
 <tr class="separator:a9ae7e5bbc3e56af5b685fbd457c9a5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999f8f1b044dd0f5f3cfa95f554959ad"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a999f8f1b044dd0f5f3cfa95f554959ad">operator~</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> a)</td></tr>
+<tr class="separator:a999f8f1b044dd0f5f3cfa95f554959ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d78ce0676b1cdbfdc44e1031a0325d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a99d78ce0676b1cdbfdc44e1031a0325d">operator&amp;=</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:a99d78ce0676b1cdbfdc44e1031a0325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0528f6866bae82a26d5b4904cf7a6ba3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0528f6866bae82a26d5b4904cf7a6ba3">operator&amp;</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:a0528f6866bae82a26d5b4904cf7a6ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925e6728d904af1e63ffaec29081b037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a925e6728d904af1e63ffaec29081b037">operator|=</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:a925e6728d904af1e63ffaec29081b037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f1c89fe097b242919f3badc03228cd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a37f1c89fe097b242919f3badc03228cd">operator|</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:a37f1c89fe097b242919f3badc03228cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d62ab2210a051b7233b602735de49f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#af9d62ab2210a051b7233b602735de49f">operator^=</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:af9d62ab2210a051b7233b602735de49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fcfd95dd212017b43d62cb5faa73ab"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a30fcfd95dd212017b43d62cb5faa73ab">operator^</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> a, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> b)</td></tr>
+<tr class="separator:a30fcfd95dd212017b43d62cb5faa73ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c01e12d28fbebbf0983cdb8406451ce"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4c01e12d28fbebbf0983cdb8406451ce">operator==</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a4c01e12d28fbebbf0983cdb8406451ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052db021d5e68e6a9615f22e21511142"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a052db021d5e68e6a9615f22e21511142">operator!=</a> (<a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a052db021d5e68e6a9615f22e21511142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d4af983f8f868522f10de7d5d8c95c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae6d4af983f8f868522f10de7d5d8c95c">operator~</a> (<a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> a)</td></tr>
 <tr class="separator:ae6d4af983f8f868522f10de7d5d8c95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a942334390f39da2c22d06c793bf4583d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a942334390f39da2c22d06c793bf4583d">operator&amp;=</a> (<a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> &amp;a, <a class="el" href="namespacereshade_1_1api.html#aa55963207d90079684f1dc9961dd15ea">acceleration_structure_build_flags</a> b)</td></tr>
@@ -1418,6 +1501,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a8a07d15ea85f4e98f5d71120c34ab89b"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8a07d15ea85f4e98f5d71120c34ab89b">operator!=</a> (<a class="el" href="namespacereshade_1_1api.html#ad5f8102537fe1fa524e5d43b9428e3ed">acceleration_structure_build_input_flags</a> lhs, uint32_t rhs)</td></tr>
 <tr class="separator:a8a07d15ea85f4e98f5d71120c34ab89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a0ae792d4cf40c386659f4182a666c1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae792d4cf40c386659f4182a666c1e2">&#9670;&nbsp;</a></span>descriptor_range_with_static_samplers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacereshade_1_1api.html#a0ae792d4cf40c386659f4182a666c1e2">reshade::api::descriptor_range_with_static_samplers</a> = typedef <a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html">descriptor_range_with_flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="aa55963207d90079684f1dc9961dd15ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa55963207d90079684f1dc9961dd15ea">&#9670;&nbsp;</a></span>acceleration_structure_build_flags</h2>
@@ -1589,9 +1687,9 @@ Functions</h2></td></tr>
 
 <p>Type of an acceleration structure. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a391077a5dd52937ce083ec6458b41c39"></a>top_level&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9"></a>generic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a391077a5dd52937ce083ec6458b41c39"></a>top_level&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a00f361ffd661fc23c055206a48691d68"></a>bottom_level&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ed6b36717133a7fcfde6ca974064f10a3d517f8924ac7fd03699a29d97dc52d9"></a>generic&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1695,10 +1793,13 @@ Functions</h2></td></tr>
 <p>The available color space types for presentation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a827470794647eabf75ea23bf50c61045"></a>srgb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a42772cdb542cdd7c8cbd4c625b33def7"></a>scrgb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7acc8cc11d7c92bd0c63d159d2dd417a45"></a>hdr10_pq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe"></a>hdr10_hlg&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a854525ea125c8aa2c118e3c980840309"></a>srgb_nonlinear&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a2e1bd279fd321004766c44c326adc676"></a>extended_srgb_linear&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7af0f35dd538a8bc039e81e72b7b1a201c"></a>hdr10_st2084&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe"></a>hdr10_hlg&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1797,6 +1898,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad3e17ea2a1d0783e9a546655413d396b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e17ea2a1d0783e9a546655413d396b">&#9670;&nbsp;</a></span>descriptor_range_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">reshade::api::descriptor_range_flags</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flags that specify the volatility of descriptors and the data they reference. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396bad687e97bbef4d3ed131429c782a916e0"></a>descriptors_volatile&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396ba669d311b56c0523e26940e8ff856345b"></a>data_volatile&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396bac329ad27e91acc2e1eb705806604bcd0"></a>data_static_while_set_at_execute&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396ba2568360725d5b81460077d69673de07f"></a>data_static&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3e17ea2a1d0783e9a546655413d396baec3e170598d340e0abda7a4403c18559"></a>partially_bound&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="afd9e41db9727a2e919c772eaafe3d23c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd9e41db9727a2e919c772eaafe3d23c">&#9670;&nbsp;</a></span>descriptor_type</h2>
 
@@ -1823,6 +1956,10 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b"></a>sampler_with_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1sampler__with__resource__view.html" title="A combined sampler and resource view descriptor.">sampler_with_resource_view</a>. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f"></a>shader_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are either of type buffer_shader_resource_view or texture_shader_resource_view. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a"></a>unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are either of type buffer_unordered_access_view or texture_unordered_access_view. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4"></a>buffer_shader_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973"></a>buffer_unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
@@ -1831,14 +1968,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d"></a>texture_unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f"></a>shader_resource_view&#160;</td><td class="fielddoc"><p>Descriptors are either of type buffer_shader_resource_view or texture_shader_resource_view. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a"></a>unordered_access_view&#160;</td><td class="fielddoc"><p>Descriptors are either of type buffer_unordered_access_view or texture_unordered_access_view. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b"></a>constant_buffer&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1buffer__range.html" title="A constant buffer resource descriptor.">buffer_range</a>. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca5122f30bfb41ef71fcacd7f6d732a19f"></a>constant_buffer_with_dynamic_offset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca52e8f9839b88cb8eaa612a7f3ee70155"></a>shader_storage_buffer&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1buffer__range.html" title="A constant buffer resource descriptor.">buffer_range</a>. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23cad5831ef28d8b794ceb23db9fb92e9f01"></a>shader_storage_buffer_with_dynamic_offset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c"></a>acceleration_structure&#160;</td><td class="fielddoc"><p>Descriptors are an array of <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">resource_view</a>. </p>
 </td></tr>
 </table>
@@ -1963,7 +2098,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a65274c70133f904bf23b0794e1e17b6e"></a>resolve_depth_stencil&#160;</td><td class="fielddoc"><p>Specifies whether resolving depth-stencil resources is supported. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#af0a75a84dd8819c4f0213b51096e75d2" title="Copies a region from the multisampled source  texture to the non-multisampled dest ination texture.">command_list::resolve_texture_region</a> must not be used with depth-stencil resources. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a90d2cc566745cd5327bd9e0fe28eb206"></a>shared_fence&#160;</td><td class="fielddoc"><p>Specifies whether fence sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">fence_flags::shared</a> must not be used. </p>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a90d2cc566745cd5327bd9e0fe28eb206"></a>shared_fence&#160;</td><td class="fielddoc"><p>Specifies whether fence sharing is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e" title="Shared fences can be imported/exported from/to different graphics APIs and/or processes....">fence_flags::shared</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a052fd5318720495e231a0637afc6ade8"></a>shared_fence_nt_handle&#160;</td><td class="fielddoc"><p>Specifies whether fence sharing with NT handles is supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce">fence_flags::shared_nt_handle</a> must not be used. </p>
 </td></tr>
@@ -1974,6 +2109,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a86505407d28808ae2affe4a1e6ca2ed8"></a>update_buffer_region_command&#160;</td><td class="fielddoc"><p>Specifies whether deferred buffer updates can be used. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#aea85268ef8ffd8c85d750cc7edc56742" title="Uploads data to a buffer resource when the command list is executed.">command_list::update_buffer_region</a> must not be used. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0aa67ff7d3200eecbf95b68eecce70343e"></a>update_texture_region_command&#160;</td><td class="fielddoc"><p>Specifies whether deferred texture updates can be used. If this feature is not present, <a class="el" href="structreshade_1_1api_1_1command__list.html#ae35fe0b1836acb85399accbe9656822a" title="Uploads data to a texture resource when the command list is executed.">command_list::update_texture_region</a> must not be used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1f75e72812269a7815296a0f248f9d0a0d99a198e126e3cfec849ccc050c8abe"></a>gpu_upload_heap&#160;</td><td class="fielddoc"><p>Specifies whether GPU upload heaps are supported. If this feature is not present, <a class="el" href="namespacereshade_1_1api.html#a5281da0286a1680c9dec5a6109871daaacf86e1bab784fe60d274ea6d8dd08d54" title="CPU visible GPU memory, when available (Resizable BAR).">memory_heap::gpu_upload</a> must not be used. </p>
 </td></tr>
 </table>
 
@@ -2053,6 +2190,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a5a204a9b991b3475e52a4b44cd33acb8"></a>alpha_func&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9ad8341ba53158a673d3df7880f61345ed"></a>srgb_write_enable&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9aa68468e78da5883715a658f79aacb6cc"></a>primitive_topology&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a71edea6d51e4894bdb48ca1269bb780f"></a>input_element_stride&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a0323747a7d7d71c6b0f24453641377a0"></a>sample_mask&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a99c067be40a1980049629602f060e767"></a>alpha_to_coverage_enable&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21e917814c5dd21aa28d2e6564f504d9a822de02da226ff6b2a55f50be3d0e4de"></a>blend_enable&#160;</td><td class="fielddoc"></td></tr>
@@ -2122,9 +2260,10 @@ Functions</h2></td></tr>
 <p>Flags that specify additional parameters of a fence. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaa334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce"></a>shared_nt_handle&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e"></a>non_monitored&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"><p>Shared fences can be imported/exported from/to different graphics APIs and/or processes. Required to use the "shared_handle" parameter of <a class="el" href="structreshade_1_1api_1_1device.html#a2dcf9fbf5715969fd63b45477906fa77" title="Creates a new fence synchronization object.">device::create_fence</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce"></a>shared_nt_handle&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2519,12 +2658,24 @@ Functions</h2></td></tr>
 
 <p>Memory heap types, which give a hint as to where to place the allocation for a resource. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaad921d60486366258809553a3db49a4a"></a>unknown&#160;</td><td class="fielddoc"><p>Usually indicates a resource that is reserved, but not yet bound to any memory. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa172b03053216c6158fe380805998ad6c"></a>default_&#160;</td><td class="fielddoc"><p>The default heap, which the GPU can read and write, but the CPU does not have access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa76ee3de97a1b8b903319b7c013d8c877"></a>upload&#160;</td><td class="fielddoc"><p>This heap has CPU access optimized for uploading to the GPU. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaa29f31235ac8a8050c0221b44da07ebb"></a>readback&#160;</td><td class="fielddoc"><p>This heap has CPU access optimized for reading data back from the GPU. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127"></a>custom&#160;</td><td class="fielddoc"><p>This heap has custom properties not covered by the other types. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa989dd0740007f144b21dd5d7d8ddabac"></a>scratch&#160;</td><td class="fielddoc"><p>This heap is only accessible by the CPU. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaacf86e1bab784fe60d274ea6d8dd08d54"></a>gpu_upload&#160;</td><td class="fielddoc"><p>CPU visible GPU memory, when available (Resizable BAR). </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaaf08840c4dc862fadbc7c358ab58a6ed9"></a>gpu_only&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa8072a3d91b33bf61afb73eb62ab25b6e"></a>cpu_to_gpu&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaac87449688c5c34bd33ca6a439a58976a"></a>gpu_to_cpu&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaab015d15899d38e8021ad9000c0eb9366"></a>cpu_only&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5281da0286a1680c9dec5a6109871daaa8b9035807842a4e4dbe009f3f1478127"></a>custom&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2583,9 +2734,11 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24"></a>push_constants&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef"></a>descriptor_table&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e"></a>descriptor_table_with_static_samplers&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a10f0f3df78fae6334300d82683a9c215"></a>descriptor_table_with_flags&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0"></a>push_descriptors&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150"></a>push_descriptors_with_ranges&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ad4b601c09e7e60f06d7f2f1f4d1594ef"></a>push_descriptors_with_ranges_and_flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e"></a>descriptor_table_with_static_samplers&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189"></a>push_descriptors_with_static_samplers&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -2870,6 +3023,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7d316ba31e491e70691c1fda3c0f238e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d316ba31e491e70691c1fda3c0f238e">&#9670;&nbsp;</a></span>render_pass_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">reshade::api::render_pass_flags</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flags that specify additional parameters of a render pass. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d316ba31e491e70691c1fda3c0f238ea334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d316ba31e491e70691c1fda3c0f238ea69f2afc2390cec954f7c208b07212d39"></a>resume&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d316ba31e491e70691c1fda3c0f238ea497927fb538c4a1572d3b3a98313cab1"></a>suspend&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a76b8af40b571deeadfdd39d7934ac4e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76b8af40b571deeadfdd39d7934ac4e0">&#9670;&nbsp;</a></span>render_pass_load_op</h2>
 
@@ -2952,9 +3134,9 @@ Functions</h2></td></tr>
 <p>Flags that specify additional parameters of a resource. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f"></a>dynamic&#160;</td><td class="fielddoc"><p>Dynamic resources can be frequently updated during a frame, with previous contents automatically being shadowed so to no affect already executing operations on the GPU. Required for <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">map_access::write_discard</a>. The flag is not supported in D3D12 or Vulkan. </p>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043ab72f3bd391ba731a35708bfd8cd8a68f"></a>dynamic&#160;</td><td class="fielddoc"><p>Dynamic resources can be frequently updated during a frame, with previous contents automatically being shadowed so to no affect already executing operations on the GPU. Required for <a class="el" href="namespacereshade_1_1api.html#a9364d8f6baaafa7a97db157988abd195afe28dd8a67ae325a163dfada03d2a21f">map_access::write_discard</a>. This flag is not supported in D3D12 or Vulkan. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a80d2e04b3050a67b9727357483610d63"></a>immutable&#160;</td><td class="fielddoc"><p>Immutable resources can never be written to again after creationn, either by the CPU or the GPU. The flag is only supported in D3D10 and D3D11. </p>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a80d2e04b3050a67b9727357483610d63"></a>immutable&#160;</td><td class="fielddoc"><p>Immutable resources can never be written to again after creationn, either by the CPU or the GPU. This flag is only supported in D3D10 and D3D11. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043aaa69922e8c300f3e187253e01eec5f63"></a>cube_compatible&#160;</td><td class="fielddoc"><p>Required to create <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5560afc38fa6e30d2026ab9dc2835730">resource_view_type::texture_cube</a> or <a class="el" href="namespacereshade_1_1api.html#a0f07392518e2fdb200e578bc545cd54fa5acee56ce2c1861f757c27f6c4ed0399">resource_view_type::texture_cube_array</a> views of the resource. </p>
 </td></tr>
@@ -2963,7 +3145,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043a9e81e7b963c71363e2fb3eefcfecfc0e"></a>shared&#160;</td><td class="fielddoc"><p>Shared resources can be imported/exported from/to different graphics APIs and/or processes. Required to use the "shared_handle" parameter of <a class="el" href="structreshade_1_1api_1_1device.html#ae239bacf4993286a23882d7ed28dca65" title="Allocates and creates a new resource.">device::create_resource</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043af9c4f4b49cecfafe651dec08645e38ce"></a>shared_nt_handle&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f"></a>sparse_binding&#160;</td><td class="fielddoc"><p>Resource is backed using sparse memory binding. </p>
+<tr><td class="fieldname"><a id="ae92d24ded74e7f371f805b1d0d609043adc26a68aba600f97a50a2c6abc42a72f"></a>sparse_binding&#160;</td><td class="fielddoc"><p>Resource is backed by sparse memory. </p>
 </td></tr>
 </table>
 
@@ -3256,6 +3438,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acacd021408d4387a0a4f687d3460b682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacd021408d4387a0a4f687d3460b682">&#9670;&nbsp;</a></span>format_is_block_compressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reshade::api::format_is_block_compressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the specified format <em>value</em>  is a block compressed (BC) format. </p>
+
+</div>
+</div>
+<a id="ac2b95a103f3a8ab5053a96a4366e3a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b95a103f3a8ab5053a96a4366e3a1a">&#9670;&nbsp;</a></span>format_is_typeless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reshade::api::format_is_typeless </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#adbd317502610c902e7097163f5a9bb89">format</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the specified format <em>value</em>  is a typeless format. </p>
+
+</div>
+</div>
 <a id="a8f35c5b27cbabea5c3333d0ac7a7f900"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f35c5b27cbabea5c3333d0ac7a7f900">&#9670;&nbsp;</a></span>format_row_pitch()</h2>
 
@@ -3452,7 +3690,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa66c9de34367735302e3bbbdf71298e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa66c9de34367735302e3bbbdf71298e2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66c9de34367735302e3bbbdf71298e2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3488,7 +3726,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8a07d15ea85f4e98f5d71120c34ab89b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a07d15ea85f4e98f5d71120c34ab89b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a07d15ea85f4e98f5d71120c34ab89b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3524,7 +3762,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a50b6db0bf5d79d395ad39fafcd5b537b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50b6db0bf5d79d395ad39fafcd5b537b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[3/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b6db0bf5d79d395ad39fafcd5b537b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[3/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3560,7 +3798,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8aa03ec3f3527f0f9e30a3630afda29a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa03ec3f3527f0f9e30a3630afda29a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[4/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa03ec3f3527f0f9e30a3630afda29a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[4/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3596,7 +3834,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0645c5fd21371d4e10f24b15bc9437cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0645c5fd21371d4e10f24b15bc9437cc">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[5/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0645c5fd21371d4e10f24b15bc9437cc">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[5/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3632,7 +3870,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23a799cf1865a3b7b89f4778623ddaa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a799cf1865a3b7b89f4778623ddaa5">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[6/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a799cf1865a3b7b89f4778623ddaa5">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[6/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3667,8 +3905,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4190de0fe8962e037b93e83ca804dcbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4190de0fe8962e037b93e83ca804dcbb">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[7/36]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool reshade::api::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a28ac7e63f1e4a3945abc3e599ca36a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ac7e63f1e4a3945abc3e599ca36a2f">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[7/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ac7e63f1e4a3945abc3e599ca36a2f">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[8/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3704,7 +3978,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abe5f1cef7003fb0221eea5e90163f6b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe5f1cef7003fb0221eea5e90163f6b3">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[8/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5f1cef7003fb0221eea5e90163f6b3">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[9/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3740,7 +4014,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2cf2f6f79c951a3e8400e4c45c96864a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cf2f6f79c951a3e8400e4c45c96864a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[9/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf2f6f79c951a3e8400e4c45c96864a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[10/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3776,7 +4050,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a96d76639306939fa7b31465c8c1c474c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d76639306939fa7b31465c8c1c474c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[10/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d76639306939fa7b31465c8c1c474c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[11/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3812,7 +4086,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a451588a995e32fd5f8c2672cc74a6c67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a451588a995e32fd5f8c2672cc74a6c67">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[11/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a451588a995e32fd5f8c2672cc74a6c67">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[12/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3848,7 +4122,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a35df397471ac4e819436b9daec61f80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35df397471ac4e819436b9daec61f80b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[12/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a35df397471ac4e819436b9daec61f80b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[13/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3884,7 +4158,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4324ad3a33b163b41363b712b28f1eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4324ad3a33b163b41363b712b28f1eef">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[13/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4324ad3a33b163b41363b712b28f1eef">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[14/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3920,7 +4194,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9d6d47ac4974254ac64666add419d97a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6d47ac4974254ac64666add419d97a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[14/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6d47ac4974254ac64666add419d97a">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[15/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3956,7 +4230,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a03e82df91ecb3808949811dc61da4375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03e82df91ecb3808949811dc61da4375">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[15/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e82df91ecb3808949811dc61da4375">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[16/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3992,7 +4266,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a87a53cebc85a929953ce7951cb512bad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87a53cebc85a929953ce7951cb512bad">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[16/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a53cebc85a929953ce7951cb512bad">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[17/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4028,7 +4302,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad906462f1a24d9a4e4f7e5c322bbf8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad906462f1a24d9a4e4f7e5c322bbf8d1">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[17/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad906462f1a24d9a4e4f7e5c322bbf8d1">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[18/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4064,7 +4338,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3962afecab06ba95e77d3af6d8e111d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3962afecab06ba95e77d3af6d8e111d1">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[18/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3962afecab06ba95e77d3af6d8e111d1">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[19/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4100,7 +4374,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a72fa6044def7d08b0b37af41aff79b8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72fa6044def7d08b0b37af41aff79b8f">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[19/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fa6044def7d08b0b37af41aff79b8f">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[20/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4136,7 +4410,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0aa8710e7efe3ed87e1e0aec138747e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aa8710e7efe3ed87e1e0aec138747e2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[20/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa8710e7efe3ed87e1e0aec138747e2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[21/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4172,7 +4446,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5a1943868f37cc91899ccf52169d8d3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a1943868f37cc91899ccf52169d8d3c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[21/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1943868f37cc91899ccf52169d8d3c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[22/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4208,7 +4482,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae71b2b93c8eafebafaaf575f2fe722a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae71b2b93c8eafebafaaf575f2fe722a2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[22/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71b2b93c8eafebafaaf575f2fe722a2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[23/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4244,7 +4518,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7ec5752edf7c6f705edb4f37b2d1e8da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec5752edf7c6f705edb4f37b2d1e8da">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[23/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec5752edf7c6f705edb4f37b2d1e8da">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[24/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4280,7 +4554,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab60977a9e5a00cb26db352f2d482f169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab60977a9e5a00cb26db352f2d482f169">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[24/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60977a9e5a00cb26db352f2d482f169">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[25/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4316,7 +4590,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3d124a4bace558040367501b8b3c5e27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d124a4bace558040367501b8b3c5e27">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[25/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d124a4bace558040367501b8b3c5e27">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[26/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4351,8 +4625,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a052db021d5e68e6a9615f22e21511142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a052db021d5e68e6a9615f22e21511142">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[27/36]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool reshade::api::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3de9deef6a4f93a4199c8288b5421e47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de9deef6a4f93a4199c8288b5421e47">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[26/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de9deef6a4f93a4199c8288b5421e47">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[28/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4388,7 +4698,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4c90a144895b06f5af857bdbf26f0239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c90a144895b06f5af857bdbf26f0239">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[27/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c90a144895b06f5af857bdbf26f0239">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[29/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4424,7 +4734,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3276c6ecd6d6fb2167c0eae95742216c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3276c6ecd6d6fb2167c0eae95742216c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[28/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3276c6ecd6d6fb2167c0eae95742216c">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[30/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4460,7 +4770,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68fd9af1a8cae0abaf8a3ac279a6a80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68fd9af1a8cae0abaf8a3ac279a6a80b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[29/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fd9af1a8cae0abaf8a3ac279a6a80b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[31/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4496,7 +4806,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0507c659d5b0a8706f0d23a0662ca398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0507c659d5b0a8706f0d23a0662ca398">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[30/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0507c659d5b0a8706f0d23a0662ca398">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[32/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4532,7 +4842,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a862ee1fc7909d48573ec20d112ec7ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a862ee1fc7909d48573ec20d112ec7ba9">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[31/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a862ee1fc7909d48573ec20d112ec7ba9">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[33/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4568,7 +4878,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa7eb00dec32d3f444499cf531c6cc917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7eb00dec32d3f444499cf531c6cc917">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[32/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7eb00dec32d3f444499cf531c6cc917">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[34/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4604,7 +4914,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="acc2894b065246c4e88a9a430e5afe12b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc2894b065246c4e88a9a430e5afe12b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[33/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc2894b065246c4e88a9a430e5afe12b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[35/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4640,7 +4950,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a05350d7f8a1df60896cfe7936c367fbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05350d7f8a1df60896cfe7936c367fbf">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[34/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05350d7f8a1df60896cfe7936c367fbf">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[36/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4676,7 +4986,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa37bf5432e8e85cef6f4026ef0cd1b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa37bf5432e8e85cef6f4026ef0cd1b6f">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37bf5432e8e85cef6f4026ef0cd1b6f">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4712,7 +5022,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a884a74a968b2612ac49dc0e3db114a91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a884a74a968b2612ac49dc0e3db114a91">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a884a74a968b2612ac49dc0e3db114a91">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4748,7 +5058,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a37e1908aa78950f42f0ce7262f8c711a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37e1908aa78950f42f0ce7262f8c711a">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e1908aa78950f42f0ce7262f8c711a">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4784,7 +5094,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab7b8605b7aa8fd94fa953947bc4b3228"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7b8605b7aa8fd94fa953947bc4b3228">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b8605b7aa8fd94fa953947bc4b3228">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4819,8 +5129,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a980ad38258cc50bcad8b8d38bb1a983f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980ad38258cc50bcad8b8d38bb1a983f">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> reshade::api::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9ebcbcb6b71a7afc1ad5a6904b818aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ebcbcb6b71a7afc1ad5a6904b818aca">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebcbcb6b71a7afc1ad5a6904b818aca">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4856,7 +5202,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a97eb54e82be3fded9a3124b2cef73d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97eb54e82be3fded9a3124b2cef73d43">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97eb54e82be3fded9a3124b2cef73d43">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4892,7 +5238,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9e3f5a436428f01b3b2014096b0c007e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e3f5a436428f01b3b2014096b0c007e">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3f5a436428f01b3b2014096b0c007e">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4927,8 +5273,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0528f6866bae82a26d5b4904cf7a6ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0528f6866bae82a26d5b4904cf7a6ba3">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> reshade::api::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0033e55b816050d01768c7afc5bf35d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0033e55b816050d01768c7afc5bf35d0">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0033e55b816050d01768c7afc5bf35d0">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4964,7 +5346,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5698ca3359c104e4096c754490d0c090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5698ca3359c104e4096c754490d0c090">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5698ca3359c104e4096c754490d0c090">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5000,7 +5382,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7ede7ab34d1b87454dc39d58bbfac7aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ede7ab34d1b87454dc39d58bbfac7aa">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ede7ab34d1b87454dc39d58bbfac7aa">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5036,7 +5418,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a942334390f39da2c22d06c793bf4583d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a942334390f39da2c22d06c793bf4583d">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a942334390f39da2c22d06c793bf4583d">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5072,7 +5454,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5227cfff3e0c92f146848cff2130812d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5227cfff3e0c92f146848cff2130812d">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5227cfff3e0c92f146848cff2130812d">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5108,7 +5490,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aef2c3cfd31ae87ee47b499f2c6f6327c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef2c3cfd31ae87ee47b499f2c6f6327c">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2c3cfd31ae87ee47b499f2c6f6327c">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5144,7 +5526,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6baac39f41df62fc199c1431a1841c81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6baac39f41df62fc199c1431a1841c81">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baac39f41df62fc199c1431a1841c81">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5179,8 +5561,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa28f4e80c40ab8f7d50f0a4661ec445b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28f4e80c40ab8f7d50f0a4661ec445b">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&amp; reshade::api::operator&amp;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a83fc64142f02cd74bc71b79b8b722cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83fc64142f02cd74bc71b79b8b722cda">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fc64142f02cd74bc71b79b8b722cda">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5216,7 +5634,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac47733e7f88e8a773ffc18ae2c573f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac47733e7f88e8a773ffc18ae2c573f81">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47733e7f88e8a773ffc18ae2c573f81">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5252,7 +5670,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a80ecc0ca77a5fd94034292fb48e69b44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80ecc0ca77a5fd94034292fb48e69b44">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ecc0ca77a5fd94034292fb48e69b44">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5287,8 +5705,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a99d78ce0676b1cdbfdc44e1031a0325d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d78ce0676b1cdbfdc44e1031a0325d">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&amp; reshade::api::operator&amp;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1cb857f15ed38b375a0a57756e68eea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cb857f15ed38b375a0a57756e68eea2">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb857f15ed38b375a0a57756e68eea2">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5324,7 +5778,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a64b0fd52afd99fdcab01cbebcb063be8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b0fd52afd99fdcab01cbebcb063be8">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b0fd52afd99fdcab01cbebcb063be8">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5360,7 +5814,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aacef138e97ae5efdfa31d957ce68f0f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacef138e97ae5efdfa31d957ce68f0f3">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacef138e97ae5efdfa31d957ce68f0f3">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5828,7 +6282,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2aa0a617f67f4bdd036ac915275737f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aa0a617f67f4bdd036ac915275737f7">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa0a617f67f4bdd036ac915275737f7">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5864,7 +6318,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac444348926ebfe2162d8a1c9b8ceb6cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac444348926ebfe2162d8a1c9b8ceb6cc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac444348926ebfe2162d8a1c9b8ceb6cc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5900,7 +6354,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af98d628df4b768e774e2ef4f8ae52229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98d628df4b768e774e2ef4f8ae52229">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af98d628df4b768e774e2ef4f8ae52229">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5936,7 +6390,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac70cdced8aa20ca9462628dc40c22681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac70cdced8aa20ca9462628dc40c22681">&#9670;&nbsp;</a></span>operator==() <span class="overload">[4/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70cdced8aa20ca9462628dc40c22681">&#9670;&nbsp;</a></span>operator==() <span class="overload">[4/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5972,7 +6426,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4a6e2a823b3b0322e4bb02fe09f132e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6e2a823b3b0322e4bb02fe09f132e9">&#9670;&nbsp;</a></span>operator==() <span class="overload">[5/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6e2a823b3b0322e4bb02fe09f132e9">&#9670;&nbsp;</a></span>operator==() <span class="overload">[5/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6008,7 +6462,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a93a67851fd3685aa418b99e39d1c4746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a67851fd3685aa418b99e39d1c4746">&#9670;&nbsp;</a></span>operator==() <span class="overload">[6/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a67851fd3685aa418b99e39d1c4746">&#9670;&nbsp;</a></span>operator==() <span class="overload">[6/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6043,8 +6497,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c0846cbeda341e61d0e0921a0c48a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0846cbeda341e61d0e0921a0c48a79">&#9670;&nbsp;</a></span>operator==() <span class="overload">[7/36]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool reshade::api::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9176d4cb1ee3954f6877b5ef7085d415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9176d4cb1ee3954f6877b5ef7085d415">&#9670;&nbsp;</a></span>operator==() <span class="overload">[7/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9176d4cb1ee3954f6877b5ef7085d415">&#9670;&nbsp;</a></span>operator==() <span class="overload">[8/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6080,7 +6570,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="adad2a62e0febba5909371bffc5f05dc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adad2a62e0febba5909371bffc5f05dc1">&#9670;&nbsp;</a></span>operator==() <span class="overload">[8/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adad2a62e0febba5909371bffc5f05dc1">&#9670;&nbsp;</a></span>operator==() <span class="overload">[9/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6116,7 +6606,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad83f25e11c88a52d353d9701ca7c20b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad83f25e11c88a52d353d9701ca7c20b0">&#9670;&nbsp;</a></span>operator==() <span class="overload">[9/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83f25e11c88a52d353d9701ca7c20b0">&#9670;&nbsp;</a></span>operator==() <span class="overload">[10/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6152,7 +6642,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aad5eebf6b08c44bc2c31f3a19ef5fca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad5eebf6b08c44bc2c31f3a19ef5fca3">&#9670;&nbsp;</a></span>operator==() <span class="overload">[10/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5eebf6b08c44bc2c31f3a19ef5fca3">&#9670;&nbsp;</a></span>operator==() <span class="overload">[11/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6188,7 +6678,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a880963c857be00e264f144bff888401e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880963c857be00e264f144bff888401e">&#9670;&nbsp;</a></span>operator==() <span class="overload">[11/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a880963c857be00e264f144bff888401e">&#9670;&nbsp;</a></span>operator==() <span class="overload">[12/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6224,7 +6714,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a969b3bd19bfabf69e605d9fb3425cf0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a969b3bd19bfabf69e605d9fb3425cf0f">&#9670;&nbsp;</a></span>operator==() <span class="overload">[12/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a969b3bd19bfabf69e605d9fb3425cf0f">&#9670;&nbsp;</a></span>operator==() <span class="overload">[13/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6260,7 +6750,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a274de619fdfe695f6f975bae643c6dc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a274de619fdfe695f6f975bae643c6dc0">&#9670;&nbsp;</a></span>operator==() <span class="overload">[13/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a274de619fdfe695f6f975bae643c6dc0">&#9670;&nbsp;</a></span>operator==() <span class="overload">[14/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6296,7 +6786,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8511349a3a9915372b03a00508dc8dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8511349a3a9915372b03a00508dc8dbe">&#9670;&nbsp;</a></span>operator==() <span class="overload">[14/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8511349a3a9915372b03a00508dc8dbe">&#9670;&nbsp;</a></span>operator==() <span class="overload">[15/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6332,7 +6822,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a85476dca22acac9f0ae8d85c425e1002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85476dca22acac9f0ae8d85c425e1002">&#9670;&nbsp;</a></span>operator==() <span class="overload">[15/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85476dca22acac9f0ae8d85c425e1002">&#9670;&nbsp;</a></span>operator==() <span class="overload">[16/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6368,7 +6858,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5e5d871b18c7d75e358e2a29cd56cfd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5d871b18c7d75e358e2a29cd56cfd8">&#9670;&nbsp;</a></span>operator==() <span class="overload">[16/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5d871b18c7d75e358e2a29cd56cfd8">&#9670;&nbsp;</a></span>operator==() <span class="overload">[17/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6404,7 +6894,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a474dd14cf11abcb57ebfc617be87a583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474dd14cf11abcb57ebfc617be87a583">&#9670;&nbsp;</a></span>operator==() <span class="overload">[17/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a474dd14cf11abcb57ebfc617be87a583">&#9670;&nbsp;</a></span>operator==() <span class="overload">[18/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6440,7 +6930,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="afd33c67637c180b0164781ebcb6eac0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd33c67637c180b0164781ebcb6eac0f">&#9670;&nbsp;</a></span>operator==() <span class="overload">[18/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd33c67637c180b0164781ebcb6eac0f">&#9670;&nbsp;</a></span>operator==() <span class="overload">[19/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6476,7 +6966,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac5ce2b14e2631cac136d18f8189e7b4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ce2b14e2631cac136d18f8189e7b4e">&#9670;&nbsp;</a></span>operator==() <span class="overload">[19/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ce2b14e2631cac136d18f8189e7b4e">&#9670;&nbsp;</a></span>operator==() <span class="overload">[20/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6512,7 +7002,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7308af86110f6fbc69e272038d1c9367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7308af86110f6fbc69e272038d1c9367">&#9670;&nbsp;</a></span>operator==() <span class="overload">[20/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7308af86110f6fbc69e272038d1c9367">&#9670;&nbsp;</a></span>operator==() <span class="overload">[21/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6548,7 +7038,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad4e5e49d0053515ea5cb0efb5b12f856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4e5e49d0053515ea5cb0efb5b12f856">&#9670;&nbsp;</a></span>operator==() <span class="overload">[21/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e5e49d0053515ea5cb0efb5b12f856">&#9670;&nbsp;</a></span>operator==() <span class="overload">[22/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6584,7 +7074,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ff3d584901d54d3ab699a2c92423c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff3d584901d54d3ab699a2c92423c9b">&#9670;&nbsp;</a></span>operator==() <span class="overload">[22/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff3d584901d54d3ab699a2c92423c9b">&#9670;&nbsp;</a></span>operator==() <span class="overload">[23/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6620,7 +7110,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a38566063476aa493bd0cbab0a7d0a225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38566063476aa493bd0cbab0a7d0a225">&#9670;&nbsp;</a></span>operator==() <span class="overload">[23/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38566063476aa493bd0cbab0a7d0a225">&#9670;&nbsp;</a></span>operator==() <span class="overload">[24/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6656,7 +7146,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a47c81e0d369b87aa27851bfc3f72012d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c81e0d369b87aa27851bfc3f72012d">&#9670;&nbsp;</a></span>operator==() <span class="overload">[24/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c81e0d369b87aa27851bfc3f72012d">&#9670;&nbsp;</a></span>operator==() <span class="overload">[25/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6692,7 +7182,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0368b99364f0eb88b654ec89a1bc8f68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0368b99364f0eb88b654ec89a1bc8f68">&#9670;&nbsp;</a></span>operator==() <span class="overload">[25/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0368b99364f0eb88b654ec89a1bc8f68">&#9670;&nbsp;</a></span>operator==() <span class="overload">[26/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6727,8 +7217,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4c01e12d28fbebbf0983cdb8406451ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c01e12d28fbebbf0983cdb8406451ce">&#9670;&nbsp;</a></span>operator==() <span class="overload">[27/36]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool reshade::api::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4046867de6b72574102aecf019521767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4046867de6b72574102aecf019521767">&#9670;&nbsp;</a></span>operator==() <span class="overload">[26/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4046867de6b72574102aecf019521767">&#9670;&nbsp;</a></span>operator==() <span class="overload">[28/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6764,7 +7290,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="afa0c41881d15edaf1241765b006ef5e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0c41881d15edaf1241765b006ef5e8">&#9670;&nbsp;</a></span>operator==() <span class="overload">[27/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0c41881d15edaf1241765b006ef5e8">&#9670;&nbsp;</a></span>operator==() <span class="overload">[29/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6800,7 +7326,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abf9e998db3d7607201a2ba98b203fc54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf9e998db3d7607201a2ba98b203fc54">&#9670;&nbsp;</a></span>operator==() <span class="overload">[28/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9e998db3d7607201a2ba98b203fc54">&#9670;&nbsp;</a></span>operator==() <span class="overload">[30/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6836,7 +7362,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8582cf197d1dd2ed6600238bf955d0cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8582cf197d1dd2ed6600238bf955d0cc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[29/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8582cf197d1dd2ed6600238bf955d0cc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[31/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6872,7 +7398,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7d86378e0571e13476f2266968400127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d86378e0571e13476f2266968400127">&#9670;&nbsp;</a></span>operator==() <span class="overload">[30/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d86378e0571e13476f2266968400127">&#9670;&nbsp;</a></span>operator==() <span class="overload">[32/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6908,7 +7434,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9ae7e5bbc3e56af5b685fbd457c9a5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ae7e5bbc3e56af5b685fbd457c9a5dc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[31/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae7e5bbc3e56af5b685fbd457c9a5dc">&#9670;&nbsp;</a></span>operator==() <span class="overload">[33/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6944,7 +7470,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aab3b2b77bd442d33bf692743214792f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab3b2b77bd442d33bf692743214792f6">&#9670;&nbsp;</a></span>operator==() <span class="overload">[32/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3b2b77bd442d33bf692743214792f6">&#9670;&nbsp;</a></span>operator==() <span class="overload">[34/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6980,7 +7506,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7b704f17a5e972ff970206421a484ab1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b704f17a5e972ff970206421a484ab1">&#9670;&nbsp;</a></span>operator==() <span class="overload">[33/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b704f17a5e972ff970206421a484ab1">&#9670;&nbsp;</a></span>operator==() <span class="overload">[35/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7016,7 +7542,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a388dc09cc9660dc646e1d8c99b9509ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388dc09cc9660dc646e1d8c99b9509ff">&#9670;&nbsp;</a></span>operator==() <span class="overload">[34/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a388dc09cc9660dc646e1d8c99b9509ff">&#9670;&nbsp;</a></span>operator==() <span class="overload">[36/36]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7052,7 +7578,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a19fa20c89a0907e10fe87052450c1846"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19fa20c89a0907e10fe87052450c1846">&#9670;&nbsp;</a></span>operator^() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fa20c89a0907e10fe87052450c1846">&#9670;&nbsp;</a></span>operator^() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7088,7 +7614,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab3ec119537f4a7bc70594f6def078b00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3ec119537f4a7bc70594f6def078b00">&#9670;&nbsp;</a></span>operator^() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ec119537f4a7bc70594f6def078b00">&#9670;&nbsp;</a></span>operator^() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7124,7 +7650,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9b2d9fbb58f0dffb7902cd9b781e5661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b2d9fbb58f0dffb7902cd9b781e5661">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2d9fbb58f0dffb7902cd9b781e5661">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7160,7 +7686,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a73dc26ab487af6bbd182c39217d690ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73dc26ab487af6bbd182c39217d690ae">&#9670;&nbsp;</a></span>operator^() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73dc26ab487af6bbd182c39217d690ae">&#9670;&nbsp;</a></span>operator^() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7195,8 +7721,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa589ed8f7c9984aaa587b7adab217c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa589ed8f7c9984aaa587b7adab217c73">&#9670;&nbsp;</a></span>operator^() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> reshade::api::operator^ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0f04002b27be3389457445348480bd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0f04002b27be3389457445348480bd5">&#9670;&nbsp;</a></span>operator^() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f04002b27be3389457445348480bd5">&#9670;&nbsp;</a></span>operator^() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7232,7 +7794,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af43bd767fc69ff8bff1d533876cc6609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af43bd767fc69ff8bff1d533876cc6609">&#9670;&nbsp;</a></span>operator^() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af43bd767fc69ff8bff1d533876cc6609">&#9670;&nbsp;</a></span>operator^() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7268,7 +7830,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0c0f023f38f642094d284ee177742011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c0f023f38f642094d284ee177742011">&#9670;&nbsp;</a></span>operator^() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0f023f38f642094d284ee177742011">&#9670;&nbsp;</a></span>operator^() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7303,8 +7865,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a30fcfd95dd212017b43d62cb5faa73ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30fcfd95dd212017b43d62cb5faa73ab">&#9670;&nbsp;</a></span>operator^() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> reshade::api::operator^ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa08726892967e48a2e0b87937397a7d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa08726892967e48a2e0b87937397a7d9">&#9670;&nbsp;</a></span>operator^() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08726892967e48a2e0b87937397a7d9">&#9670;&nbsp;</a></span>operator^() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7340,7 +7938,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0165fa3d8be69d0a2b8de85e0969ca67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0165fa3d8be69d0a2b8de85e0969ca67">&#9670;&nbsp;</a></span>operator^() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0165fa3d8be69d0a2b8de85e0969ca67">&#9670;&nbsp;</a></span>operator^() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7376,7 +7974,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aca811a689ded858dd43decb2178aae12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca811a689ded858dd43decb2178aae12">&#9670;&nbsp;</a></span>operator^() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca811a689ded858dd43decb2178aae12">&#9670;&nbsp;</a></span>operator^() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7412,7 +8010,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a56ef38e86dbe3501936a02402f6ae807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56ef38e86dbe3501936a02402f6ae807">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ef38e86dbe3501936a02402f6ae807">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7448,7 +8046,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3978fbbd3331e0a90c15ee7b2f81b390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3978fbbd3331e0a90c15ee7b2f81b390">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3978fbbd3331e0a90c15ee7b2f81b390">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7484,7 +8082,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a18cca04331292b5bd0b04a5e2eb763c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18cca04331292b5bd0b04a5e2eb763c5">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18cca04331292b5bd0b04a5e2eb763c5">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7520,7 +8118,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aaa306e70cd5b31366db26668fd82f68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa306e70cd5b31366db26668fd82f68f">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa306e70cd5b31366db26668fd82f68f">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7555,8 +8153,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9dce9f4ab60704faf073936301ae4410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dce9f4ab60704faf073936301ae4410">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&amp; reshade::api::operator^= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afd898a118f4901e525d6d03e9c250b84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd898a118f4901e525d6d03e9c250b84">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd898a118f4901e525d6d03e9c250b84">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7592,7 +8226,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aaadb61cf80330ad47607a5ece7344ad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaadb61cf80330ad47607a5ece7344ad5">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaadb61cf80330ad47607a5ece7344ad5">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7628,7 +8262,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae793163a5f9abd54c64193dfa5216f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae793163a5f9abd54c64193dfa5216f43">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae793163a5f9abd54c64193dfa5216f43">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7663,8 +8297,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af9d62ab2210a051b7233b602735de49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d62ab2210a051b7233b602735de49f">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&amp; reshade::api::operator^= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0be2f18b2ad68b0d97fdf267d632f147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0be2f18b2ad68b0d97fdf267d632f147">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be2f18b2ad68b0d97fdf267d632f147">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7700,7 +8370,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab63a460bb20cbd5fecbaf7657c29f497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63a460bb20cbd5fecbaf7657c29f497">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63a460bb20cbd5fecbaf7657c29f497">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7736,7 +8406,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ace5565be83eabc8075e457d99f5a88db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5565be83eabc8075e457d99f5a88db">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5565be83eabc8075e457d99f5a88db">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7772,7 +8442,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7bc34d561c91365ab8178096bf81d7f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc34d561c91365ab8178096bf81d7f8">&#9670;&nbsp;</a></span>operator|() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc34d561c91365ab8178096bf81d7f8">&#9670;&nbsp;</a></span>operator|() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7808,7 +8478,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a956b8ef8ce536e63695570f828ba96c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956b8ef8ce536e63695570f828ba96c5">&#9670;&nbsp;</a></span>operator|() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a956b8ef8ce536e63695570f828ba96c5">&#9670;&nbsp;</a></span>operator|() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7844,7 +8514,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af78be13cced4d992efc8737e46d3740c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af78be13cced4d992efc8737e46d3740c">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af78be13cced4d992efc8737e46d3740c">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7880,7 +8550,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abafabdc299c24c613c27c51c5cdcf40f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abafabdc299c24c613c27c51c5cdcf40f">&#9670;&nbsp;</a></span>operator|() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abafabdc299c24c613c27c51c5cdcf40f">&#9670;&nbsp;</a></span>operator|() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7915,8 +8585,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a19bb40929101a1b41df75fb4e3af52a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bb40929101a1b41df75fb4e3af52a0">&#9670;&nbsp;</a></span>operator|() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> reshade::api::operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6011ccdc4c47745a2858f1ced27a902e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6011ccdc4c47745a2858f1ced27a902e">&#9670;&nbsp;</a></span>operator|() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6011ccdc4c47745a2858f1ced27a902e">&#9670;&nbsp;</a></span>operator|() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7952,7 +8658,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ace455fde9d2aa4b95bee5e031ee38f57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace455fde9d2aa4b95bee5e031ee38f57">&#9670;&nbsp;</a></span>operator|() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ace455fde9d2aa4b95bee5e031ee38f57">&#9670;&nbsp;</a></span>operator|() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7988,7 +8694,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aafb243f615dd7d51873d366d0e62315d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb243f615dd7d51873d366d0e62315d">&#9670;&nbsp;</a></span>operator|() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb243f615dd7d51873d366d0e62315d">&#9670;&nbsp;</a></span>operator|() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8023,8 +8729,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a37f1c89fe097b242919f3badc03228cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f1c89fe097b242919f3badc03228cd">&#9670;&nbsp;</a></span>operator|() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> reshade::api::operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a21b5ee0bb10dd6a8abb5f3b10ea8d033"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21b5ee0bb10dd6a8abb5f3b10ea8d033">&#9670;&nbsp;</a></span>operator|() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b5ee0bb10dd6a8abb5f3b10ea8d033">&#9670;&nbsp;</a></span>operator|() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8060,7 +8802,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8abc9b2ceb93454823784f925fb740a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8abc9b2ceb93454823784f925fb740a1">&#9670;&nbsp;</a></span>operator|() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abc9b2ceb93454823784f925fb740a1">&#9670;&nbsp;</a></span>operator|() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8096,7 +8838,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0e35daec4f4016889ff6e775a4a9e6eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e35daec4f4016889ff6e775a4a9e6eb">&#9670;&nbsp;</a></span>operator|() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e35daec4f4016889ff6e775a4a9e6eb">&#9670;&nbsp;</a></span>operator|() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8132,7 +8874,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac48860b5da699412a8e2f20b53fb0d00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac48860b5da699412a8e2f20b53fb0d00">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48860b5da699412a8e2f20b53fb0d00">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8168,7 +8910,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac2df2e9ceb03a178d7a2e1b3650d9b7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2df2e9ceb03a178d7a2e1b3650d9b7f">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2df2e9ceb03a178d7a2e1b3650d9b7f">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8204,7 +8946,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abf8388761e64787e92b48e9fff4d4876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf8388761e64787e92b48e9fff4d4876">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8388761e64787e92b48e9fff4d4876">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8240,7 +8982,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a904c13ce1d1d01493ffa83b05d915031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904c13ce1d1d01493ffa83b05d915031">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a904c13ce1d1d01493ffa83b05d915031">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8275,8 +9017,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a58496d07579956483d387dce9ea7598c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58496d07579956483d387dce9ea7598c">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&amp; reshade::api::operator|= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9406ac6881c01a10fb4ff72b04b0da9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9406ac6881c01a10fb4ff72b04b0da9a">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9406ac6881c01a10fb4ff72b04b0da9a">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8312,7 +9090,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a676427d0c65e58ff3992f2c62bd841fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a676427d0c65e58ff3992f2c62bd841fc">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a676427d0c65e58ff3992f2c62bd841fc">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8348,7 +9126,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="acf8e99f58513da1fcd54312548a367ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf8e99f58513da1fcd54312548a367ba">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8e99f58513da1fcd54312548a367ba">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8383,8 +9161,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a925e6728d904af1e63ffaec29081b037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925e6728d904af1e63ffaec29081b037">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&amp; reshade::api::operator|= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9831b40796478ed662d1403d538980a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9831b40796478ed662d1403d538980a0">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9831b40796478ed662d1403d538980a0">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8420,7 +9234,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91dcdf29ca6d3af9dc26658202762f5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91dcdf29ca6d3af9dc26658202762f5a">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91dcdf29ca6d3af9dc26658202762f5a">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8456,7 +9270,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac07bc210d0b7508ec28be034f13379a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac07bc210d0b7508ec28be034f13379a8">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07bc210d0b7508ec28be034f13379a8">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8492,7 +9306,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae6d4af983f8f868522f10de7d5d8c95c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d4af983f8f868522f10de7d5d8c95c">&#9670;&nbsp;</a></span>operator~() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d4af983f8f868522f10de7d5d8c95c">&#9670;&nbsp;</a></span>operator~() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8518,7 +9332,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8e41018bae4488b62ff33df662956ed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e41018bae4488b62ff33df662956ed8">&#9670;&nbsp;</a></span>operator~() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e41018bae4488b62ff33df662956ed8">&#9670;&nbsp;</a></span>operator~() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8544,7 +9358,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa221e0273a164bc9dbec936858cfb4e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa221e0273a164bc9dbec936858cfb4e0">&#9670;&nbsp;</a></span>operator~() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa221e0273a164bc9dbec936858cfb4e0">&#9670;&nbsp;</a></span>operator~() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8570,7 +9384,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b23478d0d1eac09aa1a85b1f480c3c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b23478d0d1eac09aa1a85b1f480c3c2">&#9670;&nbsp;</a></span>operator~() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b23478d0d1eac09aa1a85b1f480c3c2">&#9670;&nbsp;</a></span>operator~() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8595,8 +9409,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c1ee34b36be8e7d692c7bee8accf81e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1ee34b36be8e7d692c7bee8accf81e">&#9670;&nbsp;</a></span>operator~() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a> reshade::api::operator~ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">descriptor_range_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a91b7655b1902ad423e171b8741891c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91b7655b1902ad423e171b8741891c92">&#9670;&nbsp;</a></span>operator~() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b7655b1902ad423e171b8741891c92">&#9670;&nbsp;</a></span>operator~() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8622,7 +9462,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a98c376a50e07cace2966b721770c4b84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c376a50e07cace2966b721770c4b84">&#9670;&nbsp;</a></span>operator~() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c376a50e07cace2966b721770c4b84">&#9670;&nbsp;</a></span>operator~() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8648,7 +9488,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a99560139a132d5dcdfaab3d38b041415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99560139a132d5dcdfaab3d38b041415">&#9670;&nbsp;</a></span>operator~() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99560139a132d5dcdfaab3d38b041415">&#9670;&nbsp;</a></span>operator~() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8673,8 +9513,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a999f8f1b044dd0f5f3cfa95f554959ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999f8f1b044dd0f5f3cfa95f554959ad">&#9670;&nbsp;</a></span>operator~() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a> reshade::api::operator~ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e">render_pass_flags</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af5b11b6e7ad3ce6dacea721e4c2e13d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5b11b6e7ad3ce6dacea721e4c2e13d6">&#9670;&nbsp;</a></span>operator~() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b11b6e7ad3ce6dacea721e4c2e13d6">&#9670;&nbsp;</a></span>operator~() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8700,7 +9566,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a78f2bd93d5c14c1f825953328bf4187d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78f2bd93d5c14c1f825953328bf4187d">&#9670;&nbsp;</a></span>operator~() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f2bd93d5c14c1f825953328bf4187d">&#9670;&nbsp;</a></span>operator~() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8726,7 +9592,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af320109b5f9cfc7f4909b8c7c919545b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af320109b5f9cfc7f4909b8c7c919545b">&#9670;&nbsp;</a></span>operator~() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af320109b5f9cfc7f4909b8c7c919545b">&#9670;&nbsp;</a></span>operator~() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

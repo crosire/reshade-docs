@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -77,6 +78,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="reshade__api__resource_8hpp_source.html">reshade_api_resource.hpp</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 </div>
 <p><a href="reshade__api__pipeline_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -88,7 +90,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range.html">reshade::api::descriptor_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a range of descriptors of a descriptor table in a pipeline layout.  <a href="structreshade_1_1api_1_1descriptor__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__static__samplers.html">reshade::api::descriptor_range_with_static_samplers</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1descriptor__range__with__flags.html">reshade::api::descriptor_range_with_flags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1pipeline__layout__param.html">reshade::api::pipeline_layout_param</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single parameter in a pipeline layout.  <a href="structreshade_1_1api_1_1pipeline__layout__param.html#details">More...</a><br /></td></tr>
@@ -161,6 +163,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacereshade_1_1api"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html">reshade::api</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0ae792d4cf40c386659f4182a666c1e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a0ae792d4cf40c386659f4182a666c1e2">reshade::api::descriptor_range_with_static_samplers</a> = descriptor_range_with_flags</td></tr>
+<tr class="separator:a0ae792d4cf40c386659f4182a666c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ae6d07e51daff3c4ff0b10c4ce20c77ee"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee">reshade::api::shader_stage</a> : uint32_t { <br />
@@ -221,28 +228,45 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afd9e41db9727a2e919c772eaafe3d23c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">reshade::api::descriptor_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca2b06a2251d39e28f8220696766dcd136">reshade::api::sampler</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cacf2abea31022a0c3cd4b340acf7f138b">reshade::api::sampler_with_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4">reshade::api::buffer_shader_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973">reshade::api::buffer_unordered_access_view</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d">reshade::api::texture_shader_resource_view</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d">reshade::api::texture_unordered_access_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caab3eef6df8cc17afc350749f0d0e587f">reshade::api::shader_resource_view</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23caabe6f8b346c4c60c8564a663b158584a">reshade::api::unordered_access_view</a>
 , <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca17feefde0a65d128104ed9a24b5a57a4">reshade::api::buffer_shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5f6a691dd98a5ce886a089e150f0973">reshade::api::buffer_unordered_access_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca4893238b591dbe9d9ae23e3e4d63ad8d">reshade::api::texture_shader_resource_view</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad1dd2797814c50eca1630b007af0004d">reshade::api::texture_unordered_access_view</a>
+, <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cade1df516592d6089a5a1d4c9280f257b">reshade::api::constant_buffer</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5122f30bfb41ef71fcacd7f6d732a19f">reshade::api::constant_buffer_with_dynamic_offset</a>
 , <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca52e8f9839b88cb8eaa612a7f3ee70155">reshade::api::shader_storage_buffer</a>
-, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">reshade::api::acceleration_structure</a>
+, <a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23cad5831ef28d8b794ceb23db9fb92e9f01">reshade::api::shader_storage_buffer_with_dynamic_offset</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23ca5ce48948fe80f65f45fa4ecebbdc867c">reshade::api::acceleration_structure</a>
 <br />
  }</td></tr>
 <tr class="memdesc:afd9e41db9727a2e919c772eaafe3d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a descriptor.  <a href="namespacereshade_1_1api.html#afd9e41db9727a2e919c772eaafe3d23c">More...</a><br /></td></tr>
 <tr class="separator:afd9e41db9727a2e919c772eaafe3d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e17ea2a1d0783e9a546655413d396b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">reshade::api::descriptor_range_flags</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396bad687e97bbef4d3ed131429c782a916e0">reshade::api::descriptors_volatile</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba669d311b56c0523e26940e8ff856345b">reshade::api::data_volatile</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396bac329ad27e91acc2e1eb705806604bcd0">reshade::api::data_static_while_set_at_execute</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396ba2568360725d5b81460077d69673de07f">reshade::api::data_static</a>
+, <a class="el" href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396baec3e170598d340e0abda7a4403c18559">reshade::api::partially_bound</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad3e17ea2a1d0783e9a546655413d396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify the volatility of descriptors and the data they reference.  <a href="namespacereshade_1_1api.html#ad3e17ea2a1d0783e9a546655413d396b">More...</a><br /></td></tr>
+<tr class="separator:ad3e17ea2a1d0783e9a546655413d396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833ac63874bc8b79fe4f9dbebb043c16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16">reshade::api::pipeline_layout_param_type</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16acf66d15894ab6128d23c652d72e5ac24">reshade::api::push_constants</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a11b986933e4daed37df0ce4f9a0544ef">reshade::api::descriptor_table</a>
-, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">reshade::api::descriptor_table_with_static_samplers</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a10f0f3df78fae6334300d82683a9c215">reshade::api::descriptor_table_with_flags</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a0856401a21410bc082d6de1ba93632f0">reshade::api::push_descriptors</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16a5f4cf3197203ce4c00daf17735506150">reshade::api::push_descriptors_with_ranges</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ad4b601c09e7e60f06d7f2f1f4d1594ef">reshade::api::push_descriptors_with_ranges_and_flags</a>
+, <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae144c658dc8f2857a8665be75dcdc69e">reshade::api::descriptor_table_with_static_samplers</a>
 , <a class="el" href="namespacereshade_1_1api.html#a833ac63874bc8b79fe4f9dbebb043c16ae17ad2fe9a16098d69bc8dc64d157189">reshade::api::push_descriptors_with_static_samplers</a>
 <br />
  }</td></tr>
@@ -491,66 +515,68 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad8341ba53158a673d3df7880f61345ed">reshade::api::srgb_write_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aa68468e78da5883715a658f79aacb6cc">reshade::api::primitive_topology</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a71edea6d51e4894bdb48ca1269bb780f">reshade::api::input_element_stride</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0323747a7d7d71c6b0f24453641377a0">reshade::api::sample_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a99c067be40a1980049629602f060e767">reshade::api::alpha_to_coverage_enable</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a822de02da226ff6b2a55f50be3d0e4de">reshade::api::blend_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a99c067be40a1980049629602f060e767">reshade::api::alpha_to_coverage_enable</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a822de02da226ff6b2a55f50be3d0e4de">reshade::api::blend_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a184a624825d1f8db8ffb9155ccd243af">reshade::api::logic_op_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a503611ff9eb00df608839f1df38a44d3">reshade::api::source_color_blend_factor</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a326fa5ae4e4bea1c91e164b6fd26ef18">reshade::api::dest_color_blend_factor</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a10218524a4d127917f1977399ee42524">reshade::api::color_blend_op</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a326fa5ae4e4bea1c91e164b6fd26ef18">reshade::api::dest_color_blend_factor</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a10218524a4d127917f1977399ee42524">reshade::api::color_blend_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab2ea147c733603a72c601272947aaabb">reshade::api::source_alpha_blend_factor</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0cf5b95714f5c6c6d70317b6de5fc114">reshade::api::dest_alpha_blend_factor</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab89ffeb7aa5b92c06fdc13d5a0eafb3b">reshade::api::alpha_blend_op</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1d541f141a154a7f6dd465ca0b768663">reshade::api::blend_constant</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ab89ffeb7aa5b92c06fdc13d5a0eafb3b">reshade::api::alpha_blend_op</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1d541f141a154a7f6dd465ca0b768663">reshade::api::blend_constant</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9acbf8ba6477522ba81b39f43ee6cebe66">reshade::api::logic_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a9718d70b339b0e4c1910e48cef640df0">reshade::api::render_target_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7bb0148cade18ac46778bda9380a9dd8">reshade::api::fill_mode</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a83bd7846efcf120627562bf7cfc5465d">reshade::api::cull_mode</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7bb0148cade18ac46778bda9380a9dd8">reshade::api::fill_mode</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a83bd7846efcf120627562bf7cfc5465d">reshade::api::cull_mode</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0d87308f61a76e241a8bbef19fc964bf">reshade::api::front_counter_clockwise</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ace8cd78a19128078d0ee104f4f85bb46">reshade::api::depth_bias</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a706cc048a0558681c14e380036be2760">reshade::api::depth_bias_clamp</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a66cb5bd1941313575f7260f61c8e943a">reshade::api::depth_bias_slope_scaled</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a706cc048a0558681c14e380036be2760">reshade::api::depth_bias_clamp</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a66cb5bd1941313575f7260f61c8e943a">reshade::api::depth_bias_slope_scaled</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abb8746e8627ad44fe644f9bfdb5eaa04">reshade::api::depth_clip_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1a264e656b1924ac35c77e28b3c61aca">reshade::api::scissor_enable</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a3f6e87bfe84428d51a213423ec9fb227">reshade::api::multisample_enable</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad54f4402247a0f452cba1ae336614816">reshade::api::antialiased_line_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a3f6e87bfe84428d51a213423ec9fb227">reshade::api::multisample_enable</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ad54f4402247a0f452cba1ae336614816">reshade::api::antialiased_line_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a53208ddc4738c8610331c991d8eac00b">reshade::api::depth_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a0bd9e1d9c7d0c019bb9d40ae1ca6c7a9">reshade::api::depth_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7920f4199edf22e1e9e4220f93625c7a">reshade::api::depth_func</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9afe21dadce87df50867f780a12f06f36f">reshade::api::stencil_enable</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a7920f4199edf22e1e9e4220f93625c7a">reshade::api::depth_func</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9afe21dadce87df50867f780a12f06f36f">reshade::api::stencil_enable</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a95cc7e728f5d56550c104bcccc19227f">reshade::api::front_stencil_read_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aab6031626063fb58986c84b57990a83c">reshade::api::front_stencil_write_mask</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2055c3f4affbe5c6b698255da4716b83">reshade::api::front_stencil_reference_value</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a634aa12fe739d76c169b60895d71d404">reshade::api::front_stencil_func</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2055c3f4affbe5c6b698255da4716b83">reshade::api::front_stencil_reference_value</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a634aa12fe739d76c169b60895d71d404">reshade::api::front_stencil_func</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a87c663418b4e3ef7da9ca62776bdacea">reshade::api::front_stencil_pass_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aab73984d304ca2b49701f82745143f8c">reshade::api::front_stencil_fail_op</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abc9377d7e811cf06502ca43fba95c8f5">reshade::api::front_stencil_depth_fail_op</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abdb3d39673204624edc57756e60b7d57">reshade::api::back_stencil_read_mask</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abc9377d7e811cf06502ca43fba95c8f5">reshade::api::front_stencil_depth_fail_op</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9abdb3d39673204624edc57756e60b7d57">reshade::api::back_stencil_read_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a1ed8026cf1edd5566a57dee59a05cdc4">reshade::api::back_stencil_write_mask</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a9f392083f2e736b7824b50d908edea84">reshade::api::back_stencil_reference_value</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aca3118b2537b05e4f9ffef9f5622dbfb">reshade::api::back_stencil_func</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9af08d49f42958da6a835a8bd1a2e7724f">reshade::api::back_stencil_pass_op</a>
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9aca3118b2537b05e4f9ffef9f5622dbfb">reshade::api::back_stencil_func</a>
+, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9af08d49f42958da6a835a8bd1a2e7724f">reshade::api::back_stencil_pass_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ac76e3c104ce55c9fb7566b68292912de">reshade::api::back_stencil_fail_op</a>
 , <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9ae72acae0f6bb86d7894e2cac2b199814">reshade::api::back_stencil_depth_fail_op</a>
-, <a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2b7056a4b7087774387eadc0fc71105f">reshade::api::ray_tracing_pipeline_stack_size</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9a2b7056a4b7087774387eadc0fc71105f">reshade::api::ray_tracing_pipeline_stack_size</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a21e917814c5dd21aa28d2e6564f504d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of all possible render pipeline states that can be set independent of pipeline state objects.  <a href="namespacereshade_1_1api.html#a21e917814c5dd21aa28d2e6564f504d9">More...</a><br /></td></tr>
 <tr class="separator:a21e917814c5dd21aa28d2e6564f504d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">reshade::api::fence_flags</a> : uint32_t { <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa334c4a4c42fdb79d7ebc3e73b517e6f8">reshade::api::none</a>
+, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">reshade::api::non_monitored</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">reshade::api::shared</a>
 , <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaaf9c4f4b49cecfafe651dec08645e38ce">reshade::api::shared_nt_handle</a>
-, <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaac2e62c695736c4005ee631253461f07e">reshade::api::non_monitored</a>
  }</td></tr>
 <tr class="memdesc:ab7eabaefc2ea8c8f3225f291960271ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags that specify additional parameters of a fence.  <a href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271ea">More...</a><br /></td></tr>
 <tr class="separator:ab7eabaefc2ea8c8f3225f291960271ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -593,6 +619,24 @@ Functions</h2></td></tr>
 <tr class="separator:a38566063476aa493bd0cbab0a7d0a225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec5752edf7c6f705edb4f37b2d1e8da"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a7ec5752edf7c6f705edb4f37b2d1e8da">reshade::api::operator!=</a> (pipeline_stage lhs, uint32_t rhs)</td></tr>
 <tr class="separator:a7ec5752edf7c6f705edb4f37b2d1e8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1ee34b36be8e7d692c7bee8accf81e"><td class="memItemLeft" align="right" valign="top">constexpr descriptor_range_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9c1ee34b36be8e7d692c7bee8accf81e">reshade::api::operator~</a> (descriptor_range_flags a)</td></tr>
+<tr class="separator:a9c1ee34b36be8e7d692c7bee8accf81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28f4e80c40ab8f7d50f0a4661ec445b"><td class="memItemLeft" align="right" valign="top">descriptor_range_flags &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa28f4e80c40ab8f7d50f0a4661ec445b">reshade::api::operator&amp;=</a> (descriptor_range_flags &amp;a, descriptor_range_flags b)</td></tr>
+<tr class="separator:aa28f4e80c40ab8f7d50f0a4661ec445b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980ad38258cc50bcad8b8d38bb1a983f"><td class="memItemLeft" align="right" valign="top">constexpr descriptor_range_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a980ad38258cc50bcad8b8d38bb1a983f">reshade::api::operator&amp;</a> (descriptor_range_flags a, descriptor_range_flags b)</td></tr>
+<tr class="separator:a980ad38258cc50bcad8b8d38bb1a983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58496d07579956483d387dce9ea7598c"><td class="memItemLeft" align="right" valign="top">descriptor_range_flags &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a58496d07579956483d387dce9ea7598c">reshade::api::operator|=</a> (descriptor_range_flags &amp;a, descriptor_range_flags b)</td></tr>
+<tr class="separator:a58496d07579956483d387dce9ea7598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bb40929101a1b41df75fb4e3af52a0"><td class="memItemLeft" align="right" valign="top">constexpr descriptor_range_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a19bb40929101a1b41df75fb4e3af52a0">reshade::api::operator|</a> (descriptor_range_flags a, descriptor_range_flags b)</td></tr>
+<tr class="separator:a19bb40929101a1b41df75fb4e3af52a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dce9f4ab60704faf073936301ae4410"><td class="memItemLeft" align="right" valign="top">descriptor_range_flags &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a9dce9f4ab60704faf073936301ae4410">reshade::api::operator^=</a> (descriptor_range_flags &amp;a, descriptor_range_flags b)</td></tr>
+<tr class="separator:a9dce9f4ab60704faf073936301ae4410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa589ed8f7c9984aaa587b7adab217c73"><td class="memItemLeft" align="right" valign="top">constexpr descriptor_range_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#aa589ed8f7c9984aaa587b7adab217c73">reshade::api::operator^</a> (descriptor_range_flags a, descriptor_range_flags b)</td></tr>
+<tr class="separator:aa589ed8f7c9984aaa587b7adab217c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0846cbeda341e61d0e0921a0c48a79"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a3c0846cbeda341e61d0e0921a0c48a79">reshade::api::operator==</a> (descriptor_range_flags lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a3c0846cbeda341e61d0e0921a0c48a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4190de0fe8962e037b93e83ca804dcbb"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4190de0fe8962e037b93e83ca804dcbb">reshade::api::operator!=</a> (descriptor_range_flags lhs, uint32_t rhs)</td></tr>
+<tr class="separator:a4190de0fe8962e037b93e83ca804dcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5382ab4d7db1c6c94917541d105313bb"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5382ab4d7db1c6c94917541d105313bb">reshade::api::operator&lt;</a> (pipeline_layout lhs, pipeline_layout rhs)</td></tr>
 <tr class="separator:a5382ab4d7db1c6c94917541d105313bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1943868f37cc91899ccf52169d8d3c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a5a1943868f37cc91899ccf52169d8d3c">reshade::api::operator!=</a> (pipeline_layout lhs, pipeline_layout rhs)</td></tr>

@@ -139,12 +139,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e526299301a83731015774c8f571b54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a9e526299301a83731015774c8f571b54">unmap_texture_region</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, uint32_t subresource)=0</td></tr>
 <tr class="memdesc:a9e526299301a83731015774c8f571b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps a previously mapped texture resource.  <a href="structreshade_1_1api_1_1device.html#a9e526299301a83731015774c8f571b54">More...</a><br /></td></tr>
 <tr class="separator:a9e526299301a83731015774c8f571b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20067bd353735e244a73bedf6e3e3c40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a20067bd353735e244a73bedf6e3e3c40">update_buffer_region</a> (const void *data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, uint64_t offset, uint64_t size)=0</td></tr>
-<tr class="memdesc:a20067bd353735e244a73bedf6e3e3c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a buffer resource immediately.  <a href="structreshade_1_1api_1_1device.html#a20067bd353735e244a73bedf6e3e3c40">More...</a><br /></td></tr>
-<tr class="separator:a20067bd353735e244a73bedf6e3e3c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">update_texture_region</a> (const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, uint32_t subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *box=nullptr)=0</td></tr>
-<tr class="memdesc:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a texture resource immediately.  <a href="structreshade_1_1api_1_1device.html#a3d7f302a98ab4077576eb3cf0647f7bb">More...</a><br /></td></tr>
-<tr class="separator:a3d7f302a98ab4077576eb3cf0647f7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfacaa506f5b0dc9994be80588652bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a7cfacaa506f5b0dc9994be80588652bc">update_buffer_region</a> (const void *data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint64_t dest_offset, uint64_t size)=0</td></tr>
+<tr class="memdesc:a7cfacaa506f5b0dc9994be80588652bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a buffer resource immediately.  <a href="structreshade_1_1api_1_1device.html#a7cfacaa506f5b0dc9994be80588652bc">More...</a><br /></td></tr>
+<tr class="separator:a7cfacaa506f5b0dc9994be80588652bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01db7695094a556734dde98a2eea4c72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a01db7695094a556734dde98a2eea4c72">update_texture_region</a> (const <a class="el" href="structreshade_1_1api_1_1subresource__data.html">subresource_data</a> &amp;data, <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> dest, uint32_t dest_subresource, const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *dest_box=nullptr)=0</td></tr>
+<tr class="memdesc:a01db7695094a556734dde98a2eea4c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to a texture resource immediately.  <a href="structreshade_1_1api_1_1device.html#a01db7695094a556734dde98a2eea4c72">More...</a><br /></td></tr>
+<tr class="separator:a01db7695094a556734dde98a2eea4c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec37c4e800c7b8bbcaaceceacf891970"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970">create_pipeline</a> (<a class="el" href="structreshade_1_1api_1_1pipeline__layout.html">pipeline_layout</a> layout, uint32_t subobject_count, const <a class="el" href="structreshade_1_1api_1_1pipeline__subobject.html">pipeline_subobject</a> *subobjects, <a class="el" href="structreshade_1_1api_1_1pipeline.html">pipeline</a> *out_pipeline)=0</td></tr>
 <tr class="memdesc:aec37c4e800c7b8bbcaaceceacf891970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new pipeline state object.  <a href="structreshade_1_1api_1_1device.html#aec37c4e800c7b8bbcaaceceacf891970">More...</a><br /></td></tr>
 <tr class="separator:aec37c4e800c7b8bbcaaceceacf891970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +190,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe164544bae546e3e7517b836b48f12c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">destroy_query_heap</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap)=0</td></tr>
 <tr class="memdesc:afe164544bae546e3e7517b836b48f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys a query heap that was previously created via <a class="el" href="structreshade_1_1api_1_1device.html#a13596c096666cb1bc31e0b565f22bc3b" title="Creates a new query heap.">create_query_heap</a>.  <a href="structreshade_1_1api_1_1device.html#afe164544bae546e3e7517b836b48f12c">More...</a><br /></td></tr>
 <tr class="separator:afe164544bae546e3e7517b836b48f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27bd0239c41cf7fe9488966f768c8dd6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">get_query_heap_results</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, uint32_t first, uint32_t count, void *results, uint32_t stride)=0</td></tr>
-<tr class="memdesc:a27bd0239c41cf7fe9488966f768c8dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the results of queries in a query heap.  <a href="structreshade_1_1api_1_1device.html#a27bd0239c41cf7fe9488966f768c8dd6">More...</a><br /></td></tr>
-<tr class="separator:a27bd0239c41cf7fe9488966f768c8dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af944da259faafb4871c34adb9919f1bd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#af944da259faafb4871c34adb9919f1bd">get_query_heap_results</a> (<a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a> type, uint32_t first, uint32_t count, void *results, uint32_t stride)=0</td></tr>
+<tr class="memdesc:af944da259faafb4871c34adb9919f1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the results of queries in a query heap.  <a href="structreshade_1_1api_1_1device.html#af944da259faafb4871c34adb9919f1bd">More...</a><br /></td></tr>
+<tr class="separator:af944da259faafb4871c34adb9919f1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53b077ce6c8082f8fabe80152401cb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4">set_resource_name</a> (<a class="el" href="structreshade_1_1api_1_1resource.html">resource</a> <a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>, const char *name)=0</td></tr>
 <tr class="memdesc:ad53b077ce6c8082f8fabe80152401cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a name with a resource, for easier debugging in external tools.  <a href="structreshade_1_1api_1_1device.html#ad53b077ce6c8082f8fabe80152401cb4">More...</a><br /></td></tr>
 <tr class="separator:ad53b077ce6c8082f8fabe80152401cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,9 +562,9 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>The initial value for the fence.</td></tr>
-    <tr><td class="paramname">flags</td><td>Fence creation options.</td></tr>
+    <tr><td class="paramname">flags</td><td>Additional parameters of the fence.</td></tr>
     <tr><td class="paramname">out_fence</td><td>Pointer to a variable that is set to the handle of the created fence.</td></tr>
-    <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <em>flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e">fence_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created fence. When that variable is a valid handle, the fence is imported from that shared handle.</td></tr>
+    <tr><td class="paramname">shared_handle</td><td>Optional pointer to a variable of type <code>HANDLE</code> used when <em>flags</em>  contains <a class="el" href="namespacereshade_1_1api.html#ab7eabaefc2ea8c8f3225f291960271eaa9e81e7b963c71363e2fb3eefcfecfc0e" title="Shared fences can be imported/exported from/to different graphics APIs and/or processes....">fence_flags::shared</a>. When that variable is a <code>nullptr</code>, it is set to the exported shared handle of the created fence. When that variable is a valid handle, the fence is imported from that shared handle.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1242,7 +1242,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of the acceleration structure.</td></tr>
-    <tr><td class="paramname">flags</td><td>Acceleration structure build options.</td></tr>
+    <tr><td class="paramname">flags</td><td>Additional parameters to the acceleration structure build operation.</td></tr>
     <tr><td class="paramname">input_count</td><td>Number of build inputs.</td></tr>
     <tr><td class="paramname">inputs</td><td>Pointer to the first element of an array of build inputs describing the geometry of the acceleration structure.</td></tr>
     <tr><td class="paramname">out_size</td><td>Pointer to a variable that is set to the required buffer size for the acceleration structure.</td></tr>
@@ -1482,8 +1482,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a27bd0239c41cf7fe9488966f768c8dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27bd0239c41cf7fe9488966f768c8dd6">&#9670;&nbsp;</a></span>get_query_heap_results()</h2>
+<a id="af944da259faafb4871c34adb9919f1bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af944da259faafb4871c34adb9919f1bd">&#9670;&nbsp;</a></span>get_query_heap_results()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1496,6 +1496,12 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1query__heap.html">query_heap</a>&#160;</td>
           <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1">query_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1538,6 +1544,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">heap</td><td>Query heap that contains the queries.</td></tr>
+    <tr><td class="paramname">type</td><td>Type of the queries to copy.</td></tr>
     <tr><td class="paramname">first</td><td>Index of the first query in the query heap to copy the results from.</td></tr>
     <tr><td class="paramname">count</td><td>Number of query results to copy.</td></tr>
     <tr><td class="paramname">results</td><td>Pointer to the first element of an array that is filled with the results. The necessary data type is documented at the <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">query_type</a> enumeration.</td></tr>
@@ -2018,8 +2025,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a20067bd353735e244a73bedf6e3e3c40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20067bd353735e244a73bedf6e3e3c40">&#9670;&nbsp;</a></span>update_buffer_region()</h2>
+<a id="a7cfacaa506f5b0dc9994be80588652bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfacaa506f5b0dc9994be80588652bc">&#9670;&nbsp;</a></span>update_buffer_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2037,13 +2044,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
+          <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
+          <td class="paramname"><em>dest_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2065,12 +2072,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uploads data to a buffer resource immediately. </p>
+<p>The <em>dest</em> ination resource has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the data to upload.</td></tr>
-    <tr><td class="paramname">resource</td><td>Buffer resource to upload to.</td></tr>
-    <tr><td class="paramname">offset</td><td>Offset (in bytes) into the buffer resource to start uploading to.</td></tr>
-    <tr><td class="paramname">size</td><td>Number of bytes to upload.</td></tr>
+    <tr><td class="paramname">dest</td><td>Buffer resource to upload to.</td></tr>
+    <tr><td class="paramname">dest_offset</td><td>Offset (in bytes) into the buffer resource to start uploading to.</td></tr>
+    <tr><td class="paramname">size</td><td>Number of bytes to upload. Set to -1 (UINT64_MAX) to indicate that the entire buffer should be updated.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2156,8 +2164,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d7f302a98ab4077576eb3cf0647f7bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d7f302a98ab4077576eb3cf0647f7bb">&#9670;&nbsp;</a></span>update_texture_region()</h2>
+<a id="a01db7695094a556734dde98a2eea4c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01db7695094a556734dde98a2eea4c72">&#9670;&nbsp;</a></span>update_texture_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2175,19 +2183,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structreshade_1_1api_1_1resource.html">resource</a>&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
+          <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>subresource</em>, </td>
+          <td class="paramname"><em>dest_subresource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structreshade_1_1api_1_1subresource__box.html">subresource_box</a> *&#160;</td>
-          <td class="paramname"><em>box</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>dest_box</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2203,12 +2211,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uploads data to a texture resource immediately. </p>
+<p>The <em>dest</em> ination has to be in the <a class="el" href="namespacereshade_1_1api.html#af7c77e737cfeb069db2fa6f72f35b059a3a20bc63470d18df9ac2b7163b5d89f6">resource_usage::copy_dest</a> state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the data to upload.</td></tr>
-    <tr><td class="paramname">resource</td><td>Texture resource to upload to.</td></tr>
-    <tr><td class="paramname">subresource</td><td>Index of the subresource to upload to (<code>level + (layer * levels)</code>).</td></tr>
-    <tr><td class="paramname">box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>resource</em>  to upload to.</td></tr>
+    <tr><td class="paramname">dest</td><td>Texture resource to upload to.</td></tr>
+    <tr><td class="paramname">dest_subresource</td><td>Index of the subresource to upload to (<code>level + (layer * levels)</code>).</td></tr>
+    <tr><td class="paramname">dest_box</td><td>Optional 3D box (or <code>nullptr</code> to reference the entire subresource) that defines the region in the <em>resource</em>  to upload to.</td></tr>
   </table>
   </dd>
 </dl>

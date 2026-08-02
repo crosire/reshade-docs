@@ -429,12 +429,12 @@ Functions</h2></td></tr>
 <tr class="separator:a86c7bfd003b4459ba8d3ff3ba94eac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c931767a2e8a4413b785eec69fe0293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a0c931767a2e8a4413b785eec69fe0293">set_config_value</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime, const char *section, const char *key, const char *value, size_t value_size)</td></tr>
 <tr class="separator:a0c931767a2e8a4413b785eec69fe0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe2def0040846612598f4c26b626013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#aabe2def0040846612598f4c26b626013">register_addon</a> (HMODULE addon_module, [[maybe_unused]] HMODULE reshade_module=nullptr)</td></tr>
-<tr class="memdesc:aabe2def0040846612598f4c26b626013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#aabe2def0040846612598f4c26b626013">More...</a><br /></td></tr>
-<tr class="separator:aabe2def0040846612598f4c26b626013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450eb948a009dd9a8be7fbf3773515c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a450eb948a009dd9a8be7fbf3773515c4">unregister_addon</a> (HMODULE addon_module, [[maybe_unused]] HMODULE reshade_module=nullptr)</td></tr>
-<tr class="memdesc:a450eb948a009dd9a8be7fbf3773515c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module as an add-on. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a450eb948a009dd9a8be7fbf3773515c4">More...</a><br /></td></tr>
-<tr class="separator:a450eb948a009dd9a8be7fbf3773515c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c4e52044b10e26cc83cf2accc67d97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#aa9c4e52044b10e26cc83cf2accc67d97">register_addon</a> (void *addon_module, [[maybe_unused]] void *reshade_module=nullptr)</td></tr>
+<tr class="memdesc:aa9c4e52044b10e26cc83cf2accc67d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this module as an add-on with ReShade. Call this in 'AddonInit' or 'DllMain' during process attach, before any of the other API functions!  <a href="namespacereshade.html#aa9c4e52044b10e26cc83cf2accc67d97">More...</a><br /></td></tr>
+<tr class="separator:aa9c4e52044b10e26cc83cf2accc67d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe6db1ee4714fbe79d83f1d4d406792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a2fe6db1ee4714fbe79d83f1d4d406792">unregister_addon</a> (void *addon_module, [[maybe_unused]] void *reshade_module=nullptr)</td></tr>
+<tr class="memdesc:a2fe6db1ee4714fbe79d83f1d4d406792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters this module as an add-on. Call this in 'AddonUninit' or 'DllMain' during process detach, after any of the other API functions.  <a href="namespacereshade.html#a2fe6db1ee4714fbe79d83f1d4d406792">More...</a><br /></td></tr>
+<tr class="separator:a2fe6db1ee4714fbe79d83f1d4d406792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf596a6d920cd2397192b373ff40d48"><td class="memTemplParams" colspan="2">template&lt;addon_event ev&gt; </td></tr>
 <tr class="memitem:a0cf596a6d920cd2397192b373ff40d48"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a0cf596a6d920cd2397192b373ff40d48">register_event</a> (typename addon_event_traits&lt; ev &gt;::decl callback)</td></tr>
 <tr class="memdesc:a0cf596a6d920cd2397192b373ff40d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for the specified event with ReShade.  <a href="namespacereshade.html#a0cf596a6d920cd2397192b373ff40d48">More...</a><br /></td></tr>
@@ -450,10 +450,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab58824e1bc1ffa8086661f88a0d24056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters an overlay that was previously registered via <a class="el" href="namespacereshade.html#ada303de977b98d78a41a898182b54cb0" title="Registers an overlay with ReShade.">register_overlay</a>.  <a href="namespacereshade.html#ab58824e1bc1ffa8086661f88a0d24056">More...</a><br /></td></tr>
 <tr class="separator:ab58824e1bc1ffa8086661f88a0d24056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44408c0f3aef6ad2e6fcf8cf40be68d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2">create_effect_runtime</a> (<a class="el" href="namespacereshade_1_1api.html#a0e2758bd8e3478f957852a26e12d7f5f">reshade::api::device_api</a> api, void *device, void *command_queue, void *swapchain, const char *config_path, <a class="el" href="structreshade_1_1api_1_1effect__runtime.html">reshade::api::effect_runtime</a> **out_runtime)</td></tr>
-<tr class="memdesc:a44408c0f3aef6ad2e6fcf8cf40be68d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new effect runtime for an existing swapchain, for when it was not already hooked by ReShade (e.g. because the RESHADE_DISABLE_GRAPHICS_HOOK environment variable is set).  <a href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2">More...</a><br /></td></tr>
+<tr class="memdesc:a44408c0f3aef6ad2e6fcf8cf40be68d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new effect runtime for an existing swap chain, for when it was not already hooked by ReShade (e.g. because the RESHADE_DISABLE_GRAPHICS_HOOK environment variable is set).  <a href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2">More...</a><br /></td></tr>
 <tr class="separator:a44408c0f3aef6ad2e6fcf8cf40be68d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20a6f99814b0cd58f5659536352a7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#ad20a6f99814b0cd58f5659536352a7e6">destroy_effect_runtime</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime)</td></tr>
-<tr class="memdesc:ad20a6f99814b0cd58f5659536352a7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys an effect runtime that was previously created via <a class="el" href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2" title="Creates a new effect runtime for an existing swapchain, for when it was not already hooked by ReShade...">create_effect_runtime</a>. Do not call this with effect runtimes that were automatically created by ReShade!  <a href="namespacereshade.html#ad20a6f99814b0cd58f5659536352a7e6">More...</a><br /></td></tr>
+<tr class="memdesc:ad20a6f99814b0cd58f5659536352a7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantly destroys an effect runtime that was previously created via <a class="el" href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2" title="Creates a new effect runtime for an existing swap chain, for when it was not already hooked by ReShad...">create_effect_runtime</a>. Do not call this with effect runtimes that were automatically created by ReShade!  <a href="namespacereshade.html#ad20a6f99814b0cd58f5659536352a7e6">More...</a><br /></td></tr>
 <tr class="separator:ad20a6f99814b0cd58f5659536352a7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d35354c0ed4914f973bf6a01c244d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade.html#a5d35354c0ed4914f973bf6a01c244d3a">update_and_present_effect_runtime</a> (<a class="el" href="structreshade_1_1api_1_1effect__runtime.html">api::effect_runtime</a> *runtime)</td></tr>
 <tr class="memdesc:a5d35354c0ed4914f973bf6a01c244d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates and renders an effect runtime onto the current back buffer of the swap chain it was created with. Do not call this with effect runtimes that were automatically created by ReShade!  <a href="namespacereshade.html#a5d35354c0ed4914f973bf6a01c244d3a">More...</a><br /></td></tr>
@@ -704,6 +704,10 @@ ID3D11Device::CreateSamplerState </li>
 <li>
 ID3D12Device::CreateSampler </li>
 <li>
+ID3D12Device11::CreateSampler2 </li>
+<li>
+ID3D12Device15::TryCreateSampler2 </li>
+<li>
 vkCreateSampler </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, const <a class="el" href="structreshade_1_1api_1_1sampler__desc.html" title="Describes a sampler state.">api::sampler_desc</a> &amp;desc, <a class="el" href="structreshade_1_1api_1_1sampler.html" title="An opaque handle to a sampler state object.">api::sampler</a> sampler)</code></p>
@@ -719,6 +723,10 @@ ID3D12Device::CreateSampler </li>
 <li>
 ID3D12Device::CreateRootSignature </li>
 <li>
+ID3D12Device11::CreateSampler2 </li>
+<li>
+ID3D12Device15::TryCreateSampler2 </li>
+<li>
 vkCreateSampler </li>
 </ul>
 <p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1sampler__desc.html" title="Describes a sampler state.">api::sampler_desc</a> &amp;desc)</code></p>
@@ -729,8 +737,6 @@ vkCreateSampler </li>
 ID3D10SamplerState::Release </li>
 <li>
 ID3D11SamplerState::Release </li>
-<li>
-glDeleteSamplers </li>
 <li>
 vkDestroySampler </li>
 </ul>
@@ -790,6 +796,10 @@ ID3D12Device::CreateReservedResource </li>
 ID3D12Device4::CreateCommittedResource1 </li>
 <li>
 ID3D12Device4::CreateReservedResource1 </li>
+<li>
+ID3D12Device8::CreateCommittedResource2 </li>
+<li>
+ID3D12Device10::CreateReservedResource2 </li>
 <li>
 glBufferData </li>
 <li>
@@ -908,6 +918,10 @@ ID3D12Device4::CreateCommittedResource1 </li>
 <li>
 ID3D12Device4::CreateReservedResource1 </li>
 <li>
+ID3D12Device8::CreateCommittedResource2 </li>
+<li>
+ID3D12Device10::CreateReservedResource2 </li>
+<li>
 glBufferData </li>
 <li>
 glBufferStorage </li>
@@ -988,6 +1002,7 @@ vkDestroyBuffer </li>
 vkDestroyImage </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1resource.html" title="An opaque handle to a resource object (buffer, texture, ...).">api::resource</a> resource)</code></p>
+<p>This may be called from within other API calls, e.g. device::update_texture_region, so be careful with synchronization primitives in the callback. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa816b8045a420cb826db4c6384854bf80"></a>init_resource_view&#160;</td><td class="fielddoc"><p>Called after successful resource view creation from: </p><ul>
 <li>
@@ -1026,6 +1041,14 @@ ID3D12Device::CreateUnorderedAccessView </li>
 ID3D12Device::CreateRenderTargetView </li>
 <li>
 ID3D12Device::CreateDepthStencilView </li>
+<li>
+ID3D12Device15::TryCreateShaderResourceView </li>
+<li>
+ID3D12Device15::TryCreateUnorderedAccessView </li>
+<li>
+ID3D12Device15::TryCreateRenderTargetView </li>
+<li>
+ID3D12Device15::TryCreateDepthStencilView </li>
 <li>
 glTexBuffer </li>
 <li>
@@ -1074,6 +1097,14 @@ ID3D12Device::CreateRenderTargetView </li>
 <li>
 ID3D12Device::CreateDepthStencilView </li>
 <li>
+ID3D12Device15::TryCreateShaderResourceView </li>
+<li>
+ID3D12Device15::TryCreateUnorderedAccessView </li>
+<li>
+ID3D12Device15::TryCreateRenderTargetView </li>
+<li>
+ID3D12Device15::TryCreateDepthStencilView </li>
+<li>
 glTexBuffer </li>
 <li>
 glTextureBuffer </li>
@@ -1106,7 +1137,7 @@ vkDestroyImageView </li>
 vkDestroyAccelerationStructureKHR </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1resource__view.html" title="An opaque handle to a resource view object (depth-stencil, render target, shader resource view,...">api::resource_view</a> view)</code></p>
-<p>Is not called in D3D12 (since resource views are descriptor handles instead of objects there). </p>
+<p>Is not called in D3D12 (since resource views are descriptor handles instead of objects there). This may be called from within other API calls, e.g. device::update_texture_region, so be careful with synchronization primitives in the callback. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa3e4c8af685abff398098a3b0a951b47e"></a>map_buffer_region&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1453,7 +1484,7 @@ glDeleteProgram </li>
 vkDestroyPipeline </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1pipeline.html" title="An opaque handle to a pipeline state object.">api::pipeline</a> pipeline)</code></p>
-<p>Is not called in D3D9. </p>
+<p>Is not called in D3D9. This may be called from within other API calls, e.g. device::destroy_pipeline, so be careful with synchronization primitives in the callback. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aaabbebbd3a2ec3bfb6e9ef9861b1bb88c"></a>init_pipeline_layout&#160;</td><td class="fielddoc"><p>Called after successful pipeline layout creation from: </p><ul>
 <li>
@@ -1513,6 +1544,8 @@ vkUpdateDescriptorSetWithTemplate </li>
 <li>
 ID3D12Device::CreateQueryHeap </li>
 <li>
+ID3D12Device15::CreateQueryHeap1 </li>
+<li>
 vkCreateQueryPool </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t count, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap)</code></p>
@@ -1520,6 +1553,8 @@ vkCreateQueryPool </li>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa4bf436f2d4f5e3fb7db0fc13ecd0a4d8"></a>create_query_heap&#160;</td><td class="fielddoc"><p>Called on query heap creation, before: </p><ul>
 <li>
 ID3D12Device::CreateQueryHeap </li>
+<li>
+ID3D12Device15::CreateQueryHeap1 </li>
 <li>
 vkCreateQueryPool </li>
 </ul>
@@ -1535,9 +1570,11 @@ vkDestroyQueryPool </li>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa46f6cdfb5ce6aa3c9a3d884ac8cf727d"></a>get_query_heap_results&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
+ID3D12Device15::ResolveQueryData </li>
+<li>
 vkGetQueryPoolResults </li>
 </ul>
-<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap, uint32_t first, uint32_t count, void *results, uint32_t stride)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1device.html" title="A device, used for resource creation and global operations.">api::device</a> *device, <a class="el" href="structreshade_1_1api_1_1query__heap.html" title="An opaque handle to a query heap.">api::query_heap</a> heap, <a class="el" href="namespacereshade_1_1api.html#a12ac82b069d30cccaca8928394832bf1" title="Type of a query.">api::query_type</a> type, uint32_t first, uint32_t count, void *results, uint32_t stride)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aafa9c8ab925b4a1cd4c75b1886fac8f61"></a>barrier&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1565,8 +1602,8 @@ vkCmdNextSubpass2 </li>
 <li>
 vkCmdBeginRendering </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds)</code></p>
-<p>The depth-stencil description argument is optional and may be <code>nullptr</code> (which indicates that no depth-stencil is used). </p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1render__pass__render__target__desc.html" title="Describes a render target view and how it is treated at the start and end of a render pass.">api::render_pass_render_target_desc</a> *rts, const <a class="el" href="structreshade_1_1api_1_1render__pass__depth__stencil__desc.html" title="Describes a depth-stencil view and how it is treated at the start and end of a render pass.">api::render_pass_depth_stencil_desc</a> *ds, <a class="el" href="namespacereshade_1_1api.html#a7d316ba31e491e70691c1fda3c0f238e" title="Flags that specify additional parameters of a render pass.">api::render_pass_flags</a> flags)</code></p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. The depth-stencil description argument is optional and may be <code>nullptr</code> (which indicates that no depth-stencil is used). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aab56285fa14942207a561835044abb4d2"></a>end_render_pass&#160;</td><td class="fielddoc"><p>Called before: </p><ul>
 <li>
@@ -1582,7 +1619,8 @@ vkCmdNextSubpass2 </li>
 <li>
 vkCmdEndRendering </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
+<p>Callback function signature: <code>bool (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list)</code></p>
+<p>To prevent this command from being executed, return <code>true</code>, otherwise return <code>false</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa987b2aa4a2dd7ad21a312488fe3cf9db"></a>bind_render_targets_and_depth_stencil&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -1854,9 +1892,9 @@ glBindTextureUnit </li>
 <li>
 glBindMultiTextureEXT </li>
 <li>
-vkCmdPushDescriptorSetKHR </li>
+vkCmdPushDescriptorSet </li>
 <li>
-vkCmdPushDescriptorSetWithTemplateKHR </li>
+vkCmdPushDescriptorSetWithTemplate </li>
 </ul>
 <p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee" title="Flags that specify the shader stages in the render pipeline.">api::shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t layout_param, const <a class="el" href="structreshade_1_1api_1_1descriptor__table__update.html" title="All information needed to update descriptors in a descriptor table.">api::descriptor_table_update</a> &amp;update)</code></p>
 </td></tr>
@@ -1872,7 +1910,7 @@ ID3D12GraphicsCommandList::SetGraphicsRootDescriptorTable </li>
 <li>
 vkCmdBindDescriptorSets </li>
 </ul>
-<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee" title="Flags that specify the shader stages in the render pipeline.">api::shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html" title="An opaque handle to a descriptor table in a descriptor heap.">api::descriptor_table</a> *tables)</code></p>
+<p>Callback function signature: <code>void (<a class="el" href="structreshade_1_1api_1_1command__list.html" title="A command list, used to enqueue render commands on the CPU, before later executing them in a command ...">api::command_list</a> *cmd_list, <a class="el" href="namespacereshade_1_1api.html#ae6d07e51daff3c4ff0b10c4ce20c77ee" title="Flags that specify the shader stages in the render pipeline.">api::shader_stage</a> stages, <a class="el" href="structreshade_1_1api_1_1pipeline__layout.html" title="An opaque handle to a pipeline layout object.">api::pipeline_layout</a> layout, uint32_t first, uint32_t count, const <a class="el" href="structreshade_1_1api_1_1descriptor__table.html" title="An opaque handle to a descriptor table in a descriptor heap.">api::descriptor_table</a> *tables, uint32_t dynamic_offset_count, const uint32_t *dynamic_offsets)</code></p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1187cd7f6d411c0a2dc648203c7d923aa19a4f637b2ebbbd4c2fee7fd98ccd593"></a>bind_index_buffer&#160;</td><td class="fielddoc"><p>Called after: </p><ul>
 <li>
@@ -2572,7 +2610,7 @@ vkReleaseFullScreenExclusiveModeEXT </li>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new effect runtime for an existing swapchain, for when it was not already hooked by ReShade (e.g. because the RESHADE_DISABLE_GRAPHICS_HOOK environment variable is set). </p>
+<p>Creates a new effect runtime for an existing swap chain, for when it was not already hooked by ReShade (e.g. because the RESHADE_DISABLE_GRAPHICS_HOOK environment variable is set). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">api</td><td>Underlying graphics API used.</td></tr>
@@ -2612,7 +2650,7 @@ vkReleaseFullScreenExclusiveModeEXT </li>
 </table>
 </div><div class="memdoc">
 
-<p>Instantly destroys an effect runtime that was previously created via <a class="el" href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2" title="Creates a new effect runtime for an existing swapchain, for when it was not already hooked by ReShade...">create_effect_runtime</a>. Do not call this with effect runtimes that were automatically created by ReShade! </p>
+<p>Instantly destroys an effect runtime that was previously created via <a class="el" href="namespacereshade.html#a44408c0f3aef6ad2e6fcf8cf40be68d2" title="Creates a new effect runtime for an existing swap chain, for when it was not already hooked by ReShad...">create_effect_runtime</a>. Do not call this with effect runtimes that were automatically created by ReShade! </p>
 
 </div>
 </div>
@@ -2728,8 +2766,8 @@ vkReleaseFullScreenExclusiveModeEXT </li>
 
 </div>
 </div>
-<a id="aabe2def0040846612598f4c26b626013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe2def0040846612598f4c26b626013">&#9670;&nbsp;</a></span>register_addon()</h2>
+<a id="aa9c4e52044b10e26cc83cf2accc67d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c4e52044b10e26cc83cf2accc67d97">&#9670;&nbsp;</a></span>register_addon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2740,13 +2778,13 @@ vkReleaseFullScreenExclusiveModeEXT </li>
         <tr>
           <td class="memname">bool reshade::register_addon </td>
           <td>(</td>
-          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>addon_module</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] HMODULE&#160;</td>
+          <td class="paramtype">[[maybe_unused] ] void *&#160;</td>
           <td class="paramname"><em>reshade_module</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -2975,8 +3013,8 @@ template&lt;addon_event ev&gt; </div>
 
 </div>
 </div>
-<a id="a450eb948a009dd9a8be7fbf3773515c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450eb948a009dd9a8be7fbf3773515c4">&#9670;&nbsp;</a></span>unregister_addon()</h2>
+<a id="a2fe6db1ee4714fbe79d83f1d4d406792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe6db1ee4714fbe79d83f1d4d406792">&#9670;&nbsp;</a></span>unregister_addon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2987,13 +3025,13 @@ template&lt;addon_event ev&gt; </div>
         <tr>
           <td class="memname">void reshade::unregister_addon </td>
           <td>(</td>
-          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>addon_module</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] HMODULE&#160;</td>
+          <td class="paramtype">[[maybe_unused] ] void *&#160;</td>
           <td class="paramname"><em>reshade_module</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>

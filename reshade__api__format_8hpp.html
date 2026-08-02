@@ -259,11 +259,14 @@ Enumerations</h2></td></tr>
 <tr class="separator:adbd317502610c902e7097163f5a9bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3d450b53804612b18ec38edffa10e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">reshade::api::color_space</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7aad921d60486366258809553a3db49a4a">reshade::api::unknown</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a827470794647eabf75ea23bf50c61045">reshade::api::srgb</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a42772cdb542cdd7c8cbd4c625b33def7">reshade::api::scrgb</a>
+, <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7acc8cc11d7c92bd0c63d159d2dd417a45">reshade::api::hdr10_pq</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe">reshade::api::hdr10_hlg</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a854525ea125c8aa2c118e3c980840309">reshade::api::srgb_nonlinear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2e1bd279fd321004766c44c326adc676">reshade::api::extended_srgb_linear</a>
 , <a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7af0f35dd538a8bc039e81e72b7b1a201c">reshade::api::hdr10_st2084</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7a2d70cf26502b0e316a8bba8d2fb54efe">reshade::api::hdr10_hlg</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a8f3d450b53804612b18ec38edffa10e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available color space types for presentation.  <a href="namespacereshade_1_1api.html#a8f3d450b53804612b18ec38edffa10e7">More...</a><br /></td></tr>
@@ -289,6 +292,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4db1efac5191f7cc82e5937e33480af2"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#a4db1efac5191f7cc82e5937e33480af2">reshade::api::format_slice_pitch</a> (format value, uint32_t row_pitch, uint32_t height)</td></tr>
 <tr class="memdesc:a4db1efac5191f7cc82e5937e33480af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of bytes a texture slice of the specified format <em>value</em>  occupies.  <a href="namespacereshade_1_1api.html#a4db1efac5191f7cc82e5937e33480af2">More...</a><br /></td></tr>
 <tr class="separator:a4db1efac5191f7cc82e5937e33480af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#ac2b95a103f3a8ab5053a96a4366e3a1a">reshade::api::format_is_typeless</a> (format value)</td></tr>
+<tr class="memdesc:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified format <em>value</em>  is a typeless format.  <a href="namespacereshade_1_1api.html#ac2b95a103f3a8ab5053a96a4366e3a1a">More...</a><br /></td></tr>
+<tr class="separator:ac2b95a103f3a8ab5053a96a4366e3a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacd021408d4387a0a4f687d3460b682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereshade_1_1api.html#acacd021408d4387a0a4f687d3460b682">reshade::api::format_is_block_compressed</a> (format value)</td></tr>
+<tr class="memdesc:acacd021408d4387a0a4f687d3460b682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified format <em>value</em>  is a block compressed (BC) format.  <a href="namespacereshade_1_1api.html#acacd021408d4387a0a4f687d3460b682">More...</a><br /></td></tr>
+<tr class="separator:acacd021408d4387a0a4f687d3460b682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
